@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Open CSV
+Bundle-SymbolicName: org.opencsv
+Bundle-Version: 5.2.0
+Require-Bundle: org.apache.commons.lang3
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: org.opencsv
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ lib/opencsv-5.2.jar
+Export-Package: com.opencsv,
+ com.opencsv.exceptions

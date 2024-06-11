@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+* *****************************************************
+* Copyright (c) Robert Bosch GmbH. All rights reserved.
+* *****************************************************
+*
+* Purpose : Test data to create an ChildBean  
+* Remarks : the ParentBean is reference to an existing entity in the DB, and is not created from test data file.
+* 
+* Author  : Bebith Nelson (RBEI/ETB2Z)
+*
+-->
+<data>
+    <item class="com.bosch.caltool.testframe.entity.ChildBean">
+        <parent>{name="Ref parent-01";src=DB}</parent>
+        <childname>Child_refparent</childname>
+    </item>
+</data>

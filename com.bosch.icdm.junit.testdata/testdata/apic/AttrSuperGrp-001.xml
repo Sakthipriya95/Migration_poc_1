@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+* *****************************************************
+* Copyright (c) Robert Bosch GmbH. All rights reserved.
+* *****************************************************
+*
+* Purpose : Test data to create an Attribute Super Group
+* Remarks : Super group name = UTest01-SG
+* 
+* Author  : bne4cob
+*
+-->
+
+<data>
+    <item class="com.bosch.caltool.apic.jpa.TabvAttrSuperGroup">
+        <superGroupNameEng>UTest01-SG</superGroupNameEng>
+        <superGroupNameGer>UTest01-SG Ger</superGroupNameGer>
+        <superGroupDescEng>UTest01-SG Desc Eng</superGroupDescEng>
+        <superGroupDescGer>UTest01-SG Desc Ger</superGroupDescGer>
+        <deletedFlag>N</deletedFlag>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM_JPA</createdUser>
+        <version>1</version>
+    </item>
+</data>

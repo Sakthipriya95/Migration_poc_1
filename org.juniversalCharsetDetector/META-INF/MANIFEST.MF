@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JuniversalCharsetDetector
+Bundle-SymbolicName: org.juniversalCharsetDetector
+Bundle-Version: 1.0.0
+Automatic-Module-Name: org.juniversalCharsetDetector
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.mozilla.universalchardet,
+ org.mozilla.universalchardet.prober,
+ org.mozilla.universalchardet.prober.contextanalysis,
+ org.mozilla.universalchardet.prober.distributionanalysis,
+ org.mozilla.universalchardet.prober.sequence,
+ org.mozilla.universalchardet.prober.statemachine
+Bundle-ClassPath: juniversalchardet-2.4.0.jar,
+ .
+Bundle-ActivationPolicy: lazy

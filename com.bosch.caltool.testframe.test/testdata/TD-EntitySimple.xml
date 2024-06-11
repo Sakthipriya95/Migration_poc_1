@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <item class="com.bosch.caltool.testframe.entity.ParentBean">
+        <name>Junit A simple entity</name>
+        <createdDate>1/1/2001</createdDate>
+        <address>line 1, line 2</address>
+    </item>
+</data>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <item class="com.bosch.caltool.comppkg.jpa.entity.TCpRuleAttr">
+        <tabvAttribute>{attrNameEng="AFR Sensor 1";src=DB;class=com.bosch.caltool.apic.jpa.TabvAttribute}</tabvAttribute>       
+        <TCompPkg>{compPkgName="UTest02-CP-NE"}</TCompPkg>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM_JPA</createdUser>
+        <version>1</version>
+    </item>
+    <item class="com.bosch.caltool.comppkg.jpa.entity.TCpRuleAttr">
+        <tabvAttribute>{attrNameEng="VSA - Control";src=DB;class=com.bosch.caltool.apic.jpa.TabvAttribute}</tabvAttribute>       
+        <TCompPkg>{compPkgName="UTest02-CP-NE"}</TCompPkg>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM_JPA</createdUser>
+        <version>1</version>
+    </item>
+</data>

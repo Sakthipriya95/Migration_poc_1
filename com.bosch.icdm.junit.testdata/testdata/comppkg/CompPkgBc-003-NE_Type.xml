@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <item class="com.bosch.caltool.comppkg.jpa.entity.TCompPkgBc">
+        <bcName>ASDCtl</bcName>
+        <bcSeqNo>1</bcSeqNo>
+        <TCompPkg>{compPkgName="UTest03-CP-NE"}</TCompPkg>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM_JPA</createdUser>
+        <version>1</version>
+    </item>
+</data>

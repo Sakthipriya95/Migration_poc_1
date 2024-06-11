@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+* *****************************************************
+* Copyright (c) Robert Bosch GmbH. All rights reserved.
+* *****************************************************
+*
+* Purpose : Test data for reference as xml tags  
+* Remarks : the ParentBean is reference to an created earlier, but from test data file. Also the reference is only the parentbean's id, not the relation.
+* 
+* Author  : Bebith Nelson (RBEI/ETB2Z)
+*
+-->
+
+<data>
+
+    <!-- Common parent bean -->
+    <item class="com.bosch.caltool.testframe.entity.ParentBean">
+        <name>PB Test XML std</name>
+        <createdDate>1/1/2000</createdDate>
+        <address>line 1, line 2</address>
+    </item>
+    
+    <!-- Child bean with default reference source (Test data - TD). Refers to parent bean as JPA reference -->
+    <item class="com.bosch.caltool.testframe.entity.ChildBean">
+        <parent>
+            <reference>
+                <name>PB Test XML std</name>
+            </reference>
+        </parent>
+        <childname>CB XMLStd 1</childname>
+    </item>
+    
+    <!-- Child bean with source specified as Test data(TD) for reference -->
+    <item class="com.bosch.caltool.testframe.entity.ChildBean">
+            <reference src="TD">
+                <name>PB Test XML std</name>
+            </reference>
+        <childname>CB XMLStd 2</childname>
+    </item>
+    
+    <!-- Child bean with source specified as database(DB) for reference -->
+    <item class="com.bosch.caltool.testframe.entity.ChildBean">
+            <reference src="DB">
+                <name>Ref parent-01</name>
+            </reference>
+        <childname>CB XMLStd 3</childname>
+    </item>
+    
+    <!-- Child bean with source specified as test data(TDPERS) where reference is to a specific field generated during database update -->
+    <item class="com.bosch.caltool.testframe.entity.WokeyrefTable">
+        <nodeId>
+            <reference src="TDPERS" class="com.bosch.caltool.testframe.entity.ParentBean" field="id" >
+                <name>PB Test XML std</name>
+            </reference>
+        </nodeId>
+        <recType>PARENT_BEAN</recType>
+        <refName>Reference To PB</refName>
+        <version>1</version>
+    </item>
+    
+</data>

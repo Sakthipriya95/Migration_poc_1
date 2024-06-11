@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test Data
+Bundle-SymbolicName: com.bosch.icdm.junit.testdata
+Bundle-Version: 2024.3.0
+Bundle-Vendor: BOSCH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

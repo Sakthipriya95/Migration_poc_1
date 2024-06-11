@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+* *****************************************************
+* Copyright (c) Robert Bosch GmbH. All rights reserved.
+* *****************************************************
+*
+* Purpose : Test data to create a Project Attr 
+*
+* Remarks : PIDC name       = JTestPIDC_001
+*           Level Structure = AUDI >> Diesel >> PC - Passenger Car >> BCU6
+*           PIDC Owner      = JTESTUSER_001
+*
+* Author  : svj7cob
+*
+-->
+<data>
+<item class="com.bosch.caltool.apic.jpa.TabvProjectAttr">
+        <tPidcVersion>{tabvProjectidcard.tabvAttrValue.textvalueEng="JTestPIDC_001",versName="JTestPIDC_version_001"}</tPidcVersion>
+        <tabvAttribute>{attrNameEng="Automatic Start";src=DB}</tabvAttribute>
+        <tabvAttrValue>{textvalueEng="yes",boolvalue="T",tabvAttribute.attrNameEng="Automatic Start" ;src=DB}</tabvAttrValue>
+        <description></description>
+        <specLink></specLink>
+        <partNumber></partNumber>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <isVariant>N</isVariant>
+        <used>Y</used>
+        <version>1</version>
+</item>  
+<item class="com.bosch.caltool.apic.jpa.TabvProjectAttr">
+        <tPidcVersion>{tabvProjectidcard.tabvAttrValue.textvalueEng="JTestPIDC_001",versName="JTestPIDC_version_001"}</tPidcVersion>
+        <tabvAttribute>{attrNameEng="Ambient Temperature Sensor";src=DB}</tabvAttribute>
+        <tabvAttrValue>{textvalueEng="via CAN",tabvAttribute.attrNameEng="Ambient Temperature Sensor" ;src=DB}</tabvAttrValue>
+        <description></description>
+        <specLink></specLink>
+        <partNumber></partNumber>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <isVariant>N</isVariant>
+        <used>Y</used>
+        <version>1</version>
+</item>  
+</data>

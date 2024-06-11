@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+* *****************************************************
+* Copyright (c) Robert Bosch GmbH. All rights reserved.
+* *****************************************************
+*
+* Purpose : Test data to create an Attribute  
+* Remarks : attr name = UTest01-ATTR
+* 
+* Author  : mkl2cob
+*
+-->
+<data>
+    <item class="com.bosch.caltool.apic.jpa.TCharacteristic">
+        <charNameEng>UTest01-CHAR</charNameEng>
+        <charNameGer>UTest01-CHAR Ger</charNameGer>
+        <descEng>UTest01-CHAR Desc Eng</descEng>
+        <descGer>UTest01-CHAR Desc Ger</descGer>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <focusMatrixYN>N</focusMatrixYN>
+        <modifiedDate>1/1/2010</modifiedDate>
+        <modifiedUser>DGS_ICDM</modifiedUser>
+        <version>1</version>
+    </item>
+ </data>

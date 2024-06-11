@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Client
+Bundle-SymbolicName: com.bosch.ssd.api.client
+Bundle-Version: 1.2.0
+Bundle-Activator: com.bosch.ssd.api.client.Activator
+Bundle-Vendor: BOSCH
+Require-Bundle: org.eclipse.core.runtime,
+ org.glassfish.jersey,
+ org.eclipse.swt,
+ org.apache.commons.io;bundle-version="2.6.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: com.bosch.ssd.api.client
+Bundle-ActivationPolicy: lazy
+Export-Package: com.bosch.ssd.api.fileeditor.client,
+ com.bosch.ssd.api.fileservice.client
+Import-Package: org.apache.commons.io

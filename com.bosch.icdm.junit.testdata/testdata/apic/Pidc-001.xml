@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+* *****************************************************
+* Copyright (c) Robert Bosch GmbH. All rights reserved.
+* *****************************************************
+*
+* Purpose : Test data to create a Project ID Card  
+*
+* Remarks : PIDC name       = JTestPIDC_001
+*           Level Structure = AUDI >> Diesel >> PC - Passenger Car >> BCU6
+*           PIDC Owner      = JTESTUSER_001
+*
+* Author  : bne4cob
+*
+-->
+
+<data>
+    <!-- PIDC Name -->
+    <item class="com.bosch.caltool.apic.jpa.TabvAttrValue">
+        <textvalueEng>JTestPIDC_001</textvalueEng>
+        <textvalueGer>JTestPIDC_001_Ger</textvalueGer>
+        <valueDescEng>JTest Project ID Card 001</valueDescEng>
+        <valueDescGer>JTest Project ID Card 001 Germ</valueDescGer>
+        <clearingStatus>Y</clearingStatus>
+        <deletedFlag>N</deletedFlag>
+        <tabvAttribute>{attrNameEng="Project Name";src=DB}</tabvAttribute><!-- attr-id -->
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>
+    
+    <!-- PIDC Entity -->
+    <item class="com.bosch.caltool.apic.jpa.TabvProjectidcard">
+        <tabvAttrValue>{textvalueEng="JTestPIDC_001"}</tabvAttrValue><!-- value_id -->
+        <proRevId>1</proRevId>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>
+    
+    <item class="com.bosch.caltool.apic.jpa.TPidcVersion"> 
+<!--         <pidcVersId></pidcVersId> //primary key -->
+        <tabvProjectidcard>{tabvAttrValue.textvalueEng="JTestPIDC_001"}</tabvProjectidcard>
+        <proRevId>1</proRevId>
+        <versName>JTestPIDC_version_001</versName>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>
+    
+    <!-- PIDC Node Access for owner -->
+    <item class="com.bosch.caltool.apic.jpa.TabvApicNodeAccess">
+        <nodeId>{tabvAttrValue.textvalueEng="JTestPIDC_001";src=TDPERS;class=com.bosch.caltool.apic.jpa.TabvProjectidcard;field=projectId}</nodeId>
+        <nodeType>PIDC</nodeType>
+        <owner>Y</owner>
+        <readright>Y</readright>
+        <writeright>Y</writeright>
+        <grantright>Y</grantright>
+        <tabvApicUser>{username="DGS_ICDM";src=DB}</tabvApicUser>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>
+    
+    <!-- PIDC Level attributes -->
+    <item class="com.bosch.caltool.apic.jpa.TabvProjectAttr">
+        <tPidcVersion>{tabvProjectidcard.tabvAttrValue.textvalueEng="JTestPIDC_001",versName="JTestPIDC_version_001"}</tPidcVersion>
+<!--         <tabvProjectidcard>{tabvAttrValue.textvalueEng="JTestPIDC_001"}</tabvProjectidcard> previous foreign key data-->
+        <used>Y</used>
+        <tabvAttribute>{attrLevel="1";src=DB}</tabvAttribute><!-- attr_id -->
+        <tabvAttrValue>{textvalueEng="AUDI",tabvAttribute.attrLevel="1";src=DB}</tabvAttrValue><!-- value_id -->
+        <isVariant>N</isVariant>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>
+      <item class="com.bosch.caltool.apic.jpa.TabvProjectAttr">
+      <tPidcVersion>{tabvProjectidcard.tabvAttrValue.textvalueEng="JTestPIDC_001",versName="JTestPIDC_version_001"}</tPidcVersion>
+        <used>Y</used>
+        <tabvAttribute>{attrLevel="2";src=DB}</tabvAttribute>
+        <tabvAttrValue>{textvalueEng="Diesel Engine",tabvAttribute.attrLevel="2";src=DB}</tabvAttrValue>
+        <isVariant>N</isVariant>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>
+        <item class="com.bosch.caltool.apic.jpa.TabvProjectAttr">
+        <tPidcVersion>{tabvProjectidcard.tabvAttrValue.textvalueEng="JTestPIDC_001",versName="JTestPIDC_version_001"}</tPidcVersion>
+        <used>Y</used>
+        <tabvAttribute>{attrLevel="3";src=DB}</tabvAttribute>
+        <tabvAttrValue>{textvalueEng="PC - Passenger Car",tabvAttribute.attrLevel="3";src=DB}</tabvAttrValue>
+        <isVariant>N</isVariant>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>
+        <item class="com.bosch.caltool.apic.jpa.TabvProjectAttr">
+        <tPidcVersion>{tabvProjectidcard.tabvAttrValue.textvalueEng="JTestPIDC_001",versName="JTestPIDC_version_001"}</tPidcVersion>
+        <used>Y</used>
+        <tabvAttribute>{attrLevel="4";src=DB}</tabvAttribute>
+        <tabvAttrValue>{textvalueEng="BCU6",tabvAttribute.attrLevel="4";src=DB}</tabvAttrValue>
+        <isVariant>N</isVariant>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>  
+</data>
+
+

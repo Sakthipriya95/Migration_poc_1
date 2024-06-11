@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <item class="com.bosch.caltool.testframe.entity.ParentBean">
+        <name>MyEntity 1</name>
+        <createdDate>1/1/2000</createdDate>
+        <address>line 1, line 2</address>
+    </item>
+    <item class="com.bosch.caltool.testframe.entity.ParentBean">
+        <name>MyEntity 2</name>
+        <createdDate>10/1/2001</createdDate>
+    </item>
+    <item class="com.bosch.caltool.testframe.entity.ChildBean">
+        <parent>{name="MyEntity 2"}</parent>
+        <childname>MyEntity2 1</childname>
+    </item>
+    <item class="com.bosch.caltool.testframe.entity.ChildBean">
+        <parent>{name="MyEntity 2";src=TD}</parent>
+        <childname>MyEntity2 2</childname>
+    </item>
+</data>

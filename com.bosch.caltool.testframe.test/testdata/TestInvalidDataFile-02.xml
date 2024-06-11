@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Invalid data file with invalid entity parameter name
+-->
+<data>
+    <item class="com.bosch.caltool.testframe.entity.ParentBean">
+        <name>Junit A simple entity</name>
+        <createdDate>1/1/2001</createdDate>
+        <invalidparam>some text</invalidparam>
+    </item>
+</data>

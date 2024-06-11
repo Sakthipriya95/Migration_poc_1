@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.bosch.caltool.usecase.ui.editors.UseCaseEditor"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/usecase.png"
+            id="com.bosch.caltool.usecase.ui.editors.UseCaseEditor"
+            name="Use Case Editor">
+      </editor>
+   </extension>
+   
+   <extension
+         point="com.bosch.caltool.icdm.common.ui.UseCaseTreeViewExtnPt">
+      <contribution
+            class="com.bosch.caltool.usecase.ui.actions.UseCaseTreeViewActionSet">
+      </contribution>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.bosch.caltool.usecase.ui.usecase.category"
+            name="Use Case">
+      </category>
+      <view
+            category="com.bosch.caltool.usecase.ui.usecase.category"
+            class="com.bosch.caltool.usecase.ui.views.UseCaseTreeViewPart"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/usecase_tree.png"
+            id="com.bosch.caltool.usecase.ui.views.UseCaseTreeViewPart"
+            name="Use Cases"
+            restorable="true">
+      </view>
+      <view
+            category="com.bosch.caltool.usecase.ui.usecase.category"
+            class="com.bosch.caltool.icdm.common.ui.views.OutlineViewPart"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/outline_co.gif"
+            id="com.bosch.caltool.icdm.common.ui.views.OutlineViewPart"
+            name="Outline"
+            restorable="true">
+      </view>
+      <view
+            category="com.bosch.caltool.usecase.ui.usecase.category"
+            class="com.bosch.caltool.usecase.ui.views.AttributeValuesViewPart"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/attr_value.gif"
+            id="com.bosch.caltool.usecase.ui.views.AttributeValuesViewPart"
+            name="Attribute Values"
+            restorable="true">
+      </view>
+      <view
+            category="com.bosch.caltool.usecase.ui.usecase.category"
+            class="com.bosch.caltool.usecase.ui.views.UseCaseDetailsViewPart"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/usecase.png"
+            id="com.bosch.caltool.usecase.ui.views.UseCaseDetailsViewPart"
+            name="Use Case Details"
+            restorable="true">
+      </view>
+   </extension>
+         
+  </plugin>

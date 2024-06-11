@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <item class="com.bosch.caltool.testframe.entity.ChildBean">
+        <parent>{name="MyEntity 1"}</parent>
+        <childname>MyEntity1 1</childname>
+    </item>
+</data>

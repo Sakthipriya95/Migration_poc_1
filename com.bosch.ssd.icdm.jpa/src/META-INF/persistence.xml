@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence
+    version="2.0"
+    xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit
+        name="com.bosch.ssd.icdm.jpa"
+        transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class> com.bosch.ssd.icdm.entity.VLdb2Pavast</class>
+                <class> com.bosch.ssd.icdm.entity.VLdb2Projects</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2Ssd2</class>
+        <class>com.bosch.ssd.icdm.entity.TempLabellistInterface</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2ObjectTree</class>
+        <class>com.bosch.ssd.icdm.entity.TempLabelsList</class>
+        <class>com.bosch.ssd.icdm.entity.TempSsdFile</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2DcmData</class>
+        <class>com.bosch.ssd.icdm.entity.TempCdfdatalist</class>
+        <class>com.bosch.ssd.icdm.entity.TempDcmdatalist</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2ProjectRevision</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2ProgParameter</class>
+        <class>com.bosch.ssd.icdm.entity.TempReleasesErrorLbldtl</class>
+             <class>com.bosch.ssd.icdm.entity.VLdb2ProjectRelease</class>
+             <class>com.bosch.ssd.icdm.entity.VLdb2ConfigRelease</class>
+        <class>com.bosch.ssd.icdm.entity.VSdomSsdnodeVariante</class>
+        <class>com.bosch.ssd.icdm.entity.TempLdb2Feaval</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2SsdCompAll</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2Comp</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2MaturityLevel</class>
+        <class>com.bosch.ssd.icdm.entity.TSsd2TempFeaval</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2ProjectLabel</class>
+         <class>com.bosch.ssd.icdm.entity.VLdb2Value</class>
+         <class>com.bosch.ssd.icdm.entity.VLdb2Feature</class>
+         <class>com.bosch.ssd.icdm.entity.TempLabel</class>
+         <class>com.bosch.ssd.icdm.entity.TempIcdmFeaval</class>
+         <class>com.bosch.ssd.icdm.entity.TempRuleIdOEM</class>
+          <class>com.bosch.ssd.icdm.entity.VLdb2VillaSwver</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2ProjectReleaseEdc17</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2ProjectLabelsList</class>
+        <class>com.bosch.ssd.icdm.entity.VLdb2SwVer</class>
+        <class>com.bosch.ssd.icdm.entity.TempNonSDOMNodeList</class>
+         
+
+        <properties>
+            <property
+                name="eclipselink.jdbc.batch-writing"
+                value="JDBC" />
+            <property
+                name="eclipselink.session-name"
+                value="SSD"></property>
+            <property
+                name="javax.persistence.jdbc.driver"
+                value="oracle.jdbc.OracleDriver" />
+            <property
+                name="eclipselink.jdbc.batch-writing"
+                value="Oracle-JDBC" />
+            <property
+                name="eclipselink.target-database"
+                value="Oracle11" />
+            <property
+                name="eclipselink.logging.level"
+                value="FINE" />
+            <property
+                name="eclipselink.logging.file"
+                value="jpalog.log" />
+            <property
+                name="eclipselink.jdbc.batch-writing.size"
+                value="1000" />
+
+
+
+        </properties>
+    </persistence-unit>
+
+</persistence>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <item class="com.bosch.caltool.comppkg.jpa.entity.TCompPkg">
+        <compPkgName>UTest02-CP-NE</compPkgName>
+        <descEng>UTest02-CP-NE Desc Eng</descEng>
+        <descGer>UTest02-CP-NE Desc Ger</descGer>
+        <deletedFlag>N</deletedFlag>
+        <compPkgType>NE</compPkgType>
+        <ssdNodeId>1000</ssdNodeId>
+        <ssdVersNodeId>1001</ssdVersNodeId>
+        <ssdParamClass>CustSpec</ssdParamClass>
+        <ssdUsecase>Cal4Comp</ssdUsecase>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM_JPA</createdUser>
+        <version>1</version>
+    </item>
+</data>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+* *****************************************************
+* Copyright (c) Robert Bosch GmbH. All rights reserved.
+* *****************************************************
+*
+* Purpose : Test data to create an Attribute  
+* Remarks : attr name = UTest01-ATTR
+* 
+* Author  : bru2cob
+*
+-->
+
+<data>
+    <item class="com.bosch.caltool.apic.jpa.TabvAttribute">
+        <TabvAttrGroup>{groupNameEng="UTest01-GRP"}</TabvAttrGroup>
+        <TabvAttrValueType>{valueType=TEXT;src=DB}</TabvAttrValueType>
+        <attrDescEng>UTest01-ATTR Desc Eng</attrDescEng>
+        <attrDescGer>UTest01-ATTR Desc Ger</attrDescGer>
+        <attrNameEng>UTest01-ATTR</attrNameEng>
+        <attrNameGer>UTest01-ATTR Ger</attrNameGer>
+        <deletedFlag>N</deletedFlag>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <attrSecurity>E</attrSecurity>
+        <valueSecurity>E</valueSecurity>
+        <mandatory>N</mandatory>
+        <normalizedFlag>N</normalizedFlag>
+        <partNumberFlag>N</partNumberFlag>
+        <specLinkFlag>N</specLinkFlag>
+        <units>-</units>
+        <version>1</version>
+    </item>
+    <item class="com.bosch.caltool.apic.jpa.TabvAttribute">
+        <TabvAttrGroup>{groupNameEng="UTest01-GRP"}</TabvAttrGroup>
+        <TabvAttrValueType>{valueType=NUMBER;src=DB}</TabvAttrValueType>
+        <TCharacteristic>{charNameEng="UTest01-CHAR"}</TCharacteristic>
+        <attrDescEng>UTest02-ATTR Desc Eng</attrDescEng>
+        <attrDescGer>UTest02-ATTR Desc Ger</attrDescGer>
+        <attrNameEng>UTest02-ATTR</attrNameEng>
+        <attrNameGer>UTest02-ATTR Ger</attrNameGer>
+        <deletedFlag>N</deletedFlag>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <attrSecurity>I</attrSecurity>
+        <valueSecurity>I</valueSecurity>
+        <mandatory>Y</mandatory>
+        <normalizedFlag>Y</normalizedFlag>
+        <partNumberFlag>Y</partNumberFlag>
+        <specLinkFlag>Y</specLinkFlag>
+        <units>V</units>
+        <format>9</format>
+        <version>1</version>
+    </item>
+</data>
+
+

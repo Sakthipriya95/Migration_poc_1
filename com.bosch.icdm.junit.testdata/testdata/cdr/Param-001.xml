@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+* *****************************************************
+* Copyright (c) Robert Bosch GmbH. All rights reserved.
+* *****************************************************
+*
+* Purpose : Test data to create an Parameter  
+* Remarks : param name = UTest01-PARAM
+* 
+* Author  : rgo7cob
+*
+-->
+
+<data>
+    <item class="com.bosch.caltool.cdr.jpa.entity.TParameter">
+        <name>UTest01-PARAM</name>
+        <longname>UTest01-PARAM Long name</longname>
+        <ptype>VALUE</ptype>
+        <pclass>T</pclass>
+        <iscodeword>N</iscodeword>
+        <iscustprm>N</iscustprm>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <hint>Param Hint</hint>
+        <version>1</version>
+    </item>
+</data>
+
+

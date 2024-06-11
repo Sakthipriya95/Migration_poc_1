@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test Plugin for com.bosch.caltool.testframe
+Bundle-SymbolicName: com.bosch.caltool.testframe.test
+Bundle-Version: 2024.3.0
+Bundle-Vendor: BOSCH
+Fragment-Host: com.bosch.caltool.testframe;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit;bundle-version="4.8.2",
+ com.bosch.caltool.eclipselink;bundle-version="2.4.1",
+ com.bosch.calcomp.junittestframework

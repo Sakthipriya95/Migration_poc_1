@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: vCDM_Service
+Bundle-SymbolicName: com.bosch.easee.eASEEcdm_Service
+Bundle-Version: 1.30.0
+Export-Package: com.bosch.easee.eASEEcdm_Service,
+ com.bosch.easee.eASEEcdm_Service.model,
+ com.bosch.easee.eASEEcdm_Service.model.prd,
+ com.bosch.easee.eASEEcdm_Service.model.pvd
+Bundle-Vendor: Robert Bosch GmbH
+Require-Bundle: org.com4j,
+ com.bosch.calcomp.adapter.logger,
+ com.bosch.easee.eASEEcdm_ComAPI,
+ com.bosch.caltool.pwdservice.client,
+ org.eclipse.osgi,
+ org.apache.axis2;bundle-version="1.6.2",
+ com.bosch.easee.cdmWebServiceInterface;bundle-version="19.1.17"
+Import-Package: org.eclipse.core.runtime
+Bundle-ClassPath: .,
+ resources/

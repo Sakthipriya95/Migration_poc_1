@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+* *****************************************************
+* Copyright (c) Robert Bosch GmbH. All rights reserved.
+* *****************************************************
+*
+* Purpose : Test data to create a rule set 
+* Remarks : RuleSet-001.xml
+* 
+* Author  : mkl2cob
+*
+-->
+
+<data>
+    <item class="com.bosch.caltool.cdr.jpa.entity.TRuleSetParam">
+        <TRuleSet>{rsetName="UTest01-Rule set"}</TRuleSet>
+        <TParameter>{name="UTest01-PARAM"}</TParameter>
+        <TFunction>{name="D2CTR";src=DB}</TFunction>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>
+</data>
+

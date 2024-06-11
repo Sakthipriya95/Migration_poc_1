@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EASEEcdm_ComAPI
+Bundle-SymbolicName: com.bosch.easee.eASEEcdm_ComAPI
+Bundle-Version: 21.1.0
+Export-Package: com.bosch.easee.eASEE_ComAPI,
+ com.bosch.easee.eASEEcdm_ComAPI,
+ com.bosch.easee.eASEEcdm_ComAPI.events
+Bundle-Vendor: Robert Bosch GmbH
+Require-Bundle: org.com4j;bundle-version="1.1.0",
+ com.bosch.calcomp.adapter.logger;bundle-version="1.2.0"

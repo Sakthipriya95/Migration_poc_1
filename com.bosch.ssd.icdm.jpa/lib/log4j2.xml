@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" name="CSSDLoggerConfig">
+
+    <Properties>
+        <Property name="log.path">$${env:APPDATA}/SSD_iCDM_Interface</Property>
+    </Properties>
+    
+    <Filter type="ThresholdFilter" level="trace"/>
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5p] - SSD-iCDM Interface - %d{dd MMM yyyy, HH:mm:ss} - %m%n"/>
+        </Console>
+
+        <RollingFile name="RollingFileAppender" fileName="${log.path}/ssdicdminterface.LOG" filePattern="${log.path}/ssdicdminterface.LOG.%i">
+            <PatternLayout pattern="[%-5p] - SSD-iCDM Interface - %d{dd MMM yyyy, HH:mm:ss} - %m%n" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="SSDICDMINTERFACE" level="DEBUG" />      
+        <Root level="DEBUG" >   
+          <AppenderRef ref="ConsoleAppender" />           
+            <AppenderRef ref="RollingFileAppender" />
+        </Root>      
+    </Loggers>
+</Configuration>

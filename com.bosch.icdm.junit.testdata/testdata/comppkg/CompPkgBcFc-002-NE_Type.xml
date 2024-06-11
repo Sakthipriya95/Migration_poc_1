@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <item class="com.bosch.caltool.comppkg.jpa.entity.TCompPkgBcFc">
+        <fcName>LSMD</fcName>       
+        <TCompPkgBc>{bcName="ASDCtl"}</TCompPkgBc>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM_JPA</createdUser>
+        <version>1</version>
+    </item>
+    <item class="com.bosch.caltool.comppkg.jpa.entity.TCompPkgBcFc">
+        <fcName>MDSAWE</fcName>       
+        <TCompPkgBc>{bcName="ASDCtl"}</TCompPkgBc>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM_JPA</createdUser>
+        <version>1</version>
+    </item>
+</data>

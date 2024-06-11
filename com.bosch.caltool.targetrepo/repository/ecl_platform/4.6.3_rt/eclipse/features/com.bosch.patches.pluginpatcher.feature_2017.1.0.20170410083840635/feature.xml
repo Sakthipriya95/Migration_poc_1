@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.bosch.patches.pluginpatcher.feature"
+      label="Eclipse patches"
+      version="2017.1.0.20170410083840635">
+
+   <description url="http://www.bosch.com">
+      This feature is a collection of eclipse patches for headless products
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.osgi" version="3.10.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="com.bosch.wbp.patcher"
+         download-size="12"
+         install-size="20"
+         version="1.0.3.20170410083840635"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

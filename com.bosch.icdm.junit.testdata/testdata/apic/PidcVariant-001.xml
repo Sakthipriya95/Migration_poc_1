@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <!-- PIDC Variant Name -->
+    <item class="com.bosch.caltool.apic.jpa.TabvAttrValue">
+        <textvalueEng>JTestPIDCVar_001</textvalueEng>
+        <valueDescEng>JTest Project ID Card Var 001</valueDescEng>
+        <valueDescGer>JTest Project ID Card Var 001 Germ</valueDescGer>
+        <clearingStatus>Y</clearingStatus>
+        <deletedFlag>N</deletedFlag>
+        <tabvAttribute>{attrNameEng="Variant Code";src=DB}</tabvAttribute>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>
+    
+<!--     PIDC Variant Entity -->
+    <item class="com.bosch.caltool.apic.jpa.TabvProjectVariant">
+        <tabvAttrValue>{textvalueEng="JTestPIDCVar_001"}</tabvAttrValue>
+        <deletedFlag>N</deletedFlag>
+        <tPidcVersion>{tabvProjectidcard.tabvAttrValue.textvalueEng="JTestPIDC_001",versName="JTestPIDC_version_001";src="DB"}</tPidcVersion>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM</createdUser>
+        <version>1</version>
+    </item>
+</data>

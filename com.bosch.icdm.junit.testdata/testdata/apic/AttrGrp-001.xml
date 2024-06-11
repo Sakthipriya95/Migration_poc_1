@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+* *****************************************************
+* Copyright (c) Robert Bosch GmbH. All rights reserved.
+* *****************************************************
+*
+* Purpose : Test data to create an Attribute  Group
+* Remarks : group name = UTest01-GRP
+* 
+* Author  : bru2cob
+*
+-->
+
+<data>
+    <item class="com.bosch.caltool.apic.jpa.TabvAttrGroup">
+      <TabvAttrSuperGroup>{superGroupNameEng="UTest01-SG"}</TabvAttrSuperGroup>
+        <groupNameEng>UTest01-GRP</groupNameEng>
+        <groupNameGer>UTest01-GRP Ger</groupNameGer>
+        <groupDescEng>UTest01-GRP Desc Eng</groupDescEng>
+        <groupDescGer>UTest01-GRP Desc Ger</groupDescGer>
+        <deletedFlag>N</deletedFlag>
+        <createdDate>1/1/2010</createdDate>
+        <createdUser>DGS_ICDM_JPA</createdUser>
+        <version>1</version>
+    </item>
+</data>
+

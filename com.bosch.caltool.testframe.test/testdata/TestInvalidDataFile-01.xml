@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Invalid data file with invalid entity name
+-->
+<data>
+    <item class="com.bosch.caltool.testframe.entity.InvalidEntity">
+        <name>Junit A simple entity</name>
+        <createdDate>1/1/2001</createdDate>
+        <address>some text</address>
+    </item>
+</data>
