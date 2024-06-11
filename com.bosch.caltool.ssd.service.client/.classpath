@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry excluding="resources/|main/resources/" kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/Saravana/Eclipse_Workspace/SSD_Tool_1_Workspace/org.glassfish.jersey/lib/org.osgi.core-4.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/Saravana/Eclipse_Workspace/SSD_Tool_1_Workspace/com.bosch.ssd.api/WebContent/WEB-INF/lib/commons-io-2.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/Saravana/Eclipse_Workspace/SSD_Tool_1_Workspace/com.bosch.caltool.commontarget/repository/ecl_platform/4.6.3_sdk/eclipse/plugins/org.eclipse.swt.win32.win32.x86_64.source_3.105.3.v20170228-0512.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/Saravana/Eclipse_Workspace/SSD_Tool_1_Workspace/org.glassfish.jersey/lib/javax.ws.rs-api-2.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/Saravana/Eclipse_Workspace/SSD_Tool_1_Workspace/com.bosch.caltool.commontarget/repository/ecl_platform/4.6.3_sdk/eclipse/plugins/org.eclipse.core.runtime_3.12.0.v20160606-1342.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/.m2/repository/com/fasterxml/jackson/com.fasterxml.jackson/2.6.7/jackson-annotations-2.6.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/.m2/repository/com/fasterxml/jackson/com.fasterxml.jackson/2.6.7/jackson-core-2.6.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/QRK1COB/.m2/repository/com/fasterxml/jackson/com.fasterxml.jackson/2.6.7/jackson-databind-2.6.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

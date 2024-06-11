@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>iCDM CNS Server - Data Consumers/Sources</title>
+    <link rel="stylesheet" href="cssstyles.css"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    <script type="text/javascript" src="scripts/common.js"></script>
+</head>
+
+<body onload="loadSessionsPageLoad()">
+
+<script src="scripts/headerpart.js"></script>
+
+<div class="main_div">
+
+<h2>Data Consumers/Data Sources</h2>
+
+States to retrieve  
+<input type="checkbox" id="chActive" checked> Active
+<input type="checkbox" id="chInactive" > Inactive 
+<input type="checkbox" id="chClosed" > Closed 
+
+<script>
+createTableNavBar('sessNav');
+</script>
+
+<p id="sessionsSection"></p>
+
+<script>
+
+function doLoadData(navAreaId, startIdx, retSize){
+    var isActive = document.getElementById("chActive").checked;
+    var isInactive = document.getElementById("chInactive").checked;
+    var isClosed = document.getElementById("chClosed").checked;
+    
+    loadSessionCustom(isActive, isInactive, isClosed, startIdx, retSize);	
+}
+
+function loadSessionsPageLoad() {
+	loadSessionCustom(true, false, false, 0, 10);
+}
+
+function loadSessionCustom(isActive, isInactive, isClosed, startIdx, retSize) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    	var respObj = JSON.parse(this.responseText);
+        
+        updateNavigationArea("sessNav", respObj.pageInfo);
+        
+        var txt = "<table class=\"def_table\" border='1'>";
+        
+        txt += "<tr class=\"def_table\">";
+        txt += "<th class=\"def_table\">Consumer/Source ID</th>";
+        txt += "<th class=\"def_table\">User</th>";
+        txt += "<th class=\"def_table\">Client IP</th>";
+        txt += "<th class=\"def_table\">Listening Port</th>";
+        txt += "<th class=\"def_table\">Events</th>";
+        txt += "<th class=\"def_table\">Data Created (Bytes)</th>";
+        txt += "<th class=\"def_table\">State</th>";
+        txt += "<th class=\"def_table\">Created At</th>";
+        txt += "<th class=\"def_table\">Closed At</th>";
+        txt += "<th class=\"def_table\">Inactive At</th>";
+        txt += "<th class=\"def_table\">Last Contacted At</th>";
+        txt += "<th class=\"def_table\"></th>";
+        txt += "</tr>";
+        
+
+        var sesInfoArr = respObj.elementList;
+       
+        for (sessObj of sesInfoArr){
+        	txt += "<tr class=\"def_table\">";
+            txt += "<td class=\"def_table\">" + sessObj.sessionId + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.user + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.clientIp + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.listenPort + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.eventCount + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.totalDataSize + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.state + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.createdAt + "</td>";
+            txt += "<td class=\"def_table\">" + checkNull(sessObj.closedAt) + "</td>";
+            txt += "<td class=\"def_table\">" + checkNull(sessObj.inactiveAt) + "</td>";
+            txt += "<td class=\"def_table\">" + checkNull(sessObj.lastContactAt) + "</td>";
+            txt += "<td class=\"def_table\"><button class=\"tabdata_button\" onClick=\"openSessDet('" + sessObj.sessionId + "')\"\>Details</button></td>";
+            txt += "</tr>";
+        }  
+        
+        txt += "</table>"; 
+        
+        document.getElementById("sessionsSection").innerHTML = txt;
+      
+    }
+  };
+  var sessType = "ALL";
+  if(isActive || isInactive || isClosed){
+	  sessType = null;
+	  if(isActive){
+		  sessType = "ACTIVE";
+	  }
+	  if(isInactive){
+		  sessType += ",INACTIVE";
+	  }
+	  if(isClosed){
+          sessType += ",CLOSED";
+      }
+  }
+  
+  var url = "services/admin/consumers?sessiontypes=" + sessType + "&size=" + retSize + "&startat=" + startIdx;
+  invokeGetRequest(xmlhttp, url);
+  
+}
+
+function openSessDet(sessId){
+	window.location.href = "sessiondet.html?sessid=" + sessId;
+}
+
+</script>
+
+</div>
+
+<script src="scripts/footerpart.js"></script>
+
+</body>
+</html>

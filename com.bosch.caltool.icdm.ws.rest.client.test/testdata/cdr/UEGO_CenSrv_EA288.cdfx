@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE MSRSW PUBLIC "-//ASAM//DTD CALIBRATION DATA FORMAT:V2.0.0:LAI:IAI:XML:CDF200.XSD//EN" "cdf_v2.0.0.sl.dtd">
+<MSRSW>
+	<CATEGORY>CDF20</CATEGORY>
+	<SW-SYSTEMS>
+		<SW-SYSTEM>
+			<SHORT-NAME>tbd</SHORT-NAME>
+			<SW-INSTANCE-SPEC>
+				<SW-INSTANCE-TREE>
+					<SHORT-NAME>tbd</SHORT-NAME>
+					<CATEGORY>NO_VCD</CATEGORY>
+					<SW-CS-COLLECTIONS><SW-CS-COLLECTION>
+<CATEGORY>FEATURE</CATEGORY>
+<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+</SW-CS-COLLECTION>
+</SW-CS-COLLECTIONS><SW-INSTANCE>
+						<SHORT-NAME>UEGO_tiDlyThermDpfRgn_C</SHORT-NAME>
+						<LONG-NAME>Verzögerungszeit nach thermischer DPF-Regeneration</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME>s</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>0.5</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_stSrvTestDmd_C</SHORT-NAME>
+						<LONG-NAME>Codewort zur Auswahl der Funktionen\Diagnosen bei einer Diagnoseanforderung über Servicetester</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>11.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_flgUnitMilliGrQntyTot_C</SHORT-NAME>
+						<LONG-NAME>Einheit der Einspritzmenge InjSys_qTot ist [mg\Hub]</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<VT xml:space="preserve">TRUE</VT>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_tiStEngStop_C</SHORT-NAME>
+						<LONG-NAME>Zeitverzögerung Ende Stopphase</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME>s</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>1.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_idxAsgnS1B1_C</SHORT-NAME>
+						<LONG-NAME>Zuordnung sondenspezifischer Größen zu Array-Elementen der Diesel-SW Sonde 1 Bank 1</LONG-NAME>
+<DISPLAY-NAME>UEGO_idxAsgnS1B1_C</DISPLAY-NAME>
+<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>1.0</V>
+</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2015-04-16T15:39:55</DATE><CSUS>HEF2FE</CSUS></CS-ENTRY><CS-ENTRY><STATE>checked</STATE><DATE>2013-08-16T09:23:13</DATE><CSUS>RAU5FE</CSUS><CSPR>MLB</CSPR><CSWP>UEGO + EGSDia</CSWP><CSTO>IN - R 2361</CSTO><CSPI>DE7P6</CSPI><REMARK><P>Freigabe der Betriebsart VVT</P><P>*</P><P>*</P></REMARK></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_uBattMax_C</SHORT-NAME>
+						<LONG-NAME>maximale Batteriespannung</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME>mV</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>16100.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_flgThermDpfRgnS1B1_C</SHORT-NAME>
+						<LONG-NAME>Berücksichtigung thermischer DPF-Regeneration an Sonde 1 Bank 1</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<VT xml:space="preserve">----</VT>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_posnmEgFlowS1B1_C</SHORT-NAME>
+						<LONG-NAME>Position Abgasmassenstrom Sonde 1 Bank 1</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>0.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_uBattMin_C</SHORT-NAME>
+						<LONG-NAME>minimale Batteriespannung</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME>mV</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>10700.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_stEgrVlvOpen_C</SHORT-NAME>
+						<LONG-NAME>Codewort zur Erkennung AGR-Ventil offen</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>4.294967293E9</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_stOperMod_C</SHORT-NAME>
+						<LONG-NAME>Codewort zur Bestimmung einer NSC- und\oder DPF-Regeneration</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>4.225826814E9</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_idxTypS1B1_C</SHORT-NAME>
+						<LONG-NAME>Sondentyp Sonde 1 Bank 1</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>1.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_posnTEgMdlS1B1_C</SHORT-NAME>
+						<LONG-NAME>Position Abgastemperatur Sonde 1 Bank 1</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>1.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_tiFilRatO2MdlS1B1_C</SHORT-NAME>
+						<LONG-NAME>Filterzeitkonstante Sauerstoffkonzentration Sonde 1 Bank 1</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME>s</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>0.29993593</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_tiFilRatLamRecprMdlS1B1_C</SHORT-NAME>
+						<LONG-NAME>Filterzeit für reziprokes Lambda-Modell Sonde 1 Bank 1</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME>s</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>0.29993593</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_idxHWES1B1_C</SHORT-NAME>
+						<LONG-NAME>Zuordnung sondenspezifischer Größen zur HWE Sonde 1 Bank 1</LONG-NAME>
+<DISPLAY-NAME>UEGO_idxHWES1B1_C</DISPLAY-NAME>
+<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>0.0</V>
+</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2015-04-16T15:43:27</DATE><CSUS>HEF2FE</CSUS></CS-ENTRY><CS-ENTRY><STATE>checked</STATE><DATE>2013-08-16T09:23:13</DATE><CSUS>RAU5FE</CSUS><CSPR>MLB</CSPR><CSWP>UEGO + EGSDia</CSWP><CSTO>IN - R 2361</CSTO><CSPI>DE7P6</CSPI><REMARK><P>Freigabe der Betriebsart VVT</P><P>*</P><P>*</P></REMARK></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_tiDlyRatLamRecprMdlS1B1_C</SHORT-NAME>
+						<LONG-NAME>Totzeit für reziprokes Lambda-Modell Sonde 1 Bank 1</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME>s</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>0.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_stCenSrv_C</SHORT-NAME>
+						<LONG-NAME>Status für funktionale Auswahl (Codewort)</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>0.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>UEGO_stInjAllCyl_C</SHORT-NAME>
+						<LONG-NAME>Status für Bestimmung von Einspritzungen aktiver Zylinder</LONG-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>UEGO_CenSrv</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME></UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>8.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>checked</STATE>
+								<DATE>2013-08-16T09:23:13</DATE>
+								<CSUS>RAU5FE</CSUS>
+								<CSPR>MLB</CSPR>
+								<CSWP>UEGO + EGSDia</CSWP>
+								<CSTO>IN - R 2361</CSTO>
+								<CSPI>DE7P6</CSPI>
+								<REMARK>
+									<P>Freigabe der Betriebsart VVT
+*
+*</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+				</SW-INSTANCE-TREE>
+			</SW-INSTANCE-SPEC>
+		</SW-SYSTEM>
+	</SW-SYSTEMS>
+</MSRSW>

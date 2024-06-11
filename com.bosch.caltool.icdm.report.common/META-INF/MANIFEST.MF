@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iCDM Report Common
+Bundle-SymbolicName: com.bosch.caltool.icdm.report.common
+Bundle-Version: 2024.3.0
+Bundle-Vendor: BOSCH
+Automatic-Module-Name: com.bosch.caltool.icdm.report.common
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.core.runtime,
+ com.bosch.caltool.icdm.model,
+ com.bosch.caltool.icdm.logger,
+ com.bosch.caltool.icdm.common.util,
+ org.apache.poi
+Export-Package: com.bosch.caltool.icdm.report.common

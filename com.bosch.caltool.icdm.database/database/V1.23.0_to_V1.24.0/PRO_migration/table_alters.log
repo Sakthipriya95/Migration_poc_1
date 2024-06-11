@@ -1,0 +1,26 @@
+SQL> --------------------------------------------------------
+SQL> -- T_QUESTIONNAIRE
+SQL> --
+SQL> -- New table for storing QUESTIONNAIREs
+SQL> -- 
+SQL> -- ICDM-1950
+SQL> --------------------------------------------------------
+SQL> CREATE TABLE T_QUESTIONNAIRE
+  (
+    QNAIRE_ID     NUMBER (15) Primary Key ,
+    NAME_ENG      VARCHAR2 (100 BYTE) NOT NULL ,
+    NAME_GER      VARCHAR2 (100 BYTE) ,
+    DESC_ENG      VARCHAR2 (4000 BYTE) NOT NULL ,
+    DESC_GER      VARCHAR2 (4000 BYTE) ,
+    CREATED_USER  VARCHAR2 (100 BYTE) NOT NULL ,
+    MODIFIED_USER VARCHAR2 (100 BYTE) ,
+    CREATED_DATE  TIMESTAMP NOT NULL ,
+    MODIFIED_DATE TIMESTAMP ,
+    DELETED_FLAG  VARCHAR2 (1 BYTE) ,
+    VERSION       NUMBER NOT NULL,
+    
+    CONSTRAINT T_QNAIRE_NAME_ENG_UN UNIQUE ( NAME_ENG )
+  ) ;
+
+Table T_QUESTIONNAIRE erstellt.
+

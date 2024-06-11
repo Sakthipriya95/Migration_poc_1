@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.apache.httpcomponents.client
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Require-Bundle: org.eclipse.core.runtime,org.apache.commons.logging,or
+ g.apache.httpcomponents.core
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.apache.commons.codec,org.apache.commons.codec.bina
+ ry,org.apache.commons.codec.digest,org.apache.commons.codec.language,
+ org.apache.commons.codec.language.bm,org.apache.commons.codec.net,org
+ .apache.http.auth,org.apache.http.auth.params,org.apache.http.client,
+ org.apache.http.client.cache,org.apache.http.client.entity,org.apache
+ .http.client.fluent,org.apache.http.client.methods,org.apache.http.cl
+ ient.params,org.apache.http.client.protocol,org.apache.http.client.ut
+ ils,org.apache.http.conn,org.apache.http.conn.params,org.apache.http.
+ conn.routing,org.apache.http.conn.scheme,org.apache.http.conn.ssl,org
+ .apache.http.conn.util,org.apache.http.cookie,org.apache.http.cookie.
+ params,org.apache.http.entity.mime,org.apache.http.entity.mime.conten
+ t,org.apache.http.impl.auth,org.apache.http.impl.client,org.apache.ht
+ tp.impl.client.cache,org.apache.http.impl.client.cache.ehcache,org.ap
+ ache.http.impl.client.cache.memcached,org.apache.http.impl.conn,org.a
+ pache.http.impl.conn.tsccm,org.apache.http.impl.cookie,org.apache.htt
+ pcomponents.client
+Bundle-Name: Client
+Bundle-Version: 4.2.3.20170725101834082
+Bundle-ClassPath: lib/org.apache.httpcomponents.httpclient_4.2.3.jar,.
+Bundle-Activator: org.apache.httpcomponents.client.Activator
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

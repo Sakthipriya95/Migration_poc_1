@@ -1,0 +1,18 @@
+
+#usecase SSD
+#contact "RO: Upadhya, Pramod(PS/EAT-IN)"
+#SSDnode "Common\Customer (SSD)\Mahindra Hydraulics\EDC17 TG75 MD1CS018 Mahindra BS"
+ 
+!##################### Begin of DDRC_RatDeb.Rail_numOverPresReactUDRat_C #######################
+ 
+ #IF (Rail_swtOverPresEna_C == 1)
+	DDRC_RatDeb.Rail_numOverPresReactUDRat_C,		VALVERB ("Ratio3")
+#ELSE
+	!no check necessary in case of deactivation
+#ENDIF
+
+ 
+!##################### End of DDRC_RatDeb.Rail_numOverPresReactUDRat_C #######################
+ 
+#endcontact 
+#endusecase

@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE MSRSW PUBLIC "-//ASAM//DTD CALIBRATION DATA FORMAT:V2.0.0:LAI:IAI:XML:CDF200.XSD//EN" "cdf_v2.0.0.sl.dtd">
+<MSRSW>
+	<CATEGORY>CDF20</CATEGORY>
+	<SW-SYSTEMS>
+		<SW-SYSTEM>
+			<SHORT-NAME>tbd</SHORT-NAME>
+			<SW-INSTANCE-SPEC>
+				<SW-INSTANCE-TREE>
+					<SHORT-NAME>tbd</SHORT-NAME>
+					<CATEGORY>NO_VCD</CATEGORY>
+					<SW-INSTANCE>
+						<SHORT-NAME>AccMon_nPtd_CUR</SHORT-NAME>
+						<LONG-NAME/>
+						<CATEGORY>CURVE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">rpm</UNIT-DISPLAY-NAME>
+							<SW-ARRAYSIZE>
+								<V>3</V>
+							</SW-ARRAYSIZE>
+							<SW-VALUES-PHYS>
+								<V>1600.0</V>
+								<V>2500.0</V>
+								<V>6000.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-AXIS-CONTS>
+							<SW-AXIS-CONT>
+								<CATEGORY>STD_AXIS</CATEGORY>
+								<UNIT-DISPLAY-NAME>Nm</UNIT-DISPLAY-NAME>
+								<SW-INSTANCE-REF></SW-INSTANCE-REF>
+								<SW-VALUES-PHYS>
+									<V>75.0</V>
+									<V>100.0</V>
+									<V>150.0</V>
+								</SW-VALUES-PHYS>
+							</SW-AXIS-CONT>
+						</SW-AXIS-CONTS>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>prelimCalibrated</STATE>
+								<DATE>2020-09-13T19:03:18</DATE>
+								<CSUS>DGS_ICDM_JPA</CSUS>
+								<CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR>
+								<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+								<CSTO>MFVpct: 12.93</CSTO>
+								<CSTV></CSTV>
+								<CSPI>M8610 : DA861R4000000.A2L</CSPI>
+								<CSDI>SumDST: 13036</CSDI>
+								<REMARK>
+									<P>Most Frequent Value (MFV) from Series Statistics</P>
+									<P>13036 datasets using this label</P>
+									<P>Label has 49 different values</P>
+									<P>1685 datasets using MFV (12.93 %)</P>
+									<P>SeriesStatistics Filters used for this label: </P>
+								</REMARK>
+								<SD GID="SumDST">13036</SD>
+								<SD GID="NumVAL">49</SD>
+								<SD GID="MFVpct">12.93</SD>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>BasSvrAppl_EepHwPartNum_C</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>BasSvrAppl_EepHwPartNum_C</DISPLAY-NAME>
+						<CATEGORY>ASCII</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<VT xml:space="preserve">ABCDEFG123</VT>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-14T11:05:57</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:28</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 2.24</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 22790</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>22790 datasets using this label</P><P>Label has 882 different values</P><P>511 datasets using MFV (2.24 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">22790</SD><SD GID="NumVAL">882</SD><SD GID="MFVpct">2.24</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>Air_tDiffMeanNgvPos1_CUR</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>Air_tDiffMeanNgvPos1_CUR</DISPLAY-NAME>
+						<CATEGORY>CURVE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">K</UNIT-DISPLAY-NAME>
+							<SW-ARRAYSIZE>
+								<V>2</V>
+							</SW-ARRAYSIZE>
+							<SW-VALUES-PHYS>
+								<V>-1200.0</V>
+								<V>200.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-AXIS-CONTS>
+							<SW-AXIS-CONT>
+								<CATEGORY>STD_AXIS</CATEGORY>
+								<UNIT-DISPLAY-NAME>deg C</UNIT-DISPLAY-NAME>
+								<SW-INSTANCE-REF></SW-INSTANCE-REF>
+								<SW-VALUES-PHYS>
+									<V>-700.04</V>
+									<V>699.96</V>
+								</SW-VALUES-PHYS>
+							</SW-AXIS-CONT>
+						</SW-AXIS-CONTS>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-13T21:59:03</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:28</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 41.98</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 8242</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>8242 datasets using this label</P><P>Label has 6 different values</P><P>3460 datasets using MFV (41.98 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">8242</SD><SD GID="NumVAL">6</SD><SD GID="MFVpct">41.98</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>ETCtl_qPoI1Min_X_AXIS</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>ETCtl_qPoI1Min_X_AXIS</DISPLAY-NAME>
+						<CATEGORY>COM_AXIS</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">rpm</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>980.0</V>
+								<V>1000.0</V>
+								<V>1250.0</V>
+								<V>1500.0</V>
+								<V>1750.0</V>
+								<V>2000.0</V>
+								<V>2250.0</V>
+								<V>2500.0</V>
+								<V>2750.0</V>
+								<V>3000.0</V>
+								<V>3250.0</V>
+								<V>3500.0</V>
+								<V>3750.0</V>
+								<V>4000.0</V>
+								<V>4000.0</V>
+								<V>4000.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-14T11:04:14</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:28</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 49.85</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 12641</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>12641 datasets using this label</P><P>Label has 26 different values</P><P>6301 datasets using MFV (49.85 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">12641</SD><SD GID="NumVAL">26</SD><SD GID="MFVpct">49.85</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>Air_tTransfTAFSADC_CUR</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>Air_tTransfTAFSADC_CUR</DISPLAY-NAME>
+						<CATEGORY>CURVE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">deg C</UNIT-DISPLAY-NAME>
+							<SW-ARRAYSIZE>
+								<V>2</V>
+							</SW-ARRAYSIZE>
+							<SW-VALUES-PHYS>
+								<V>2500.96</V>
+								<V>2600.96</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-AXIS-CONTS>
+							<SW-AXIS-CONT>
+								<CATEGORY>STD_AXIS</CATEGORY>
+								<UNIT-DISPLAY-NAME>mV</UNIT-DISPLAY-NAME>
+								<SW-INSTANCE-REF></SW-INSTANCE-REF>
+								<SW-VALUES-PHYS>
+									<V>-6553.6</V>
+									<V>6553.4</V>
+								</SW-VALUES-PHYS>
+							</SW-AXIS-CONT>
+						</SW-AXIS-CONTS>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-13T19:39:46</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:28</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 83.33</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 2178</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>2178 datasets using this label</P><P>Label has 3 different values</P><P>1815 datasets using MFV (83.33 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">2178</SD><SD GID="NumVAL">3</SD><SD GID="MFVpct">83.33</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>Air_tDiffMeanNgvPos0_CUR</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>Air_tDiffMeanNgvPos0_CUR</DISPLAY-NAME>
+						<CATEGORY>CURVE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">K</UNIT-DISPLAY-NAME>
+							<SW-ARRAYSIZE>
+								<V>2</V>
+							</SW-ARRAYSIZE>
+							<SW-VALUES-PHYS>
+								<V>-1600.0</V>
+								<V>-1200.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-AXIS-CONTS>
+							<SW-AXIS-CONT>
+								<CATEGORY>STD_AXIS</CATEGORY>
+								<UNIT-DISPLAY-NAME>deg C</UNIT-DISPLAY-NAME>
+								<SW-INSTANCE-REF></SW-INSTANCE-REF>
+								<SW-VALUES-PHYS>
+									<V>-700.04</V>
+									<V>699.96</V>
+								</SW-VALUES-PHYS>
+							</SW-AXIS-CONT>
+						</SW-AXIS-CONTS>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-13T21:58:21</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:28</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 41.98</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 8242</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>8242 datasets using this label</P><P>Label has 6 different values</P><P>3460 datasets using MFV (41.98 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">8242</SD><SD GID="NumVAL">6</SD><SD GID="MFVpct">41.98</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>ASMod_dmSotBasLM2_MAP</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>ASMod_dmSotBasLM2_MAP</DISPLAY-NAME>
+						<CATEGORY>MAP</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">mg/s</UNIT-DISPLAY-NAME>
+							<SW-ARRAYSIZE>
+								<V>15</V>
+								<V>12</V>
+							</SW-ARRAYSIZE>
+							<SW-VALUES-PHYS>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>1.0</V>
+								<V>2.0</V>
+								<V>3.0</V>
+								<V>4.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>2.0</V>
+								<V>2.0</V>
+								<V>3.0</V>
+								<V>4.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>3.0</V>
+								<V>3.0</V>
+								<V>3.0</V>
+								<V>4.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>4.0</V>
+								<V>4.0</V>
+								<V>4.0</V>
+								<V>4.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>0.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+								<V>5.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-AXIS-CONTS>
+							<SW-AXIS-CONT>
+								<CATEGORY>STD_AXIS</CATEGORY>
+								<UNIT-DISPLAY-NAME>rpm</UNIT-DISPLAY-NAME>
+								<SW-INSTANCE-REF></SW-INSTANCE-REF>
+								<SW-VALUES-PHYS>
+									<V>0.0</V>
+									<V>300.0</V>
+									<V>900.0</V>
+									<V>1200.0</V>
+									<V>1500.0</V>
+									<V>2100.0</V>
+									<V>2400.0</V>
+									<V>3000.0</V>
+									<V>3300.0</V>
+									<V>3600.0</V>
+									<V>4200.0</V>
+									<V>4500.0</V>
+									<V>4800.0</V>
+									<V>5400.0</V>
+									<V>5700.0</V>
+								</SW-VALUES-PHYS>
+							</SW-AXIS-CONT>
+							<SW-AXIS-CONT>
+								<CATEGORY>STD_AXIS</CATEGORY>
+								<UNIT-DISPLAY-NAME>mg/hub</UNIT-DISPLAY-NAME>
+								<SW-INSTANCE-REF></SW-INSTANCE-REF>
+								<SW-VALUES-PHYS>
+									<V>0.0</V>
+									<V>10.0</V>
+									<V>15.0</V>
+									<V>25.0</V>
+									<V>35.0</V>
+									<V>45.0</V>
+									<V>50.0</V>
+									<V>60.0</V>
+									<V>70.0</V>
+									<V>80.0</V>
+									<V>85.0</V>
+									<V>95.0</V>
+								</SW-VALUES-PHYS>
+							</SW-AXIS-CONT>
+						</SW-AXIS-CONTS>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-14T11:01:52</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:28</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 22.61</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 10856</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>10856 datasets using this label</P><P>Label has 487 different values</P><P>2454 datasets using MFV (22.61 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">10856</SD><SD GID="NumVAL">487</SD><SD GID="MFVpct">22.61</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>AirC_DigOutCmpr.tiBtwTstSCB_C</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>AirC_DigOutCmpr.tiBtwTstSCB_C</DISPLAY-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">ms</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>2000.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-14T10:16:04</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:18</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 62.22</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 75563</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>75563 datasets using this label</P><P>Label has 10 different values</P><P>47013 datasets using MFV (62.22 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">75563</SD><SD GID="NumVAL">10</SD><SD GID="MFVpct">62.22</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>DFC_CtlMsk2.DFC_GlwPlgPLUGSC_4_C</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>DFC_CtlMsk2.DFC_GlwPlgPLUGSC_4_C</DISPLAY-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>-1.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-13T12:32:41</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:29</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 96.9</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 5226</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>5226 datasets using this label</P><P>Label has 4 different values</P><P>5064 datasets using MFV (96.9 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">5226</SD><SD GID="NumVAL">4</SD><SD GID="MFVpct">96.9</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>DFC_CtlMsk2.DFC_GlwPlgPLUGSC_5_C</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>DFC_CtlMsk2.DFC_GlwPlgPLUGSC_5_C</DISPLAY-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>5.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-13T12:33:31</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:29</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 96.9</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 5226</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>5226 datasets using this label</P><P>Label has 4 different values</P><P>5064 datasets using MFV (96.9 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">5226</SD><SD GID="NumVAL">4</SD><SD GID="MFVpct">96.9</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>AirC_RmpSlpClntP.Neg_C</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>AirC_RmpSlpClntP.Neg_C</DISPLAY-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">hPa/s</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>800.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-13T12:31:21</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:18</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 38.78</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 75463</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>75463 datasets using this label</P><P>Label has 20 different values</P><P>29267 datasets using MFV (38.78 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">75463</SD><SD GID="NumVAL">20</SD><SD GID="MFVpct">38.78</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>AirC_DigOutCmpr.numTstMax_C</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>AirC_DigOutCmpr.numTstMax_C</DISPLAY-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>5000.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-14T10:09:27</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:18</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 80.09</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 75563</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>75563 datasets using this label</P><P>Label has 9 different values</P><P>60515 datasets using MFV (80.09 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">75563</SD><SD GID="NumVAL">9</SD><SD GID="MFVpct">80.09</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>Com_swtACCTyp_C</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>Com_swtACCTyp_C</DISPLAY-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>-1.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-13T12:18:13</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:18</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 88.23</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 19717</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>19717 datasets using this label</P><P>Label has 2 different values</P><P>17397 datasets using MFV (88.23 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">19717</SD><SD GID="NumVAL">2</SD><SD GID="MFVpct">88.23</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>ETCtl_facKdNegOutr_CA</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>ETCtl_facKdNegOutr_CA</DISPLAY-NAME>
+						<CATEGORY>VAL_BLK</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+							<SW-ARRAYSIZE>
+								<V>2</V>
+							</SW-ARRAYSIZE>
+							<SW-VALUES-PHYS>
+								<V>0.1015625</V>
+								<V>0.1000000</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-14T11:15:58</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:28</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 21.42</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 9269</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>9269 datasets using this label</P><P>Label has 44 different values</P><P>1985 datasets using MFV (21.42 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">9269</SD><SD GID="NumVAL">44</SD><SD GID="MFVpct">21.42</SD></CS-ENTRY><CS-ENTRY><STATE>changed</STATE><DATE>2020-09-14T11:09:04</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:28</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 21.42</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 9269</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>9269 datasets using this label</P><P>Label has 44 different values</P><P>1985 datasets using MFV (21.42 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">9269</SD><SD GID="NumVAL">44</SD><SD GID="MFVpct">21.42</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>AccMon_vDevThres_CUR</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>AccMon_vDevThres_CUR</DISPLAY-NAME>
+						<CATEGORY>CURVE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">km/h</UNIT-DISPLAY-NAME>
+							<SW-ARRAYSIZE>
+								<V>2</V>
+							</SW-ARRAYSIZE>
+							<SW-VALUES-PHYS>
+								<V>327.67</V>
+								<V>500.00</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-AXIS-CONTS>
+							<SW-AXIS-CONT>
+								<CATEGORY>STD_AXIS</CATEGORY>
+								<UNIT-DISPLAY-NAME>km/h</UNIT-DISPLAY-NAME>
+								<SW-INSTANCE-REF></SW-INSTANCE-REF>
+								<SW-VALUES-PHYS>
+									<V>70.0</V>
+									<V>80.0</V>
+								</SW-VALUES-PHYS>
+							</SW-AXIS-CONT>
+						</SW-AXIS-CONTS>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-13T12:35:47</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:18</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 38.9</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 9492</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>9492 datasets using this label</P><P>Label has 16 different values</P><P>3692 datasets using MFV (38.9 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">9492</SD><SD GID="NumVAL">16</SD><SD GID="MFVpct">38.9</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>DFC_DisblMsk2.DFC_AirCClntPSig_C</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>DFC_DisblMsk2.DFC_AirCClntPSig_C</DISPLAY-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>50000.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-13T12:29:36</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:18</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 77.68</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 15878</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>15878 datasets using this label</P><P>Label has 14 different values</P><P>12334 datasets using MFV (77.68 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">15878</SD><SD GID="NumVAL">14</SD><SD GID="MFVpct">77.68</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>ACComp_tiTrqDyn_CUR</SHORT-NAME>
+						<LONG-NAME/>
+						<CATEGORY>CURVE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">s</UNIT-DISPLAY-NAME>
+							<SW-ARRAYSIZE>
+								<V>5</V>
+							</SW-ARRAYSIZE>
+							<SW-VALUES-PHYS>
+								<V>0.999481185338908</V>
+								<V>0.999481185338908</V>
+								<V>0.999481185338908</V>
+								<V>0.999481185338908</V>
+								<V>0.999481185338908</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-AXIS-CONTS>
+							<SW-AXIS-CONT>
+								<CATEGORY>STD_AXIS</CATEGORY>
+								<UNIT-DISPLAY-NAME>hPa</UNIT-DISPLAY-NAME>
+								<SW-INSTANCE-REF></SW-INSTANCE-REF>
+								<SW-VALUES-PHYS>
+									<V>1000.0</V>
+									<V>2000.0</V>
+									<V>2500.0</V>
+									<V>3000.0</V>
+									<V>4000.0</V>
+								</SW-VALUES-PHYS>
+							</SW-AXIS-CONT>
+						</SW-AXIS-CONTS>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>prelimCalibrated</STATE>
+								<DATE>2020-09-13T19:03:28</DATE>
+								<CSUS>DGS_ICDM_JPA</CSUS>
+								<CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR>
+								<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+								<CSTO>MFVpct: 29.12</CSTO>
+								<CSTV></CSTV>
+								<CSPI>M8610 : DA861R4000000.A2L</CSPI>
+								<CSDI>SumDST: 17185</CSDI>
+								<REMARK>
+									<P>Most Frequent Value (MFV) from Series Statistics</P>
+									<P>17185 datasets using this label</P>
+									<P>Label has 116 different values</P>
+									<P>5005 datasets using MFV (29.12 %)</P>
+									<P>SeriesStatistics Filters used for this label: </P>
+								</REMARK>
+								<SD GID="SumDST">17185</SD>
+								<SD GID="NumVAL">116</SD>
+								<SD GID="MFVpct">29.12</SD>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>Com_daACCDes_C</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>Com_daACCDes_C</DISPLAY-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">m/s^2/s</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>1.06</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-13T12:19:20</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:18</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 76.9</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 20424</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>20424 datasets using this label</P><P>Label has 3 different values</P><P>15707 datasets using MFV (76.9 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">20424</SD><SD GID="NumVAL">3</SD><SD GID="MFVpct">76.9</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>ACCmpr_rTrqDfl_C</SHORT-NAME>
+						<LONG-NAME/>
+						<DISPLAY-NAME>ACCmpr_rTrqDfl_C</DISPLAY-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>-1.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY><STATE>changed</STATE><DATE>2020-09-14T10:06:26</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>prelimCalibrated</STATE><DATE>2020-09-13T19:03:18</DATE><CSUS>DGS_ICDM_JPA</CSUS><CSPR>X_Testcustomer---&gt;X_Test_ICDM_RBEI_01 (Version 1)</CSPR><CSWP>iCDM pre-calibration from SeriesStatistics</CSWP><CSTO>MFVpct: 98.31</CSTO><CSPI>M8610 : DA861R4000000.A2L</CSPI><CSDI>SumDST: 17362</CSDI><REMARK><P>Most Frequent Value (MFV) from Series Statistics</P><P>17362 datasets using this label</P><P>Label has 8 different values</P><P>17069 datasets using MFV (98.31 %)</P><P>SeriesStatistics Filters used for this label: </P></REMARK><SD GID="SumDST">17362</SD><SD GID="NumVAL">8</SD><SD GID="MFVpct">98.31</SD></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>ACComp_CalcDem_CW</SHORT-NAME>
+						<DISPLAY-NAME>ACComp_CalcDem_CW</DISPLAY-NAME>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-VALUE-CONT>
+							<SW-VALUES-PHYS>
+								<V>4</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY><CS-ENTRY><STATE>changed</STATE><DATE>2020-09-16T13:28:58</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY><CS-ENTRY><STATE>changed</STATE><DATE>2020-09-16T13:17:51</DATE><CSUS>BNE4COB</CSUS><CSDI>iCDM - Function(ACComp_Demand)</CSDI><REMARK><P>Reference Value</P><P>do NOT edit !!! Used in automated service tests</P><P>Test ID : RuleTypes_6.1</P><P>How to calibrate?: </P><P>Bit 0: FALSE: AC_trqDes wird hart auf Null gesetzt, wenn Klimaanlage ausgeschaltet wird</P><P>Bit 0: TRUE: AC_trqDes wird auf Null gefiltert, wenn Klimaanlage ausgeschaltet wird</P><P>Bit 1: FALSE: AC_trqResv wird auf den berechneten Wert gesetzt</P><P>Bit 1: TRUE: AC_trqResv wird auf den Vorgabewert ACComp_trqResACDfl_C gesetzt</P><P>Bit 2: FALSE: keine Berücksichtigung der Motordrehzahl oder der Fzg. Geschwindigkeit</P><P>Bit 2: TRUE: Berücksichtigung der Motordrehzahl oder der Fzg. Geschwindigkeit</P></REMARK></CS-ENTRY><CS-ENTRY><STATE>changed</STATE><DATE>2020-09-16T13:34:29</DATE><CSUS>BNE4COB</CSUS></CS-ENTRY></SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>AccMon_trqMinLos_C</SHORT-NAME>
+						<LONG-NAME/>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">Nm</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>-82.5</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>prelimCalibrated</STATE>
+								<DATE>2022-04-22T14:38:38</DATE>
+								<CSUS>HNU1COB</CSUS>
+								<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+								<REMARK>
+									<P>Statistics Value from Series Statistics</P>
+									<P>12533 datasets using this parameter</P>
+									<P>Parameter has 10 different values</P>
+									<P>44 datasets using this value (0 %)</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>AirC_RmpSlpClntP.Pos_C</SHORT-NAME>
+						<LONG-NAME/>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">hPa/s</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>1000.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>prelimCalibrated</STATE>
+								<DATE>2022-04-22T12:50:50</DATE>
+								<CSUS>HNU1COB</CSUS>
+								<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+								<REMARK>
+									<P>Statistics Value from Series Statistics</P>
+									<P>87478 datasets using this parameter</P>
+									<P>Parameter has 20 different values</P>
+									<P>36559 datasets using this value (41 %)</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>AirC_pClntIni_C</SHORT-NAME>
+						<LONG-NAME/>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">hPa</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>0.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>prelimCalibrated</STATE>
+								<DATE>2022-04-22T15:04:45</DATE>
+								<CSUS>HNU1COB</CSUS>
+								<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+								<REMARK>
+									<P>Statistics Value from Series Statistics</P>
+									<P>17592 datasets using this parameter</P>
+									<P>Parameter has 3 different values</P>
+									<P>1066 datasets using this value (6 %)</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>AirC_TransStgClntP.stSensId_C</SHORT-NAME>
+						<LONG-NAME/>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>1.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>prelimCalibrated</STATE>
+								<DATE>2022-04-22T12:56:51</DATE>
+								<CSUS>HNU1COB</CSUS>
+								<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+								<REMARK>
+									<P>Statistics Value from Series Statistics</P>
+									<P>85590 datasets using this parameter</P>
+									<P>Parameter has 9 different values</P>
+									<P>91 datasets using this value (0 %)</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>AirC_TransStgClntP.Dfl_C</SHORT-NAME>
+						<LONG-NAME/>
+						<CATEGORY>VALUE</CATEGORY>
+						<SW-FEATURE-REF>
+						</SW-FEATURE-REF>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">hPa</UNIT-DISPLAY-NAME>
+							<SW-VALUES-PHYS>
+								<V>50.0</V>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>prelimCalibrated</STATE>
+								<DATE>2022-04-22T15:07:14</DATE>
+								<CSUS>HNU1COB</CSUS>
+								<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+								<REMARK>
+									<P>Statistics Value from Series Statistics</P>
+									<P>85590 datasets using this parameter</P>
+									<P>Parameter has 23 different values</P>
+									<P>6409 datasets using this value (7 %)</P>
+								</REMARK>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+					<SW-INSTANCE>
+						<SHORT-NAME>DIUMPR_Check_CA</SHORT-NAME>
+						<DISPLAY-NAME>DIUMPR_Check_CA</DISPLAY-NAME>
+						<CATEGORY>VAL_BLK</CATEGORY>
+						<SW-VALUE-CONT>
+							<UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+							<SW-ARRAYSIZE>
+								<V>5</V>
+							</SW-ARRAYSIZE>
+							<SW-VALUES-PHYS>
+								<VT xml:space="preserve">DFC_UEGOHeatrCtlS1B1</VT>
+								<VT xml:space="preserve">DFC_CEngDsTWrmCrssChkEngTPlaus</VT>
+								<VT xml:space="preserve">DFC_OilCylHdTWrmCrssChkEngTPlaus</VT>
+								<VT xml:space="preserve">DFC_CEngBlkTWrmCrssChkEngTPlaus</VT>
+								<VT xml:space="preserve">DFC_Unused</VT>
+							</SW-VALUES-PHYS>
+						</SW-VALUE-CONT>
+						<SW-CS-HISTORY>
+							<CS-ENTRY>
+								<STATE>prelimCalibrated</STATE>
+								<DATE>2022-05-02T20:26:16</DATE>
+								<CSUS>BNE4COB</CSUS>
+								<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+								<REMARK>
+									<P>Statistics Value from Series Statistics</P>
+									<P>77735 datasets using this parameter</P>
+									<P>Parameter has 1482 different values</P>
+									<P>2079 datasets using this value (2 %)</P>
+								</REMARK>
+							</CS-ENTRY>
+							<CS-ENTRY>
+									<STATE>changed</STATE>
+									<DATE>2022-05-03T12:19:54</DATE>
+									<CSUS>unknown</CSUS>
+							</CS-ENTRY>
+						</SW-CS-HISTORY>
+					</SW-INSTANCE>
+				</SW-INSTANCE-TREE>
+			</SW-INSTANCE-SPEC>
+		</SW-SYSTEM>
+	</SW-SYSTEMS>
+</MSRSW>

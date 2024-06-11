@@ -1,0 +1,54 @@
+<!-- Copyright (c) Robert Bosch GmbH. All rights reserved. -->
+<project name="EncryptTool" default="createjar" basedir="..">
+    <description>
+        Build file to create the Encrypt tool
+    </description>
+    
+    <!-- set global properties for this build -->
+    <property name="src.dir" location="src" />
+    <property name="temp.dir" location="temp" />
+    <property name="dist.dir" location="dist" />
+    <property name="distjar.filename" value="EncryptTool.jar" />
+
+    <target name="init" depends="clean">
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${temp.dir}" />
+        <!-- Create the distribution directory -->
+        <mkdir dir="${dist.dir}" />
+    </target>
+
+    <target name="compile" depends="init" description="compile the source ">
+
+        <!-- Compile the java code from ${src.dir} into ${temp.dir} -->
+        <javac destdir="${temp.dir}">
+            <src path="${src.dir}" />
+            <include name="com/bosch/caltool/security/util/EncryptTool.java" />
+            <include name="com/bosch/caltool/security/util/CryptUtil.java" />
+        </javac>
+    </target>
+
+    <target name="createjar" depends="compile" description="create the jar">
+
+        <!-- Put required classes in ${temp.dir} into the ${tempjar.filename} file -->
+        <jar jarfile="${dist.dir}/${distjar.filename}">
+            <fileset dir="${temp.dir}">
+                <include name="com/bosch/caltool/security/util/EncryptTool.class" />
+                <include name="com/bosch/caltool/security/util/CryptUtil.class" />
+            </fileset>
+            <!-- Manifest file details -->
+            <manifest>
+                <attribute name="Sealed" value="true" />
+                <attribute name="Implementation-Vendor" value="Robert Bosch GmbH" />
+                <attribute name="Implementation-Title" value="Encrypt Tool" />
+                <attribute name="Implementation-Version" value="1.0.0" />
+                <attribute name="Main-Class" value="com.bosch.caltool.security.util.EncryptTool" />
+            </manifest>
+        </jar>
+
+    </target>
+    <target name="clean" description="clean up">
+        <!-- Delete the ${temp.dir} and ${dist.dir} directory trees -->
+        <delete dir="${temp.dir}" />
+        <delete dir="${dist.dir}" />
+    </target>
+</project>

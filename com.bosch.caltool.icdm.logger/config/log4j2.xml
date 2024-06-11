@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" name="iCDMClientLoggerConfig">
+
+    <Properties>
+        <Property name="log.path">$${sys:java.io.tmpdir}/iCDM_DEV</Property>
+    </Properties>
+    
+    <Filter type="ThresholdFilter" level="trace"/>
+    
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d [%t] [%c] %-5p - %m%n" />
+        </Console>
+
+        <RollingFile name="RollingFileAppender" fileName="${log.path}/iCDM.log" filePattern="${log.path}/iCDM.log.%i">
+            <PatternLayout pattern="%d [%t] [%c] %-5p - %m%n" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="ICDM" level="DEBUG" />
+        <Logger name="A2L" level="INFO" />
+        <Logger name="CDF" level="INFO" />
+        <Logger name="CNSCLIENT" level="INFO" />
+        <Logger name="PARSER" level="WARN" />
+        <Logger name="com.bosch.calcomp.tulservice.client" level="INFO" />
+         <Logger name="com.bosch.calcomp.mail.client" level="INFO" />
+        <Logger name="Log4JLoggerAdapterImplExt" level="INFO" />
+        <Logger name="LoggerUtil" level="INFO" />
+        <Logger name="org.apache.axis2" level="WARN" />
+        <Logger name="org.apache.axiom" level="WARN" />
+        <Logger name="httpclient.wire" level="WARN" />
+        <Logger name="org.apache.commons.httpclient" level="WARN" />
+        <Logger name="org.apache.pdfbox" level="WARN" />
+        <Logger name="org.apache.commons" level="WARN" />
+        
+        <Root level="DEBUG" >
+            <!--To enable console appender, uncomment the below line-->
+            <!--  <AppenderRef ref="ConsoleAppender" />-->
+            
+            <AppenderRef ref="RollingFileAppender" />
+        </Root>
+        
+    </Loggers>
+
+</Configuration>

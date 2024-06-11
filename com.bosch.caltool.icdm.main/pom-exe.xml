@@ -1,0 +1,41 @@
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.bosch.caltool.icdm.tycho</groupId>
+    <artifactId>com.bosch.caltool.icdm.main</artifactId>
+    <version>${iCDM.version}</version>
+    <packaging>pom</packaging>
+    <properties>
+        <iCDM.version>2024.3.0</iCDM.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <tycho.version>1.4.0</tycho.version>
+        <tycho-extras.version>1.4.0</tycho-extras.version>
+        <osgi.os>win32</osgi.os>
+        <osgi.ws>win32</osgi.ws>
+        <osgi.arch>x86_64</osgi.arch>
+        <jacoco.version>0.7.2.201409121644</jacoco.version>
+        <src>1.8</src>
+        <target>1.8</target>
+    </properties>
+    
+    <modules>
+            <module>../com.bosch.caltool.icdm.product/pom-exe.xml</module>
+    </modules>
+    <build>
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+                <version>${tycho.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <useProjectSettings>false</useProjectSettings>
+                </configuration>
+            </plugin>
+         </plugins>   
+            
+    </build>
+</project>

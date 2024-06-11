@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: dk.brics.automaton
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Require-Bundle: org.eclipse.core.runtime
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: dk.brics.automaton
+Bundle-Name: Automaton
+Bundle-Version: 1.0.0.20170725101834082
+Bundle-ClassPath: lib/automaton.jar,.
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

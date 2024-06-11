@@ -1,0 +1,96 @@
+package com.bosch.caltool.icdm.ws.rest.client.apic;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
+import com.bosch.caltool.icdm.model.a2l.Parameter;
+import com.bosch.caltool.icdm.ws.rest.client.AbstractRestClientTest;
+import com.bosch.caltool.icdm.ws.rest.client.exception.ApicWebServiceException;
+
+
+/**
+ * Service Client Test for Parameter
+ *
+ * @author EMS4KOR
+ */
+public class ParameterServiceClientTest extends AbstractRestClientTest {
+
+  private final static Long PARAMETER_ID = 379414915L;
+  private final static Long INVALID_PARAMETER_ID = -1L;
+
+
+  /**
+   * Test method for {@link ParameterServiceClient#get(Long)}
+   *
+   * @throws ApicWebServiceException Webservice Error
+   */
+  @Test
+  public void testGet() throws ApicWebServiceException {
+    ParameterServiceClient servClient = new ParameterServiceClient();
+    Parameter parameter = servClient.get(PARAMETER_ID);
+    assertNotNull("Response should not be null", parameter);
+    testParameter(parameter);
+  }
+
+  /**
+   * Negative Test method for {@link ParameterServiceClient#get(Long)}
+   *
+   * @throws ApicWebServiceException Webservice Error
+   */
+  @Test
+  public void testGetNegative() throws ApicWebServiceException {
+    ParameterServiceClient servClient = new ParameterServiceClient();
+    this.thrown.expect(ApicWebServiceException.class);
+    this.thrown.expectMessage("Parameter with ID " + "'" + INVALID_PARAMETER_ID + "'" + " not found");
+    servClient.get(INVALID_PARAMETER_ID);
+    fail("Expected Exception not thrown");
+  }
+
+
+  /**
+   * Test method for {@link ParameterServiceClient#getInvalidParameters(List)}
+   *
+   * @throws ApicWebServiceException Web Service Error
+   */
+  @Test
+  public void testGetInvalidParamService() throws ApicWebServiceException {
+    ParameterServiceClient servClient = new ParameterServiceClient();
+
+    List<String> set = new ArrayList<>();
+    set.add("DSCHED_UpLimRateOk.FID_BLATP2_C");
+    set.add("DFES_DTCO.DFC_ComTOutBRK_C");
+    set.add("test");
+    set.add("TestingInvalidString");
+    List<String> list;
+    list = servClient.getInvalidParameters(set);
+    assertNotNull("List should not be null or empty", list);
+    boolean flag = false;
+    for (String value : list) {
+      if (value.equals("TestingInvalidString")) {
+        flag = true;
+      }
+    }
+    assertTrue("Invalid string should be present", flag);
+  }
+
+
+  /**
+   * test output data
+   */
+  private void testParameter(final Parameter parameter) {
+
+    assertEquals("Id is equal", "379414915", parameter.getId().toString());
+    assertEquals("Name is equal", "DFC_CtlMsk.DFC_ComACCADLC_C", parameter.getName().toString());
+    assertEquals("pClassText is equal", "", parameter.getpClassText());
+    assertEquals("custPrm is equal", "N", parameter.getCustPrm());
+
+
+  }
+}

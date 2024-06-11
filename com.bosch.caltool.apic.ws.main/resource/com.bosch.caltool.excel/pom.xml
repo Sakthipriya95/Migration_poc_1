@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
+    <version>${icdm.version}</version>
+    <artifactId>com.bosch.caltool.excel</artifactId>
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>${mavenjar.plugin}</version>
+            <configuration>
+                <archive>
+                    <manifestEntries>
+                        <Major-Version>${icdm.version}</Major-Version>
+                        <Build-Version>${build.number}</Build-Version>
+                        <Build-Time>${maven.build.timestamp}</Build-Time>
+                    </manifestEntries>
+                </archive>
+            </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <groupId>com.bosch.caltool.excel</groupId>
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.core</groupId>
+            <artifactId>org.eclipse.core.runtime</artifactId>
+            <version>3.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.14</version>
+            <scope>system</scope>
+            <systemPath>${p2repo.path}\com.bosch.caltool.icdm.updatesite\externaldependency\poi-3.14-20160307.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.14</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <parent>
+        <relativePath>../com.bosch.caltool.apic.ws.main</relativePath>
+        <groupId>com.bosch.caltool.apic.ws.main</groupId>
+        <artifactId>com.bosch.caltool.apic.ws.main</artifactId>
+        <version>${icdm.version}</version>
+    </parent>
+</project>

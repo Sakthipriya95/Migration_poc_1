@@ -1,0 +1,20 @@
+[SETTINGS]
+Version;V1.1
+MultiRasterSeparator;&
+
+[LABEL]
+AirMod_facTDifAirFil_T;;test
+AirMod_nrTEngAirFilMdl_C;
+AirMod_nrTEnvAirFilMdl_C;
+AirMod_tiTDifAirFilHeatg_T;
+ASMod_facPresLsCmprUs_C;
+ASMod_facPresTotCorUs_C;
+ASMod_numAirTempIntMnfLPUs_C;
+;comment lisne
+[FUNCTION]
+AccECU_ComSCL;
+SeqStrt;
+
+[GROUP]
+_WP__6_2_2__Kraftstoff___Injektor_Zylinder;
+

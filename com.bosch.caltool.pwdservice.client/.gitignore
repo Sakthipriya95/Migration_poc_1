@@ -1,0 +1,6 @@
+
+*.class
+
+/.codepro
+/bin
+/build

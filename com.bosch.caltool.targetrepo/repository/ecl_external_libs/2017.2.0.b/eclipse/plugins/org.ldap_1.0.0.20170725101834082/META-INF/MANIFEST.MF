@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.ldap
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Robert Bosch GmbH
+Export-Package: ldap
+Bundle-Name: Ldap
+Bundle-Version: 1.0.0.20170725101834082
+Bundle-ClassPath: lib/ldap.jar,.
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

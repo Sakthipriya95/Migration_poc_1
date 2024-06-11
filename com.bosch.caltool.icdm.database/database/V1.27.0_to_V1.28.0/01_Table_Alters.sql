@@ -1,0 +1,70 @@
+spool c:\temp\table_alters.log
+
+ALTER TABLE T_FOCUS_MATRIX_REVIEW RENAME COLUMN RVW_ID TO FM_RVW_ID;
+
+ALTER TABLE T_FOCUS_MATRIX_REVIEW RENAME COLUMN RVWED_BY TO REVIEWED_USER;
+
+ALTER TABLE T_FOCUS_MATRIX_REVIEW RENAME COLUMN RVWED_ON TO REVIEWED_DATE;
+
+
+--ICDM-2491
+--
+--Rename table name T_QNAIRE_ANS_OPEN_POINTS to T_RVW_QNAIRE_ANSWER_OPL
+--
+ALTER TABLE T_QNAIRE_ANS_OPEN_POINTS   
+RENAME TO T_RVW_QNAIRE_ANSWER_OPL;
+
+--
+-- Make column open_points not null
+--
+ALTER TABLE T_RVW_QNAIRE_ANSWER_OPL 
+MODIFY OPEN_POINTS NOT NULL;
+
+--
+--Rename table name T_RVW_QUESTIONNAIRE to T_RVW_QNAIRE_RESULTS
+--
+
+ALTER TABLE T_RVW_QUESTIONNAIRE   
+RENAME TO T_RVW_QNAIRE_RESULTS;
+
+
+--
+--ICDM-2508- new column for positive result.
+--
+alter table T_QUESTION add POSITIVE_RESULT varchar2(1);
+
+--
+--ICDM-2504- new column for dependent Question id.
+--
+
+alter table T_QUESTION add DEP_QUES_ID NUMBER(15);
+--
+--ICDM-2504- new column for dependent Question response either P or N
+--
+
+alter table T_QUESTION add DEP_QUES_RESP varchar2(1);
+
+--
+--ICDM-2504-foreign key relation.
+--
+  ALTER TABLE T_QUESTION ADD CONSTRAINT T_QUESTION_DEP_FK FOREIGN KEY (DEP_QUES_ID)
+      REFERENCES T_QUESTION (Q_ID);
+--
+--ICDM-2504-relationship between DEP_QUES_ID and DEP_QUES_RESP.
+--
+      
+ ALTER TABLE T_QUESTION ADD CONSTRAINT
+ T_QUES_DEP_CK1 CHECK ((DEP_QUES_ID is  null and DEP_QUES_RESP is  null) or (DEP_QUES_ID is not null and DEP_QUES_RESP is not null ));
+
+--
+-- ICDM-2521
+--
+ALTER TABLE T_QUESTIONNAIRE MODIFY (NAME_ENG NULL);
+
+--
+-- Unique constraint for PIDC Version ID column. Only one record is expected per pidc version
+--
+ALTER TABLE T_FOCUS_MATRIX_REVIEW
+    ADD CONSTRAINT T_FOCUS_MATRIX_REVIEW_UK1 UNIQUE (PIDC_VERS_ID);
+
+spool off

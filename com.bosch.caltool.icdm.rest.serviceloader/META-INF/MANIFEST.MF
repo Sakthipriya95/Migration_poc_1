@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: REST Service Loader
+Bundle-SymbolicName: com.bosch.caltool.icdm.rest.serviceloader
+Bundle-Version: 2024.3.0
+Automatic-Module-Name: com.bosch.caltool.icdm.rest.serviceloader
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.bosch.caltool.icdm.database,
+ com.bosch.calcomp.adapter.logger,
+ com.bosch.caltool.icdm.model;bundle-version="3.0.6",
+ com.bosch.caltool.dmframework;bundle-version="3.0.6",
+ com.bosch.caltool.icdm.common.util;bundle-version="3.1.0",
+ com.bosch.caltool.excel;bundle-version="3.1.0",
+ com.bosch.caltool.icdm.bo;bundle-version="3.1.0"

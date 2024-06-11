@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NAT Table Test
+Bundle-SymbolicName: com.bosch.caltool.nattable.test
+Bundle-Version: 1.9.5
+Fragment-Host: com.bosch.caltool.nattable;bundle-version="1.9.5"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

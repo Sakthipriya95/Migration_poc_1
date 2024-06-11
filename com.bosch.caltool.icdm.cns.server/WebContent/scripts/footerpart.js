@@ -1,0 +1,1 @@
+document.write('<footer><p><br><div class="footer_txt_div">&copy; Robert Bosch GmbH. All rights reserved.<address>For support, contact <a href="mailto:iCDM-Hotline.Clearing@de.bosch.com">iCDM-Clearing Hotline</a></address></div><br><img src="images/bottom_bosch.png" /></footer>');

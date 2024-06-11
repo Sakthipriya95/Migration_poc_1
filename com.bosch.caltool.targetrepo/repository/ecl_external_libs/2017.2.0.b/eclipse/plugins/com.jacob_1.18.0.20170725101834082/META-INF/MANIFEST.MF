@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.jacob;singleton:=true
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Robert Bosch GmbH
+Export-Package: com.jacob.activeX,com.jacob.com
+Bundle-Name: Jacob COM Bridge from Sourceforge Jacob Project
+Bundle-Version: 1.18.0.20170725101834082
+Bundle-ClassPath: lib/jacob.jar,.
+Bundle-NativeCode: lib/x86/jacob-1.18-x86.dll;processor=x86,lib/x86_64
+ /jacob-1.18-x64.dll;processor=x86_64
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

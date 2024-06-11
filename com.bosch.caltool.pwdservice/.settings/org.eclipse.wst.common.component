@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="com.bosch.caltool.pwdservice">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="com.bosch.calcomp.adapter.logger.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.adapter.logger/com.bosch.calcomp.adapter.logger">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="com.bosch.caltool.pwdservice"/>
+        <property name="java-output-path" value="/com.bosch.caltool.pwdservice/build/classes"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Pidcrequester
+Bundle-SymbolicName: com.bosch.caltool.icdm.pidcrequestor
+Bundle-Version: 2024.3.0
+Bundle-Activator: com.bosch.caltool.icdm.pidcrequestor.PIDCRequestorPlugin
+Bundle-Vendor: BOSCH
+Require-Bundle: org.eclipse.core.runtime,
+ org.apache.poi;bundle-version="3.9.0",
+ com.bosch.calcomp.adapter.logger;bundle-version="1.2.0",
+ com.bosch.caltool.apic.ws.client;bundle-version="1.9.0",
+ com.bosch.caltool.icdm.logger;bundle-version="1.9.0",
+ org.junit;bundle-version="4.8.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.bosch.caltool.icdm.pidcrequestor

@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Datamodel Stub
+Bundle-SymbolicName: com.bosch.caltool.icdm.datamodelstub
+Bundle-Version: 2024.3.0
+Bundle-Activator: com.bosch.caltool.icdm.datamodelstub.Activator
+Bundle-Vendor: BOSCH
+Require-Bundle: org.eclipse.core.runtime,
+ com.bosch.ssd.icdm.jpa,
+ com.bosch.caltool.eclipselink,
+ com.bosch.calcomp.adapter.logger,
+ com.bosch.calmodel.caldata,
+ com.bosch.calmodel.caldataphy,
+ com.bosch.calcomp.parser.dcm,
+ com.bosch.calcomp.exception,
+ com.bosch.caltool.cdfwriter
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.bosch.caltool.icdm.datamodelstub,
+ com.bosch.caltool.icdm.datamodelstub.ssd

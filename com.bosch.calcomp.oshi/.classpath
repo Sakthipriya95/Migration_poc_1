@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry exported="true" kind="lib" path="slf4j-api-1.7.32.jar"/>
+	<classpathentry exported="true" kind="lib" path="jna-5.8.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="jna-platform-5.8.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="oshi-core-5.8.2.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

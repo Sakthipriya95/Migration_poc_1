@@ -1,0 +1,13 @@
+Mandatory attributes with values over all levels. 
+
+Shows the number of mandatory attributes which have a value entered. 
+Considers all mandatory attributes of the levels PIDC, Variant and
+Sub-Variant. 
+
+E.g.:
+Mandatory attributes on level 
+PIDC: 5, thereof with value: 2
+Variant: 10, thereof with value: 4
+Sub-Variant: 3, thereof with value: 3
+
+Shown value in this column: 7

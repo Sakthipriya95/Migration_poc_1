@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>iCDM CNS Server - Data Producer Details</title>
+    <link rel="stylesheet" href="cssstyles.css"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    <script type="text/javascript" src="scripts/common.js"></script>
+</head>
+
+<body onload="loadProducerDetIfReqd()">
+
+<script src="scripts/headerpart.js"></script>
+
+<div class="main_div">
+
+<p id="backSection"></p>
+
+<h2>Data Producer Details</h2>
+
+Producer ID <input type="text" id="txtProdId" size=38 onClick="selectContents('txtProdId')"/>
+<button class="def_button" onclick="loadProducerDet()">Show</button>
+
+<h3>Producer</h3>
+<p id="producerSection"></p>
+
+<h3>Generated Events</h3>
+<script>
+createTableNavBar('prodEvtNav');
+</script>
+<p id="producerEventSection"></p>
+
+<script>
+
+function backToProducerPage(){
+	window.location.href = "producers.html";
+}
+
+function loadProducerDetIfReqd() {
+	var queryParamUrl = decodeURIComponent(window.location.search);
+	queryParamUrl = queryParamUrl.substring(1);
+	var paramArr = queryParamUrl.split("&");
+	var param1 = paramArr[0];
+	
+	var pid = param1.substring(param1.indexOf("=") + 1, param1.length);
+	
+	if(pid){
+	    document.getElementById("txtProdId").value = pid;
+	    var txt = "<button class=\"def_button\" onclick=\"backToProducerPage()\">Back</button>";
+	    document.getElementById("backSection").innerHTML = txt;
+	    loadProducerDet();
+	}else{
+		document.getElementById("backSection").innerHTML = "";
+	}
+}
+
+function loadProducerDet() {
+    var pid = document.getElementById("txtProdId").value;
+    loadProducerInfo(pid);
+    loadProducerEvents(pid, 0, 10);
+}
+
+function loadProducerInfo(sid) {
+
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        
+    	var txt = "<table class=\"def_table\">";
+    	 
+        txt += "<tr class=\"def_table\">";
+        txt += "<th class=\"def_table\">Producer ID</th>";
+        txt += "<th class=\"def_table\">IP Address</th>";
+        txt += "<th class=\"def_table\">Port</th>";
+        txt += "<th class=\"def_table\">Events</th>";
+        txt += "<th class=\"def_table\">Data Created (Bytes)</th>";
+        txt += "<th class=\"def_table\">Last Contacted At</th>";
+        txt += "</tr>";
+        
+        var respObj = JSON.parse(this.responseText);
+        
+        var prodMap = respObj.producerInfo;
+        
+        var prodObj;
+        Object.keys(prodMap).forEach(function(key) {
+            prodObj = prodMap[key];
+            txt += "<tr class=\"def_table\">";
+            txt += "<td class=\"def_table\">" + prodObj.producerId + "</td>";
+            txt += "<td class=\"def_table\">" + prodObj.ipAddress + "</td>";
+            txt += "<td class=\"def_table\">" + prodObj.port + "</td>";
+            txt += "<td class=\"def_table\">" + prodObj.eventCount + "</td>";
+            txt += "<td class=\"def_table\">" + prodObj.totalDataSize + "</td>";
+            txt += "<td class=\"def_table\">" + checkNull(prodObj.lastContactAt) + "</td>";
+            txt += "</tr>";
+        });  
+        
+        txt += "</table>"; 
+        
+        document.getElementById("producerSection").innerHTML = txt;
+    }
+  };
+  
+  invokeGetRequest(xmlHttp, "services/admin/statsproducer?producerid=" + sid);
+}
+
+function doLoadData(navAreaId, startIdx, retSize){
+	var sid = document.getElementById("txtProdId").value;
+	loadProducerEvents(sid, startIdx, retSize);
+}
+
+function loadProducerEvents(producerId, startIdx, retSize){
+    document.getElementById("producerEventSection").innerHTML = "";
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        
+        var respObj = JSON.parse(this.responseText);
+        
+        updateNavigationArea("prodEvtNav", respObj.pageInfo);
+        
+        var txt = "<table class=\"def_table\">";
+        
+        txt += "<tr class=\"def_table\">";
+        txt += "<th class=\"def_table\">Event ID</th>";
+        txt += "<th class=\"def_table\">Service ID</th>";
+        txt += "<th class=\"def_table\">Source ID</th>";
+        txt += "<th class=\"def_table\">User</th>";
+        txt += "<th class=\"def_table\">Data Size (Bytes)</th>";
+        txt += "<th class=\"def_table\">Created At</th>";
+        txt += "<th class=\"def_table\">Data Available</th>";
+        txt += "<th class=\"def_table\">Source State</th>";
+        txt += "</tr>";
+        
+        var evtArr = respObj.elementList;
+        for (evtObj of evtArr){
+            txt += "<tr class=\"def_table\">";
+            txt += "<td class=\"def_table\">" + evtObj.eventId + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.serviceId + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.sessionId + "</td>";
+            txt += "<td class=\"def_table\">" + checkNull(evtObj.user) + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.dataLength + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.createdAt + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.dataAvailable + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.sessionState + "</td>";
+            txt += "</tr>";
+        }
+        
+        txt += "</table>"; 
+        
+        document.getElementById("producerEventSection").innerHTML = txt;
+      
+    }
+    };
+    
+    var url = "services/admin/producerevents?producerid=" + producerId + "&size=" + retSize + "&startat=" + startIdx;
+    invokeGetRequest(xmlHttp, url);
+}
+
+</script>
+
+</div>
+
+<script src="scripts/footerpart.js"></script>
+
+</body>
+</html>

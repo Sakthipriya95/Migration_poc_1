@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.bosch.calcomp.mail.client.test
+Bundle-Version: 1.0.2
+Fragment-Host: com.bosch.calcomp.mail.client
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.bosch.calcomp.junittestframework,
+ org.junit;bundle-version="4.12.0"

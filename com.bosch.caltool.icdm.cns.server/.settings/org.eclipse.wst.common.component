@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="com.bosch.caltool.icdm.cns.server">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/test"/>
+        <dependent-module archiveName="jersey-server.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-server.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.annotation-api-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javax.annotation-api-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.ws.rs-api-2.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javax.ws.rs-api-2.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet-api-3.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javax.servlet-api-3.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-container-servlet-core.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-container-servlet-core.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-common-2.22.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-common-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-api-2.4.0-b31.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/hk2-api-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-guava-2.22.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-guava-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.inject-2.4.0-b31.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javax.inject-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-utils-2.4.0-b31.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/hk2-utils-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-locator-2.4.0-b31.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/hk2-locator-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-client.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-client.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="validation-api-1.1.0.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/validation-api-1.1.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-jaxrs-json-provider-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-jaxrs-json-provider-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-core-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-core-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-json-jackson-2.22.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jersey-media-json-jackson-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-jaxrs-base-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-jaxrs-base-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-databind-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-databind-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-annotations-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-annotations-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-module-jaxb-annotations-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-module-jaxb-annotations-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-container-servlet.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-container-servlet.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.adapter.logger.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.adapter.logger/com.bosch.calcomp.adapter.logger">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.cns.common.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.cns.common/com.bosch.caltool.icdm.cns.common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.18.1-GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javassist-3.18.1-GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-core-2.17.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.calcomp.adapter.logger/lib/log4j-core-2.17.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-api-2.17.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.calcomp.adapter.logger/lib/log4j-api-2.17.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="com.bosch.caltool.icdm.cns.server"/>
+        <property name="java-output-path" value="/com.bosch.caltool.icdm.cns.server/build/classes"/>
+    </wb-module>
+</project-modules>

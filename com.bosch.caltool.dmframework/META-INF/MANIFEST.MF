@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Data Model Framework
+Bundle-SymbolicName: com.bosch.caltool.dmframework;singleton:=true
+Bundle-Version: 2024.3.0
+Bundle-Activator: com.bosch.caltool.dmframework.Activator
+Bundle-Vendor: BOSCH
+Require-Bundle: org.eclipse.core.runtime,
+ com.bosch.caltool.eclipselink;bundle-version="2.4.1";visibility:=reexport,
+ com.bosch.calcomp.adapter.logger;bundle-version="1.2.0",
+ com.bosch.caltool.icdm.common.util;bundle-version="1.9.0",
+ com.bosch.calmodel.caldata,
+ com.bosch.calmodel.caldataphy,
+ com.bosch.caltool.datamodel.core;bundle-version="2.3.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.bosch.caltool.dmframework,
+ com.bosch.caltool.dmframework.bo,
+ com.bosch.caltool.dmframework.common,
+ com.bosch.caltool.dmframework.entity,
+ com.bosch.caltool.dmframework.logging.eclipselink,
+ com.bosch.caltool.dmframework.notification,
+ com.bosch.caltool.dmframework.transactions

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>com.bosch.caltool.icdm.oslc.ws</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+ 
+  
+ <!--
+   ****************************** 
+   OSLC REST Service Servlet Mapping 
+   ******************************
+   -->
+  
+<servlet>
+<description>JAX-RS Tools Generated - Do not modify</description>
+<servlet-name>JAX-RS Servlet</servlet-name>
+<servlet-class>org.apache.wink.server.internal.servlet.RestServlet</servlet-class>
+<init-param>
+<param-name>javax.ws.rs.Application</param-name>
+<param-value>com.bosch.caltool.apic.ws.oslc.applications.ICDMOSLCWinkApplication</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+<servlet-name>JAX-RS Servlet</servlet-name>
+<url-pattern>/*</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>restSdkAdmin</servlet-name>
+<servlet-class>org.apache.wink.server.internal.servlet.AdminServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>restSdkAdmin</servlet-name>
+<url-pattern>/admin</url-pattern>
+</servlet-mapping>
+    <!--
+   ****************************** 
+   Listeners 
+   ******************************
+   -->
+
+  
+ <listener>
+<description>Listener for ServletContext lifecycle changes</description>
+<listener-class>com.bosch.caltool.apic.ws.oslc.servlets.OSLCServletListener</listener-class>
+</listener>
+
+ <!--
+   ****************************** 
+   Filters 
+   ******************************
+   -->
+<filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>com.bosch.caltool.apic.ws.oslc.servlets.RestAuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>

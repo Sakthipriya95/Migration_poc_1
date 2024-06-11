@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" name="iCDMServiceLoggerConfig">
+
+    <Properties>
+        <Property name="log.path">C:/iCDM_WebService/log</Property>
+    </Properties>
+    
+    <Filter type="ThresholdFilter" level="trace"/>
+    
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d [%t] [%c] %-5p - %m%n" />
+        </Console>
+
+        <RollingFile name="RollingFileAppender" fileName="${log.path}/iCDM_WebService.log" filePattern="${log.path}/iCDM_WebService.log.%i">
+            <PatternLayout pattern="%d [%c] [%p] [%t] [SID: %X{requestId}] [%X{method}] [%m]%n" />
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="50"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="ICDM" level="DEBUG" />
+        <Logger name="JPA" level="INFO" />
+        <Logger name="A2L" level="INFO" />
+        <Logger name="EASEE" level="INFO" />
+        <Logger name="CDF" level="INFO" />
+        <Logger name="CDA" level="INFO" />
+        <Logger name="CNSCLIENT" level="INFO" />
+        <Logger name="A2LLOADER" level="INFO" />
+        <Logger name="PARSER" level="WARN" />
+        <Logger name="SSD" level="DEBUG" />
+        <Logger name="ICDMWS" level="DEBUG" />
+        <Logger name="com.bosch.calcomp.tulservice.client" level="INFO" />
+        <Logger name="com.bosch.calcomp.mail.client" level="INFO" />
+        <Logger name="Log4JLoggerAdapterImplExt" level="INFO" />
+        <Logger name="LoggerUtil" level="INFO" />
+        <Logger name="AbstractTimeZone" level="INFO" />
+        <Logger name="org.apache.axis2" level="WARN" />
+        <Logger name="org.apache.axiom" level="WARN" />
+        <Logger name="httpclient.wire" level="WARN" />
+        <Logger name="org.apache.commons.httpclient" level="WARN" />
+        <Logger name="org.apache.pdfbox" level="WARN" />
+        <Logger name="org.apache.commons" level="WARN" />
+        
+        <Root level="DEBUG" >
+            <!--To enable console appender, uncomment the below line-->
+            <!--<AppenderRef ref="ConsoleAppender" />-->
+            
+            <AppenderRef ref="RollingFileAppender" />
+        </Root>
+        
+    </Loggers>
+    
+</Configuration>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>com.bosch.caltool.apic.ws.main</artifactId>
+    <version>${icdm.version}</version>
+    <groupId>com.bosch.caltool.apic.ws.main</groupId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../com.bosch.caltool.icdm.logger</module>
+        <module>../com.bosch.rcputils</module>
+        <module>../com.bosch.caltool.comparator</module>
+        <module>../com.bosch.caltool.datamodel.core</module>
+        <module>../com.bosch.calcomp.externallink</module>
+        <module>../com.bosch.caltool.icdm.common.util</module>
+        <module>../com.bosch.caltool.icdm.model</module>
+        <module>../com.bosch.caltool.icdm.common.bo</module>
+        <module>../com.bosch.caltool.apic.ws.common</module>
+        <module>../com.bosch.caltool.icdm.ws.rest.client</module>
+        <module>../com.bosch.caltool.apic.vcdminterface</module>
+        <module>../com.bosch.caltool.apic.ws.client/pom_soap.xml</module>
+        
+    </modules>
+</project>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>About This Content</title>
+</head>
+<body>
+
+<h1>About This Content</h1>
+
+<h2>License</h2>
+
+<p>The Robert Bosch GmbH makes available all content in this plug-in
+("Content"). Unless otherwise indicated below, the Content is provided to you
+under the terms and conditions of the product's license.</p>
+
+<h2>Changes of the original source code</h2>
+
+<p>We have created a patch <b>org.apache.logging.log4j.patch</b> where we have adapted the changes to LOG4j source code.</p>
+The following classes has been copied and modified from Apache Log4j 2.4.0 (log4j-core-2.4.jar).
+<p><b>org.apache.logging.log4j.core.config.AbstractConfiguration</b> - The original source code was modified to supress the message logged in console. The change is commenting Line 430 since we merge all the log4j configurations, so unable to locate appender message is not relevant. The validation for the appenders used is done in finalize method of MergeableConfiguration</p>
+<p><b>org.apache.logging.log4j.core.LoggerContext</b> - The original source code was modified to optimize the initialization performane.Line 131 is commented out and introduced line 132. Now a DefaultConfiguration instance is not created during the static initialization of the class</p>
+<p><b>org.apache.logging.log4j.core.LoggerContext</b> -Line 424 MDGB Build wants to get rid of this warnings. So commented this line. "No Root logger was configured, creating default ERROR-level Root logger with Console appender" The root tag was not present is come log4j xml and hence this warning message was displayed.</p>
+
+<h2>Third Party Content</h2>
+
+<p>The Content includes items that have been sourced from third parties as set
+out below:</p>
+
+<h3>Apache Log4j 2.4.0</h3>
+
+<h3>Log4j 2.4.0 contains log4j-1.2-api-2.4.jar(Log4j 1.2 API bridge),log4j-api-2.4.jar,log4j-core-2.4.jar  which is under the Apache License 2.0</h3>
+
+<p>The plug-in includes software developed by The Apache Software Foundation as
+part of the Apache Logging project.</p>
+
+<p>Your use of this code is subject to the terms and conditions of the 
+Apache License 2.0. A copy of the license is contained is available at
+<a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>.</p>
+
+</body>
+</html>

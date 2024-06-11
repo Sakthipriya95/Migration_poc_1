@@ -1,0 +1,13 @@
+
+KONSERVIERUNG_FORMAT 2.0
+
+
+FESTWERT                 AccPed_nMax_C
+  EINHEIT_W "rpm"
+  WERT               3000.0   
+END
+
+FESTWERT                 AccPed_nMinBrk_C
+  EINHEIT_W "rpm"
+  WERT               1200.0   
+END

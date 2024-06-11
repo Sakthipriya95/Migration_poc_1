@@ -1,0 +1,17 @@
+The number of mandatory attributes that have to be filled over all levels. 
+
+Shows the number of mandatory attributes which have to be entered. 
+Considers all mandatory attributes of the levels PIDC, Variant and
+Sub-Variant. 
+
+E.g.:
+Mandatory attributes on level 
+PIDC: 5, thereof with value: 2
+Variant: 10, thereof with value: 4
+Sub-Variant: 3, thereof with value: 3
+
+Shown value in this column: 18
+
+The number of mandatory attributes to be filled can be different due to:
+- the number of variants and/or subvariants with mandatory attributes
+- differences due to attribute dependencies

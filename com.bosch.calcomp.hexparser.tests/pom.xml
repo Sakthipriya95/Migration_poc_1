@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.bosch.calcomp.hexparser.tests</groupId>
+  <artifactId>com.bosch.calcomp.hexparser.tests</artifactId>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <parent>
+      <groupId>com.bosch.calcomp.hexparser.main</groupId>
+      <artifactId>com.bosch.calcomp.hexparser.main</artifactId>
+      <version>1.5.6</version>
+      <relativePath>../com.bosch.calcomp.hexparser.main</relativePath>
+  </parent>
+  <properties>
+    <sonar.projectVersion>1.1.0</sonar.projectVersion>
+    <!-- Workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=397015 -->
+    <sonar.sources></sonar.sources>
+    <sonar.tests>src</sonar.tests>
+  </properties>
+  <packaging>eclipse-test-plugin</packaging>
+  <version>1.5.6</version>
+</project>

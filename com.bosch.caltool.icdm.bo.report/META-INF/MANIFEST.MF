@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iCDM BO Report
+Bundle-SymbolicName: com.bosch.caltool.icdm.bo.report
+Bundle-Version: 2024.3.0
+Bundle-Vendor: BOSCH
+Automatic-Module-Name: com.bosch.caltool.icdm.bo.report
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.apache.poi,
+ com.bosch.caltool.excel,
+ com.bosch.caltool.icdm.logger,
+ com.bosch.caltool.icdm.model,
+ com.bosch.caltool.icdm.common.util,
+ com.bosch.caltool.icdm.report.common,
+ com.bosch.caltool.dmframework
+Export-Package: com.bosch.caltool.icdm.bo.report,
+ com.bosch.caltool.icdm.bo.report.cdr.cdfx

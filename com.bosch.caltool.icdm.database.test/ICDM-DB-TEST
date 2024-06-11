@@ -1,0 +1,95 @@
+2020-02-28 14:44:00,875 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 14:44:00,890 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 18:15:34,125 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 18:15:34,139 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 18:20:27,288 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 18:20:27,300 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 18:22:18,622 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2020-02-28 18:22:18,625 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01
+2020-02-28 18:22:18,625 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:22:18,625 [main] [Log4JLoggerAdapterImplExt] DEBUG - assert
+2020-02-28 18:22:18,626 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01 completed. Time taken = 1 ms
+2020-02-28 18:22:18,626 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:42:02,994 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 18:42:03,008 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 18:42:23,681 [main] [Log4JLoggerAdapterImplExt] INFO  - Collective query notification listener initialised. Registration ID : 1464426
+2020-02-28 18:42:24,036 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2020-02-28 18:42:24,039 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01
+2020-02-28 18:42:24,039 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:42:24,165 [main] [Log4JLoggerAdapterImplExt] DEBUG - Results : 0
+2020-02-28 18:42:24,166 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01 completed. Time taken = 127 ms
+2020-02-28 18:42:24,166 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:44:18,789 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 18:44:18,801 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 18:44:22,975 [main] [Log4JLoggerAdapterImplExt] INFO  - Collective query notification listener initialised. Registration ID : 1464428
+2020-02-28 18:44:23,322 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2020-02-28 18:44:23,325 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01
+2020-02-28 18:44:23,325 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:44:23,453 [main] [Log4JLoggerAdapterImplExt] DEBUG - Results : 2
+2020-02-28 18:44:23,453 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773517365
+2020-02-28 18:44:23,454 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773511015
+2020-02-28 18:44:23,454 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01 completed. Time taken = 129 ms
+2020-02-28 18:44:23,454 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:45:33,069 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 18:45:33,083 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 18:45:37,901 [main] [Log4JLoggerAdapterImplExt] INFO  - Collective query notification listener initialised. Registration ID : 1464429
+2020-02-28 18:45:38,264 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2020-02-28 18:45:38,267 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01
+2020-02-28 18:45:38,268 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:45:38,360 [main] [Log4JLoggerAdapterImplExt] DEBUG - Results : 2
+2020-02-28 18:45:38,360 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773517365
+2020-02-28 18:45:38,360 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773511015
+2020-02-28 18:45:38,360 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01 completed. Time taken = 92 ms
+2020-02-28 18:45:38,360 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:49:14,360 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 18:49:14,372 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 18:49:19,393 [main] [Log4JLoggerAdapterImplExt] INFO  - Collective query notification listener initialised. Registration ID : 1464431
+2020-02-28 18:49:19,759 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2020-02-28 18:49:19,763 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01
+2020-02-28 18:49:19,763 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:49:19,875 [main] [Log4JLoggerAdapterImplExt] DEBUG - Results : 2
+2020-02-28 18:49:19,875 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773517365
+2020-02-28 18:49:19,875 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773511015
+2020-02-28 18:49:19,876 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01 completed. Time taken = 113 ms
+2020-02-28 18:49:19,876 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:59:08,193 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 18:59:08,206 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 18:59:13,190 [main] [Log4JLoggerAdapterImplExt] INFO  - Collective query notification listener initialised. Registration ID : 1464432
+2020-02-28 18:59:13,511 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2020-02-28 18:59:13,514 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01
+2020-02-28 18:59:13,514 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:59:13,540 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01 completed. Time taken = 26 ms
+2020-02-28 18:59:13,540 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:59:54,612 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 18:59:54,625 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 18:59:59,278 [main] [Log4JLoggerAdapterImplExt] INFO  - Collective query notification listener initialised. Registration ID : 1464433
+2020-02-28 18:59:59,630 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2020-02-28 18:59:59,634 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01
+2020-02-28 18:59:59,634 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 18:59:59,744 [main] [Log4JLoggerAdapterImplExt] DEBUG - Results : 2
+2020-02-28 18:59:59,745 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773517365
+2020-02-28 18:59:59,745 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773511015
+2020-02-28 18:59:59,745 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : test01 completed. Time taken = 111 ms
+2020-02-28 18:59:59,745 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 19:02:23,001 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 19:02:23,013 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 19:02:27,493 [main] [Log4JLoggerAdapterImplExt] INFO  - Collective query notification listener initialised. Registration ID : 1464725
+2020-02-28 19:02:27,846 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2020-02-28 19:02:27,850 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testNqGetPidcVersByAprjNA2l
+2020-02-28 19:02:27,850 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 19:02:27,978 [main] [Log4JLoggerAdapterImplExt] DEBUG - Results : 2
+2020-02-28 19:02:27,978 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773517365
+2020-02-28 19:02:27,978 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773511015
+2020-02-28 19:02:27,978 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testNqGetPidcVersByAprjNA2l completed. Time taken = 128 ms
+2020-02-28 19:02:27,978 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 19:02:47,612 [main] [Log4JLoggerAdapterImplExt] DEBUG - Creating database connection to rb0orarac18.de.bosch.com:38000
+2020-02-28 19:02:47,624 [main] [Log4JLoggerAdapterImplExt] DEBUG - Data model Object store initialised
+2020-02-28 19:02:52,319 [main] [Log4JLoggerAdapterImplExt] INFO  - Collective query notification listener initialised. Registration ID : 1464726
+2020-02-28 19:02:52,643 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2020-02-28 19:02:52,646 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testNqGetPidcVersByAprjNA2l
+2020-02-28 19:02:52,646 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2020-02-28 19:02:52,756 [main] [Log4JLoggerAdapterImplExt] DEBUG - Results : 2
+2020-02-28 19:02:52,756 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773517365
+2020-02-28 19:02:52,756 [main] [Log4JLoggerAdapterImplExt] DEBUG -   773511015
+2020-02-28 19:02:52,756 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testNqGetPidcVersByAprjNA2l completed. Time taken = 110 ms
+2020-02-28 19:02:52,756 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------

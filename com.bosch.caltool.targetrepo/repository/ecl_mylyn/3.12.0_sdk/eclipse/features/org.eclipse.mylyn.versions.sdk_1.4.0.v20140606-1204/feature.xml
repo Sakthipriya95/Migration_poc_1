@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2011 Tasktop Technologies and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+         Tasktop Technologies - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.mylyn.versions.sdk"
+      label="%featureName"
+      version="1.4.0.v20140606-1204"
+      provider-name="%providerName"
+      plugin="org.eclipse.mylyn.versions.core">
+
+   <description url="http://eclipse.org/mylyn">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="com.google.guava" version="15.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <includes
+         id="org.eclipse.mylyn.git"
+         version="1.4.0.v20140606-1204"/>
+
+   <includes
+         id="org.eclipse.mylyn.cvs"
+         version="1.4.0.v20140606-1204"/>
+
+   <includes
+         id="org.eclipse.mylyn.versions"
+         version="1.4.0.v20140606-1204"/>
+
+   <plugin
+         id="com.google.guava"
+         download-size="2211"
+         install-size="4997"
+         version="15.0.0.v201403281430"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.versions.core.source"
+         download-size="21"
+         install-size="67"
+         version="1.4.0.v20140402-0752"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.versions.ui.source"
+         download-size="5"
+         install-size="10"
+         version="1.4.0.v20140402-0752"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.git.core.source"
+         download-size="9"
+         install-size="21"
+         version="1.4.0.v20140402-0752"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.git.ui.source"
+         download-size="8"
+         install-size="22"
+         version="1.4.0.v20140402-0752"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.cvs.core.source"
+         download-size="4"
+         install-size="6"
+         version="1.4.0.v20140402-0752"
+         unpack="false"/>
+
+</feature>

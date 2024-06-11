@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CNS Client Test
+Bundle-SymbolicName: com.bosch.caltool.icdm.cns.client.test
+Bundle-Version: 2024.3.0
+Fragment-Host: com.bosch.caltool.icdm.cns.client;bundle-version="3.0.0"
+Automatic-Module-Name: com.bosch.caltool.icdm.cns.client.test
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit,
+ com.bosch.caltool.icdm.model,
+ com.bosch.calcomp.junittestframework

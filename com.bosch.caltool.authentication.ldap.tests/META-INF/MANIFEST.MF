@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LDAP Auth Tests
+Bundle-SymbolicName: com.bosch.caltool.authentication.ldap.tests
+Bundle-Version: 2.3.1
+Bundle-Vendor: BOSCH
+Fragment-Host: com.bosch.caltool.authentication.ldap
+Require-Bundle: org.junit;bundle-version="4.8.2",
+ com.bosch.calcomp.junittestframework
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

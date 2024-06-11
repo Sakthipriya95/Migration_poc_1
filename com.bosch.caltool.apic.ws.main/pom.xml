@@ -1,0 +1,108 @@
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.bosch.caltool.apic.ws.main</groupId>
+    <artifactId>com.bosch.caltool.apic.ws.main</artifactId>
+    <version>${icdm.version}</version>
+    <packaging>pom</packaging>
+    <properties>
+        <build.number>SNAPSHOT</build.number>
+        <!-- Maven Version -->
+        <maven.version>3.3</maven.version>
+        <!-- Java Version -->
+        <java.version>1.8</java.version>
+        <!-- iCDM Version -->
+        <icdm.version>2024.3.0</icdm.version>
+        <mavenwar.plugin>2.6</mavenwar.plugin>
+        <mavenjar.plugin>2.4</mavenjar.plugin>
+        <!-- P2 RepoPath -->
+         <p2repo.path>${jenkins.workspace}</p2repo.path>
+        <!--  <p2repo.path>C:\Users\ukt1cob\ICDM\workspace_Log4j_branch_maven_new</p2repo.path> -->
+        <!-- <p2repo.path>\\COB1080575.cob.apac.bosch.com\JenkinsShared\Repository\releases\Develop-Stream-Components</p2repo.path> -->
+        <!-- <p2repo.path>C:\Sharavan\ALMWorkspace\ICDMMavenUsingUpdateSiteNew</p2repo.path> -->
+        <!-- UpdateSite Jar Version -->
+        <logger.version>2.0.0</logger.version>
+        <beanutil.version>1.9.4</beanutil.version>
+        <commoncollection.version>3.2.2</commoncollection.version>
+        <nattable.version>1.9.6</nattable.version>
+        <caldataphy.version>1.5.5</caldataphy.version>
+        <ssdinterface.version>4.0.3</ssdinterface.version>
+        <eASEEcdmService.version>1.30.0</eASEEcdmService.version>
+        <a2lData.version>1.19.1</a2lData.version>
+        <pwclient.version>1.3.0</pwclient.version>
+        <dcmparser.version>2.6.8</dcmparser.version>
+        <caldata.version>1.5.5</caldata.version>
+        <cretastructureparser.version>0.1.0.beta</cretastructureparser.version>
+        <FTEParser.version>0.1.0</FTEParser.version>
+        <pacotocaldata.version>1.7.3</pacotocaldata.version>
+        <cretastructuredata.version>0.1.0.beta</cretastructuredata.version>
+        <ftedata.version>0.1.0</ftedata.version>
+        <cdfparser.version>1.7.3</cdfparser.version>
+        <pacoparser.version>1.7.3</pacoparser.version>
+        <caldatafromhex.version>1.10.2</caldatafromhex.version>
+        <eclipselink.version>2.4.2</eclipselink.version>
+        <cdfwriter.version>1.7.2</cdfwriter.version>
+        <exception.version>1.8.3</exception.version>
+        <ldap.version>2.3.1</ldap.version>
+        <security.version>1.2.1</security.version>
+        <caldataphy2dcm.version>1.5.6</caldataphy2dcm.version>
+        <a2lParser.version>1.19.2</a2lParser.version>
+        <calUtil.version>1.8.3</calUtil.version>
+        <codexmodel.version>1.0.2</codexmodel.version>
+        <codexparser.version>1.0.2</codexparser.version>
+        <eASEEcdmComAPI.version>21.1.0</eASEEcdmComAPI.version>
+        <vectorCdmService.version>21.1.15-SNAPSHOT</vectorCdmService.version>
+        <axis2Transport.version>1.8.0</axis2Transport.version>
+        <shapeanalysis.version>2.1.2</shapeanalysis.version>
+        <catdata.version>1.0.1</catdata.version>
+        <catdataparser.version>1.0.1</catdataparser.version>
+        <checkssd.version>3.12.1</checkssd.version>
+        <cdftocaldata.version>1.7.2</cdftocaldata.version>
+        <cdftocaldataphy.version>1.7.2</cdftocaldataphy.version>
+        <a2lloader.version>2.2.0</a2lloader.version>
+        <caldataanalysis.version>2.2.0</caldataanalysis.version>
+        <log.client.version>1.1.2</log.client.version>
+        <uinotifier.version>2.1.2</uinotifier.version>
+        <pwdservice.version>1.3.0</pwdservice.version>
+        <monicareportparser.version>1.3.0</monicareportparser.version>
+        <caldatautils.version>2.3.1</caldatautils.version>
+        <labfunparser.version>1.3.2</labfunparser.version>
+        <commonutil.version>2.0.2</commonutil.version> 
+        <eCDM2CalData.version>1.3.1</eCDM2CalData.version> 
+        <tulclient.version>1.2.2</tulclient.version> 
+          <mailclient.version>1.0.2</mailclient.version> 
+          <ossdisplay.version>1.0.0</ossdisplay.version>    
+    </properties>
+    <modules>
+        <module>../com.bosch.caltool.icdm.logger</module>
+        <module>../com.bosch.rcputils</module>
+        <module>../com.bosch.caltool.comparator</module>
+        <module>../com.bosch.caltool.datamodel.core</module>
+        <module>../com.bosch.caltool.icdm.plausibelparser</module>
+        <module>../com.bosch.calcomp.externallink</module>
+        <module>../com.bosch.caltool.icdm.common.util</module>
+        <module>../com.bosch.caltool.dmframework</module>
+        <module>../com.bosch.caltool.icdm.model</module>
+        <module>../com.bosch.caltool.icdm.database</module>
+        <module>../com.bosch.caltool.icdm.datamodelstub</module>
+        <module>../com.bosch.caltool.icdm.common.bo</module>
+        <module>../com.bosch.caltool.icdm.bo</module>
+        <module>../com.bosch.caltool.apic.ws.common</module>
+        <module>../com.bosch.caltool.apic.jpa</module>
+        <module>../com.bosch.caltool.a2l.jpa</module>
+        <module>../com.bosch.caltool.apic.vcdminterface</module>
+        <module>../com.bosch.caltool.cdr.jpa</module>
+        <module>../com.bosch.caltool.comppkg.jpa</module>
+        <module>../com.bosch.caltool.icdm.jpa</module>
+        <module>../com.bosch.caltool.excel</module>       
+        <module>../com.bosch.caltool.apic.ws</module>
+        <module>../com.bosch.caltool.icdm.cns.common</module>
+        <module>../com.bosch.caltool.icdm.cns.client</module>
+        <module>../com.bosch.caltool.icdm.oslc.ws</module>
+        <module>../com.bosch.caltool.icdm.cns.server</module>
+        <module>../com.bosch.caltool.icdm.report.common</module>
+        <module>../com.bosch.caltool.icdm.bo.report</module>
+    </modules>
+</project>

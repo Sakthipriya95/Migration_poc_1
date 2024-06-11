@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.bosch.ubk.extlibs.feature"
+      label="External Libraries "
+      version="2017.2.0.20170725101834082"
+      provider-name="Robert Bosch GmbH">
+
+   <description url="http://www.bosch.com">
+      For libraries (.jars mostly) that are downloaded from third parties,
+best practice is to create a bundle and maintain it. This feature
+collects all plugins created from third-party .jars.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <includes
+         id="com.bosch.ubk.extlibs.headless.feature"
+         version="2017.2.0.20170725101834082"
+         name="External Libraries Headless"/>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.apache.commons.collections" version="3.2.0" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.logging"/>
+      <import plugin="org.eclipse.osgi"/>
+      <import plugin="org.dom4j"/>
+      <import plugin="org.apache.xmlbeans"/>
+      <import plugin="org.apache.poi"/>
+   </requires>
+
+   <plugin
+         id="com.jacob"
+         download-size="211"
+         install-size="440"
+         version="1.18.0.20170725101834082"/>
+
+   <plugin
+         id="org.ldap"
+         download-size="15"
+         install-size="15"
+         version="1.0.0.20170725101834082"/>
+
+   <plugin
+         id="org.htmlparser"
+         download-size="271"
+         install-size="311"
+         version="1.0.0.20170725101834082"/>
+
+   <plugin
+         id="com.alexmerz.graphviz"
+         download-size="66"
+         install-size="147"
+         version="2.1.0.20170725101834082"/>
+
+   <plugin
+         id="org.antlr"
+         download-size="1818"
+         install-size="1996"
+         version="3.2.0.20170725101834082"/>
+
+   <plugin
+         id="org.apache.commons.beanutils"
+         download-size="242"
+         install-size="494"
+         version="1.0.0.20170725101834082"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.digester"
+         download-size="535"
+         install-size="799"
+         version="1.0.0.20170725101834082"
+         unpack="false"/>
+
+   <plugin
+         id="org.mockito"
+         download-size="2902"
+         install-size="3130"
+         version="1.10.19.20170725101834082"/>
+
+   <plugin
+         id="org.anarres.cpp"
+         download-size="60"
+         install-size="70"
+         version="1.0.0.20170725101834082"/>
+
+   <plugin
+         id="net.sf.opencsv"
+         download-size="35"
+         install-size="59"
+         version="1.0.0.20170725101834082"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.httpcomponents.client"
+         download-size="710"
+         install-size="879"
+         version="4.2.3.20170725101834082"/>
+
+   <plugin
+         id="org.apache.httpcomponents.core"
+         download-size="470"
+         install-size="582"
+         version="4.2.3.20170725101834082"/>
+
+   <plugin
+         id="com.csvreader"
+         download-size="21"
+         install-size="38"
+         version="2.0.0.20170725101834082"
+         unpack="false"/>
+
+   <plugin
+         id="org.jmathtools.berlios"
+         download-size="351"
+         install-size="384"
+         version="1.0.0.20170725101834082"/>
+
+   <plugin
+         id="com.launch4j"
+         download-size="5868"
+         install-size="10254"
+         version="3.8.0.20170725101834082"/>
+
+   <plugin
+         id="org.apache.poi.addons"
+         download-size="5723"
+         install-size="6836"
+         version="3.9.0.20170725101834082"/>
+
+   <plugin
+         id="org.eclipse.ui.workbench.patch"
+         download-size="30"
+         install-size="64"
+         version="1.0.0.20170725101834082"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="com4j"
+         download-size="671"
+         install-size="1011"
+         version="1.0.0.20170725101834082"/>
+
+</feature>

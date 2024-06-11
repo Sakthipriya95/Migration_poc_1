@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="com.bosch.caltool.apic.ws">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/config"/>
+        <wb-resource deploy-path="/" source-path="/resources"/>
+        <dependent-module archiveName="javax.persistence_2.0.4.v201112161009.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.eclipselink/lib/javax.persistence_2.0.4.v201112161009.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="eclipselink.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.eclipselink/lib/eclipselink.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ojdbc6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.eclipselink/lib/ojdbc6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="orai18n.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.eclipselink/lib/orai18n.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.core.runtime_3.7.0.v20110110.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.apic.ws/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.equinox.common_3.6.0.v20110523.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.apic.ws/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.adapter.logger.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.adapter.logger/com.bosch.calcomp.adapter.logger">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calmodel.caldataphy.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calmodel.caldataphy/com.bosch.calmodel.caldataphy">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calmodel.caldata.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calmodel.caldata/com.bosch.calmodel.caldata">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.calutil.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.calutil/com.bosch.calcomp.calutil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.caldataanalysis.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.caldataanalysis/com.bosch.calcomp.caldataanalysis">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.caldataanalyzer.uinotifier.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.caldataanalyzer.uinotifier/com.bosch.caltool.caldataanalyzer.uinotifier">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="A2LtoDB_Project.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.a2lloader/com.bosch.calcomp.a2lloader">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.parser.a2l.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.parser.a2l/com.bosch.calcomp.parser.a2l">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calmodel.a2ldata.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calmodel.a2ldata/com.bosch.calmodel.a2ldata">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.logger.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.logger/com.bosch.caltool.icdm.logger">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.easee.eASEEcdm_Service.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.easee.eASEEcdm_Service/com.bosch.easee.eASEEcdm_Service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.annotation-api-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javax.annotation-api-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-locator-2.4.0-b31.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/hk2-locator-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-container-servlet.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-container-servlet.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-api-2.4.0-b31.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/hk2-api-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-jaxb.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-media-jaxb.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-api-2.2.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jaxb-api-2.2.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-container-servlet-core.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-container-servlet-core.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-guava-2.22.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-guava-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-server.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-server.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.inject-2.4.0-b31.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javax.inject-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aopalliance-repackaged-2.4.0-b31.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/aopalliance-repackaged-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hk2-utils-2.4.0-b31.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/hk2-utils-2.4.0-b31.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-client.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-client.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.osgi.core-4.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/org.osgi.core-4.2.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="osgi-resource-locator-1.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/osgi-resource-locator-1.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.18.1-GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javassist-3.18.1-GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet-api-3.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javax.servlet-api-3.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.ws.rs-api-2.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javax.ws.rs-api-2.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="persistence-api-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/persistence-api-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="validation-api-1.1.0.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/validation-api-1.1.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-debug-all-5.0.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/asm-debug-all-5.0.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.apic.ws.common.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.apic.ws.common/com.bosch.caltool.apic.ws.common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="junit.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.targetrepo/repository/ecl_jdt/3.12.3_sdk/eclipse/plugins/org.junit_4.12.0.v201504281640/junit.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-core-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-core-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-jaxrs-base-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-jaxrs-base-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-databind-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-databind-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-annotations-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-annotations-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-jaxrs-json-provider-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-jaxrs-json-provider-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-module-jaxb-annotations-2.6.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.fasterxml.jackson/lib/jackson-module-jaxb-annotations-2.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-validator-1.4.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.common.util/lib/commons-validator-1.4.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.easee.cdmWebServiceInterface.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.easee.cdmWebServiceInterface/com.bosch.easee.cdmWebServiceInterface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.easee.eASEEcdm_ComAPI.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.easee.eASEEcdm_ComAPI/com.bosch.easee.eASEEcdm_ComAPI">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-math3-3.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.commons.math3/commons-math3-3.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.common.util.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.common.util/com.bosch.caltool.icdm.common.util">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.dmframework.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.dmframework/com.bosch.caltool.dmframework">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.apache.commons.lang_2.6.0.v201404270220.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.targetrepo/repository/ecl_mylyn/3.12.0_sdk/eclipse/plugins/org.apache.commons.lang_2.6.0.v201404270220.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-common-2.22.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-common-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.apic.vcdminterface.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.apic.vcdminterface/com.bosch.caltool.apic.vcdminterface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.externallink.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.externallink/com.bosch.calcomp.externallink">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.database.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.database/com.bosch.caltool.icdm.database">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.rcputils.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.rcputils/com.bosch.rcputils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.caldatafromhex.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.caldatafromhex/com.bosch.calcomp.caldatafromhex">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-media-multipart-2.22.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-media-multipart-2.22.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mimepull-1.9.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/mimepull-1.9.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.ssd.icdm.jpa.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.ssd.icdm.jpa/com.bosch.ssd.icdm.jpa">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.caldataphy2dcm.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.caldataphy2dcm/com.bosch.calcomp.caldataphy2dcm">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.authentication.ldap.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.authentication.ldap/com.bosch.caltool.authentication.ldap">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.security.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.security/com.bosch.caltool.security">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.exception.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.exception/com.bosch.calcomp.exception">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.catdataparser.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.catdataparser/com.bosch.calcomp.catdataparser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.application.log.client.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.application.log.client/com.bosch.caltool.application.log.client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.parser.dcm.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.parser.dcm/com.bosch.calcomp.parser.dcm">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.shapeanalysis.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.shapeanalysis/com.bosch.calcomp.shapeanalysis">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.cdfwriter.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.cdfwriter/com.bosch.caltool.cdfwriter">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.hexparser.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.hexparser/com.bosch.calcomp.hexparser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.pwdservice.client.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.pwdservice.client/com.bosch.caltool.pwdservice.client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.checkssd.logger.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.checkssd.logger/com.bosch.checkssd.logger">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.checkssd.datamodel/com.bosch.checkssd.datamodel">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.checkssd.reports.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.checkssd.reports/com.bosch.checkssd.reports">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.checkssd.reports.comparision.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.checkssd.reports.comparision/com.bosch.checkssd.reports.comparision">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.checkssd.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.checkssd/com.bosch.checkssd">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.checkssd.exception.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.checkssd.exception/com.bosch.checkssd.exception">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.checkssd.ws.complilabels.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.checkssd.ws.complilabels/com.bosch.checkssd.ws.complilabels">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.commonutil.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.commonutil/com.bosch.calcomp.commonutil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.commontools.evaluator.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.commontools.evaluator/com.bosch.commontools.evaluator">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.ssd.parser.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.ssd.parser/com.bosch.ssd.parser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.migration.serializer.excel.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.migration.serializer.excel/com.bosch.calcomp.migration.serializer.excel">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.pdfbox/lib/commons-logging-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pdfbox-2.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.pdfbox/lib/pdfbox-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="guava-18.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.pdfbox/lib/guava-18.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fontbox-2.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.pdfbox/lib/fontbox-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="boxable-1.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.pdfbox/lib/boxable-1.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.7.10.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.pdfbox/lib/slf4j-api-1.7.10.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsoup-1.9.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.pdfbox/lib/jsoup-1.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-csv-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.pdfbox/lib/commons-csv-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.codexparser.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.codexparser/com.bosch.caltool.codexparser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.codexmodel.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.codexmodel/com.bosch.caltool.codexmodel">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.bo.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.bo/com.bosch.caltool.icdm.bo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.model.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.model/com.bosch.caltool.icdm.model">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.datamodel.core.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.datamodel.core/com.bosch.caltool.datamodel.core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.common.bo.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.common.bo/com.bosch.caltool.icdm.common.bo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.apache.axis2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/org.apache.axis2/org.apache.axis2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.cns.client.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.cns.client/com.bosch.caltool.icdm.cns.client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.cns.common.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.cns.common/com.bosch.caltool.icdm.cns.common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.monicareportparser.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.monicareportparser/com.bosch.calcomp.monicareportparser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.cdfparser.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.cdfparser/com.bosch.calcomp.cdfparser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.pacoparser.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.pacoparser/com.bosch.calcomp.pacoparser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.cdftocaldata.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.cdftocaldata/com.bosch.calcomp.cdftocaldata">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.pacotocaldataphy.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.pacotocaldataphy/com.bosch.calcomp.pacotocaldataphy">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.pacotocaldata.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.pacotocaldata/com.bosch.calcomp.pacotocaldata">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.cdftocaldataphy.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.cdftocaldataphy/com.bosch.calcomp.cdftocaldataphy">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="poi-ooxml-schemas-3.14-20160307.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.poi/poi-ooxml-schemas-3.14-20160307.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="poi-ooxml-3.14-20160307.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.poi/poi-ooxml-3.14-20160307.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="poi-scratchpad-3.14-20160307.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.poi/poi-scratchpad-3.14-20160307.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlbeans-2.6.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.poi/xmlbeans-2.6.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="poi-3.14-20160307.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.poi/poi-3.14-20160307.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dom4j-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.poi/dom4j-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="poi-excelant-3.14-20160307.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.poi/poi-excelant-3.14-20160307.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.caldatautils.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.caldatautils/com.bosch.calcomp.caldatautils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.labfunparser.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.labfunparser/com.bosch.caltool.labfunparser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com4j.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.com4j/lib/com4j.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.excel.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.excel/com.bosch.caltool.excel">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.plausibelparser.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.plausibelparser/com.bosch.caltool.icdm.plausibelparser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.a2lextenderinterface.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.a2lextenderinterface/com.bosch.caltool.icdm.a2lextenderinterface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.ice.ara2l.a2lparser_1.0.0.202201101623.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.a2lextenderinterface/lib/com.bosch.ice.ara2l.a2lparser_1.0.0.202201101623.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.emf.common_2.14.0.v20180527-1134.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.a2lextenderinterface/lib/org.eclipse.emf.common_2.14.0.v20180527-1134.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.blueworx.ulc_3.3.1.202201071730.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.a2lextenderinterface/lib/com.bosch.blueworx.ulc_3.3.1.202201071730.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.dgs.ice.a2lparser_4.8.0.202201101623.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.a2lextenderinterface/lib/com.bosch.dgs.ice.a2lparser_4.8.0.202201101623.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.dgs.ice.aom_4.8.0.202201101623.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.a2lextenderinterface/lib/com.bosch.dgs.ice.aom_4.8.0.202201101623.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.ice.ara2l.a2lextender.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.a2lextenderinterface/lib/com.bosch.ice.ara2l.a2lextender.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.ice.ara2l.a2lparserapi_1.0.0.202201101623.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.a2lextenderinterface/lib/com.bosch.ice.ara2l.a2lparserapi_1.0.0.202201101623.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.ice.ara2l.a2lextender.logger_1.0.0.202201101623.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.a2lextenderinterface/lib/com.bosch.ice.ara2l.a2lextender.logger_1.0.0.202201101623.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.bo.report.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.bo.report/com.bosch.caltool.icdm.bo.report">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.report.common.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.report.common/com.bosch.caltool.icdm.report.common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="juniversalchardet-2.4.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.juniversalCharsetDetector/juniversalchardet-2.4.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.eCDM2CalData.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.eCDM2CalData/com.bosch.calcomp.eCDM2CalData">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-core-2.17.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.calcomp.adapter.logger/lib/log4j-core-2.17.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-api-2.17.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.calcomp.adapter.logger/lib/log4j-api-2.17.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.tulservice.client.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.tulservice.client/com.bosch.calcomp.tulservice.client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oshi-core-5.8.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.calcomp.oshi/oshi-core-5.8.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.7.32.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.calcomp.oshi/slf4j-api-1.7.32.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jna-platform-5.8.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.calcomp.oshi/jna-platform-5.8.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jna-5.8.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.calcomp.oshi/jna-5.8.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-slf4j-impl-2.17.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.calcomp.adapter.logger/lib/log4j-slf4j-impl-2.17.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="antlr-3.4-complete.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.calcomp.antlr/lib/antlr-3.4-complete.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.common.util/lib/commons-collections-3.2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-1.9.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.common.util/lib/commons-beanutils-1.9.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jempbox-1.8.17.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.apache.pdfbox/lib/jempbox-1.8.17.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.mail.client.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.mail.client/com.bosch.calcomp.mail.client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.vector.cdm.server.webservice.client-21.1.15-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.easee.cdmWebServiceInterface/lib/com.vector.cdm.server.webservice.client-21.1.15-SNAPSHOT.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.ssd.api.client.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.ssd.api.client/com.bosch.calcomp.ssd.api.client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>    
+        
+        <property name="context-root" value="com.bosch.caltool.apic.ws"/>
+        <property name="java-output-path" value="/com.bosch.caltool.apic.ws/build/classes"/>
+    </wb-module>
+</project-modules>

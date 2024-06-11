@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2010 Tasktop Technologies and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+         Tasktop Technologies - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.mylyn.builds.sdk"
+      label="%featureName"
+      version="1.4.0.v20140606-1204"
+      provider-name="%providerName"
+      plugin="org.eclipse.mylyn.builds.core">
+
+   <description url="http://eclipse.org/mylyn">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.mylyn.hudson"
+         version="1.4.0.v20140606-1204"/>
+
+   <includes
+         id="org.eclipse.mylyn.builds"
+         version="1.4.0.v20140606-1204"/>
+
+   <plugin
+         id="org.eclipse.mylyn.builds.core.source"
+         download-size="141"
+         install-size="715"
+         version="1.4.0.v20140328-2337"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.builds.ui.source"
+         download-size="133"
+         install-size="339"
+         version="1.4.0.v20140328-2337"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.hudson.core.source"
+         download-size="86"
+         install-size="243"
+         version="1.4.0.v20140416-0043"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.hudson.ui.source"
+         download-size="8"
+         install-size="16"
+         version="1.4.0.v20140520-2249"
+         unpack="false"/>
+
+   <plugin
+         id="com.google.gson"
+         download-size="206"
+         install-size="416"
+         version="2.2.4.v201311231704"
+         unpack="false"/>
+
+</feature>

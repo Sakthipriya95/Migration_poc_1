@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="PIDCTreeViewExtnPt" name="PIDCTreeViewExtnPt" schema="schema/PIDCTreeViewExtnPt.exsd"/>
+   <extension-point id="UseCaseTreeViewExtnPt" name="UseCaseTreeViewExtnPt" schema="schema/UseCaseTreeViewExtnPt.exsd"/>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="org.eclipse.ui"
+            class="org.eclipse.ui.ExtensionFactory:progressView"
+            icon="icons/pview.gif"
+            id="org.eclipse.ui.views.ProgressView"
+            name="Progress View"
+            restorable="true">
+      </view>
+      <view
+            category="com.bosch.caltool.icdm.ui.icdm.category"
+            class="com.bosch.caltool.icdm.common.ui.views.SeriesStatisticsViewPart"
+            icon="icons/series_obj.gif"
+            id="com.bosch.caltool.icdm.common.ui.views.SeriesStatisticsViewPart"
+            name="SeriesStatistics"
+            restorable="true">
+      </view>
+      <view
+            category="com.bosch.caltool.icdm.ui.icdm.category"
+            class="com.bosch.caltool.icdm.common.ui.views.FCBCUsageViewPart"
+            icon="icons/fc_bc_usage.gif"
+            id="com.bosch.caltool.icdm.common.ui.views.FCBCUsageViewPart"
+            name="FC/BC Usage"
+            restorable="true">
+      </view>
+      <view
+            category="org.eclipse.ui"
+            class="com.bosch.caltool.icdm.common.ui.views.TransactionSummaryViewPart"
+            icon="icons/summary.png"
+            id="com.bosch.caltool.icdm.common.ui.views.TransactionSummaryViewPart"
+            name="Transaction Summary"
+            restorable="true">
+      </view>
+   </extension>
+<extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.A2LFile"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.IPIDCAttribute"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.NodeAccessRight"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.Attribute"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.PIDCard"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.PIDCVariant"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+        <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.PIDCDetailsNode"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.PIDCSubVariant"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+        
+      
+     
+      <factory
+            adaptableType="com.bosch.caltool.icdm.client.bo.uc.IUseCaseItemClientBO"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.UseCaseItemPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+       <factory
+            adaptableType="com.bosch.caltool.icdm.client.bo.uc.FavUseCaseItemNode"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.UseCaseItemPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.UseCaseNatInput"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.PIDCVersion"
+            class="com.bosch.caltool.icdm.common.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      </extension>
+<extension
+      point="org.eclipse.ui.services">
+   <sourceProvider
+         provider="com.bosch.caltool.icdm.common.ui.services.CommandState">
+      <variable
+            name="com.bosch.caltool.icdm.product.redostatus"
+            priorityLevel="workbench">
+      </variable>
+      <variable
+            name="com.bosch.caltool.icdm.product.undostatus"
+            priorityLevel="workbench">
+      </variable>
+        <variable
+            name="com.bosch.caltool.icdm.product.reportexportstatus"
+            priorityLevel="workbench">
+      </variable>
+   </sourceProvider>
+</extension>
+<extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.bosch.caltool.icdm.common.ui.command.PIDCTreeDropDownHandler"
+            id="com.bosch.caltool.icdm.common.ui.command.PIDCTreeDropDownHandler"
+            name="PIDC Tree DropDown">
+      </command>
+      <command
+            defaultHandler="com.bosch.caltool.icdm.common.ui.command.FavTreeDropDownHandler"
+            id="com.bosch.caltool.icdm.common.ui.command.FavTreeDropDownHandler"
+            name="PIDC Tree DropDown">
+      </command>
+      <command
+            defaultHandler="com.bosch.caltool.icdm.common.ui.command.PIDCEmptyNodeFilterHandler"
+            id="com.bosch.caltool.icdm.common.ui.command.PIDCEmptyNodeFilterHandler"
+            name="PIDC Varnode Filter">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+       <command
+            defaultHandler="com.bosch.caltool.icdm.common.ui.command.ShowInActiveA2LFilesHandler"
+            id="com.bosch.caltool.icdm.common.ui.command.ShowInActiveA2LFilesHandler"
+            name="Inactive A2L Files Filter">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            defaultHandler="com.bosch.caltool.icdm.common.ui.command.ShowDeletedQnaireReponseHandler"
+            id="com.bosch.caltool.icdm.common.ui.command.ShowDeletedQnaireReponseHandler"
+            name="Deleted Questionnaire Reponse Filter">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+       <command
+            defaultHandler="com.bosch.caltool.icdm.common.ui.command.ShowDeletedPidcVariantHandler"
+            id="com.bosch.caltool.icdm.common.ui.command.ShowDeletedPidcVariantHandler"
+            name="Deleted Variants Filter">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+ </extension>
+  <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="true"
+            locationURI="toolbar:com.bosch.caltool.icdm.common.ui.views.FavoritesViewPart?after=additions">
+         <command
+               commandId="com.bosch.caltool.icdm.common.ui.command.FavTreeDropDownHandler"
+               icon="icons/setting.png"
+               style="pulldown"
+               tooltip="More Options">
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="true"
+            locationURI="toolbar:com.bosch.caltool.icdm.common.ui.views.PIDTreeViewPart?after=additions">
+         <command
+               commandId="com.bosch.caltool.icdm.common.ui.command.PIDCTreeDropDownHandler"
+               icon="icons/setting.png"
+               style="pulldown"
+               tooltip="More Options">
+         </command>
+      </menuContribution>
+        <menuContribution
+            allPopups="true"
+            locationURI="menu:com.bosch.caltool.icdm.common.ui.command.FavTreeDropDownHandler">
+        
+        <command
+               commandId="com.bosch.caltool.icdm.common.ui.command.ShowInActiveA2LFilesHandler"
+               label="Display Inactive A2LFiles"
+               style="toggle"
+               tooltip="Display Inactive A2LFiles">            
+         </command>
+         <command
+               commandId="com.bosch.caltool.icdm.common.ui.command.ShowDeletedQnaireReponseHandler"
+               label="Display Deleted Questionnaire"
+               style="toggle"
+               tooltip="Display Deleted Questionnaire">            
+         </command>
+         <command
+               commandId="com.bosch.caltool.icdm.common.ui.command.ShowDeletedPidcVariantHandler"
+               label="Display Deleted Variants"
+               style="toggle"
+               tooltip="Display Deleted Variants">            
+         </command>
+      </menuContribution>
+       <menuContribution
+            allPopups="true"
+            locationURI="menu:com.bosch.caltool.icdm.common.ui.command.PIDCTreeDropDownHandler">
+         <command
+               commandId="com.bosch.caltool.icdm.common.ui.command.PIDCEmptyNodeFilterHandler"
+               label="Hide Empty nodes"
+               style="toggle"
+               tooltip="Hide Empty nodes">            
+         </command>
+         <command
+               commandId="com.bosch.caltool.icdm.common.ui.command.ShowInActiveA2LFilesHandler"
+               label="Display Inactive A2LFiles"
+               style="toggle"
+               tooltip="Display Inactive A2LFiles">            
+         </command>
+         <command
+               commandId="com.bosch.caltool.icdm.common.ui.command.ShowDeletedQnaireReponseHandler"
+               label="Display Deleted Questionnaire"
+               style="toggle"
+               tooltip="Display Deleted Questionnaire">            
+         </command>
+         <command
+               commandId="com.bosch.caltool.icdm.common.ui.command.ShowDeletedPidcVariantHandler"
+               label="Display Deleted Variants"
+               style="toggle"
+               tooltip="Display Deleted Variants">            
+         </command>
+      </menuContribution>   
+   </extension>
+  <extension
+        point="com.bosch.caltool.icdm.ws.rest.client.cns.listener">
+     <contribution
+           class="com.bosch.caltool.icdm.common.ui.listeners.CnsUiListener">
+     </contribution>
+  </extension>
+  <extension
+        point="com.bosch.caltool.icdm.client.bo.connectionstate.listener">
+     <contribution
+           class="com.bosch.caltool.icdm.common.ui.listeners.ConnectionStatusSystrayListener">
+     </contribution>
+  </extension>
+   
+</plugin>

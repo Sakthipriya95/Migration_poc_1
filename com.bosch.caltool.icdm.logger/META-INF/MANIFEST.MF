@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iCDM Logger
+Bundle-SymbolicName: com.bosch.caltool.icdm.logger;singleton:=true
+Bundle-Version: 2024.3.0
+Bundle-Activator: com.bosch.caltool.icdm.logger.CDMLoggerActivator
+Bundle-Vendor: Robert Bosch
+Require-Bundle: org.eclipse.core.runtime,
+ com.bosch.calcomp.adapter.logger;bundle-version="1.1.0";visibility:=reexport,
+ org.eclipse.ui;bundle-version="3.6.2"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.bosch.caltool.icdm.logger
+Bundle-ClassPath: .

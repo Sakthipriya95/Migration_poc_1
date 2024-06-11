@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Pacoparser
+Bundle-SymbolicName: com.bosch.calcomp.pacoparser
+Bundle-Version: 1.7.3
+Export-Package: com.bosch.calcomp.pacoparser,
+ com.bosch.calcomp.pacoparser.exception,
+ com.bosch.calcomp.pacoparser.factory,
+ com.bosch.calcomp.pacoparser.modeladapter,
+ com.bosch.calcomp.pacoparser.pacomodelcollection,
+ com.bosch.calcomp.pacoparser.tagprocessor,
+ com.bosch.calcomp.pacoparser.utility
+Require-Bundle: com.bosch.calcomp.adapter.logger
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

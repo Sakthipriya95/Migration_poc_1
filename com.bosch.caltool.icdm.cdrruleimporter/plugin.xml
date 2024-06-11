@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.bosch.caltool.icdm.cdrruleimporter.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.bosch.caltool.icdm.cdrruleimporter.Perspective"
+            id="com.bosch.caltool.icdm.cdrruleimporter.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.bosch.caltool.icdm.cdrruleimporter"
+            name="Sample Category">
+      </category>
+      <view
+            category="com.bosch.caltool.icdm.cdrruleimporter"
+            class="com.bosch.caltool.icdm.cdrruleimporter.views.SampleView"
+            icon="icons/sample.gif"
+            id="com.bosch.caltool.icdm.cdrruleimporter.views.SampleView"
+            name="CDR Rule Importer">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               id="com.bosch.caltool.icdm.cdrruleimporter.views.SampleView"
+               ratio="0.5"
+               relationship="right"
+               relative="org.eclipse.ui.views.TaskList">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+
+</plugin>

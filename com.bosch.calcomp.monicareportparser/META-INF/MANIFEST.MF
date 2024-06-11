@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Monicaparser
+Bundle-SymbolicName: com.bosch.calcomp.monicareportparser
+Bundle-Version: 1.3.0
+Bundle-Activator: com.bosch.caltool.monicareportparser.Activator
+Bundle-Vendor: BOSCH
+Require-Bundle: org.eclipse.core.runtime,
+ org.apache.poi;bundle-version="3.12.0",
+ com.bosch.calcomp.adapter.logger;bundle-version="1.4.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.bosch.caltool.monicareportparser,
+ com.bosch.caltool.monicareportparser.data,
+ com.bosch.caltool.monicareportparser.exception,
+ com.bosch.caltool.monicareportparser.util

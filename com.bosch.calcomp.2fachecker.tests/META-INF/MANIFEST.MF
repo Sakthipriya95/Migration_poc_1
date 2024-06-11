@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: 2FA Checker Test
+Bundle-SymbolicName: com.bosch.calcomp.2fachecker.tests
+Bundle-Version: 1.0.1
+Fragment-Host: com.bosch.calcomp.2fachecker;bundle-version="1.0.0"
+Automatic-Module-Name: com.bosch.calcomp.2fachecker.test
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit,
+ com.bosch.calcomp.adapter.logger,
+ com.bosch.calcomp.junittestframework

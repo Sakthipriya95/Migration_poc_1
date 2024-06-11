@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: 2FA Checker
+Bundle-SymbolicName: com.bosch.calcomp.2fachecker
+Bundle-Version: 1.0.1
+Bundle-Vendor: BOSCH
+Automatic-Module-Name: com.bosch.calcomp.2fachecker
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.bosch.calcomp.adapter.logger
+Export-Package: com.bosch.calcomp.twofachecker

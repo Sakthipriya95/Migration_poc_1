@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.htmlparser
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Require-Bundle: org.eclipse.core.runtime
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Robert Bosch GmbH
+Export-Package: org.htmlparser,org.htmlparser.beans,org.htmlparser.fil
+ ters,org.htmlparser.http,org.htmlparser.lexer,org.htmlparser.nodes,or
+ g.htmlparser.parserapplications,org.htmlparser.parserapplications.fil
+ terbuilder,org.htmlparser.parserapplications.filterbuilder.layouts,or
+ g.htmlparser.parserapplications.filterbuilder.wrappers,org.htmlparser
+ .sax,org.htmlparser.scanners,org.htmlparser.tags,org.htmlparser.util,
+ org.htmlparser.util.sort,org.htmlparser.visitors
+Bundle-Name: HtmlParser
+Bundle-Version: 1.0.0.20170725101834082
+Bundle-ClassPath: lib/htmlparser.jar,.
+Bundle-Activator: org.htmlparser.Activator
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

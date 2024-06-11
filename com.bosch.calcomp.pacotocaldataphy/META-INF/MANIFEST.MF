@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Pacotocaldataphy Plug-in
+Bundle-SymbolicName: com.bosch.calcomp.pacotocaldataphy
+Bundle-Version: 1.7.3
+Bundle-Activator: com.bosch.calcomp.pacotocaldataphy.Activator
+Bundle-Vendor: BOSCH
+Bundle-Localization: plugin
+Implementation-Title: com.bosch.calcomp.pacotocaldataphy
+Implementation-Vendor: "Bosch"
+Implementation-Version: 1.3.1
+Class-Path: lib/pacoparser_1.3.1.jar lib/log4j.jar lib/calutil_1.1.0.jar lib/loggeradapter_1.1.0.jar lib/caldata_1.2.1.jar
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.bosch.calcomp.calutil,
+ com.bosch.calcomp.adapter.logger,
+ com.bosch.calcomp.pacoparser,
+ com.bosch.calmodel.caldataphy
+Eclipse-LazyStart: true
+Export-Package: com.bosch.calcomp.pacotocaldataphy,
+ com.bosch.calcomp.pacotocaldataphy.factory.impl,
+ com.bosch.calcomp.pacotocaldataphy.modeladapter
+Bundle-ClassPath: .
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

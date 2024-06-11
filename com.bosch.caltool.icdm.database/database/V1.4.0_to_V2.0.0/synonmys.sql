@@ -1,0 +1,1 @@
+create synonym TABV_APIC_USERS for DGS_ICDM.TABV_APIC_USERS;

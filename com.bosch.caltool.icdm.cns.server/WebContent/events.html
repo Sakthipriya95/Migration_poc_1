@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>iCDM CNS Server - Events</title>
+    <link rel="stylesheet" href="cssstyles.css"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    <script type="text/javascript" src="scripts/common.js"></script>
+</head>
+
+<body onload="loadEventsPageLoad()">
+
+<script src="scripts/headerpart.js"></script>
+
+<div class="main_div">
+
+<h2>Events</h2>
+
+Source state during event
+<input type="radio" name="rbgSrcState" value="rbAll" id="rbAll" checked> ALL
+<input type="radio" name="rbgSrcState" value="rbClosed" id="rbClosed"> CLOSED
+<input type="radio" name="rbgSrcState" value="rbInvalid" id="rbInvalid"> INVALID
+<input type="radio" name="rbgSrcState" value="rbNone" id="rbNone"> NONE
+
+<script>
+createTableNavBar("eventNav");
+</script>
+
+<p id="eventsSection"></p>
+
+<script>
+
+function loadEventsPageLoad() {
+	doLoadData("eventNav", 0, 10);
+}
+
+function doLoadData(navAreaId, startIdx, retSize){
+	var evtSrcState ="ALL";
+	if(document.getElementById("rbClosed").checked){
+		evtSrcState = "CLOSED";
+	} else if(document.getElementById("rbInvalid").checked){
+        evtSrcState = "INVALID";
+    } else if(document.getElementById("rbNone").checked){
+        evtSrcState = "NONE";
+    }
+    loadEventCustom(evtSrcState, startIdx, retSize);
+}
+
+function loadEventCustom(evtSrcState, startIdx, retSize){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    	var respObj = JSON.parse(this.responseText);
+        
+    	updateNavigationArea("eventNav", respObj.pageInfo);
+        
+        var txt;
+        
+        txt = "<table class=\"def_table\">";
+        
+        txt += "<tr class=\"def_table\">";
+        txt += "<th class=\"def_table\">Event ID</th>";
+        txt += "<th class=\"def_table\">Service ID</th>";
+        txt += "<th class=\"def_table\">Source ID</th>";
+        txt += "<th class=\"def_table\">User</th>";
+        txt += "<th class=\"def_table\">Producer ID</th>";
+        txt += "<th class=\"def_table\">Data Size (Bytes)</th>";
+        txt += "<th class=\"def_table\">Created At</th>";
+        txt += "<th class=\"def_table\">Data Available</th>";
+        txt += "<th class=\"def_table\">Source State</th>";
+        txt += "<th class=\"def_table\"></th>";
+        txt += "</tr>";
+        
+        var evtArr = respObj.elementList;
+        for (evtObj of evtArr){
+            txt += "<tr class=\"def_table\">";
+            txt += "<td class=\"def_table\">" + evtObj.eventId + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.serviceId + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.sessionId + "</td>";
+            txt += "<td class=\"def_table\">" + checkNull(evtObj.user) + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.producerId + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.dataLength + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.createdAt + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.dataAvailable + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.sessionState + "</td>";
+            txt += "<td class=\"def_table\"><button class=\"tabdata_button\" onClick=\"openEventDet('" + evtObj.eventId + "')\"\>Details</button></td>";
+            txt += "</tr>";
+        }
+        
+        txt += "</table>"; 
+        
+        document.getElementById("eventsSection").innerHTML = txt;
+      
+    }
+  };
+  
+  var srvUrl = "services/admin/";
+  if(evtSrcState == "ALL"){
+	  srvUrl = srvUrl + "events?";
+  } else {
+	  srvUrl = srvUrl + "eventsbysourcestate?sourcestate=" + evtSrcState + "&";
+  }
+  
+  srvUrl = srvUrl + "startat=" + startIdx + "&size=" + retSize;
+  
+  invokeGetRequest(xmlhttp, srvUrl);
+  
+}
+
+function openEventDet(eventId){
+	window.location.href = "eventdet.html?eventid=" + eventId;
+}
+
+</script>
+
+</div>
+
+<script src="scripts/footerpart.js"></script>
+
+</body>
+</html>

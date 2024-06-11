@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+
+h3 {
+    color: #787878;
+    background: url('lamp.jpg') 0 0 no-repeat;
+    color:white;
+    position: absolute;
+    top: 0px;
+    margin: auto;
+    z-index: 100000;
+    width: 1200px;
+    padding-top: 5px;
+    text-align: left;
+    padding-left: 45px;
+    height: 25px;
+    font-family: serif;
+      font-size: 18px;
+    background-color:   #4775A3;
+    border-bottom-style: solid;
+    border-bottom-color: #787878;
+}
+
+body {
+	padding-top: 20px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #000000;
+    background-repeat: repeat-x;
+}

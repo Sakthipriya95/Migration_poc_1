@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests
+Bundle-SymbolicName: com.bosch.calcomp.parcoparser.tests
+Bundle-Version: 1.7.3
+Bundle-Vendor: BOSCH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.bosch.calcomp.adapter.logger,
+ org.junit,
+ com.bosch.calcomp.exception,
+ com.bosch.calcomp.calutil,
+ com.bosch.calcomp.pacoparser,
+ org.junit
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Import-Package: com.bosch.calcomp.pacotocaldata.factory.impl,
+ com.bosch.calmodel.caldata,
+ com.bosch.calmodel.caldataphy
+

@@ -1,0 +1,21 @@
+DROP TABLE TABV_APIC_USERS cascade constraints;        
+DROP TABLE TABV_APIC_ACCESS_RIGHTS cascade constraints;        
+DROP TABLE TABV_APIC_NODE_ACCESS cascade constraints;          
+DROP TABLE TABV_ATTR_DEPENDENCIES cascade constraints;         
+DROP TABLE TABV_ATTR_GROUPS cascade constraints;               
+DROP TABLE TABV_ATTR_HISTORY cascade constraints;              
+DROP TABLE TABV_ATTRIBUTES cascade constraints;                
+DROP TABLE TABV_ATTR_SUPER_GROUPS cascade constraints;         
+DROP TABLE TABV_ATTR_VALUES cascade constraints;               
+DROP TABLE TABV_ATTR_VALUE_TYPES cascade constraints;          
+DROP TABLE TABV_PID_FAVORITES cascade constraints;             
+DROP TABLE TABV_PID_HISTORY cascade constraints;               
+DROP TABLE TABV_PID_STATUS cascade constraints;                
+DROP TABLE TABV_PROJECT_ATTR cascade constraints;              
+DROP TABLE TABV_PROJECTIDCARD cascade constraints;             
+DROP TABLE TABV_PROJECT_SUB_VARIANTS cascade constraints;      
+DROP TABLE TABV_PROJECT_VARIANTS cascade constraints;          
+DROP TABLE TABV_PROJ_SUB_VARIANTS_ATTR cascade constraints;    
+DROP TABLE TABV_VARIANTS_ATTR cascade constraints;             
+
+DROP SEQUENCE SEQV_ATTRIBUTES;

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='2'>
+  <artifact classifier='osgi.bundle' id='com.bosch.calcomp.hexparser' version='1.5.5'>
+    <properties size='5'>
+      <property name='artifact.size' value='68065'/>
+      <property name='download.size' value='68065'/>
+      <property name='maven-groupId' value='com.bosch.calcomp.hexparser'/>
+      <property name='maven-artifactId' value='com.bosch.calcomp.hexparser'/>
+      <property name='maven-version' value='1.5.5'/>
+    </properties>
+  </artifact>
+  <artifact classifier='osgi.bundle' id='com.bosch.calcomp.hexparser.source' version='1.5.5'>
+    <properties size='6'>
+      <property name='artifact.size' value='30887'/>
+      <property name='download.size' value='30887'/>
+      <property name='maven-groupId' value='com.bosch.calcomp.hexparser'/>
+      <property name='maven-artifactId' value='com.bosch.calcomp.hexparser'/>
+      <property name='maven-version' value='1.5.5'/>
+      <property name='maven-classifier' value='sources'/>
+    </properties>
+  </artifact>
+</artifacts>

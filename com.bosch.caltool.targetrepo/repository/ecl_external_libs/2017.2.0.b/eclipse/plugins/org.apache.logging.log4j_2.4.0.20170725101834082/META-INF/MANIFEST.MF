@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.apache.logging.log4j;singleton:=true
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Require-Bundle: org.eclipse.core.runtime
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Robert Bosch GmbH
+Eclipse-ExtensibleAPI: true
+Export-Package: com.bosch.wbp.logging.configurator,org.apache.log4j,or
+ g.apache.log4j.config,org.apache.log4j.helpers,org.apache.log4j.spi,o
+ rg.apache.log4j.xml,org.apache.logging.log4j,org.apache.logging.log4j
+ .core,org.apache.logging.log4j.core.appender,org.apache.logging.log4j
+ .core.appender.rewrite,org.apache.logging.log4j.core.appender.rolling
+ ,org.apache.logging.log4j.core.appender.routing,org.apache.logging.lo
+ g4j.core.config,org.apache.logging.log4j.core.config.plugins,org.apac
+ he.logging.log4j.core.filter,org.apache.logging.log4j.core.impl,org.a
+ pache.logging.log4j.core.jmx,org.apache.logging.log4j.core.layout,org
+ .apache.logging.log4j.core.lookup,org.apache.logging.log4j.core.net,o
+ rg.apache.logging.log4j.core.pattern,org.apache.logging.log4j.core.se
+ lector,org.apache.logging.log4j.message,org.apache.logging.log4j.simp
+ le,org.apache.logging.log4j.spi,org.apache.logging.log4j.status,org.a
+ pache.logging.log4j.util
+Bundle-Name: Apache Log4j 2.4 API and Core jar
+Bundle-Version: 2.4.0.20170725101834082
+Bundle-ClassPath: .,lib/log4j-1.2-api-2.4.jar,lib/log4j-core-2.4.jar,l
+ ib/log4j-api-2.4.jar
+Bundle-Activator: com.bosch.wbp.logging.configurator.Activator
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

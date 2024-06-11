@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.bosch.caltool.apic.ui.category"
+            name="PIDC">
+      </category>
+      <view
+            category="com.bosch.caltool.apic.ui.category"
+            class="com.bosch.caltool.icdm.common.ui.views.PIDTreeViewPart"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/pid_tree.png"
+            id="com.bosch.caltool.icdm.common.ui.views.PIDTreeViewPart"
+            name="PID Card"
+            restorable="true">
+      </view>      
+      <view
+            category="com.bosch.caltool.apic.ui.category"
+            class="com.bosch.caltool.icdm.common.ui.views.FavoritesViewPart"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/favorites.png"
+            id="com.bosch.caltool.icdm.common.ui.views.FavoritesViewPart"
+            name="Favorites"
+            restorable="true">
+      </view>
+      <view
+            category="com.bosch.caltool.apic.ui.category"
+            class="com.bosch.caltool.icdm.common.ui.views.OutlineViewPart"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/outline_co.gif"
+            id="com.bosch.caltool.icdm.common.ui.views.OutlineViewPart"
+            name="Navigator/Filter"
+            restorable="true">
+      </view>
+      <view
+            category="com.bosch.caltool.apic.ui.category"
+            class="com.bosch.caltool.icdm.common.ui.views.ScratchPadViewPart"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/scratch_pad.png"
+            id="com.bosch.caltool.icdm.common.ui.views.ScratchPadViewPart"
+            name="Scratch Pad"
+            restorable="true">
+      </view>
+      <view
+            category="com.bosch.caltool.apic.ui.category"
+            class="com.bosch.caltool.icdm.common.ui.views.PIDCDetailsViewPart"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/tree_obj.png"
+            id="com.bosch.caltool.icdm.common.ui.views.PIDCDetailsViewPart"
+            name="Structure"
+            restorable="true">
+      </view>
+      <view
+            category="com.bosch.caltool.apic.ui.category"
+            class="com.bosch.caltool.apic.ui.views.PIDCHistoryViewPart"
+            id="com.bosch.caltool.apic.ui.views.PIDCHistoryViewPart"
+            name="PIDC History"
+            allowMultiple="true"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/clock.png"
+            restorable="true"
+            visible="false">
+      </view>
+      <view
+            category="com.bosch.caltool.apic.ui.category"
+            class="com.bosch.caltool.apic.ui.views.FocusMatrixEditView"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/tree_obj.png"
+            id="com.bosch.caltool.apic.ui.views.FocusMatrixEditView"
+            name="Focus Matrix Edit"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.bosch.caltool.apic.ui.editors.PIDCEditor"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/pidc_obj.gif"
+            id="com.bosch.caltool.apic.ui.editors.PIDCEditor"
+            name="ProjectIDCard">
+      </editor>
+      <editor
+            class="com.bosch.caltool.apic.ui.editors.AttributesEditor"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/attr_editor.png"
+            id="com.bosch.caltool.apic.ui.editors.AttributesEditor"
+            name="Attributes">
+      </editor>
+      <editor
+            class="com.bosch.caltool.apic.ui.editors.PIDCSearchEditor"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/Search.gif"
+            id="com.bosch.caltool.apic.ui.editors.PIDCSearchEditor"
+            name="PIDC Scout">
+      </editor>
+      <editor
+            class="com.bosch.caltool.apic.ui.editors.PIDCCompareEditor"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/compare_editor.png"
+            id="com.bosch.caltool.apic.ui.editors.PIDCCompareEditor"
+            name="Compare ProjectIDCard">
+      </editor>
+      <editor
+            class="com.bosch.caltool.apic.ui.editors.AliasDefinitionEditor"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/alias.png"
+            id="com.bosch.caltool.apic.ui.editors.AliasDefinitionEditor"
+            name="Alias Details Editor">
+      </editor>
+   </extension>
+   <extension
+         point="com.bosch.caltool.icdm.common.ui.PIDCTreeViewExtnPt">
+      <contribution
+            class="com.bosch.caltool.apic.ui.actions.PIDCTreeViewActionSet">
+      </contribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.bosch.caltool.apic.ui.commands.PIDCDetailsDropDownHandler"
+            id="com.bosch.caltool.apic.ui.commands.PIDCDetailsDropDownHandler"
+            name="PIDC Details DropDown">
+      </command>
+      <command
+            defaultHandler="com.bosch.caltool.apic.ui.commands.PIDCDetailsFilterHandler"
+            id="com.bosch.caltool.apic.ui.commands.PIDCDetailsFilterDeleteHandler"
+            name="PIDC Details Filter">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            defaultHandler="com.bosch.caltool.apic.ui.commands.PIDCDetailsVsShowHandler"
+            id="com.bosch.caltool.apic.ui.commands.PIDCDetailsFilterVsShowHandler"
+            name="Show/Hide PIDC Virtual Structure">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:true"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            defaultHandler="com.bosch.caltool.apic.ui.commands.PIDCUnclearedDetailsFilterHandler"
+            id="com.bosch.caltool.apic.ui.commands.PIDCUnclearedDetailsVarFilterHandler"
+            name="PIDC Uncleared Details Filter">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+         
+      <menuContribution
+            allPopups="true"
+            locationURI="toolbar:com.bosch.caltool.icdm.common.ui.views.PIDCDetailsViewPart?after=additions">
+         <command
+               commandId="com.bosch.caltool.apic.ui.commands.PIDCDetailsDropDownHandler"
+               icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/setting.png"
+               style="pulldown"
+               tooltip="More Options">
+         </command>
+         
+            <visibleWhen>
+                  <reference
+                        definitionId="org.eclipse.ui.examples.contributions.view.activeEditor">
+                  </reference>
+               </visibleWhen>
+      </menuContribution>
+      <menuContribution
+            allPopups="true"
+            locationURI="menu:com.bosch.caltool.apic.ui.commands.PIDCDetailsDropDownHandler">
+         <command
+               commandId="com.bosch.caltool.apic.ui.commands.PIDCDetailsFilterDeleteHandler"
+               label="Show Deleted Items"
+               style="toggle"
+               tooltip="Show Deleted Variants and Sub-Variants">            
+         </command>
+         <separator
+               name="com.bosch.caltool.apic.ui.commands.PIDCDetailsDropDownHandler.separator1"
+               visible="true">
+         </separator>
+         <command
+               commandId="com.bosch.caltool.apic.ui.commands.PIDCDetailsFilterVsShowHandler"
+               label="Show Virtual Structure"
+               style="toggle"
+               tooltip="Switch between virtual structure(if present) and original structure of this PIDC">
+         </command>
+         <command
+               commandId="com.bosch.caltool.apic.ui.commands.PIDCUnclearedDetailsVarFilterHandler"
+               label="Show Only Uncleared / Missing Mandatory Items"
+               style="toggle"
+               tooltip="Show Only Uncleared / Missing Mandatory Variants and Sub-Variants">
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="com.bosch.calcomp.externallink.action">
+      <handlers
+            creation="com.bosch.calcomp.externallink.creation.DefaultLinkCreationActionHandler"
+            process="com.bosch.caltool.apic.ui.extlink.PidcVersionExternalLinkOpenAction"
+            type="PIDC_VERSION">
+      </handlers>
+      <handlers
+            creation="com.bosch.calcomp.externallink.creation.DefaultLinkCreationActionHandler"
+            process="com.bosch.caltool.apic.ui.extlink.PidcExternalLinkOpenAction"
+            type="PIDC">
+      </handlers>
+      <handlers
+            creation="com.bosch.calcomp.externallink.creation.DefaultLinkCreationActionHandler"
+            process="com.bosch.caltool.apic.ui.extlink.PidcVariantExternalLinkOpenAction"
+            type="PIDC_VARIANT">
+      </handlers>
+       <handlers
+            creation="com.bosch.calcomp.externallink.creation.DefaultLinkCreationActionHandler"
+            process="com.bosch.caltool.apic.ui.extlink.PidcSubVariantExternalLinkOpenAction"
+            type="SUB_VARIANT">
+      </handlers>
+      <handlers
+            creation="com.bosch.calcomp.externallink.creation.DefaultLinkCreationActionHandler"
+            process="com.bosch.caltool.apic.ui.extlink.UsecaseInPidcVersnExternalLinkOpenAction"
+            type="USE_CASE">
+      
+      </handlers>
+      <handlers
+            creation="com.bosch.calcomp.externallink.creation.DefaultLinkCreationActionHandler"
+            process="com.bosch.caltool.apic.ui.extlink.UsecaseInPidcVersnExternalLinkOpenAction"
+            type="USE_CASE_SECT">
+      
+      </handlers>
+      
+      <handlers
+            creation="com.bosch.calcomp.externallink.creation.DefaultLinkCreationActionHandler"
+            process="com.bosch.caltool.apic.ui.extlink.UsecaseInPidcVersnExternalLinkOpenAction"
+            type="USE_CASE_GROUP">
+      </handlers>
+           
+      <handlers
+            creation="com.bosch.calcomp.externallink.creation.DefaultLinkCreationActionHandler"
+            process="com.bosch.caltool.apic.ui.extlink.UsecaseInPidcVersnExternalLinkOpenAction"
+            type="PROJECT_USE_CASE">
+      
+      
+      </handlers>
+   </extension>
+<extension
+         point="org.eclipse.core.runtime.adapters">
+               <factory
+            adaptableType="com.bosch.caltool.icdm.model.apic.pidc.IProjectObject"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.icdm.client.bo.apic.PIDCDetailsNode"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.apic.ui.editors.compare.PidcNattableRowObject"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+       <factory
+            adaptableType="com.bosch.caltool.icdm.model.apic.pidc.PidcA2lFileExt"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+           <factory
+            adaptableType="com.bosch.caltool.icdm.model.apic.attr.Attribute"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+       <factory
+            adaptableType="com.bosch.caltool.icdm.model.apic.attr.AttributeValue"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.icdm.model.apic.attr.AttrNValueDependency"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+       <factory
+            adaptableType="com.bosch.caltool.icdm.model.apic.attr.AttrGroup"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+              <factory
+            adaptableType="com.bosch.caltool.icdm.model.apic.attr.AttrSuperGroup"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+         </factory>
+         <factory
+            adaptableType="com.bosch.caltool.icdm.model.user.NodeAccess"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+       </extension>
+</plugin>

@@ -1,0 +1,18 @@
+{
+	"webflowID":"1001",
+	"pverName":"P1337_MEDCC79",
+	"pverVariant":"M240",
+	"pverRevision":"0",
+	"a2lFileName":null,
+	"hexFilePidcElement":
+	{
+		"1":768112367 ,
+		"2":768112367
+	},
+	"hexfileIdxMap":
+	{
+		"1":"HEX_EA56HPE6M240LG032KAHA_COMPLI_ok.hex",
+		"2":"HEX_EA56HPE6M240LG032KAHA.hex"
+	}
+}
+

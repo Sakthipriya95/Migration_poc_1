@@ -1,0 +1,20 @@
+GRANT select, insert, update, delete on TABV_APIC_ACCESS_RIGHTS to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_APIC_NODE_ACCESS to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_ATTR_DEPENDENCIES to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_ATTR_GROUPS to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_ATTR_HISTORY to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_ATTRIBUTES to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_ATTR_SUPER_GROUPS to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_ATTR_VALUES to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_ATTR_VALUE_TYPES to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_PID_FAVORITES to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_PID_HISTORY to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_PID_STATUS to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_PROJECT_ATTR to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_PROJECTIDCARD to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_PROJECT_SUB_VARIANTS to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_PROJECT_VARIANTS to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_PROJ_SUB_VARIANTS_ATTR to DGS_ICDM_JPA;
+GRANT select, insert, update, delete on TABV_VARIANTS_ATTR to DGS_ICDM_JPA;
+
+GRANT select on SEQV_ATTRIBUTES to DGS_ICDM_JPA;

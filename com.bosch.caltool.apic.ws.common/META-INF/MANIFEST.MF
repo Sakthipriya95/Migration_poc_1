@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: APIC Web Service Common Classes
+Bundle-SymbolicName: com.bosch.caltool.apic.ws.common
+Bundle-Version: 2024.3.0
+Bundle-Vendor: BOSCH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.bosch.caltool.apic.ws.common,
+ com.bosch.caltool.apic.ws.common.dataobject
+Require-Bundle: org.glassfish.jersey;bundle-version="2.22.1"

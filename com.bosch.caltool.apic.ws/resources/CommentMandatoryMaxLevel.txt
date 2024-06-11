@@ -1,0 +1,10 @@
+The number of mandatory attributes that have to be filled for the level <level>. 
+
+The number of mandatory attributes to be filled can be different due to:
+- the number of variants and/or subvariants with mandatory attributes
+- differences due to attribute dependencies
+
+Only on PIDC level it is possible to have an overall maximum number of
+mandatory attributes -> this is the number of defined mandatory attributes.
+On variant and subvariant level the maximum number of attributs depends on the project 
+structure. 

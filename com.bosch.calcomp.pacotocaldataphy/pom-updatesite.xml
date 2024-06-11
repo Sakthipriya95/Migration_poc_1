@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.bosch.calcomp.pacotocaldataphy</groupId>
+  <artifactId>com.bosch.calcomp.pacotocaldataphy</artifactId>
+  <packaging>eclipse-plugin</packaging>
+    <parent>
+      <groupId>com.bosch.caltool.components.updatesite.main</groupId>
+      <artifactId>com.bosch.caltool.components.updatesite.main</artifactId>
+      <version>2.0.0</version>
+      <relativePath>../com.bosch.caltool.components.updatesite.main</relativePath>
+  </parent>
+ <properties>
+     <sonar.projectVersion>1.1.0</sonar.projectVersion>
+ </properties>
+ <version>1.7.3</version>
+</project>

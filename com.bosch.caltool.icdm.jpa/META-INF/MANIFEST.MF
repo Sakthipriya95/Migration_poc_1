@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iCDM JPA
+Bundle-SymbolicName: com.bosch.caltool.icdm.jpa
+Bundle-Version: 2024.3.0
+Export-Package: com.bosch.caltool.icdm.jpa
+Bundle-Vendor: Robert Bosch
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: com.bosch.caltool.icdm.jpa.JPAActivator
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.6.0",
+ org.eclipse.ui;bundle-version="3.6.2",
+ com.bosch.caltool.icdm.common.util;bundle-version="1.1.0";visibility:=reexport,
+ com.bosch.caltool.icdm.logger;bundle-version="1.1.0",
+ com.bosch.calcomp.adapter.logger;bundle-version="1.1.0",
+ com.bosch.caltool.eclipselink;bundle-version="2.4.1",
+ com.bosch.calmodel.a2ldata;bundle-version="1.9.0",
+ com.bosch.caltool.a2l.jpa;bundle-version="1.0.0",
+ com.bosch.calmodel.caldata;bundle-version="1.2.2",
+ com.bosch.caltool.dmframework;bundle-version="1.0.0",
+ com.bosch.caltool.cdr.jpa;bundle-version="1.0.0";visibility:=reexport,
+ com.bosch.ssd.icdm.jpa;bundle-version="3.0.0",
+ com.bosch.caltool.comppkg.jpa;bundle-version="1.11.0",
+ com.bosch.caltool.apic.vcdminterface;bundle-version="1.11.0",
+ com.bosch.calmodel.caldataphy,
+ com.bosch.caltool.security;bundle-version="1.0.1",
+ com.bosch.caltool.authentication.ldap;bundle-version="1.0.0",
+ com.bosch.calcomp.externallink,
+ com.bosch.caltool.icdm.model;bundle-version="2.3.0",
+ com.bosch.caltool.icdm.bo;bundle-version="2.3.0",
+ com.bosch.caltool.icdm.common.bo,
+ com.bosch.caltool.icdm.cns.client
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: .
+

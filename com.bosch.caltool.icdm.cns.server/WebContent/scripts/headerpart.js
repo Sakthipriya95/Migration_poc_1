@@ -1,0 +1,1 @@
+document.write('<header><img src="images/top_bosch.png" /><table><tr><td><img src="images/icdm_logo.png" class="header_logo_img" /></td><td><h1>&nbsp;iCDM CNS Server</h1></td></tr></table></header>');

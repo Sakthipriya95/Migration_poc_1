@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>iCDM CNS Server - Data Producers</title>
+    <link rel="stylesheet" href="cssstyles.css"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    <script type="text/javascript" src="scripts/common.js"></script>
+</head>
+
+<body onload="loadProducersPageLoad()">
+
+<script src="scripts/headerpart.js"></script>
+
+<div class="main_div">
+
+<h2>Data Producers</h2>
+
+<script>
+createTableNavBar("prodNav");
+</script>
+
+<p id="producersSection"></p>
+
+<script>
+
+function loadProducersPageLoad() {
+	doLoadData("prodNav", 0, 10);
+}
+
+function doLoadData(navAreaId, startIdx, retSize){
+	
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var respObj = JSON.parse(this.responseText);
+        
+        updateNavigationArea("prodNav", respObj.pageInfo);
+        
+        var txt = "<table class=\"def_table\" border='1'>";
+        
+        txt += "<tr class=\"def_table\">";
+        txt += "<th class=\"def_table\">Producer ID</th>";
+        txt += "<th class=\"def_table\">IP Address</th>";
+        txt += "<th class=\"def_table\">Port</th>";
+        txt += "<th class=\"def_table\">Events</th>";
+        txt += "<th class=\"def_table\">Data Created (Bytes)</th>";
+        txt += "<th class=\"def_table\">Last Contacted At</th>";
+        txt += "<th class=\"def_table\"></th>";
+        txt += "</tr>";
+       
+        for (proObj of respObj.elementList){
+        	txt += "<tr class=\"def_table\">";
+            txt += "<td class=\"def_table\">" + proObj.producerId + "</td>";
+            txt += "<td class=\"def_table\">" + proObj.ipAddress + "</td>";
+            txt += "<td class=\"def_table\">" + proObj.port + "</td>";
+            txt += "<td class=\"def_table\">" + proObj.eventCount + "</td>";
+            txt += "<td class=\"def_table\">" + proObj.totalDataSize + "</td>";
+            txt += "<td class=\"def_table\">" + checkNull(proObj.lastContactAt) + "</td>";
+            txt += "<td class=\"def_table\"><button class=\"tabdata_button\" onClick=\"openProdDet('" + proObj.producerId + "')\"\>Details</button></td>";
+            txt += "</tr>";
+        }  
+        
+        txt += "</table>"; 
+        
+        document.getElementById("producersSection").innerHTML = txt;
+      
+    }
+  };
+  
+  invokeGetRequest(xmlhttp, "services/admin/producers?startat=" + startIdx + "&size=" + retSize);
+    
+}
+
+function openProdDet(producerId){
+    window.location.href = "producerdet.html?prodid=" + producerId;
+}
+</script>
+
+</div>
+
+<script src="scripts/footerpart.js"></script>
+
+</body>
+</html>

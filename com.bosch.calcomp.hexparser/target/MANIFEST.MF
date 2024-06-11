@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Implementation-Title: com.bosch.calcomp.hexparser
+Bundle-SymbolicName: com.bosch.calcomp.hexparser
+Implementation-Version: 1.1.0
+Require-Bundle: org.eclipse.core.runtime,com.bosch.calcomp.calutil,com
+ .bosch.calcomp.exception,com.bosch.calcomp.adapter.logger
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: BOSCH
+Class-Path: lib/log4j.jar lib/calutil_1.0.1.jar lib/calcompexception_1
+ .0.0.jar lib/loggeradapter_1.0.0.jar
+Import-Package: org.apache.commons.codec.binary
+Implementation-Vendor: "Bosch"
+Export-Package: com.bosch.calcomp.hexparser,com.bosch.calcomp.hexparse
+ r.exception,com.bosch.calcomp.hexparser.factory,com.bosch.calcomp.hex
+ parser.model,com.bosch.calcomp.hexparser.model.handler,com.bosch.calc
+ omp.hexparser.process,com.bosch.calcomp.hexparser.util
+Bundle-Name: Hexparser Plug-in
+Bundle-Version: 1.5.5
+Bundle-Localization: plugin
+Eclipse-AutoStart: true
+Bundle-ClassPath: .
+Bundle-Activator: com.bosch.calcomp.hexparser.plugin.HexparserPlugin
+

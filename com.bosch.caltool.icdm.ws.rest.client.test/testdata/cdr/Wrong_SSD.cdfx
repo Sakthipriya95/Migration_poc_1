@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE MSRSW PUBLIC "-//ASAM//DTD CALIBRATION DATA FORMAT:V2.0.0:LAI:IAI:XML:CDF200.XSD//EN" "cdf_v2.0.0.sl.dtd">
+
+<MSRSW>
+    <CATEGORY>CDF20</CATEGORY>
+    <SW-SYSTEMS>
+        <SW-SYSTEM>
+            <SHORT-NAME>tbd</SHORT-NAME>
+            <SW-INSTANCE-SPEC>
+                <SW-INSTANCE-TREE>
+                    <SHORT-NAME>tbd</SHORT-NAME>
+                    <CATEGORY>NO_VCD</CATEGORY>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>AirCtl_pAirHi_C</SHORT-NAME>
+                        <LONG-NAME/>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF> </SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>hPa</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>750.0</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Mon Nov 12 07:35:42 CET 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>67225 datasets using this label</P>
+    <P>Label has 125 different values</P>
+    <P>13891 datasets using this value (20 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                </SW-INSTANCE-TREE>
+            </SW-INSTANCE-SPEC>
+        </SW-SYSTEM>
+    </SW-SYSTEMS>
+</MSRSW>

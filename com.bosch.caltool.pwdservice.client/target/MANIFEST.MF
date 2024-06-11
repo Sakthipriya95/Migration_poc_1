@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.bosch.caltool.pwdservice.client
+Export-Package: com.bosch.caltool.pwdservice,com.bosch.caltool.pwdserv
+ ice.exception
+Bundle-Name: Password Service Client
+Bundle-Version: 1.2.0
+Bundle-ClassPath: .
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: Bosch
+

@@ -1,0 +1,64 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.apache.httpcomponents.core
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Require-Bundle: org.eclipse.core.runtime
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.apache.http;uses:="org.apache.http.protocol,org.ap
+ ache.http.params,org.apache.http.util",org.apache.http.annotation,org
+ .apache.http.concurrent,org.apache.http.entity;uses:="org.apache.http
+ ",org.apache.http.impl; uses:="org.apache.http.impl.entity,  org.apac
+ he.http.io,  org.apache.http.protocol,  org.apache.http.params,  org.
+ apache.http",org.apache.http.impl.entity;uses:="org.apache.http.io,or
+ g.apache.http.entity,org.apache.http",org.apache.http.impl.io; uses:=
+ "org.apache.http.message,  org.apache.http.io,  org.apache.http.param
+ s,  org.apache.http.util,  org.apache.http",org.apache.http.impl.nio;
+  uses:="org.apache.http.io,  org.apache.http.protocol,  org.apache.ht
+ tp.impl.io,  org.apache.http.impl,  org.apache.http.params,  org.apac
+ he.http.entity,  org.apache.http.nio.util,  org.apache.http.impl.nio.
+ reactor,  org.apache.http.nio,  org.apache.http.nio.reactor.ssl,  org
+ .apache.http.nio.reactor,  javax.net.ssl,  org.apache.http",org.apach
+ e.http.impl.nio.codecs; uses:="org.apache.http.message,  org.apache.h
+ ttp.impl.io,  org.apache.http.params,  org.apache.http.nio.reactor,  
+ org.apache.http.util,  org.apache.http.nio,  org.apache.http",org.apa
+ che.http.impl.nio.pool; uses:="org.apache.http.pool,  org.apache.http
+ .params,  org.apache.http.nio.reactor.ssl,  org.apache.http.nio.react
+ or,  org.apache.http.nio.util,  org.apache.http.nio.pool,  javax.net.
+ ssl,  org.apache.http.nio,  org.apache.http.concurrent,  org.apache.h
+ ttp",org.apache.http.impl.nio.reactor; uses:="org.apache.http.nio.rea
+ ctor.ssl,  org.apache.http.params,  org.apache.http.nio.reactor,  org
+ .apache.http.nio.util,  javax.net.ssl,  org.apache.http.util",org.apa
+ che.http.impl.nio.ssl; uses:="org.apache.http.impl.nio,  org.apache.h
+ ttp.params,  org.apache.http.nio.reactor,  org.apache.http.impl.nio.r
+ eactor,  javax.net.ssl,  org.apache.http.nio",org.apache.http.impl.po
+ ol; uses:="org.apache.http.pool,  org.apache.http.params,  javax.net.
+ ssl,  org.apache.http",org.apache.http.io;uses:="org.apache.http.util
+ ,org.apache.http",org.apache.http.message;uses:="org.apache.http.para
+ ms,org.apache.http.util,org.apache.http",org.apache.http.nio;uses:="o
+ rg.apache.http.protocol,org.apache.http.nio.reactor,org.apache.http",
+ org.apache.http.nio.entity; uses:="org.apache.http.entity,  org.apach
+ e.http.nio.util,  org.apache.http.nio,  org.apache.http",org.apache.h
+ ttp.nio.params;uses:="org.apache.http.params",org.apache.http.nio.poo
+ l;uses:="org.apache.http.pool,org.apache.http.nio.reactor,org.apache.
+ http.concurrent",org.apache.http.nio.protocol; uses:="org.apache.http
+ .protocol,  org.apache.http.pool,  org.apache.http.params,  org.apach
+ e.http.entity,  org.apache.http.nio.util,  org.apache.http.nio,  org.
+ apache.http.nio.entity,  org.apache.http,  org.apache.http.concurrent
+ ",org.apache.http.nio.reactor;uses:="org.apache.http.util",org.apache
+ .http.nio.reactor.ssl;uses:="org.apache.http.nio.reactor,javax.net.ss
+ l",org.apache.http.nio.util;uses:="org.apache.http.io,org.apache.http
+ .nio",org.apache.http.params;uses:="org.apache.http",org.apache.http.
+ pool;uses:="org.apache.http.concurrent",org.apache.http.protocol;uses
+ :="org.apache.http.params,org.apache.http",org.apache.http.util;uses:
+ ="org.apache.http",org.apache.httpcomponents.core;uses:="org.eclipse.
+ core.runtime,org.osgi.framework"
+Bundle-Name: Core
+Bundle-Version: 4.2.3.20170725101834082
+Bundle-ClassPath: lib/org.apache.httpcomponents.httpcore_4.2.3.jar,.
+Bundle-Activator: org.apache.httpcomponents.core.Activator
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

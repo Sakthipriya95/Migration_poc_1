@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: vCDM Interface Tests
+Bundle-SymbolicName: com.bosch.caltool.apic.vcdminterface.test
+Bundle-Version: 2024.3.0
+Bundle-Vendor: BOSCH
+Fragment-Host: com.bosch.caltool.apic.vcdminterface
+Automatic-Module-Name: com.bosch.caltool.apic.vcdminterface.test
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit,
+ com.bosch.caltool.pwdservice.client,
+ com.bosch.calcomp.junittestframework

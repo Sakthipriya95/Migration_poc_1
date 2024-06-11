@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="com.bosch.caltool.icdm.oslc.ws">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="com.bosch.caltool.dmframework.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.dmframework/com.bosch.caltool.dmframework">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.database.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.database/com.bosch.caltool.icdm.database">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.logger.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.logger/com.bosch.caltool.icdm.logger">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.adapter.logger.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.adapter.logger/com.bosch.calcomp.adapter.logger">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.common.util.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.common.util/com.bosch.caltool.icdm.common.util">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.persistence_2.0.4.v201112161009.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.eclipselink/lib/javax.persistence_2.0.4.v201112161009.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.jpa.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.jpa/com.bosch.caltool.icdm.jpa">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.apic.jpa.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.apic.jpa/com.bosch.caltool.apic.jpa">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.pwdservice.client.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.pwdservice.client/com.bosch.caltool.pwdservice.client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.security.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.security/com.bosch.caltool.security">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-httpclient-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/commons-httpclient-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-transport-local-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-transport-local-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-cli-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/commons-cli-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-metadata-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-metadata-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-fileupload-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/commons-fileupload-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpcore-4.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/httpcore-4.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-clustering-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-clustering-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-jibx-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-jibx-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="geronimo-stax-api_1.0_spec-1.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/geronimo-stax-api_1.0_spec-1.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-java2wsdl-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-java2wsdl-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axiom-dom-1.2.13.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axiom-dom-1.2.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-corba-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-corba-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mail-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/mail-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="activation-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/activation-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlbeans-2.3.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/xmlbeans-2.3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-adb-codegen-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-adb-codegen-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-jaxws-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-jaxws-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-json-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-json-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-fastinfoset-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-fastinfoset-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-ant-plugin-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-ant-plugin-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-codec-1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/commons-codec-1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="junit.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/junit.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="antlr-2.7.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/antlr-2.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="woden-impl-commons-1.0M9.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/woden-impl-commons-1.0M9.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-jaxbri-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-jaxbri-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-soapmonitor-servlet-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-soapmonitor-servlet-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-codegen-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-codegen-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="woden-api-1.0M9.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/woden-api-1.0M9.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-mtompolicy-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-mtompolicy-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/commons-io-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-xmlbeans-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-xmlbeans-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-spring-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-spring-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-transport-http-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-transport-http-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wstx-asl-3.2.9.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/wstx-asl-3.2.9.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="woden-impl-dom-1.0M9.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/woden-impl-dom-1.0M9.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-saaj-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-saaj-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axiom-impl-1.2.13.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axiom-impl-1.2.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oslc4j-jena-provider-2.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/oslc4j-jena-provider-2.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jena-iri-0.9.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/jena-iri-0.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xercesImpl-2.8.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/xercesImpl-2.8.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wink-server-1.2.1-incubating.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/wink-server-1.2.1-incubating.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jena-core-2.7.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/jena-core-2.7.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr311-api-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/jsr311-api-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oslc4j-core-2.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/oslc4j-core-2.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.equinox.common_3.6.0.v20110523.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/org.eclipse.equinox.common_3.6.0.v20110523.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wink-common-1.2.1-incubating.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/wink-common-1.2.1-incubating.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.slf4j.api_1.6.4.v20120130-2120.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/org.slf4j.api_1.6.4.v20120130-2120.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.core.runtime_3.7.0.v20110110.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/org.eclipse.core.runtime_3.7.0.v20110110.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-adb-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-adb-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oslc4j-wink-2.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/oslc4j-wink-2.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axiom-api-1.2.13.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axiom-api-1.2.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wink-client-1.2.1-incubating.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/wink-client-1.2.1-incubating.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wsdl4j-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/wsdl4j-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-1.2.15.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/log4j-1.2.15.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="XmlSchema-1.4.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/XmlSchema-1.4.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-log4j12-1.6.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/slf4j-log4j12-1.6.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oslc4j-json4j-provider-2.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/oslc4j-json4j-provider-2.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="axis2-kernel-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/axis2-kernel-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.0.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/commons-logging-1.0.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="neethi-3.0.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/neethi-3.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="eclipselink.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.eclipselink/lib/eclipselink.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.externallink.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.externallink/com.bosch.calcomp.externallink">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ojdbc6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.eclipselink/lib/ojdbc6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.ssd.icdm.jpa.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.ssd.icdm.jpa/com.bosch.ssd.icdm.jpa">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.cdr.jpa.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.cdr.jpa/com.bosch.caltool.cdr.jpa">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.a2l.jpa.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.a2l.jpa/com.bosch.caltool.a2l.jpa">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.comppkg.jpa.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.comppkg.jpa/com.bosch.caltool.comppkg.jpa">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.apic.vcdminterface.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.apic.vcdminterface/com.bosch.caltool.apic.vcdminterface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.easee.eASEEcdm_Service.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.easee.eASEEcdm_Service/com.bosch.easee.eASEEcdm_Service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wink-json4j-1.2.1-incubating.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/wink-json4j-1.2.1-incubating.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oslc-query-2.1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.icdm.oslc.ws/lib/oslc-query-2.1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.apic.ws.common.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.apic.ws.common/com.bosch.caltool.apic.ws.common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.eclipselink.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.eclipselink/com.bosch.caltool.eclipselink">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.parser.a2l.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.parser.a2l/com.bosch.calcomp.parser.a2l">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.exception.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.exception/com.bosch.calcomp.exception">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calcomp.calutil.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calcomp.calutil/com.bosch.calcomp.calutil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calmodel.caldataphy.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calmodel.caldataphy/com.bosch.calmodel.caldataphy">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calmodel.a2ldata.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calmodel.a2ldata/com.bosch.calmodel.a2ldata">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.calmodel.caldata.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.calmodel.caldata/com.bosch.calmodel.caldata">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.equinox.preferences_3.6.1.v20160815-1406.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.targetrepo/repository/ecl_platform/4.6.3_rt/eclipse/plugins/org.eclipse.equinox.preferences_3.6.1.v20160815-1406.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.osgi_3.11.3.v20170209-1843.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/com.bosch.caltool.targetrepo/repository/ecl_platform/4.6.3_rt/eclipse/plugins/org.eclipse.osgi_3.11.3.v20170209-1843.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="servlet-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/D:/RBEI/iCDM/common/apache-tomcat-9.0.6/lib/servlet-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.bo.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.bo/com.bosch.caltool.icdm.bo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.model.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.model/com.bosch.caltool.icdm.model">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.datamodel.core.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.datamodel.core/com.bosch.caltool.datamodel.core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.bosch.caltool.icdm.cns.client.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/com.bosch.caltool.icdm.cns.client/com.bosch.caltool.icdm.cns.client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jersey-client.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/jersey-client.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.ws.rs-api-2.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/org.glassfish.jersey/lib/javax.ws.rs-api-2.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="com.bosch.caltool.icdm.oslc.ws"/>
+        <property name="java-output-path" value="/com.bosch.caltool.icdm.oslc.ws/build/classes"/>
+    </wb-module>
+</project-modules>

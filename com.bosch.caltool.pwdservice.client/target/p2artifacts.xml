@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='2'>
+  <artifact classifier='osgi.bundle' id='com.bosch.caltool.pwdservice.client' version='1.2.0'>
+    <properties size='5'>
+      <property name='artifact.size' value='6980'/>
+      <property name='download.size' value='6980'/>
+      <property name='maven-groupId' value='com.bosch.caltool.pwdservice.client'/>
+      <property name='maven-artifactId' value='com.bosch.caltool.pwdservice.client'/>
+      <property name='maven-version' value='1.2.0'/>
+    </properties>
+  </artifact>
+  <artifact classifier='osgi.bundle' id='com.bosch.caltool.pwdservice.client.source' version='1.2.0'>
+    <properties size='6'>
+      <property name='artifact.size' value='3786'/>
+      <property name='download.size' value='3786'/>
+      <property name='maven-groupId' value='com.bosch.caltool.pwdservice.client'/>
+      <property name='maven-artifactId' value='com.bosch.caltool.pwdservice.client'/>
+      <property name='maven-version' value='1.2.0'/>
+      <property name='maven-classifier' value='sources'/>
+    </properties>
+  </artifact>
+</artifacts>

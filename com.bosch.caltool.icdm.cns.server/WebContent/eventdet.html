@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>iCDM CNS Server - Event Details</title>
+    <link rel="stylesheet" href="cssstyles.css"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    <script type="text/javascript" src="scripts/common.js"></script>
+</head>
+
+<body onload="loadEventDetIfReqd()">
+
+<script src="scripts/headerpart.js"></script>
+
+<div class="main_div">
+
+<p id="backSection"></p>
+
+<h2>Event Details</h2>
+
+Event ID <input type="text" id="txtEventId" size=15 onClick="selectContents('txtEventId')"/>
+<button class="def_button" onclick="loadEventDet()">Show</button>
+
+<p id="eventSection"></p>
+<p id="sessionSection"></p>
+<p id="producerSection"></p>
+
+<script>
+
+function loadEventDetIfReqd() {
+
+    var oldURL = document.referrer;
+    if(oldURL.indexOf("events.html") !== -1){
+        var txt = "<button class=\"def_button\" onclick=\"backToEventsPage()\">Back</button>";
+        document.getElementById("backSection").innerHTML = txt;
+    }else{
+        document.getElementById("backSection").innerHTML = "";
+    }
+    
+	var queryParamUrl = decodeURIComponent(window.location.search);
+	queryParamUrl = queryParamUrl.substring(1);
+	var paramArr = queryParamUrl.split("&");
+	var param1 = paramArr[0];
+	
+	var eId = param1.substring(param1.indexOf("=") + 1, param1.length);
+	
+	if(eId){
+	    document.getElementById("txtEventId").value = eId;
+	    doLoadEventDet(eId);
+	}
+	
+}
+
+function backToEventsPage(){
+    window.location.href = "events.html";
+}
+
+function loadEventDet() {
+	  var eId = document.getElementById("txtEventId").value;
+	  doLoadEventDet(eId);
+}
+
+function doLoadEventDet(eId) {
+
+  document.getElementById("eventSection").innerHTML = "";
+  document.getElementById("sessionSection").innerHTML = "";
+  document.getElementById("producerSection").innerHTML = "";
+    
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    	
+        var respObj = JSON.parse(this.responseText);
+        var txt;
+        
+        txt = "<h3>Event</h3>";
+
+        txt += "<table class=\"def_table\">";
+        
+        txt += "<tr class=\"def_table\">";
+        txt += "<th class=\"def_table\">Event ID</th>";
+        txt += "<th class=\"def_table\">Service ID</th>";
+        txt += "<th class=\"def_table\">Data Size (Bytes)</th>";
+        txt += "<th class=\"def_table\">Created At</th>";
+        txt += "<th class=\"def_table\">Data Available</th>";
+        txt += "<th class=\"def_table\">Source State</th>";
+        txt += "</tr>";
+
+        var evtObj = respObj.eventInfo;
+        txt += "<tr class=\"def_table\">";
+        txt += "<td class=\"def_table\">" + evtObj.eventId + "</td>";
+        txt += "<td class=\"def_table\">" + evtObj.serviceId + "</td>";
+        txt += "<td class=\"def_table\">" + evtObj.dataLength + "</td>";
+        txt += "<td class=\"def_table\">" + evtObj.createdAt + "</td>";
+        txt += "<td class=\"def_table\">" + evtObj.dataAvailable + "</td>";
+        txt += "<td class=\"def_table\">" + evtObj.sessionState + "</td>";
+        txt += "</tr>";
+        
+        txt += "</table>"; 
+        
+        document.getElementById("eventSection").innerHTML = txt;
+
+        
+    	txt = "<h3>Event Source</h3>";
+    	
+        txt += "<table class=\"def_table\">";
+        
+        txt += "<tr class=\"def_table\">";
+        txt += "<th class=\"def_table\">Source ID</th>";
+        txt += "<th class=\"def_table\">User</th>";
+        txt += "<th class=\"def_table\">Client IP</th>";
+        txt += "<th class=\"def_table\">Listening Port</th>";
+        txt += "<th class=\"def_table\">Data Created (Bytes)</th>";
+        txt += "<th class=\"def_table\">State</th>";
+        txt += "<th class=\"def_table\">Created At</th>";
+        txt += "<th class=\"def_table\">Closed At</th>";
+        txt += "<th class=\"def_table\">Inactive At</th>";
+        txt += "<th class=\"def_table\">Last Contacted At</th>";
+        txt += "</tr>";
+        
+        var sessObj = respObj.sessionInfo;
+        txt += "<tr class=\"def_table\">";
+        txt += "<td class=\"def_table\">" + sessObj.sessionId + "</td>";
+        txt += "<td class=\"def_table\">" + sessObj.user + "</td>";
+        txt += "<td class=\"def_table\">" + sessObj.clientIp + "</td>";
+        txt += "<td class=\"def_table\">" + sessObj.listenPort + "</td>";
+        txt += "<td class=\"def_table\">" + sessObj.totalDataSize + "</td>";
+        txt += "<td class=\"def_table\">" + sessObj.state + "</td>";
+        txt += "<td class=\"def_table\">" + sessObj.createdAt + "</td>";
+        txt += "<td class=\"def_table\">" + checkNull(sessObj.closedAt) + "</td>";
+        txt += "<td class=\"def_table\">" + checkNull(sessObj.inactiveAt) + "</td>";
+        txt += "<td class=\"def_table\">" + checkNull(sessObj.lastContactAt) + "</td>";
+        txt += "</tr>";
+   
+        
+        txt += "</table>"; 
+        
+        document.getElementById("sessionSection").innerHTML = txt;
+        
+
+        
+        txt = "<h3>Data Producer</h3>";
+        
+        txt += "<table class=\"def_table\" border='1'>";
+        
+        txt += "<tr class=\"def_table\">";
+        txt += "<th class=\"def_table\">Producer ID</th>";
+        txt += "<th class=\"def_table\">IP Address</th>";
+        txt += "<th class=\"def_table\">Port</th>";
+        txt += "<th class=\"def_table\">Data Created (Bytes)</th>";
+        txt += "<th class=\"def_table\">Last Contacted At</th>";
+        txt += "</tr>";
+       
+        var proObj = respObj.producerInfo;
+        txt += "<tr class=\"def_table\">";
+        txt += "<td class=\"def_table\">" + proObj.producerId + "</td>";
+        txt += "<td class=\"def_table\">" + proObj.ipAddress + "</td>";
+        txt += "<td class=\"def_table\">" + proObj.port + "</td>";
+        txt += "<td class=\"def_table\">" + proObj.totalDataSize + "</td>";
+        txt += "<td class=\"def_table\">" + checkNull(proObj.lastContactAt) + "</td>";
+        txt += "</tr>";
+        
+        txt += "</table>"; 
+        
+        document.getElementById("producerSection").innerHTML = txt;
+      
+    }
+  };
+  
+  invokeGetRequest(xmlHttp, "services/admin/eventdetails?eventid=" + eId);
+}
+</script>
+
+</div>
+
+<script src="scripts/footerpart.js"></script>
+
+</body>
+</html>

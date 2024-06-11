@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iCDM Client BO Test
+Bundle-SymbolicName: com.bosch.caltool.icdm.client.bo.test
+Bundle-Version: 2024.3.0
+Fragment-Host: com.bosch.caltool.icdm.client.bo;bundle-version="2.3.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit,
+ com.bosch.calcomp.junittestframework,
+ com.bosch.caltool.pwdservice.client

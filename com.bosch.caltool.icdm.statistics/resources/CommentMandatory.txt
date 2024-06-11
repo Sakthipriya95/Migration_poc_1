@@ -1,0 +1,25 @@
+Mandatory attributes with value on PIDC level. 
+
+For example: 3 (4)
+
+The first number shows the mandatory attributes with value (also if the value
+is <Variant> or <Sub-Variant>. The second number in brackets shows the max.
+possible mandatory attributes for this PIDC.
+
+How this attribute might be maintained on Variant or Sub-Variant level 
+is not considered.
+For example:
+
+Attribute 1: No Value on PIDC
+Attribute 2: Value "Test"
+Attribute 3: <Variant>
+Attribute 4: <Sub-Variant>
+(Attribute 5: )
+
+Of these five attributes 2-4 would be considered as filled. Attribute 2 
+has a value, 3 and 4 are maintained on a lower level. If they are 
+really maintained on  a lower level is not ensured.
+Attribute 5 is a mandatory attribute that has dependencies, thus it is 
+not considered. That means, the number
+of possible mandatory attributes can be different from PIDC to PIDC.
+The output for the upper five attributes would be: 3 (4)

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Parsers
+Bundle-SymbolicName: com.bosch.caltool.labfunparser;singleton:=true
+Bundle-Version: 1.3.2
+Bundle-Activator: com.bosch.caltool.labfunparser.Activator
+Bundle-Vendor: BOSCH
+Require-Bundle: org.eclipse.core.runtime,
+ com.bosch.calcomp.adapter.logger,
+ com.bosch.calcomp.calutil,
+ org.juniversalCharsetDetector
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.bosch.caltool.labfunparser,
+ com.bosch.caltool.labfunparser.exception,
+ com.bosch.caltool.labfunparser.textparser

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="iCDM" uid="iCDM" id="com.bosch.caltool.icdm.product.product" application="com.bosch.caltool.icdm.product.application" version="2024.3.0" useFeatures="false" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="icons/logo-about.gif"/>
+      <text>
+         iCDM - Intelligent Calibration Data Management
+
+Version  : 2024.3.0
+
+An integrated tool combining the information from different data sources 
+with the target to find the best pre-calibration values for a project 
+and to minimize the time to collect information. 
+Includes additional features like calibration data review to support calibration engineers.
+
+(c) Copyright Robert Bosch GmbH. All Rights Reserved.
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-data &quot;@user.home/AppData/Roaming/iCDM&quot;
+      </programArgs>
+      <vmArgs>-Xmx2048m
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="icons/window-image-16x16.gif" i32="icons/window-image-32x32.gif" i48="icons/window-image-48x48.gif" i64="icons/window-image-64x64.gif" i128="icons/window-image-128x128.gif"/>
+
+   <splash
+      location="com.bosch.caltool.icdm.product"
+      handlerType="interactive" />
+   <launcher name="iCDM">
+      <win useIco="true">
+         <ico path="icons/icdmlauncher.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
+   </vm>
+
+   <plugins>
+      <plugin id="FTE_Parser"/>
+      <plugin id="ca.odell.glazedlists"/>
+      <plugin id="com.bosch.calcomp.2fachecker"/>
+      <plugin id="com.bosch.calcomp.adapter.logger"/>
+      <plugin id="com.bosch.calcomp.caldatafromhex"/>
+      <plugin id="com.bosch.calcomp.caldataphy2dcm"/>
+      <plugin id="com.bosch.calcomp.caldatautils"/>
+      <plugin id="com.bosch.calcomp.calutil"/>
+      <plugin id="com.bosch.calcomp.cdfparser"/>
+      <plugin id="com.bosch.calcomp.cdftocaldata"/>
+      <plugin id="com.bosch.calcomp.cdftocaldataphy"/>
+      <plugin id="com.bosch.calcomp.cretastructureparser"/>
+      <plugin id="com.bosch.calcomp.exception"/>
+      <plugin id="com.bosch.calcomp.externallink"/>
+      <plugin id="com.bosch.calcomp.hexparser"/>
+      <plugin id="com.bosch.calcomp.monicareportparser"/>
+      <plugin id="com.bosch.calcomp.pacoparser"/>
+      <plugin id="com.bosch.calcomp.pacotocaldata"/>
+      <plugin id="com.bosch.calcomp.pacotocaldataphy"/>
+      <plugin id="com.bosch.calcomp.parser.a2l"/>
+      <plugin id="com.bosch.calcomp.parser.dcm"/>
+      <plugin id="com.bosch.calcomp.ssd.api.client"/>
+      <plugin id="com.bosch.calmodel.a2ldata"/>
+      <plugin id="com.bosch.calmodel.caldata"/>
+      <plugin id="com.bosch.calmodel.caldataphy"/>
+      <plugin id="com.bosch.calmodel.cretastructuredata"/>
+      <plugin id="com.bosch.calmodel.ftedata"/>
+      <plugin id="com.bosch.caltool.admin.ui"/>
+      <plugin id="com.bosch.caltool.apic.ui"/>
+      <plugin id="com.bosch.caltool.apic.ws.client"/>
+      <plugin id="com.bosch.caltool.apic.ws.common"/>
+      <plugin id="com.bosch.caltool.authentication.ldap"/>
+      <plugin id="com.bosch.caltool.cdfwriter"/>
+      <plugin id="com.bosch.caltool.cdr.ui"/>
+      <plugin id="com.bosch.caltool.comparator"/>
+      <plugin id="com.bosch.caltool.comppkg.ui"/>
+      <plugin id="com.bosch.caltool.datamodel.core"/>
+      <plugin id="com.bosch.caltool.excel"/>
+      <plugin id="com.bosch.caltool.icdm.client.bo"/>
+      <plugin id="com.bosch.caltool.icdm.cns.client"/>
+      <plugin id="com.bosch.caltool.icdm.cns.common"/>
+      <plugin id="com.bosch.caltool.icdm.common.bo"/>
+      <plugin id="com.bosch.caltool.icdm.common.ui"/>
+      <plugin id="com.bosch.caltool.icdm.common.util"/>
+      <plugin id="com.bosch.caltool.icdm.logger"/>
+      <plugin id="com.bosch.caltool.icdm.model"/>
+      <plugin id="com.bosch.caltool.icdm.pidcrequestor"/>
+      <plugin id="com.bosch.caltool.icdm.product"/>
+      <plugin id="com.bosch.caltool.icdm.report"/>
+      <plugin id="com.bosch.caltool.icdm.ruleseditor"/>
+      <plugin id="com.bosch.caltool.icdm.statistics"/>
+      <plugin id="com.bosch.caltool.icdm.ui"/>
+      <plugin id="com.bosch.caltool.icdm.ws.rest.client"/>
+      <plugin id="com.bosch.caltool.labfunparser"/>
+      <plugin id="com.bosch.caltool.nattable"/>
+      <plugin id="com.bosch.caltool.pwdservice.client"/>
+      <plugin id="com.bosch.caltool.security"/>
+      <plugin id="com.bosch.caltool.tablegraph.ui"/>
+      <plugin id="com.bosch.caltool.usecase.ui"/>
+      <plugin id="com.bosch.citi.lite.client"/>
+      <plugin id="com.bosch.rcputils"/>
+      <plugin id="com.fasterxml.jackson"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="javax.annotation"/>
+      <plugin id="javax.el"/>
+      <plugin id="javax.inject"/>
+      <plugin id="javax.servlet"/>
+      <plugin id="javax.servlet.jsp"/>
+      <plugin id="javax.xml"/>
+      <plugin id="org.apache.axis2"/>
+      <plugin id="org.apache.batik.css"/>
+      <plugin id="org.apache.batik.util"/>
+      <plugin id="org.apache.batik.util.gui"/>
+      <plugin id="org.apache.commons.codec"/>
+      <plugin id="org.apache.commons.io"/>
+      <plugin id="org.apache.commons.jxpath"/>
+      <plugin id="org.apache.commons.lang"/>
+      <plugin id="org.apache.commons.lang3"/>
+      <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.apache.felix.gogo.command"/>
+      <plugin id="org.apache.felix.gogo.runtime"/>
+      <plugin id="org.apache.jasper.glassfish"/>
+      <plugin id="org.apache.lucene.analysis"/>
+      <plugin id="org.apache.lucene.core"/>
+      <plugin id="org.apache.poi"/>
+      <plugin id="org.com4j"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.beans"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.net"/>
+      <plugin id="org.eclipse.core.net.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.resources.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.e4.core.commands"/>
+      <plugin id="org.eclipse.e4.core.contexts"/>
+      <plugin id="org.eclipse.e4.core.di"/>
+      <plugin id="org.eclipse.e4.core.di.annotations"/>
+      <plugin id="org.eclipse.e4.core.di.extensions"/>
+      <plugin id="org.eclipse.e4.core.services"/>
+      <plugin id="org.eclipse.e4.emf.xpath"/>
+      <plugin id="org.eclipse.e4.ui.bindings"/>
+      <plugin id="org.eclipse.e4.ui.css.core"/>
+      <plugin id="org.eclipse.e4.ui.css.swt"/>
+      <plugin id="org.eclipse.e4.ui.css.swt.theme"/>
+      <plugin id="org.eclipse.e4.ui.di"/>
+      <plugin id="org.eclipse.e4.ui.model.workbench"/>
+      <plugin id="org.eclipse.e4.ui.services"/>
+      <plugin id="org.eclipse.e4.ui.widgets"/>
+      <plugin id="org.eclipse.e4.ui.workbench"/>
+      <plugin id="org.eclipse.e4.ui.workbench.addons.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench.renderers.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench.swt"/>
+      <plugin id="org.eclipse.e4.ui.workbench3"/>
+      <plugin id="org.eclipse.emf.common"/>
+      <plugin id="org.eclipse.emf.ecore"/>
+      <plugin id="org.eclipse.emf.ecore.change"/>
+      <plugin id="org.eclipse.emf.ecore.xmi"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.bidi"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.ds"/>
+      <plugin id="org.eclipse.equinox.event"/>
+      <plugin id="org.eclipse.equinox.http.jetty"/>
+      <plugin id="org.eclipse.equinox.http.registry"/>
+      <plugin id="org.eclipse.equinox.http.servlet"/>
+      <plugin id="org.eclipse.equinox.jsp.jasper"/>
+      <plugin id="org.eclipse.equinox.jsp.jasper.registry"/>
+      <plugin id="org.eclipse.equinox.p2.core"/>
+      <plugin id="org.eclipse.equinox.p2.engine"/>
+      <plugin id="org.eclipse.equinox.p2.metadata"/>
+      <plugin id="org.eclipse.equinox.p2.metadata.repository"/>
+      <plugin id="org.eclipse.equinox.p2.repository"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.equinox.security.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.equinox.util"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.help.base"/>
+      <plugin id="org.eclipse.help.ui"/>
+      <plugin id="org.eclipse.help.webapp"/>
+      <plugin id="org.eclipse.jetty.http"/>
+      <plugin id="org.eclipse.jetty.io"/>
+      <plugin id="org.eclipse.jetty.security"/>
+      <plugin id="org.eclipse.jetty.server"/>
+      <plugin id="org.eclipse.jetty.servlet"/>
+      <plugin id="org.eclipse.jetty.util"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.nebula.widgets.grid"/>
+      <plugin id="org.eclipse.nebula.widgets.nattable.core"/>
+      <plugin id="org.eclipse.nebula.widgets.nattable.extension.glazedlists"/>
+      <plugin id="org.eclipse.nebula.widgets.nattable.extension.poi"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.compatibility.state" fragment="true"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.pde.runtime"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86_64" fragment="true"/>
+      <plugin id="org.eclipse.text"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.forms"/>
+      <plugin id="org.eclipse.ui.ide"/>
+      <plugin id="org.eclipse.ui.intro"/>
+      <plugin id="org.eclipse.ui.intro.quicklinks"/>
+      <plugin id="org.eclipse.ui.intro.universal"/>
+      <plugin id="org.eclipse.ui.views"/>
+      <plugin id="org.eclipse.ui.views.log"/>
+      <plugin id="org.eclipse.ui.views.properties.tabbed"/>
+      <plugin id="org.eclipse.ui.win32" fragment="true"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.eclipse.ui.workbench.patch" fragment="true"/>
+      <plugin id="org.glassfish.jersey"/>
+      <plugin id="org.hamcrest.core"/>
+      <plugin id="org.junit"/>
+      <plugin id="org.juniversalCharsetDetector"/>
+      <plugin id="org.opencsv"/>
+      <plugin id="org.tukaani.xz"/>
+      <plugin id="org.w3c.css.sac"/>
+      <plugin id="org.w3c.dom.events"/>
+      <plugin id="org.w3c.dom.smil"/>
+      <plugin id="org.w3c.dom.svg"/>
+   </plugins>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <property name="org.eclipse.update.reconcile" value="false" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+      <file path="/com.bosch.caltool.icdm.product/content/root.css"/>
+   </cssInfo>
+
+</product>

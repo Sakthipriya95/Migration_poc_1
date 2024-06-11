@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<!--
+    Performs static weaving of the entity classes
+-->
+<project name="com.bosch.caltool.comppkg.jpa" basedir="." default="weave">
+    
+    <!-- dependencies-->
+    <property name="eclipselink.dir" value="../com.bosch.caltool.eclipselink/lib/" />
+    <property name="antlib.dir" value="ant-lib/" />
+    <property name="dfframe.dir" value="../com.bosch.caltool.dmframework/bin/" />
+    <path id="build-classpath">
+        <fileset dir="${eclipselink.dir}" includes="*.jar" />
+        <fileset dir="${antlib.dir}" includes="org.eclipse.osgi_3.6.2.R36x_v20110210.jar" />
+        <pathelement location="${dfframe.dir}" />
+    </path>
+
+    <!-- target-->
+    <target name="weavingTask" description="New task definition for EclipseLink static weaving" >
+        <taskdef name="weave" classname="org.eclipse.persistence.tools.weaving.jpa.StaticWeaveAntTask" >
+            <classpath refid="build-classpath">
+            </classpath>            
+        </taskdef>
+    </target>
+
+    <target name="weave" description="Weave workspace classes" depends="weavingTask" >
+        <echo message="Source = build\classes, target = build\classes, log file = C:\temp\eclipselinkWeaving.log" />
+        <weave source="build\classes" target="build\classes" log="C:\temp\eclipselinkWeaving.log" loglevel="FINEST" >
+            <classpath refid="build-classpath" >
+            </classpath>            
+        </weave>
+    </target>
+</project>

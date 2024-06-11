@@ -1,0 +1,201 @@
+*/*<RBHead>
+***************           Robert BOSCH GmbH, Stuttgart            *************
+***************   Alle Rechte vorbehalten - all rights reserved   *************
+*$function_definition: EGAS_PVS 1_N2_EA839_ULEV70_DMG1002AH2P1584_MY18F11_U8F11n2n6    $
+*$application_package: Überwachungsfunktionen / Flow-ID:$
+*
+*$project: Audi KoVOMo MG1 V6T 1584 LK2$
+*$emission_legislation: ULEV$
+*$market: USA$
+*$transmission: $
+*$SOP: $
+*
+*$program_version: 18F11_1Flut_P1584_DMG1002AH2C1584.a2l$
+*$data_setting: Monitoring_U8F11n2n6-SY1_X712.hex$
+*
+*$calibration_status: calibrated$
+*$level_of_calibration: nicht festgeschrieben$
+*
+*$test_vehicle: $
+*$open_points: $
+*$remarks: PVS Daten für Cayenne LK2; Momentenvergleich-Tests wurden
+*          durchgeführt.$
+*
+*$date: 05.04.2017$
+*$date_of_data_source_file: 05.04.2017$
+*$engineer: DGS-EC/EAU3-Sa$
+*$responsible: DGS-EC/EAU3-Sa$
+*******************************************************************************
+*</RBHead>*/
+
+
+* encoding="ISO-8859-1"
+* DAMOS-Austauschdatei
+* Erstellt von ADM V16.10.18
+* Erstellungsdatum: 05.04.2017 16:51:07
+*
+* Projekt: _MoPeD\DMG1002AH2C1584_MY18F11\DMG1002AH2C1584_MY18F11
+* Datensatz: M201700000545\Delivery_U8F11n2n6-SY1_X712.hex
+
+KONSERVIERUNG_FORMAT 2.0
+
+* Version: DMG1002AH2C1584_MY18F11
+* Customer number: 5
+* User: APPLICATOR
+* Phone number: 
+* ECU: MDG1
+* CPU type: IFX
+* Memory segments:
+*  Pst80000000 RESERVED INTERN 0x80000000 0x20
+*  Pst80000020 RESERVED INTERN 0x80000020 0xBFE0
+*  Pst80010000 RESERVED INTERN 0x80010000 0x8000
+*  Pst80200000 CODE INTERN 0x80200000 0x1FFAE0
+*  Pst803FFAE0 RESERVED INTERN 0x803FFAE0 0x520
+*  Pst80400000 CODE INTERN 0x80400000 0x1FFAE0
+*  Pst805FFAE0 RESERVED INTERN 0x805FFAE0 0x520
+*  Pst80630000 CODE INTERN 0x80630000 0x1CFAE0
+*  Pst807FFAE0 RESERVED INTERN 0x807FFAE0 0x520
+*  Pst801FFAE0 RESERVED INTERN 0x801FFAE0 0x520
+*  Pst80600000 RESERVED INTERN 0x80600000 0x30000
+*  Pst8001C000 CODE INTERN 0x8001C000 0x43AE0
+*  Pst8005FAE0 RESERVED INTERN 0x8005FAE0 0x520
+*  Pst8000C000 RESERVED INTERN 0x8000C000 0x4000
+*  Pst80018100 RESERVED INTERN 0x80018100 0x3F00
+*  Pst80060100 RESERVED INTERN 0x80060100 0x1FF00
+*  Pst80018000 RESERVED INTERN 0x80018000 0x100
+*  Pst80060000 RESERVED INTERN 0x80060000 0x100
+*  Dst80080000 DATA INTERN 0x80080000 0x17FAE0
+*  RamAFE70000 VARIABLES INTERN 0xAFE70000 0x8000
+*  RamB0000000 VARIABLES INTERN 0xB0000000 0x8000
+*  Ram70100000 VARIABLES INTERN 0x70100000 0x8000
+*  Ram60100000 VARIABLES INTERN 0x60100000 0x8000
+*  Ram50100000 VARIABLES INTERN 0x50100000 0x8000
+*  Ram70000000 VARIABLES INTERN 0x70000000 0x1E000
+*  Ram60000000 VARIABLES INTERN 0x60000000 0x3C000
+*  Ram50000000 VARIABLES INTERN 0x50000000 0x3C000
+*  RamBF1EF5F0 VARIABLES INTERN 0xBF1EF5F0 0x10A10
+*  RamBF1E0000 CALIBRATION_VARIABLES INTERN 0xBF1E0000 0xF5F0
+
+
+FUNKTIONEN
+   FKT APP_PlausBrk "1.18.0" "1.18.0    Fahrpedalposition Plausibilisierung gegen Bremse" 
+   FKT CordSpdDes "26.1" "SWS-VWAG 26.1.0-26.1.0 Coordination of desired speed" 
+   FKT CordTqIntv "27.1" "SWS-VWAG 27.1.1-27.1.0 coordination of torque due to external interventions" 
+   FKT DMBEG "2.8.0" "2.8.0     Diagnose Momentenbegrenzung Ebene 1" 
+   FKT DrvDemCord "24.1" "SWS-VWAG 24.1.0-24.1.0 Driver demand coordinator" 
+   FKT EngDem_TrqLimCoord "2.32.0" "2.32.0    Koordination der begrenzenden Momente aus Motoranforderungen" 
+   FKT EngICO_Co "41.1.1" "41.1.1    Erweiterte Überwachung: Einspritzmengenbegrenzung (ICO)" 
+   FKT EngTrqPtd_Co "42.4.0" "42.4.0    Erweiterte Überwachung: Maximal zulässiges Motormoment" 
+   FKT Mo_Glbl "97.7.0" "97.7.0    Überwachung: Globale Definitionen" 
+   FKT MoCADC_Co "80.6.0" "80.6.0    Rechnerüberwachung: AD-Wandler" 
+   FKT MoCCom_Co "81.16.0" "81.16.0   Rechnerüberwachung: Frage-Antwort-Kommunikation zwischen MM und FC" 
+   FKT MoCCPU_Co "80.5.0" "80.5.0    Rechnerüberwachung: Befehlstest" 
+   FKT MoCEMM_Co "1.14.0" "1.14.0    Rechnerüberwachung: Fehlermanagementmodul" 
+   FKT MoCGTM_Co "1.11.0" "1.11.0    Rechnerüberwachung: Generic Timer Module (GTM)" 
+   FKT MoCMem_Co "80.16.0" "80.16.0   Rechnerüberwachung: Zyklischer Speichertest" 
+   FKT MoCPC_Co "1.2.0" "1.2.0     Rechnerüberwachung: Peripheral Core" 
+   FKT MoCSCC_Co "1.17.0" "1.17.0    Rechnerüberwachung: Konfigurationsprüfung" 
+   FKT MoCSOP_Co "81.18.0" "81.18.0   Rechnerüberwachung: Abschaltpfadtest" 
+   FKT MoFAir_FilgPrdc "25.0.0" "25.0.0    Funktionsüberwachung: Relative Luftfüllung prädiziert" 
+   FKT MoFAirFl_Cda "7.0.0" "7.0.0     Funktionsüberwachung: Zylinderabschaltung" 
+   FKT MoFAirFl_CtOffGdi "5.0.0" "5.0.0     Funktionsüberwachung: Einspritzausblendung BDE" 
+   FKT MoFAirFl_CtOffPfi "4.0.0" "4.0.0     Funktionsüberwachung: Einspritzausblendung SRE" 
+   FKT MoFAirFl_CylGdi "5.0.0" "5.0.0     Funktionsüberwachung: Zylinderindividuelle Kraftstoffkorrektur BDE" 
+   FKT MoFAirFl_CylPfi "4.0.0" "4.0.0     Funktionsüberwachung: Zylinderindividuelle Kraftstoffkorrektur SRE" 
+   FKT MoFAirFl_Eta "13.1.0" "13.1.0    Funktionsüberwachung: Wirkungsgrade für Luft und Kraftstoff" 
+   FKT MoFAirFl_GdiPfi "6.0.0" "6.0.0     Funktionsüberwachung: Koordination duales Kraftstoffsystem GDI und PFI" 
+   FKT MoFAirFl_In "25.1.0" "25.1.0    Funktionsüberwachung: Eingangssignale für Luft und Kraftstoff" 
+   FKT MoFAirFl_MixCtlGdi "6.1.0" "6.1.0     Funktionsüberwachung: Gemischkontrolle BDE" 
+   FKT MoFAirFl_MixCtlPfi "6.1.1" "6.1.1     Funktionsüberwachung: Gemischkontrolle SRE" 
+   FKT MoFAirFl_Mode "16.0.0" "16.0.0    Funktionsüberwachung: Betriebsart" 
+   FKT MoFAPP_Co "75.3.0" "75.3.0    Funktionsüberwachung: Fahrpedalposition" 
+   FKT MoFAPP_In "2.6.0" "2.6.0     Funktionsüberwachung: Eingangssignale Fahrpedal" 
+   FKT MoFAPP_Rel "25.4.1" "25.4.1    Funktionsüberwachung: Relative Fahrpedalposition" 
+   FKT MoFBrk_Co "94.5.0" "94.5.0    Funktionsüberwachung: Bremse" 
+   FKT MoFBrk_In "2.4.0" "2.4.0     Funktionsüberwachung: Bremseeingangssignale" 
+   FKT MoFClth_Co "1.5.0" "1.5.0     Funktionsüberwachung: Kupplung" 
+   FKT MoFESpd_Co "37.4.1" "37.4.1    Funktionsüberwachung: Motordrehzahl" 
+   FKT MoFETC_Co "63.0.0" "63.0.0    Funktionsüberwachung: Testereingriff" 
+   FKT MoFFrm_Co "100.8.0" "100.8.0   Funktionsüberwachung: Botschaften vom Bordnetz" 
+   FKT MoFHybRx_Co "18.8.0" "18.8.0    Funktionsüberwachung: Eingangssignale vom Hybridsystem" 
+   FKT MoFHybTx_Co "34.1.0" "34.1.0    Funktionsüberwachung: Versendete Botschaften ans Hybridsystem" 
+   FKT MoFIA_Co "16.0.0" "16.0.0    Funktionsüberwachung: Zündwinkel" 
+   FKT MoFICO_Co "52.3.0" "52.3.0    Funktionsüberwachung: Einspritzmengenbegrenzung (ICO)" 
+   FKT MoFIn_Co "42.0.0" "42.0.0    Funktionsüberwachung: Eingangssignale" 
+   FKT MoFMonAdpr_InVW "11.7.0" "11.7.0    Funktionsüberwachung Eingangsschnittstellen Adapter VW" 
+   FKT MoFStrt_Crash "1.0.0" "1.0.0     Funktionsüberwachung: Start nach Crash Ereignis" 
+   FKT MoFStrt_In "32.5.0" "32.5.0    Funktionsüberwachung: Eingangssignale Start" 
+   FKT MoFStrt_Rx "1.8.0_1.0.0" "1.8.0_1.0.0Signal Receiver" 
+   FKT MoFTEng_Co "29.0.0" "29.0.0    Funktionsüberwachung: Motortemperatur" 
+   FKT MoFTrqAct_Eng "67.1.0" "67.1.0    Funktionsüberwachung: Istmoment Motor" 
+   FKT MoFTrqLim_Eng "12.1.0" "12.1.0    Funktionsüberwachung: Momentengrenzen Motor" 
+   FKT MoFTrqLos_Add "5.0.0" "5.0.0     Funktionsüberwachung: Zusätzliche Verlustmomente" 
+   FKT MoFTrqLos_Co "24.4.0" "24.4.0    Funktionsüberwachung: Verlustmomente" 
+   FKT MoFTrqPtd_Eng "43.0.0" "43.0.0    Funktionsüberwachung: Maximal zulässiges Motormoment" 
+   FKT MoFTx_Co "40.3.0" "40.3.0    Funktionsüberwachung: Versendete Botschaften Bordnetz" 
+   FKT MoFVar_Co "28.1.0" "28.1.0    Funktionsüberwachung: Variantencodierung" 
+   FKT MoFVar_PostBldSel "2.1.0" "2.1.0     Funktionsüberwachung: Post-Build Selectable" 
+   FKT MoFVehIfc_RxDrAs "4.1.1" "4.1.1     Funktionsüberwachung: Redundanter Empfang der Botschaften aus den Fahrerassistenzsystemen" 
+   FKT MoFVehIfc_RxEsc "4.1.0" "4.1.0     Funktionsüberwachung: Redundanter Empfang der Botschaften des elektronischen Stabilitätssystems" 
+   FKT MoFVehIfc_RxGbx "4.2.0" "4.2.0     Funktionsüberwachung: Redundanter Empfang Getriebebotschaften" 
+   FKT MoFVehIfc_RxMisc "4.1.0" "4.1.0     Funktionsüberwachung: Redundanter Empfang der Botschaften aus diversen Steuergeräten" 
+   FKT MonAdpVW "13.2.0" "13.2.0    Überwachung Adapter VW" 
+   FKT MonBChMngVW "1.0.0_VW_100_1_0" "1.0.0_VW_100_1_0Überwachung Ladeüberwachung VW" 
+   FKT MonClu0stVW "2.1.1_VW_105_1_1" "2.1.1_VW_105_1_1Überwachung K0-Überwachung VW" 
+   FKT MonCordTqVehVW "2.1.0_VW_7_1_0" "2.1.0_VW_7_1_0Überwachung Fahrzeugmomentenkoordination VW" 
+   FKT MonDrvAlwVW "2.8.0_VW_9_4_0" "2.8.0_VW_9_4_0Überwachung Triebstrangfreigabe VW" 
+   FKT MonDrvAsiVW "1.3.0_VW_12_1_0" "1.3.0_VW_12_1_0Überwachung Fahrassistenzsysteme VW" 
+   FKT MonDrvDemAVW "2.5.0_VW_12_1_0" "2.5.0_VW_12_1_0Überwachung Fahrerwunscherfassung Gaspedal VW" 
+   FKT MonDrvDemBrkVW "2.0.1_VW_7_1_1" "2.0.1_VW_7_1_1Überwachung Fahrerwunscherfassung Bremse VW" 
+   FKT MonDrvDemCordVW "2.4.0_VW_13_1_0" "2.4.0_VW_13_1_0Überwachung Fahrerwunscherfassungskoordination VW" 
+   FKT MonDrvDemCreVW "1.1.0_VW_7_2_0" "1.1.0_VW_7_2_0Überwachung Kriechregler VW" 
+   FKT MonDrvDemDrgVW "2.2.0_VW_10_1_0" "2.2.0_VW_10_1_0Überwachung Fahrerwunscherfassung Schleppmoment VW" 
+   FKT MonDrvModSwtVW "2.1.0_VW_102_1_0" "2.1.0_VW_102_1_0Überwachung Fahrprogrammnachbildung VW" 
+   FKT MonDrvPresVW "2.7.0_VW_6_2_0" "2.7.0_VW_6_2_0Überwachung Fahreranwesenheit VW" 
+   FKT MonElmActVW "2.2.0_VW_4_1_0" "2.2.0_VW_4_1_0Überwachung Eingangssignale Hybrid-CAN VW" 
+   FKT MonElmSpVW "2.3.0_VW_8_1_0" "2.3.0_VW_8_1_0Überwachung Versand auf Hybrid-CAN VW" 
+   FKT MonErrMngVW "2.3.0_VW_6_1_0" "2.3.0_VW_6_1_0Überwachung Fehlermanagement VW" 
+   FKT MonPedEvalVW "1.6.0_VW_3_1_0" "1.6.0_VW_3_1_0Überwachung Fahrpedalauswertung VW" 
+   FKT MonPtComVW "2.2.0_VW_204_1_0" "2.2.0_VW_204_1_0Funktionsüberwachung Kommunikation VW" 
+   FKT MonPtIntvVW "2.8.0_VW_11_1_0" "2.8.0_VW_11_1_0Überwachung Getriebeeingriffe VW" 
+   FKT MonPtJCmpVW "1.2.0_VW_3_1_0" "1.2.0_VW_3_1_0Überwachung Funktion für Antriebsstrang Trägheit Kompensation VW" 
+   FKT MonPtOpDetVW "1.5.0_VW_7_1_0" "1.5.0_VW_7_1_0Triebstrang offen Erkennung in der Überwachung" 
+   FKT MonPtOppVW "2.5.1_VW_8_1_0" "2.5.1_VW_8_1_0Überwachung Berechnung Trägheitsmoment Motor VW" 
+   FKT MonSpdCtlVW "3.9.0_VW_14_1_0" "3.9.0_VW_14_1_0Überwachung Lehrlaufregler VW" 
+   FKT MonStrtRlsVW "1.6.0_VW_7_1_0" "1.6.0_VW_7_1_0Überwachung Startfreigabe VW" 
+   FKT MonTqActVW "2.1.0_VW_2_1_0" "2.1.0_VW_2_1_0Überwachung Summenistmoment VW" 
+   FKT MonTqCmpVW "2.6.0_VW_7_1_0" "2.6.0_VW_7_1_0Überwachung Kompensationsmomente VW" 
+   FKT MonTqCompDesVW "2.5.0_VW_7_1_0" "2.5.0_VW_7_1_0Überwachung Momentenvergleich zulässiges Moment VW" 
+   FKT MonTqCompVW "2.3.0_VW_5_2_0" "2.3.0_VW_5_2_0Überwachung Momentenvergleich Motor VW" 
+   FKT MonTqCordVW "2.3.0_VW_7_1_0" "2.3.0_VW_7_1_0Überwachung Momentenkoordination VW" 
+   FKT MonTqInpVW "2.4.1_VW_6_1_0" "2.4.1_VW_6_1_0Überwachung Eingangssignale der Momentenüberwachung VW" 
+   FKT MonTqIntvVW "2.6.0_VW_14_1_0" "2.6.0_VW_14_1_0Überwachung Momenteneingriffe VW" 
+   FKT MonTraVW "2.3.0_VW_5.3.0" "2.3.0_VW_5.3.0Überwachung Triebstrangübersetzung VW" 
+   FKT MonVehDynCtlVW "2.4.0_VW_7_1_0" "2.4.0_VW_7_1_0Überwachung Fahrstabilitätseingriffe und Rekuperation VW" 
+   FKT MonVehHldVW "1.2.0_VW_3.1.0" "1.2.0_VW_3.1.0Überwachung autonomer Fahrzeug Stopp VW" 
+   FKT MonVehSpdVW "2.1.0_VW_5_1_0" "2.1.0_VW_5_1_0Überwachung Geschwindigkeitserfassung VW" 
+   FKT MoXEMM_Co "4.2.0" "4.2.0     Erweiterte Überwachung: Diagnose Funktion für EMM-Modul" 
+   FKT MoXSyncLos_Co "5.0.0" "5.0.0     Erweiterte Überwachung: Erkennung Synchronisationsverlust" 
+   FKT MoXTEng_Co "2.1.0" "2.1.0     Erweiterte Überwachung: Motortemperatur" 
+   FKT MoXTrqLim_Eng "4.1.0" "4.1.0     Erweiterte Überwachung: Momentengrenzen Motor" 
+   FKT MoXTrqLos_Add "3.1.0" "3.1.0     Erweiterte Überwachung: Zusätzliche Verlustmomente" 
+   FKT MoXTrqLos_Co "16.0.0" "16.0.0    Erweiterte Überwachung: Verlustmomente" 
+   FKT OCWDA_Co "80.2.0" "80.2.0    Erweiterte Überwachung: Betriebsbedingungen der WDA/ABE-Abschaltung" 
+   FKT SpdDesMax "22.1" "SWS-VWAG 22.1.0-22.1.0 Calculation of desired maximum speed for combustion engine" 
+END
+
+FESTWERT APP_drUnFltLim_C 
+   LANGNAME "Schwelle für Fahrpedalwertgradient zum Rücksetzen der Plausibilität mit der Bremse"
+   FUNKTION APP_PlausBrk 
+   EINHEIT_W "%/s"
+   WERT 200.1953
+END
+
+
+
+FESTWERT Mo_swtClrCntrMax_C 
+   LANGNAME "Bedingung Schleppzeiger ruecksetzen in der Funktionsueberwachung"
+   FUNKTION Mo_Glbl 
+   EINHEIT_W "-"
+   WERT 0.0
+END

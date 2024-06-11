@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Plausibelparser
+Bundle-SymbolicName: com.bosch.caltool.icdm.plausibelparser
+Bundle-Version: 2024.3.0
+Bundle-Activator: com.bosch.caltool.icdm.plausibelparser.Activator
+Bundle-Vendor: BOSCH
+Require-Bundle: org.eclipse.core.runtime,
+ com.bosch.calcomp.adapter.logger;bundle-version="1.3.0",
+ org.apache.poi;bundle-version="3.12.0",
+ com.bosch.calmodel.caldataphy;bundle-version="1.3.3",
+ com.bosch.ssd.icdm.jpa;bundle-version="3.1.9"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.bosch.caltool.icdm.excelimport,
+ com.bosch.caltool.icdm.excelimport.utilities,
+ com.bosch.caltool.icdm.plausibelparser.cdrruleimport

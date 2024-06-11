@@ -1,0 +1,236 @@
+<project
+      xmlns="http://maven.apache.org/POM/4.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.bosch.caltool.labfunparser</groupId>
+    <artifactId>com.bosch.caltool.labfunparser.main</artifactId>
+    <name>CalTools.Components.LabfunParser</name>
+    <version>${labfunparser.version}</version>
+    <packaging>pom</packaging>
+
+    <repositories>
+        <repository>
+            <id>com.bosch.caltools.tycho.updatesite</id>
+            <layout>p2</layout>
+            <url>file:\\COB1080575.cob.apac.bosch.com\JenkinsShared\Repository\releases\oneclick\Common_updateSite\com.bosch.caltool.components.updatesite\</url>
+        </repository>
+        <!-- <repository> <id>com.bosch.caltools.tycho.updatesites</id> <layout>p2</layout> <url>file:C:\Sharavan\MavenEXEGeneration\compare\components\com.bosch.caltool.icdm.updatesite\</url> 
+            </repository> -->
+        <repository>
+            <id>neon</id>
+            <layout>p2</layout>
+            <url>http://nexus.emt.cdg-smt.de.bosch.com:8280/nexus/content/repositories/eclipse_neon/</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <labfunparser.version>1.3.2</labfunparser.version>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <tycho.version>1.4.0</tycho.version>
+        <tycho-extras.version>1.4.0</tycho-extras.version>
+        <osgi.os>win32</osgi.os>
+        <osgi.ws>win32</osgi.ws>
+        <osgi.arch>x86_64</osgi.arch>
+        
+        <src>1.8</src>
+        <target>1.8</target>
+
+        <maven.version>3.3</maven.version>
+        <jacoco.version>0.8.4</jacoco.version>
+    </properties>
+
+    <modules>
+        <module>../com.bosch.caltool.labfunparser</module>
+        <module>../com.bosch.caltool.labfunparser.test</module>
+    </modules>
+
+    <build>
+        <plugins>
+        
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+                <version>${tycho.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <useProjectSettings>false</useProjectSettings>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>target-platform-configuration</artifactId>
+                <configuration>
+                    <environments>
+                        <environment>
+                            <os>win32</os>
+                            <ws>win32</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                    </environments>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>plugin-source</id>
+                        <goals>
+                            <goal>plugin-source</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+                <configuration>
+                    <includes>
+                        <include>com.bosch.*</include>
+                    </includes>
+                    <destFile>${project.basedir}/../com.bosch.caltool.labfunparser.main/target/jacoco.exec</destFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report-aggregate</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+            
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-compiler-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <encoding>UTF-8</encoding>
+                        <compilerArgument>-warn:+discouraged,forbidden</compilerArgument>
+                    </configuration>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>target-platform-configuration</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-packaging-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.eclipse.tycho.extras</groupId>
+                            <artifactId>tycho-buildtimestamp-jgit</artifactId>
+                            <version>${tycho-extras.version}</version>
+                        </dependency>
+                    </dependencies>
+                    <configuration>
+                        <strictBinIncludes>false</strictBinIncludes>
+                        <format>'v'yyyyMMdd-HHmm</format>
+                        <timestampProvider>jgit</timestampProvider>
+                        <jgit.ignore>
+                        </jgit.ignore>
+                    </configuration>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-source-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                    <configuration>
+                        <strictSrcIncludes>false</strictSrcIncludes>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-surefire-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.eclipse.tycho.extras</groupId>
+                    <artifactId>tycho-source-feature-plugin</artifactId>
+                    <version>${tycho-extras.version}</version>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho.extras</groupId>
+                    <artifactId>tycho-custom-bundle-plugin</artifactId>
+                    <version>${tycho-extras.version}</version>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-p2-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+                
+                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven 
+                    build itself. -->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.eclipse.tycho
+                                        </groupId>
+                                        <artifactId>
+                                            tycho-packaging-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [1.4.0,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>build-qualifier</goal>
+                                            <goal>validate-id</goal>
+                                            <goal>
+                                                validate-version
+                                            </goal>
+                                            <goal>build-qualifier-aggregator</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+        
+    </build>
+</project>

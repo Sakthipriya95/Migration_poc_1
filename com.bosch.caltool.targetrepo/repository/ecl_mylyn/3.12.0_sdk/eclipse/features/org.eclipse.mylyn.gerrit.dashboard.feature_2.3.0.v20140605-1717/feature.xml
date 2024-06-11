@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.mylyn.gerrit.dashboard.feature"
+      label="%featureName"
+      version="2.3.0.v20140605-1717"
+      provider-name="%providerName">
+
+   <description url="http://eclipse.org/mylyn/reviews">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.mylyn.gerrit.feature" version="2.2.0"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.mylyn.gerrit.dashboard.core"
+         download-size="12"
+         install-size="21"
+         version="2.3.0.v20140505-1727"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.gerrit.dashboard.ui"
+         download-size="100"
+         install-size="200"
+         version="2.3.0.v20140516-1855"
+         unpack="false"/>
+
+</feature>

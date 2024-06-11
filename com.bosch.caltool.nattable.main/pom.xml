@@ -1,0 +1,318 @@
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.bosch.caltool.nattable</groupId>
+    <artifactId>com.bosch.caltool.nattable.main</artifactId>
+    <name>CalTools.Components.NatTableCustom</name>
+    <version>1.9.5</version>
+    <packaging>pom</packaging>
+
+    <repositories>
+        <repository>
+            <id>indigo</id>
+            <layout>p2</layout>
+            <url>http://download.eclipse.org/releases/indigo/</url>
+        </repository>
+        <repository>
+            <id>common</id>
+            <layout>p2</layout>
+            <url>http://cob417169.cob.apac.bosch.com:8081/com.bosch.caltool.icdm.components.p2</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <tycho.version>0.19.0</tycho.version>
+        <tycho-extras.version>0.19.0</tycho-extras.version>
+        <juno-repo.url>http://download.eclipse.org/releases/indigo</juno-repo.url>
+        <tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
+        <osgi.os>win32</osgi.os>
+        <osgi.ws>win32</osgi.ws>
+        <osgi.arch>x86_64</osgi.arch>
+
+        <jacoco.version>0.7.2.201409121644</jacoco.version>
+        
+        <src>1.7</src>
+        <target>1.7</target>
+        
+        <!-- SonarQube specific properties -->
+        <sonar.projectVersion>1.6.0-SNAPSHOT</sonar.projectVersion>
+        <sonar.language>java</sonar.language>
+        <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+
+        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+        <sonar.surefire.reportsPath>${project.basedir}/../target/surefire-reports</sonar.surefire.reportsPath>
+        <sonar.jacoco.reportMissing.force.zero>true</sonar.jacoco.reportMissing.force.zero>
+
+        <sonar.scm.url>
+            scm:svn:https://korvm029.apac.bosch.com/etbtools/CalTools/Trunk/ToolsAndComponents/Components/NatTableCustom/30_src
+        </sonar.scm.url>
+        <sonar.links.homepage>https://si51686.si.de.bosch.com:8443/browse/CDMBC/component/22515</sonar.links.homepage>
+        <sonar.links.ci>http://cob417169:8081/jenkins/job/CalTools.Components.NatTableCustom</sonar.links.ci>
+        <sonar.links.issue>https://si51686.si.de.bosch.com:8443/browse/CDMBC/component/22515</sonar.links.issue>
+        <sonar.links.scm>https://korvm029.apac.bosch.com/etbtools/CalTools/Trunk/ToolsAndComponents/Components/NatTableCustom/30_src</sonar.links.scm>
+        
+    </properties>
+
+    <modules>
+        <module>../com.bosch.caltool.nattable</module>
+        <module>../com.bosch.caltool.nattable.test</module>
+    </modules>
+
+    <build>
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+        <plugins>
+        
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+                <version>${tycho.version}</version>
+                <extensions>true</extensions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>target-platform-configuration</artifactId>
+                <configuration>
+                    <environments>
+                        <environment>
+                            <os>win32</os>
+                            <ws>win32</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                    </environments>
+                </configuration>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>plugin-source</id>
+                        <goals>
+                            <goal>plugin-source</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+                <configuration>
+                    <includes>
+                        <include>com.bosch.*</include>
+                    </includes>
+                    <destFile>${project.basedir}/../target/jacoco.exec</destFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+            
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-compiler-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                    <configuration>
+                        <source>1.7</source>
+                        <target>1.7</target>
+                        <encoding>UTF-8</encoding>
+                        <compilerArgument>-warn:+discouraged,forbidden</compilerArgument>
+                    </configuration>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>target-platform-configuration</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-packaging-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.eclipse.tycho.extras</groupId>
+                            <artifactId>tycho-buildtimestamp-jgit</artifactId>
+                            <version>${tycho-extras.version}</version>
+                        </dependency>
+                    </dependencies>
+                    <configuration>
+                        <strictBinIncludes>false</strictBinIncludes>
+                        <format>'v'yyyyMMdd-HHmm</format>
+                        <timestampProvider>jgit</timestampProvider>
+                        <jgit.ignore>
+                        </jgit.ignore>
+                    </configuration>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-surefire-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-source-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                    <configuration>
+                        <strictSrcIncludes>false</strictSrcIncludes>
+                    </configuration>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho.extras</groupId>
+                    <artifactId>tycho-source-feature-plugin</artifactId>
+                    <version>${tycho-extras.version}</version>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho.extras</groupId>
+                    <artifactId>tycho-custom-bundle-plugin</artifactId>
+                    <version>${tycho-extras.version}</version>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-p2-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                    <configuration>
+                        <baselineMode>warn</baselineMode>
+                        <baselineReplace>none</baselineReplace>
+                        <baselineRepositories>
+                            <repository>
+                                <url>http://download.eclipse.org/eclipse/updates/3.7</url>
+                            </repository>
+                        </baselineRepositories>
+                    </configuration>
+                </plugin>
+                
+                <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven 
+                    build itself. -->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.eclipse.tycho
+                                        </groupId>
+                                        <artifactId>
+                                            tycho-packaging-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [0.18.0,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>build-qualifier</goal>
+                                            <goal>validate-id</goal>
+                                            <goal>
+                                                validate-version
+                                            </goal>
+                                            <goal>build-qualifier-aggregator</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.eclipse.tycho
+                                        </groupId>
+                                        <artifactId>
+                                            tycho-compiler-plugin
+                                        </artifactId>
+                                        <versionRange>
+                                            [0.18.0,)
+                                        </versionRange>
+                                        <goals>
+                                            <goal>compile</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.jacoco</groupId>
+                                        <artifactId>
+                                            jacoco-maven-plugin
+                                        </artifactId>
+                                        <versionRange>${jacoco.version}</versionRange>
+                                        <goals>
+                                            <goal>prepare-agent</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore></ignore>
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>2.6</version>
+                </plugin>
+                
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.15</version>
+                    <configuration>
+                        <argLine>-XX:-UseSplitVerifier</argLine>
+                        <includes>
+                            <include>**/*Test.java</include>
+                            <include>**/*Tests.java</include>
+                        </includes>
+                        <excludes>
+                            <exclude>**/it/*IT.java</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+                
+            </plugins>
+        </pluginManagement>
+        
+    </build>
+    
+    <reporting>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <configuration>
+                    <outputDirectory>${basedir}/target/surefire-reports</outputDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+</project>

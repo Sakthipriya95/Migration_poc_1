@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE MSRSW PUBLIC "-//ASAM//DTD CALIBRATION DATA FORMAT:V2.0.0:LAI:IAI:XML:CDF200.XSD//EN" "cdf_v2.0.0.sl.dtd">
+
+<MSRSW>
+    <CATEGORY>CDF20</CATEGORY>
+    <SW-SYSTEMS>
+        <SW-SYSTEM>
+            <SHORT-NAME>tbd</SHORT-NAME>
+            <SW-INSTANCE-SPEC>
+                <SW-INSTANCE-TREE>
+                    <SHORT-NAME>tbd</SHORT-NAME>
+                    <CATEGORY>NO_VCD</CATEGORY>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>AirCtl_tAirCldLo_C</SHORT-NAME>
+                        <LONG-NAME/>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF> </SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>deg C</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>999.96</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>2018-12-26T14:55:34</DATE>
+<CSUS>BRU2COB</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Max Value from Series Statistics</P>
+    <P>41677 datasets using this label</P>
+    <P>Label has 70 different values</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>AirCtl_pAirLo_C</SHORT-NAME>
+                        <LONG-NAME/>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF> </SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>hPa</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>740.0</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>2018-12-26T14:55:15</DATE>
+<CSUS>BRU2COB</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Most Frequent Value from Series Statistics</P>
+    <P>67729 datasets using this label</P>
+    <P>Label has 117 different values</P>
+    <P>11863 datasets using the most frequent value (17.52 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                </SW-INSTANCE-TREE>
+            </SW-INSTANCE-SPEC>
+        </SW-SYSTEM>
+    </SW-SYSTEMS>
+</MSRSW>

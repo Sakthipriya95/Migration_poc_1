@@ -1,0 +1,24 @@
+spool c:\temp\05_synonyms_fc2wp.log
+
+--------------------------------------------------------
+-- IMPORTANT !!! 
+-- To be executed in DGS_ICDM_JPA user
+--
+--------------------------------------------------------
+
+
+
+-------------------------------------------------
+--Task 231531 Schema for FC2WP definition
+-------------------------------------------------
+CREATE OR REPLACE SYNONYM T_BASE_COMPONENTS for DGS_ICDM.T_BASE_COMPONENTS;
+CREATE OR REPLACE SYNONYM T_FC2WP_DEFINITION for DGS_ICDM.T_FC2WP_DEFINITION;
+CREATE OR REPLACE SYNONYM T_FC2WP_DEF_VERSION for DGS_ICDM.T_FC2WP_DEF_VERSION;
+CREATE OR REPLACE SYNONYM T_FC2WP_MAPPING for DGS_ICDM.T_FC2WP_MAPPING;
+CREATE OR REPLACE SYNONYM T_FC2WP_PT_TYPE_RELV for DGS_ICDM.T_FC2WP_PT_TYPE_RELV;
+CREATE OR REPLACE SYNONYM T_FC2WP_MAP_PT_TYPES for DGS_ICDM.T_FC2WP_MAP_PT_TYPES;
+CREATE OR REPLACE SYNONYM T_POWER_TRAIN_TYPE for DGS_ICDM.T_POWER_TRAIN_TYPE;
+CREATE OR REPLACE SYNONYM T_WP_RESOURCE for DGS_ICDM.T_WP_RESOURCE;
+
+
+spool off

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE MSRSW PUBLIC "-//ASAM//DTD CALIBRATION DATA FORMAT:V2.0.0:LAI:IAI:XML:CDF200.XSD//EN" "cdf_v2.0.0.sl.dtd">
+
+<MSRSW>
+    <CATEGORY>CDF20</CATEGORY>
+    <SW-SYSTEMS>
+        <SW-SYSTEM>
+            <SHORT-NAME>tbd</SHORT-NAME>
+            <SW-INSTANCE-SPEC>
+                <SW-INSTANCE-TREE>
+                    <SHORT-NAME>tbd</SHORT-NAME>
+                    <CATEGORY>NO_VCD</CATEGORY>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>CEngDsT_dtMinDynTst_CUR</SHORT-NAME>
+                        <LONG-NAME/>
+                        <CATEGORY>CURVE</CATEGORY>
+                        <SW-FEATURE-REF> </SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME xml:space="preserve">K</UNIT-DISPLAY-NAME>
+                            <SW-ARRAYSIZE>
+<V>0.1</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+<V>0.1</V>
+<V>0.1</V>
+<V>0.1</V>
+<V>0.1</V>
+<V>0.1</V>
+<V>0.1</V>
+<V>0.1</V>
+<V>0.1</V>
+<V>0.1</V>
+<V>0.1</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-AXIS-CONTS>
+                            <SW-AXIS-CONT>
+<CATEGORY>STD_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>deg C</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF></SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>-28.140000000000008</V>
+    <V>-25.140000000000008</V>
+    <V>-23.140000000000008</V>
+    <V>-17.140000000000008</V>
+    <V>-13.14000000000001</V>
+    <V>-10.14000000000001</V>
+    <V>26.859999999999992</V>
+    <V>126.85999999999999</V>
+    <V>136.85999999999999</V>
+    <V>146.85999999999999</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                        </SW-AXIS-CONTS>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>2022-03-10T21:03:24</DATE>
+<CSUS>NDV4KOR</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Most Frequent Value from Series Statistics</P>
+    <P>54292 datasets using this parameter</P>
+    <P>Parameter has 195 different values</P>
+    <P>11380 datasets using the most frequent value (20.96 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>EpmCrS_tiPlsFwd_C</SHORT-NAME>
+                        <LONG-NAME/>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF> </SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME xml:space="preserve">us</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>51.0</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>2022-03-10T21:00:31</DATE>
+<CSUS>NDV4KOR</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Most Frequent Value from Series Statistics</P>
+    <P>14515 datasets using this parameter</P>
+    <P>Parameter has 13 different values</P>
+    <P>6005 datasets using the most frequent value (41.37 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DINH_FId.DFC_CEngDsTDynTst_CA</SHORT-NAME>
+                        <LONG-NAME/>
+                        <CATEGORY>VAL_BLK</CATEGORY>
+                        <SW-FEATURE-REF> </SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+                            <SW-ARRAYSIZE>
+<V>15</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+<VT xml:space="preserve">FId_ASModStrt</VT>
+<VT xml:space="preserve">FId_Fans</VT>
+<VT xml:space="preserve">FId_PFltMonEffPPDs</VT>
+<VT xml:space="preserve">FId_PPDsTempMeaMonStrt</VT>
+<VT xml:space="preserve">FId_PPDsTempMeaMonTest</VT>
+<VT xml:space="preserve">FId_PPDsTempMeaRngMonStrt</VT>
+<VT xml:space="preserve">FId_PPDsTempMeaRngMonTest</VT>
+<VT xml:space="preserve">FId_Unused</VT>
+<VT xml:space="preserve">FId_Unused</VT>
+<VT xml:space="preserve">FId_Unused</VT>
+<VT xml:space="preserve">FId_Unused</VT>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>2022-03-10T21:02:04</DATE>
+<CSUS>NDV4KOR</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Most Frequent Value from Series Statistics</P>
+    <P>52433 datasets using this parameter</P>
+    <P>Parameter has 950 different values</P>
+    <P>4461 datasets using the most frequent value (8.51 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>EpmCrS_facGapCrit1_C</SHORT-NAME>
+                        <LONG-NAME/>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF> </SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME xml:space="preserve">-</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>1.8</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>2022-03-10T20:55:00</DATE>
+<CSUS>NDV4KOR</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Most Frequent Value from Series Statistics</P>
+    <P>116174 datasets using this parameter</P>
+    <P>Parameter has 22 different values</P>
+    <P>49391 datasets using the most frequent value (42.51 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                </SW-INSTANCE-TREE>
+            </SW-INSTANCE-SPEC>
+        </SW-SYSTEM>
+    </SW-SYSTEMS>
+</MSRSW>

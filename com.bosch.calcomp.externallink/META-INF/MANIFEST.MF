@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: External Link
+Bundle-SymbolicName: com.bosch.calcomp.externallink;singleton:=true
+Bundle-Version: 2024.3.0
+Bundle-Vendor: BOSCH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.bosch.calcomp.adapter.logger;bundle-version="1.4.0",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ org.eclipse.swt
+Export-Package: com.bosch.calcomp.externallink,
+ com.bosch.calcomp.externallink.creation,
+ com.bosch.calcomp.externallink.exception,
+ com.bosch.calcomp.externallink.process,
+ com.bosch.calcomp.externallink.process.listener

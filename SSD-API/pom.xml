@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <groupId>com.bosch.ssd.api</groupId>
+    <artifactId>com.bosch.ssd.api</artifactId>
+    <version>2.0.0</version>
+    <name>SSD-API</name>
+    <description>Spring Boot application for SSD API</description>
+    <modelVersion>4.0.0</modelVersion>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <boot.version>2.7.10</boot.version>
+        <commons.io.version>2.6</commons.io.version>
+        <jacoco.version>0.8.7</jacoco.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.oracle.ojdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <scope>runtime</scope>
+            <version>19.3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons.io.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-core</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.6.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jtransc</groupId>
+            <artifactId>jtransc-rt</artifactId>
+            <version>0.5.0-ALPHA1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.caltool.authentication.ldap</groupId>
+            <artifactId>com.bosch.caltool.authentication.ldap</artifactId>
+            <version>2.1.0</version>
+
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.calcomp.adapter.logger</groupId>
+            <artifactId>com.bosch.calcomp.adapter.logger</artifactId>
+            <version>2.0.0</version>
+
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.caltool.security</groupId>
+            <artifactId>com.bosch.caltool.security</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.caltool.pwdservice.client</groupId>
+            <artifactId>com.bosch.caltool.pwdservice.client</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.bosch.checkssd.reports</groupId>
+            <artifactId>com.bosch.checkssd.reports</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.checkssd.context.help</groupId>
+            <artifactId>com.bosch.checkssd.context.help</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.checkssd.exception</groupId>
+            <artifactId>com.bosch.checkssd.exception</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.checkssd.logger</groupId>
+            <artifactId>com.bosch.checkssd.logger</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.checkssd.reports.comparision</groupId>
+            <artifactId>com.bosch.checkssd.reports.comparision</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr</artifactId>
+            <version>3.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.checkssd.datamodel</groupId>
+            <artifactId>com.bosch.checkssd.datamodel</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.checkssd.ws.complilabels</groupId>
+            <artifactId>com.bosch.checkssd.ws.complilabels</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.caltool.application.log.client</groupId>
+            <artifactId>com.bosch.caltool.application.log.client</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bosch.ssd.parser</groupId>
+            <artifactId>com.bosch.ssd.parser</artifactId>
+            <version>3.12.0</version>
+        </dependency> 
+              <dependency>
+            <groupId>com.bosch.calmodel.a2ldata</groupId>
+            <artifactId>com.bosch.calmodel.a2ldata</artifactId>
+            <version>1.19.1</version>
+        </dependency>
+        
+         <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>2.22.2</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.bosch.calcomp.exception</groupId>
+            <artifactId>com.bosch.calcomp.exception</artifactId>
+            <version>1.8.2</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.bosch.calcomp.calutil</groupId>
+            <artifactId>com.bosch.calcomp.calutil</artifactId>
+            <version>1.8.2</version>
+        </dependency>
+        
+     <dependency>
+            <groupId>com.bosch.calmodel.caldata</groupId>
+            <artifactId>com.bosch.calmodel.caldata</artifactId>
+            <version>1.5.5</version>
+        </dependency>
+        
+        
+     <dependency>
+            <groupId>com.bosch.calmodel.caldataphy</groupId>
+            <artifactId>com.bosch.calmodel.caldataphy</artifactId>
+            <version>1.5.5</version>
+        </dependency>
+        
+             <dependency>
+            <groupId>com.bosch.calcomp.commonutil</groupId>
+            <artifactId>com.bosch.calcomp.commonutil</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+        
+           <dependency>
+            <groupId>com.bosch.commontools.evaluator</groupId>
+            <artifactId>com.bosch.commontools.evaluator</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+          <dependency>
+            <artifactId>junit</artifactId>
+            <groupId>junit</groupId>
+            <version>4.12</version>
+        </dependency>
+        
+    </dependencies>
+    
+
+    <build>
+        <finalName>ssdapiservice</finalName>
+        <plugins>
+
+            <!-- Maven compiler 1.8 Java -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+            <!-- Maven implementation version <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jar-plugin</artifactId> 
+                <version>3.0.2</version> <configuration> <archive> <manifestEntries> <Implementation-version>${project.version}</Implementation-version> 
+                </manifestEntries> </archive> </configuration> </plugin> -->
+
+            <!-- Boot plugin -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${boot.version}</version>
+
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>build-info</id>
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-dependency-plugin</artifactId> <version>3.1.1</version> 
+                <executions> <execution> <id>download-sources</id> <goals> <goal>sources</goal> </goals> <configuration> </configuration> 
+                </execution> </executions> </plugin> -->
+
+            <!-- Sonar Test Coverage -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+                <executions>
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugin</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+          <repository>
+            <id>neon</id>
+            <layout>p2</layout>
+            <url>http://nexus.emt.cdg-smt.de.bosch.com:8280/nexus/content/repositories/eclipse_neon/</url>
+   </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+        <repository>
+            <id>spring-releases</id>
+            <name>Spring Releases</name>
+            <url>https://repo.spring.io/release</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/release</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <url>https://repo.spring.io/milestone</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <packaging>war</packaging>
+</project>

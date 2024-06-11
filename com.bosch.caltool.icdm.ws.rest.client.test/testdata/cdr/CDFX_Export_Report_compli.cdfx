@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE MSRSW PUBLIC "-//ASAM//DTD CALIBRATION DATA FORMAT:V2.0.0:LAI:IAI:XML:CDF200.XSD//EN" "cdf_v2.0.0.sl.dtd">
+
+<MSRSW>
+    <CATEGORY>CDF20</CATEGORY>
+    <SW-SYSTEMS>
+        <SW-SYSTEM>
+            <SHORT-NAME>tbd</SHORT-NAME>
+            <SW-INSTANCE-SPEC>
+                <SW-INSTANCE-TREE>
+                    <SHORT-NAME>tbd</SHORT-NAME>
+                    <CATEGORY>NO_VCD</CATEGORY>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>ChrCtl_tiEngRunngFlowMonMin_C</SHORT-NAME>
+                        <LONG-NAME>Mindestzeit im Zustand Motor läuft zur Freigabe des EGR Flow Monitoring</LONG-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF>ChrCtl_EGRFlowMon</SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>ms</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>3000.0</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>2019-03-22T11:25:22</DATE>
+<CSUS>BRU2COB</CSUS>
+<CSPR></CSPR>
+<CSWP>iCDM Check Value from Calibration Data Review</CSWP>
+<CSTO></CSTO>
+<CSTV></CSTV>
+<CSPI></CSPI>
+<CSDI>iCDM - CalDataReview</CSDI>
+<REMARK>
+    <P>Check Value from iCDM Calibration Data Review rule.</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                </SW-INSTANCE-TREE>
+            </SW-INSTANCE-SPEC>
+        </SW-SYSTEM>
+    </SW-SYSTEMS>
+</MSRSW>

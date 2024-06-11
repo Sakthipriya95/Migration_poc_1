@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: com.bosch.caltool.ssd.service.client.test
+Bundle-Version: 1.0.0
+Bundle-Activator: com.bosch.caltool.ssd.service.client.test.Activator
+Bundle-Vendor: BOSCH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.bosch.caltool.ssd.rulesearch.client,
+ com.bosch.caltool.ssd.rulesearch.client.model,
+ com.bosch.caltool.ssd.rulesearch.exception,
+ com.bosch.caltool.ssd.rulesearch.service.client,
+ com.bosch.caltool.ssd.service.client.model
+Automatic-Module-Name: com.bosch.caltool.ssd.rulesearch.client.test
+Bundle-ActivationPolicy: lazy
+Require-Bundle: com.bosch.caltool.ssd.service.client,
+ com.bosch.caltool.ssd.service.client.model
+

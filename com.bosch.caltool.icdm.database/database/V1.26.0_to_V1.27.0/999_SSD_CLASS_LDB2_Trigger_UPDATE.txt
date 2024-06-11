@@ -1,0 +1,18 @@
+K5ESK_LDB2:
+
+grant SELECT on K5ESK_LDB2.T_LDB2_PAVAST to DGS_ICDM ;
+
+Add update statement to these triggers:
+- TRG_PAVAST_MODIFY
+- TRG_LDB2_PAV_C
+
+
+additional statement:
+
+   /*
+      update the SSD_CLASS in iCDM if label available
+   */
+   update dgs_icdm.t_parameter
+      set ssd_class = :NEW.ssd_class
+    where NAME =  :NEW.label
+   ; 

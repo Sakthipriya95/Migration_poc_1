@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="D:\eclipse\plugins\org.eclipse.core.runtime.compatibility.registry_3.2.200.v20080610\runtime_registry_compatibility.jar;D:\eclipse\plugins\org.eclipse.core.contenttype_3.3.0.v20080604-1400.jar;D:\eclipse\plugins\org.eclipse.core.runtime_3.4.0.v20080512.jar;../com.bosch.calcomp.adapter.logger/lib/log4j.jar;D:\eclipse\plugins\org.eclipse.equinox.preferences_3.2.200.v20080421-2006.jar;lib/log4j.jar;D:\eclipse\plugins\org.eclipse.equinox.app_1.1.0.v20080421-2006.jar;D:\eclipse\plugins\org.eclipse.equinox.registry_3.4.0.v20080516-0950.jar;../com.bosch.calcomp.adapter.logger/bin;D:\eclipse\plugins\org.eclipse.core.jobs_3.4.0.v20080512.jar;D:\eclipse\plugins\org.eclipse.osgi_3.4.0.v20080605-1900.jar;D:\eclipse\plugins\org.eclipse.equinox.common_3.4.0.v20080421-2006.jar" destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.bosch.calcomp.pacoparser.pacoModelCollection,com.bosch.calcomp.pacoparser,com.bosch.calcomp.pacoparser.utility,com.bosch.calcomp.adapter.logger,com.bosch.calcomp.pacoparser.factory,com.bosch.calcomp.pacoparser.exception,com.bosch.calcomp.adapter.logger.util,com.bosch.calcomp.pacoparser.modeladapter,com.bosch.calcomp.pacoparser.tagprocessor" source="1.5" sourcepath="../com.bosch.calcomp.adapter.logger/src;src" splitindex="true" use="true" version="true">
+            <link href="file:/D:/Projects/CalTools/Components/PacoParser/com.bosch.calcomp.adapter.logger/doc/"/>
+        </javadoc>
+    </target>
+</project>

@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>com.bosch.caltool.icdm.ws.rest.client</artifactId>
+  <packaging>eclipse-plugin</packaging>
+  <parent>
+      <groupId>com.bosch.caltool.icdm.tycho</groupId>
+      <artifactId>com.bosch.caltool.icdm.main</artifactId>
+      <version>${iCDM.version}</version>
+      <relativePath>../com.bosch.caltool.icdm.main/pom.xml/</relativePath>
+  </parent>
+  <groupId>com.bosch.caltool.icdm.ws.rest.client</groupId>
+  <version>${iCDM.version}</version>
+</project>

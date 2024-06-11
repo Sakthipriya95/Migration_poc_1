@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model
+Bundle-SymbolicName: com.bosch.caltool.ssd.service.client.model
+Bundle-Version: 1.0.0
+Bundle-Vendor: BOSCH
+Automatic-Module-Name: com.bosch.caltool.ssd.release.client.model
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.bosch.caltool.ssd.service.client.model

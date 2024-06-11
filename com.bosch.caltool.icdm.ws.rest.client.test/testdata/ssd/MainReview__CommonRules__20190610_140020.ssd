@@ -1,0 +1,27 @@
+!  SSD-Report for  Software, SSD-Labeldatabase, for ICDM
+!  ============================================================================================
+ 
+!  System-spezifische Software-Daten
+ 
+! 1. GRP
+! =========================================================
+ 
+! 1.1 ACCtl_Demand
+! ---------------------------------------------------------
+ 
+#usecase Review
+#contact ""
+ 
+   ACCtl_nEngACOffHi_C, >=7000, <=10000
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   ACCtl_nEngMinHi_C, >=500, <=740
+ 
+#endcontact 
+#endusecase
+ 

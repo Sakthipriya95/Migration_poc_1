@@ -1,0 +1,4 @@
+Mandatory attributes with values for level <level>. 
+
+Shows the number of mandatory attributes which have a value entered. 
+Considers all mandatory attributes of the level <level>. 

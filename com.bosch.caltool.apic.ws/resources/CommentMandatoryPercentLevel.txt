@@ -1,0 +1,4 @@
+Percentage of all filled mandatory attributes for level <level>. 
+Due to the different structure of the PIDCs the percentage can't be really 
+compared on PIDC/Variant/Sub-Variant level.
+For comparison, use the overall percentage.

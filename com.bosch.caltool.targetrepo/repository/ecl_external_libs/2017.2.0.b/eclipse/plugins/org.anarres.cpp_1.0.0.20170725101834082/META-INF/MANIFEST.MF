@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.anarres.cpp
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: %providerName
+Export-Package: org.anarres.cpp
+Bundle-Name: %pluginName
+Bundle-Version: 1.0.0.20170725101834082
+Bundle-ClassPath: lib/anarres-cpp.jar,.
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

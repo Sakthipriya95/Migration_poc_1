@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- This file was auto-generated from WSDL --><!-- by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST) --><serviceGroup>
+    <service name="APIC">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="com.bosch.caltool.apic.ws.APICMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">com.bosch.caltool.apic.ws.APICSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="getPidcWebFlowDataV2" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcWebFlowDataV2</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowDataV2Response</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowDataV2/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcWebFlowDataV2Fault">http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowDataV2/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcWebFlowDataV2Fault_Exception">http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowDataV2/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getPidcWebFlowDataV2Fault">urn:getPidcWebFlowDataV2getPidcWebFlowDataV2Fault</faultActionMapping>
+        </operation>
+        <operation name="getPidcFavourites" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcFavourites</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcFavouritesResponse</outputActionMapping>
+        </operation>
+        <operation name="getPidcScoutResult" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcScoutResult</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcScoutResultResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getPidcScoutResult/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcScoutResultFault">http://ws.apic.caltool.bosch.com/APIC/getPidcScoutResult/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcScoutResultFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getPidcScoutResult/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getPidcScoutResultFault">urn:getPidcScoutResultgetPidcScoutResultFault</faultActionMapping>
+        </operation>
+        <operation name="getProjectIdCardV2" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getProjectIdCardV2</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getProjectIdCardV2Response</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getProjectIdCardV2/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetProjectIdCardV2Fault">http://ws.apic.caltool.bosch.com/APIC/getProjectIdCardV2/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetProjectIdCardV2Fault_Exception">http://ws.apic.caltool.bosch.com/APIC/getProjectIdCardV2/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getProjectIdCardV2Fault">urn:getProjectIdCardV2getProjectIdCardV2Fault</faultActionMapping>
+        </operation>
+        <operation name="getVcdmLabelStatistics" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getVcdmLabelStatistics</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getVcdmLabelStatisticsResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getVcdmLabelStatistics/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetVcdmLabelStatisticsFault">http://ws.apic.caltool.bosch.com/APIC/getVcdmLabelStatistics/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetVcdmLabelStatisticsFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getVcdmLabelStatistics/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getVcdmLabelStatisticsFault">urn:getVcdmLabelStatisticsgetVcdmLabelStatisticsFault</faultActionMapping>
+        </operation>
+        <operation name="getParameterStatisticsFile" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getParameterStatisticsFile</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getParameterStatisticsFileResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getParameterStatisticsFile/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetParameterStatisticsFileFault">http://ws.apic.caltool.bosch.com/APIC/getParameterStatisticsFile/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetParameterStatisticsFileFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getParameterStatisticsFile/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getParameterStatisticsFileFault">urn:getParameterStatisticsFilegetParameterStatisticsFileFault</faultActionMapping>
+        </operation>
+        <operation name="getPidcDiffs" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcDiffs</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcDiffsResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getPidcDiffs/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcDiffsFault">http://ws.apic.caltool.bosch.com/APIC/getPidcDiffs/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcDiffsFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getPidcDiffs/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getPidcDiffsFault">urn:getPidcDiffsgetPidcDiffsFault</faultActionMapping>
+        </operation>
+        <operation name="getPidcActiveVersionId" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcActiveVersionId</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcActiveVersionIdResponse</outputActionMapping>
+        </operation>
+        <operation name="getWebServiceVersion" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getWebServiceVersion</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getWebServiceVersionResponse</outputActionMapping>
+        </operation>
+        <operation name="getPidcVersionStatistics" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcVersionStatistics</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcVersionStatisticsResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getPidcVersionStatistics/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcVersionStatisticsFault">http://ws.apic.caltool.bosch.com/APIC/getPidcVersionStatistics/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcVersionStatisticsFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getPidcVersionStatistics/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getPidcVersionStatisticsFault">urn:getPidcVersionStatisticsgetPidcVersionStatisticsFault</faultActionMapping>
+        </operation>
+        <operation name="cancelSession" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/cancelSession</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/cancelSessionResponse</outputActionMapping>
+        </operation>
+        <operation name="getPidcAttrDiffReportForVersion" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcAttrDiffReportForVersion</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcAttrDiffReportForVersionResponse</outputActionMapping>
+        </operation>
+        <operation name="getAllProjectIdCardVersions" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getAllProjectIdCardVersions</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getAllProjectIdCardVersionsResponse</outputActionMapping>
+        </operation>
+        <operation name="getAllAttributes" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getAllAttributes</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getAllAttributesResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getAllAttributes/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAllAttributesFault">http://ws.apic.caltool.bosch.com/APIC/getAllAttributes/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAllAttributesFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getAllAttributes/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getAllAttributesFault">urn:getAllAttributesgetAllAttributesFault</faultActionMapping>
+        </operation>
+        <operation name="getAttrGroups" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getAttrGroups</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getAttrGroupsResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getAttrGroups/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAttrGroupsFault">http://ws.apic.caltool.bosch.com/APIC/getAttrGroups/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAttrGroupsFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getAttrGroups/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getAttrGroupsFault">urn:getAttrGroupsgetAttrGroupsFault</faultActionMapping>
+        </operation>
+        <operation name="getPidcAccessRight" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcAccessRight</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcAccessRightResponse</outputActionMapping>
+        </operation>
+        <operation name="getUseCases" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getUseCases</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getUseCasesResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getUseCases/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetUseCasesFault">http://ws.apic.caltool.bosch.com/APIC/getUseCases/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetUseCasesFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getUseCases/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getUseCasesFault">urn:getUseCasesgetUseCasesFault</faultActionMapping>
+        </operation>
+        <operation name="getAllProjectIdCards" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getAllProjectIdCards</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getAllProjectIdCardsResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getAllProjectIdCards/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAllProjectIdCardsFault">http://ws.apic.caltool.bosch.com/APIC/getAllProjectIdCards/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAllProjectIdCardsFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getAllProjectIdCards/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getAllProjectIdCardsFault">urn:getAllProjectIdCardsgetAllProjectIdCardsFault</faultActionMapping>
+        </operation>
+        <operation name="getPidcAttrDiffReport" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcAttrDiffReport</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcAttrDiffReportResponse</outputActionMapping>
+        </operation>
+        <operation name="Logout" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/Logout</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/LogoutResponse</outputActionMapping>
+        </operation>
+        <operation name="invalidateWebFlowElement" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/invalidateWebFlowElement</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/invalidateWebFlowElementResponse</outputActionMapping>
+        </operation>
+        <operation name="getUseCaseWithSectionTree" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getUseCaseWithSectionTree</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getUseCaseWithSectionTreeResponse</outputActionMapping>
+        </operation>
+        <operation name="Login" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/Login</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/LoginResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/Login/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="LoginFault">http://ws.apic.caltool.bosch.com/APIC/Login/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="LoginFault_Exception">http://ws.apic.caltool.bosch.com/APIC/Login/Fault/fault</faultActionMapping>
+        </operation>
+        <operation name="getProjectIdCardForVersion" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getProjectIdCardForVersion</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getProjectIdCardForVersionResponse</outputActionMapping>
+        </operation>
+        <operation name="getStatusForAsyncExecution" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getStatusForAsyncExecution</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getStatusForAsyncExecutionResponse</outputActionMapping>
+        </operation>
+        <operation name="loadA2LFileData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/loadA2LFileData</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/loadA2LFileDataResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/loadA2LFileData/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="LoadA2LFileDataFault">http://ws.apic.caltool.bosch.com/APIC/loadA2LFileData/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="LoadA2LFileDataFault_Exception">http://ws.apic.caltool.bosch.com/APIC/loadA2LFileData/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="loadA2LFileDataFault">urn:loadA2LFileDataloadA2LFileDataFault</faultActionMapping>
+        </operation>
+        <operation name="getVcdmLabelStatisticsForWP" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getVcdmLabelStatisticsForWP</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getVcdmLabelStatisticsForWPResponse</outputActionMapping>
+        </operation>
+        <operation name="getParameterStatistics" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getParameterStatistics</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getParameterStatisticsResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getParameterStatistics/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetParameterStatisticsFault">http://ws.apic.caltool.bosch.com/APIC/getParameterStatistics/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetParameterStatisticsFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getParameterStatistics/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getParameterStatisticsFault">urn:getParameterStatisticsgetParameterStatisticsFault</faultActionMapping>
+        </operation>
+        <operation name="getParameterReviewResult" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getParameterReviewResult</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getParameterReviewResultResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getParameterReviewResult/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetParameterReviewResultFault">http://ws.apic.caltool.bosch.com/APIC/getParameterReviewResult/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetParameterReviewResultFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getParameterReviewResult/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getParameterReviewResultFault">urn:getParameterReviewResultgetParameterReviewResultFault</faultActionMapping>
+        </operation>
+        <operation name="getParameterStatisticsXML" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getParameterStatisticsXML</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getParameterStatisticsXMLResponse</outputActionMapping>
+        </operation>
+        <operation name="getAttributeValues" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getAttributeValues</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getAttributeValuesResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getAttributeValues/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAttributeValuesFault">http://ws.apic.caltool.bosch.com/APIC/getAttributeValues/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAttributeValuesFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getAttributeValues/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getAttributeValuesFault">urn:getAttributeValuesgetAttributeValuesFault</faultActionMapping>
+        </operation>
+        <operation name="getPidcDiffForVersion" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcDiffForVersion</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcDiffForVersionResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getPidcDiffForVersion/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcDiffForVersionFault">http://ws.apic.caltool.bosch.com/APIC/getPidcDiffForVersion/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcDiffForVersionFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getPidcDiffForVersion/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getPidcDiffForVersionFault">urn:getPidcDiffForVersiongetPidcDiffForVersionFault</faultActionMapping>
+        </operation>
+        <operation name="getPidcStatistic" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcStatistic</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcStatisticResponse</outputActionMapping>
+        </operation>
+        <operation name="getPidcWebFlowElement" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcWebFlowElement</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowElementResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowElement/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcWebFlowElementFault1">http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowElement/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcWebFlowElementFault1_Exception">http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowElement/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getPidcWebFlowElementFault1">urn:getPidcWebFlowElementgetPidcWebFlowElementFault1</faultActionMapping>
+        </operation>
+        <operation name="getProjectIdCard" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getProjectIdCard</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getProjectIdCardResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getProjectIdCard/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetProjectIdCardFault">http://ws.apic.caltool.bosch.com/APIC/getProjectIdCard/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetProjectIdCardFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getProjectIdCard/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getProjectIdCardFault">urn:getProjectIdCardgetProjectIdCardFault</faultActionMapping>
+        </operation>
+        <operation name="getAllPidcDiffForVersion" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getAllPidcDiffForVersion</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getAllPidcDiffForVersionResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getAllPidcDiffForVersion/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAllPidcDiffForVersionFault">http://ws.apic.caltool.bosch.com/APIC/getAllPidcDiffForVersion/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAllPidcDiffForVersionFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getAllPidcDiffForVersion/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getAllPidcDiffForVersionFault">urn:getAllPidcDiffForVersiongetAllPidcDiffForVersionFault</faultActionMapping>
+        </operation>
+        <operation name="getParameterStatisticsExt" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getParameterStatisticsExt</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getParameterStatisticsExtResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getParameterStatisticsExt/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetParameterStatisticsExtFault">http://ws.apic.caltool.bosch.com/APIC/getParameterStatisticsExt/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetParameterStatisticsExtFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getParameterStatisticsExt/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getParameterStatisticsExtFault">urn:getParameterStatisticsExtgetParameterStatisticsExtFault</faultActionMapping>
+        </operation>
+        <operation name="getAllPidcDiff" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getAllPidcDiff</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getAllPidcDiffResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getAllPidcDiff/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAllPidcDiffFault">http://ws.apic.caltool.bosch.com/APIC/getAllPidcDiff/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetAllPidcDiffFault_Exception">http://ws.apic.caltool.bosch.com/APIC/getAllPidcDiff/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getAllPidcDiffFault">urn:getAllPidcDiffgetAllPidcDiffFault</faultActionMapping>
+        </operation>
+        <operation name="getPidcScoutResultForVersion" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcScoutResultForVersion</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcScoutResultForVersionResponse</outputActionMapping>
+        </operation>
+        <operation name="getPidcWebFlowData" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://ws.apic.caltool.bosch.com">
+            <actionMapping>http://ws.apic.caltool.bosch.com/getPidcWebFlowData</actionMapping>
+            <outputActionMapping>http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowDataResponse</outputActionMapping>
+            <faultActionMapping faultName="fault">http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowData/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcWebFlowDataFault1">http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowData/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="GetPidcWebFlowDataFault1_Exception">http://ws.apic.caltool.bosch.com/APIC/getPidcWebFlowData/Fault/fault</faultActionMapping>
+            <faultActionMapping faultName="getPidcWebFlowDataFault1">urn:getPidcWebFlowDatagetPidcWebFlowDataFault1</faultActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

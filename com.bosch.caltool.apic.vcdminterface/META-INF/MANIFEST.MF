@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: vCDM Interface
+Bundle-SymbolicName: com.bosch.caltool.apic.vcdminterface;singleton:=true
+Bundle-Version: 2024.3.0
+Bundle-Activator: com.bosch.caltool.apic.vcdminterface.Activator
+Bundle-Vendor: BOSCH
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.bosch.easee.cdmWebServiceInterface,
+ com.bosch.easee.eASEEcdm_Service,
+ com.bosch.caltool.icdm.logger;bundle-version="1.1.0",
+ com.bosch.calcomp.adapter.logger;bundle-version="1.1.0",
+ com.bosch.easee.eASEEcdm_ComAPI,
+ com.bosch.caltool.icdm.common.util;bundle-version="1.1.0",
+ com.bosch.caltool.security;bundle-version="1.0.1",
+ com.bosch.calcomp.externallink;bundle-version="2.0.1",
+ org.apache.axis2;bundle-version="1.6.2",
+ com.bosch.caltool.icdm.model;bundle-version="2.3.0",
+ org.apache.commons.lang;bundle-version="2.6.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.bosch.caltool.apic.vcdminterface,
+ com.bosch.caltool.apic.vcdminterface.constants,
+ com.bosch.caltool.apic.vcdminterface.util
+Bundle-ClassPath: .

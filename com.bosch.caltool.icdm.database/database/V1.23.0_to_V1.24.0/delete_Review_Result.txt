@@ -1,0 +1,37 @@
+delete from T_RVW_VARIANTS
+where RESULT_ID in (774130179);
+
+delete from T_RVW_PARTICIPANTS
+where RESULT_ID in (774130179);
+
+delete from TABV_ICDM_FILE_DATA
+ where FILE_ID in (
+                   select file_id
+                     from t_rvw_files
+                    where t_rvw_files.RESULT_ID in (774130179)
+                  )
+;                  
+
+delete from T_RVW_FILES
+where RESULT_ID in (774130179);
+
+delete from TABV_ICDM_FILES
+ where FILE_ID in (
+                   select file_id
+                     from t_rvw_files
+                    where t_rvw_files.RESULT_ID in (774130179)
+                  )
+;                  
+
+
+delete from T_RVW_FUNCTIONS
+where RESULT_ID in (774130179);
+
+delete from T_RVW_PARAMETERS
+where RESULT_ID in (774130179);
+
+delete from T_RVW_RESULTS
+where RESULT_ID in (774130179);
+
+delete from T_RVW_RESULTS_TEMP
+where RESULT_ID in (774130179);

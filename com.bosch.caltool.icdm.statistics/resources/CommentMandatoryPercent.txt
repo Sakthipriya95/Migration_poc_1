@@ -1,0 +1,14 @@
+Percentage of all filled mandatory attributes over all levels. 
+A percentage and not an absolute number is shown, because the number
+of mandatory attributes can be different depending on the number of variants 
+and sub-variants.
+
+For example:
+PIDC 1 has three variants. Attribute 1 is maintained on variant level. This
+means, attribute 1 has to be entered three times.
+PIDC 2 has no variants. Attribute 1 is maintained on PIDC level. This
+means, attribute 1 has to be entered once.
+
+Note: There are mandatory attributes that have not fulfilled dependencies. 
+They are not considered for a percentage. That means, the number
+of possible mandatory attributes can be different from PIDC to PIDC.

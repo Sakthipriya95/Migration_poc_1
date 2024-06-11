@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.jmathtools.berlios
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Robert Bosch GmbH
+Export-Package: Jama,Jama.examples,Jama.test,Jama.util,edu.cornell.las
+ sp.houle.RngPack,org.math.array,org.math.array.util,org.math.io,org.m
+ ath.io.files,org.math.io.littleendian,org.math.io.parser,org.math.io.
+ stream,org.math.plot,org.math.plot.canvas,org.math.plot.components,or
+ g.math.plot.plotObjects,org.math.plot.plots,org.math.plot.render,org.
+ math.plot.utils
+Bundle-Name: Jmath
+Bundle-Version: 1.0.0.20170725101834082
+Bundle-ClassPath: lib/jmatharray.jar,lib/jmathio.jar,lib/jmathplot.jar
+ ,.
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

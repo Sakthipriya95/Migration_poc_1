@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE MSRSW PUBLIC "-//ASAM//DTD CALIBRATION DATA FORMAT:V2.0.0:LAI:IAI:XML:CDF200.XSD//EN" "cdf_v2.0.0.sl.dtd">
+
+<MSRSW>
+    <CATEGORY>CDF20</CATEGORY>
+    <SW-SYSTEMS>
+        <SW-SYSTEM>
+            <SHORT-NAME>tbd</SHORT-NAME>
+            <SW-INSTANCE-SPEC>
+                <SW-INSTANCE-TREE>
+                    <SHORT-NAME>tbd</SHORT-NAME>
+                    <CATEGORY>NO_VCD</CATEGORY>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>AirCtl_tiFltEGRLPTCACUsNegSlp_C</SHORT-NAME>
+                        <LONG-NAME/>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF> </SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>ms</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>99.99923855646084</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>2018-11-16T14:39:44</DATE>
+<CSUS>RGO7COB</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Most Frequent Value from Series Statistics</P>
+    <P>393 datasets using this label</P>
+    <P>Label has 3 different values</P>
+    <P>282 datasets using the most frequent value (71.76 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>AirCtl_facEGRLPTCACUsLim_MAP</SHORT-NAME>
+                        <LONG-NAME/>
+                        <CATEGORY>MAP</CATEGORY>
+                        <SW-FEATURE-REF> </SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+                            <SW-ARRAYSIZE>
+<V>16</V>
+<V>16</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-AXIS-CONTS>
+                            <SW-AXIS-CONT>
+<CATEGORY>STD_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>rpm</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF></SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>0.0</V>
+    <V>500.0</V>
+    <V>750.0</V>
+    <V>1000.0</V>
+    <V>1250.0</V>
+    <V>1500.0</V>
+    <V>1750.0</V>
+    <V>2000.0</V>
+    <V>2500.0</V>
+    <V>2750.0</V>
+    <V>3000.0</V>
+    <V>3250.0</V>
+    <V>3500.0</V>
+    <V>3750.0</V>
+    <V>4000.0</V>
+    <V>4500.0</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                            <SW-AXIS-CONT>
+<CATEGORY>STD_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>deg C</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF></SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>-0.0400000000000091</V>
+    <V>9.95999999999999</V>
+    <V>12.45999999999999</V>
+    <V>14.95999999999999</V>
+    <V>17.45999999999999</V>
+    <V>19.95999999999999</V>
+    <V>22.45999999999999</V>
+    <V>24.95999999999999</V>
+    <V>29.95999999999999</V>
+    <V>32.459999999999994</V>
+    <V>34.959999999999994</V>
+    <V>37.459999999999994</V>
+    <V>39.959999999999994</V>
+    <V>42.459999999999994</V>
+    <V>44.959999999999994</V>
+    <V>49.959999999999994</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                        </SW-AXIS-CONTS>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>2018-11-16T14:47:49</DATE>
+<CSUS>RGO7COB</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Most Frequent Value from Series Statistics</P>
+    <P>758 datasets using this label</P>
+    <P>Label has 15 different values</P>
+    <P>321 datasets using the most frequent value (42.35 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                </SW-INSTANCE-TREE>
+            </SW-INSTANCE-SPEC>
+        </SW-SYSTEM>
+    </SW-SYSTEMS>
+</MSRSW>

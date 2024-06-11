@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.bosch.caltools.tulservice.client
+Bundle-SymbolicName: com.bosch.calcomp.tulservice.client
+Export-Package: com.bosch.calcomp.tulservice.client,com.bosch.calcomp.
+ tulservice.internal.model,com.bosch.calcomp.tulservice.model,com.bosc
+ h.calcomp.tulservice.utils
+Bundle-Name: Tool Usage Logger Client
+Bundle-Version: 1.2.2
+Bundle-ClassPath: .,libs/guava-io-r03.jar
+Require-Bundle: com.bosch.calcomp.oshi;bundle-version="1.0.0",com.bosc
+ h.calcomp.adapter.logger;bundle-version="2.0.0",com.bosch.caltool.pwd
+ service.client;bundle-version="1.2.0"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: Bosch
+Import-Package: com.fasterxml.jackson.annotation,com.fasterxml.jackson
+ .databind
+

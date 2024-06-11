@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2011 Tasktop Technologies and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+         Tasktop Technologies - initial API and implementation
+ -->
+<feature
+      id="org.eclipse.mylyn.commons.sdk"
+      label="%featureName"
+      version="3.12.0.v20140605-1728"
+      provider-name="%providerName"
+      plugin="org.eclipse.mylyn.commons.core">
+
+   <description url="http://eclipse.org/mylyn/commons/">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.mylyn.commons"
+         version="3.12.0.v20140605-1728"/>
+
+   <includes
+         id="org.eclipse.mylyn.discovery"
+         version="3.12.0.v20140605-1728"/>
+
+   <includes
+         id="org.eclipse.mylyn.monitor"
+         version="3.12.0.v20140605-1728"/>
+
+   <includes
+         id="org.eclipse.mylyn.commons.identity"
+         version="1.4.0.v20140605-1728"/>
+
+   <includes
+         id="org.eclipse.mylyn.commons.notifications"
+         version="1.4.0.v20140605-1728"/>
+
+   <includes
+         id="org.eclipse.mylyn.commons.repositories"
+         version="1.4.0.v20140605-1728"/>
+
+   <includes
+         id="org.eclipse.mylyn.commons.repositories.http"
+         version="1.4.0.v20140605-1728"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.net"
+         download-size="72"
+         install-size="133"
+         version="3.12.0.v20140404-1455"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.xmlrpc"
+         download-size="28"
+         install-size="55"
+         version="3.12.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.sdk.util"
+         download-size="47"
+         install-size="90"
+         version="3.12.0.v20140524-1455"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.core.source"
+         download-size="81"
+         install-size="231"
+         version="3.12.0.v20140405-2305"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.identity.core.source"
+         download-size="25"
+         install-size="49"
+         version="1.4.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.identity.ui.source"
+         download-size="11"
+         install-size="27"
+         version="1.4.0.v20140411-0916"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.net.source"
+         download-size="56"
+         install-size="165"
+         version="3.12.0.v20140404-1455"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.notifications.core.source"
+         download-size="7"
+         install-size="11"
+         version="1.4.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.notifications.feed.source"
+         download-size="13"
+         install-size="26"
+         version="1.4.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.notifications.ui.source"
+         download-size="30"
+         install-size="77"
+         version="1.4.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.repositories.core.source"
+         download-size="27"
+         install-size="65"
+         version="1.4.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.repositories.ui.source"
+         download-size="50"
+         install-size="140"
+         version="1.4.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.repositories.http.core.source"
+         download-size="18"
+         install-size="47"
+         version="1.4.0.v20140515-1744"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.screenshots.source"
+         download-size="26"
+         install-size="104"
+         version="3.12.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.sdk.util.source"
+         download-size="23"
+         install-size="64"
+         version="3.12.0.v20140524-1455"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.ui.source"
+         download-size="83"
+         install-size="237"
+         version="3.12.0.v20140402-2209"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.workbench.source"
+         download-size="72"
+         install-size="201"
+         version="3.12.0.v20140411-2206"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.commons.xmlrpc.source"
+         download-size="18"
+         install-size="38"
+         version="3.12.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.discovery.core.source"
+         download-size="52"
+         install-size="146"
+         version="3.12.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.discovery.ui.source"
+         download-size="36"
+         install-size="111"
+         version="3.12.0.v20140512-2018"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.monitor.core.source"
+         download-size="23"
+         install-size="55"
+         version="3.12.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.mylyn.monitor.ui.source"
+         download-size="29"
+         install-size="72"
+         version="3.12.0.v20140331-0927"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.xmlrpc"
+         download-size="223"
+         install-size="420"
+         version="3.0.0.v20100427-1100"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.ws.commons.util"
+         download-size="42"
+         install-size="76"
+         version="1.0.1.v20100518-1140"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.logging"
+         download-size="66"
+         install-size="138"
+         version="1.1.1.v201101211721"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.codec"
+         download-size="251"
+         install-size="504"
+         version="1.6.0.v201305230611"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.httpclient"
+         download-size="314"
+         install-size="650"
+         version="3.1.0.v201012070820"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.lang"
+         download-size="292"
+         install-size="619"
+         version="2.6.0.v201404270220"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.io"
+         download-size="166"
+         install-size="327"
+         version="2.0.1.v201105210651"
+         unpack="false"/>
+
+   <plugin
+         id="com.google.gson"
+         download-size="206"
+         install-size="416"
+         version="2.2.4.v201311231704"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.httpcomponents.httpcore"
+         download-size="253"
+         install-size="507"
+         version="4.2.5.v201311072007"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.httpcomponents.httpclient"
+         download-size="613"
+         install-size="1259"
+         version="4.2.6.v201311072007"
+         unpack="false"/>
+
+   <plugin
+         id="com.google.guava"
+         download-size="2211"
+         install-size="4997"
+         version="15.0.0.v201403281430"
+         unpack="false"/>
+
+</feature>

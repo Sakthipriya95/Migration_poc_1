@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Password Service Client
+Bundle-SymbolicName: com.bosch.caltool.pwdservice.client
+Bundle-Version: 1.3.0
+Export-Package: com.bosch.caltool.pwdservice,
+ com.bosch.caltool.pwdservice.exception
+Bundle-ClassPath: .
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: Bosch
+Require-Bundle: com.bosch.calcomp.adapter.logger

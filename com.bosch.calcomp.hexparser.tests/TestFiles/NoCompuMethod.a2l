@@ -1,0 +1,155 @@
+﻿ASAP2_VERSION  1 4
+/* Erstellt von DAMOS++ V5.6.4 WinServer 2008 R2 */
+/begin PROJECT P695 "EDC17DC"
+  /begin HEADER ""
+    VERSION    "P_695_FDS3__CV141100"
+    PROJECT_NO P695
+  /end HEADER
+
+  /begin MODULE DIM ""
+  
+		/begin COMPU_TAB
+
+			AIRSYS_NUMTEMPFLDLENGTH_SY_Compu
+    "Schwelle für den alterungsabh䮧igen Wirkungsgrad"
+			TAB_NOINTP
+			9
+			0 0
+			1 1
+			2 2
+			3 3
+			4 4
+			5 5
+			6 6
+			7 7
+			8 8
+
+
+	   /end COMPU_TAB
+	   
+	  /begin CHARACTERISTIC
+
+		AirSys_stMskOpModeSysTst_C
+		"Maske zur Auswahl des Zustandes des Betriebsartenkoordinators"
+		VALUE
+		0x80877994
+		Val_Wu16
+		65535.00
+		OneToOne
+		0.00
+		65535.00
+		FORMAT "%8.2"
+		EXTENDED_LIMITS 0.00 65535.00
+		
+		
+		/begin ANNOTATION 
+			ANNOTATION_LABEL "Calibration Note"
+			ANNOTATION_ORIGIN "Graf Zeppelin"
+			/begin ANNOTATION_TEXT 
+				"The very nice ASAM MCD-2 MC Specification." 
+				"Text.\r\n" 
+				"In case of a quotation mark " "use \" or "" to mark it." 
+			/end ANNOTATION_TEXT 
+		/end ANNOTATION
+			/begin ANNOTATION 
+			ANNOTATION_LABEL "Calibration Note3" 
+			ANNOTATION_ORIGIN "Graf Zeppelin"
+			/begin ANNOTATION_TEXT 
+				"The very nice ASAM MCD-2 MC Specification." 
+				"Text.\r\n" 
+				"In case of a quotation mark " "use \" or "" to mark it." 
+			/end ANNOTATION_TEXT 
+	/end ANNOTATION
+
+	/end CHARACTERISTIC
+	
+		  /begin CHARACTERISTIC
+
+		AirSys_stMskOpModeSysTst_C11
+		"Maske zur Auswahl des Zustandes ""des"" Betriebsartenkoordinators"
+		VALUE
+		0x80877994
+		Val_Wu16
+		65535.00
+		OneToOne
+		0.00
+		65535.00
+		FORMAT "%8.2"
+		EXTENDED_LIMITS 0.00 65535.00
+		
+		/begin ANNOTATION 
+			ANNOTATION_LABEL "Calibration Note4"
+			ANNOTATION_ORIGIN "Graf Zeppelin"
+			/begin ANNOTATION_TEXT 
+				"The very nice ASAM MCD-2 MC Specification." 
+				"Text.\r\n" 
+				"In case of a quotation mark " "use \" or "" to mark it." 
+			/end ANNOTATION_TEXT 
+		/end ANNOTATION
+		
+			/begin ANNOTATION 
+			ANNOTATION_LABEL "Calibration Note35" 
+			ANNOTATION_ORIGIN "Graf Zeppelin"
+			/begin ANNOTATION_TEXT 
+				"The very nice ASAM MCD-2 MC Specification." 
+				"Text.\r\n" 
+				"In case of a quotation mark " "use \" or "" to mark it." 
+			/end ANNOTATION_TEXT 
+	/end ANNOTATION
+
+	/end CHARACTERISTIC
+/begin CHARACTERISTIC
+
+    AFS_uBattMax_C
+    "Obere Batterieschwelle für䴢 Bestimmung der AFS-Signalqualit"
+    VALUE
+    0x808621FE
+    Val_Ws16
+    1310700.
+    OneToOne
+    -655360.0
+    655340.0
+
+    FORMAT "%8.1"
+    EXTENDED_LIMITS -655360.0 655340.0
+    
+
+/end CHARACTERISTIC
+	/begin MEASUREMENT
+
+    aadps_vg
+    "Variationsgrad der AAD für das ܢerwachungskonzept"
+    UBYTE
+    DEZ
+    1
+    100
+    0.00
+    255.0
+
+    
+    FORMAT "%5.1"
+    
+    ECU_ADDRESS 0xD0000149
+
+    /begin IF_DATA ASAP1B_CCP KP_BLOB 0x00 0xD0000149 0x1 RASTER 1 /end IF_DATA
+    /begin IF_DATA ETK KP_BLOB 0xD0000149 INTERN 0x1 RASTER 2 /end IF_DATA
+	/begin ANNOTATION 
+			ANNOTATION_LABEL "Calibration Note3" 
+			ANNOTATION_ORIGIN "Graf Zeppelin"
+			/begin ANNOTATION_TEXT 
+				"The very nice ASAM MCD-2 MC Specification." 
+				"Text.\r\n" 
+				"In case of a quotation mark " "use \" or "" to mark it." 
+			/end ANNOTATION_TEXT 
+	/end ANNOTATION
+/end MEASUREMENT
+	
+	
+/begin RECORD_LAYOUT Val_Wu8
+
+    FNC_VALUES        1 UBYTE COLUMN_DIR DIRECT
+
+/end RECORD_LAYOUT
+
+  /end MODULE
+/end PROJECT

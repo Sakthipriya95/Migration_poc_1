@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iCDM REST Webservice client Test
+Bundle-SymbolicName: com.bosch.caltool.icdm.ws.rest.client.test
+Bundle-Version: 2024.3.0
+Fragment-Host: com.bosch.caltool.icdm.ws.rest.client;bundle-version="2.0.0"
+Require-Bundle: com.bosch.calcomp.adapter.logger,
+ org.junit,
+ com.bosch.caltool.icdm.model,
+ com.bosch.calmodel.caldata,
+ com.bosch.caltool.icdm.common.util,
+ com.bosch.calmodel.caldataphy,
+ com.bosch.calcomp.junittestframework
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.bosch.caltool.icdm.model.a2l,
+ com.bosch.caltool.icdm.common.exception,
+ com.bosch.caltool.icdm.model.bc,
+ com.bosch.caltool.icdm.model.comppkg

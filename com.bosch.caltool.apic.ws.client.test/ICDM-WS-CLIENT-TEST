@@ -1,0 +1,92 @@
+2019-09-17 17:59:16,961 [main] [Log4JLoggerAdapterImplExt] INFO  - ICDM WS Client initialized. Base URL - http://localhost:8580/com.bosch.caltool.apic.ws
+2019-09-17 17:59:17,930 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 17:59:17,930 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testAllPidcVersions
+2019-09-17 17:59:17,931 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:22,036 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testAllPidcVersions completed. Time taken = 4105 ms
+2019-09-17 17:59:22,037 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:22,476 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 17:59:22,476 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testPidcAttributes
+2019-09-17 17:59:22,476 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:26,493 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testPidcAttributes completed. Time taken = 4017 ms
+2019-09-17 17:59:26,493 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:26,935 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 17:59:26,935 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testSpecificPidcVersion
+2019-09-17 17:59:26,935 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:30,964 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testSpecificPidcVersion completed. Time taken = 4029 ms
+2019-09-17 17:59:30,964 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:31,419 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 17:59:31,420 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testAllPidc
+2019-09-17 17:59:31,420 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:35,435 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testAllPidc completed. Time taken = 4015 ms
+2019-09-17 17:59:35,435 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:35,861 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 17:59:35,862 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testSpecficPidc
+2019-09-17 17:59:35,862 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:39,878 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testSpecficPidc completed. Time taken = 4016 ms
+2019-09-17 17:59:39,878 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:40,304 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 17:59:40,304 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testLevelAttrs
+2019-09-17 17:59:40,304 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:44,322 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testLevelAttrs completed. Time taken = 4016 ms
+2019-09-17 17:59:44,322 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:44,780 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 17:59:44,780 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : activeid
+2019-09-17 17:59:44,780 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:48,793 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : activeid completed. Time taken = 4013 ms
+2019-09-17 17:59:48,793 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:56,174 [main] [Log4JLoggerAdapterImplExt] INFO  - ICDM WS Client initialized. Base URL - http://si-cdm02.de.bosch.com:8980/APIC_WS2
+2019-09-17 17:59:57,165 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 17:59:57,165 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testAllPidcVersions
+2019-09-17 17:59:57,165 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:57,657 [main] [Log4JLoggerAdapterImplExt] INFO  - Number of Project id versions in the db 1297
+2019-09-17 17:59:57,658 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testAllPidcVersions completed. Time taken = 493 ms
+2019-09-17 17:59:57,658 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:58,078 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 17:59:58,079 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testSpecificPidcVersion
+2019-09-17 17:59:58,079 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:58,435 [main] [Log4JLoggerAdapterImplExt] INFO  - Project id card name BE-045724_GM_V8_EMS_TurnKey
+2019-09-17 17:59:58,435 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testSpecificPidcVersion completed. Time taken = 356 ms
+2019-09-17 17:59:58,435 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 17:59:58,845 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 17:59:58,845 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testPidcAttributes
+2019-09-17 17:59:58,846 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 18:00:00,041 [main] [Log4JLoggerAdapterImplExt] INFO  - Attribute name:Z-Junit 011563185592086
+2019-09-17 18:00:00,041 [main] [Log4JLoggerAdapterImplExt] INFO  - Attribute name:Z-Junit AliasTest1568717515303
+2019-09-17 18:00:00,042 [main] [Log4JLoggerAdapterImplExt] INFO  - Attribute name:Clutch Switch - End Position
+2019-09-17 18:00:00,042 [main] [Log4JLoggerAdapterImplExt] INFO  - Attribute name:Clutch Switch - Start Position
+2019-09-17 18:00:00,042 [main] [Log4JLoggerAdapterImplExt] INFO  - Attribute name:Z-Junit 011568717515303
+2019-09-17 18:00:00,042 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testPidcAttributes completed. Time taken = 1196 ms
+2019-09-17 18:00:00,042 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 18:00:00,452 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 18:00:00,453 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testLevelAttrs
+2019-09-17 18:00:00,453 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 18:00:01,584 [main] [Log4JLoggerAdapterImplExt] INFO  - level attr id :36
+2019-09-17 18:00:01,584 [main] [Log4JLoggerAdapterImplExt] INFO  - Honda
+2019-09-17 18:00:01,585 [main] [Log4JLoggerAdapterImplExt] INFO  - level attr id :2225
+2019-09-17 18:00:01,585 [main] [Log4JLoggerAdapterImplExt] INFO  - Diesel Engine
+2019-09-17 18:00:01,585 [main] [Log4JLoggerAdapterImplExt] INFO  - level attr id :2232
+2019-09-17 18:00:01,585 [main] [Log4JLoggerAdapterImplExt] INFO  - PC - Passenger Car
+2019-09-17 18:00:01,585 [main] [Log4JLoggerAdapterImplExt] INFO  - level attr id :197
+2019-09-17 18:00:01,585 [main] [Log4JLoggerAdapterImplExt] INFO  - EDC7
+2019-09-17 18:00:01,585 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testLevelAttrs completed. Time taken = 1132 ms
+2019-09-17 18:00:01,586 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 18:00:02,001 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 18:00:02,001 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testSpecficPidc
+2019-09-17 18:00:02,001 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 18:00:03,158 [main] [Log4JLoggerAdapterImplExt] INFO  - Pidc name paste d2
+2019-09-17 18:00:03,158 [main] [Log4JLoggerAdapterImplExt] INFO  - Pidc attributes Size 887
+2019-09-17 18:00:03,158 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testSpecficPidc completed. Time taken = 1156 ms
+2019-09-17 18:00:03,158 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 18:00:03,615 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 18:00:03,615 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : activeid
+2019-09-17 18:00:03,615 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 18:00:04,543 [main] [Log4JLoggerAdapterImplExt] INFO  - 
+active id : 1433828721
+2019-09-17 18:00:04,543 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : activeid completed. Time taken = 927 ms
+2019-09-17 18:00:04,543 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 18:00:05,014 [main] [Log4JLoggerAdapterImplExt] DEBUG - ======================================================
+2019-09-17 18:00:05,014 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testAllPidc
+2019-09-17 18:00:05,014 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------
+2019-09-17 18:00:05,921 [main] [Log4JLoggerAdapterImplExt] INFO  - Number of Project id card in the db 1297
+2019-09-17 18:00:05,922 [main] [Log4JLoggerAdapterImplExt] DEBUG - Test : testAllPidc completed. Time taken = 908 ms
+2019-09-17 18:00:05,922 [main] [Log4JLoggerAdapterImplExt] DEBUG - ------------------------------------------------------

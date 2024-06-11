@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LDAP Authentication
+Bundle-SymbolicName: com.bosch.caltool.authentication.ldap
+Bundle-Version: 2.3.1
+Bundle-Vendor: Robert Bosch
+Require-Bundle: com.bosch.calcomp.adapter.logger,
+ com.bosch.caltool.security,
+ com.bosch.caltool.pwdservice.client
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.bosch.caltool.authentication.ldap
+Bundle-ClassPath: .

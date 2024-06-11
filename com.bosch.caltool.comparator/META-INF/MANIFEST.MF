@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: iCDM Comparator
+Bundle-SymbolicName: com.bosch.caltool.comparator
+Bundle-Version: 2024.3.0
+Bundle-Activator: com.bosch.caltool.comparator.Activator
+Bundle-Vendor: BOSCH
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: com.bosch.caltool.comparator

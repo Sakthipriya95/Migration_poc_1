@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.alexmerz.graphviz
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Require-Bundle: org.eclipse.ui
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Alexander Merz http://www.alexander-merz.com
+Export-Package: com.alexmerz.graphviz,com.alexmerz.graphviz.cli,com.al
+ exmerz.graphviz.objects
+Bundle-Name: com.alexmerz.graphviz
+Bundle-Version: 2.1.0.20170725101834082
+Bundle-ClassPath: .
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

@@ -1,0 +1,43 @@
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.bosch.caltool.icdm.cns.common</groupId>
+    <artifactId>com.bosch.caltool.icdm.cns.common</artifactId>
+    <version>${icdm.version}</version>
+   <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>${mavenjar.plugin}</version>
+            <configuration>
+                <archive>
+                    <manifestEntries>
+                        <Major-Version>${icdm.version}</Major-Version>
+                        <Build-Version>${build.number}</Build-Version>
+                        <Build-Time>${maven.build.timestamp}</Build-Time>
+                    </manifestEntries>
+                </archive>
+            </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <parent>
+        <groupId>com.bosch.caltool.apic.ws.main</groupId>
+        <artifactId>com.bosch.caltool.apic.ws.main</artifactId>
+        <version>${icdm.version}</version>
+        <relativePath>../com.bosch.caltool.apic.ws.main</relativePath>
+    </parent>
+</project>

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.bsh
+Archiver-Version: Plexus Archiver
+Built-By: ide3si
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: Robert Bosch GmbH
+Export-Package: bsh,bsh.classpath,bsh.collection,bsh.commands,bsh.org.
+ objectweb.asm,bsh.reflect,bsh.servlet,bsh.util
+Bundle-Name: Bsh
+Bundle-Version: 2.0.0.20170725101834082
+Bundle-ClassPath: lib/bsh-2.0b4.jar,.
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_141
+Eclipse-BundleShape: dir
+

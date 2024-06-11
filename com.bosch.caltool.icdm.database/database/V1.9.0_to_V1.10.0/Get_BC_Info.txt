@@ -1,0 +1,4 @@
+create or replace Procedure Get_BC_Info (a2lID IN NUMBER) IS
+  begin
+    Get_BC_Info@DGSPRO.WORLD@K5ESK_VILLA_RO(a2lID);
+  end;

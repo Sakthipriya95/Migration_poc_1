@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>iCDM CNS Server - Data Consumer/Source Details</title>
+    <link rel="stylesheet" href="cssstyles.css"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    <script type="text/javascript" src="scripts/common.js"></script>
+</head>
+
+<body onload="loadSessionDetIfReqd()">
+
+<script src="scripts/headerpart.js"></script>
+
+<div class="main_div">
+
+<p id="backSection"></p>
+
+<h2>Data Consumer/Data Source Details</h2>
+
+Consumer/Source ID <input type="text" id="txtSessId" size=38 onClick="selectContents('txtSessId')"/>
+<button class="def_button" onclick="loadSessionDet()">Show</button>
+
+<h3>Consumer/Source</h3>
+<p id="sessionSection"></p>
+
+<h3>Generated Events</h3>
+<script>
+createTableNavBar('sessEvtNav');
+</script>
+<p id="sessionEventSection"></p>
+
+<script>
+
+function backToSessionPage(){
+	window.location.href = "sessions.html";
+}
+
+function loadSessionDetIfReqd() {
+	var queryParamUrl = decodeURIComponent(window.location.search);
+	queryParamUrl = queryParamUrl.substring(1);
+	var paramArr = queryParamUrl.split("&");
+	var param1 = paramArr[0];
+	
+	var sid = param1.substring(param1.indexOf("=") + 1, param1.length);
+	
+	if(sid){
+	    document.getElementById("txtSessId").value = sid;
+	    var txt = "<button class=\"def_button\" onclick=\"backToSessionPage()\">Back</button>";
+	    document.getElementById("backSection").innerHTML = txt;
+	    loadSessionDet();
+	}else{
+		document.getElementById("backSection").innerHTML = "";
+	}
+}
+
+function loadSessionDet() {
+    var sid = document.getElementById("txtSessId").value;
+    loadSessionInfo(sid);
+    loadSessionEvents(sid, 0, 10);
+}
+
+function loadSessionInfo(sid) {
+
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        
+    	var txt = "<table class=\"def_table\">";
+        
+        txt += "<tr class=\"def_table\">";
+        txt += "<th class=\"def_table\">Consumer/Source ID</th>";
+        txt += "<th class=\"def_table\">User</th>";
+        txt += "<th class=\"def_table\">Client IP</th>";
+        txt += "<th class=\"def_table\">Listening Port</th>";
+        txt += "<th class=\"def_table\">Events</th>";
+        txt += "<th class=\"def_table\">Data Created (Bytes)</th>";
+        txt += "<th class=\"def_table\">State</th>";
+        txt += "<th class=\"def_table\">Created At</th>";
+        txt += "<th class=\"def_table\">Closed At</th>";
+        txt += "<th class=\"def_table\">Inactive At</th>";
+        txt += "<th class=\"def_table\">Last Contacted At</th>";
+        txt += "</tr>";
+        
+        var respObj = JSON.parse(this.responseText);
+        
+        var sessMap = respObj.sessionInfo;
+        
+        var sessObj;
+        Object.keys(sessMap).forEach(function(key) {
+            sessObj = sessMap[key];
+            txt += "<tr class=\"def_table\">";
+            txt += "<td class=\"def_table\">" + sessObj.sessionId + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.user + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.clientIp + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.listenPort + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.eventCount + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.totalDataSize + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.state + "</td>";
+            txt += "<td class=\"def_table\">" + sessObj.createdAt + "</td>";
+            txt += "<td class=\"def_table\">" + checkNull(sessObj.closedAt) + "</td>";
+            txt += "<td class=\"def_table\">" + checkNull(sessObj.inactiveAt) + "</td>";
+            txt += "<td class=\"def_table\">" + checkNull(sessObj.lastContactAt) + "</td>";
+            txt += "</tr>";
+        });  
+        
+        txt += "</table>"; 
+        
+        document.getElementById("sessionSection").innerHTML = txt;
+    }
+  };
+  
+  invokeGetRequest(xmlHttp, "services/admin/statssession?sessionid=" + sid);
+}
+
+function doLoadData(navAreaId, startIdx, retSize){
+	var sid = document.getElementById("txtSessId").value;
+	loadSessionEvents(sid, startIdx, retSize);
+}
+
+function loadSessionEvents(sessionId, startIdx, retSize){
+    document.getElementById("sessionEventSection").innerHTML = "";
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        
+        var respObj = JSON.parse(this.responseText);
+        
+        updateNavigationArea("sessEvtNav", respObj.pageInfo);
+        
+        var txt = "<table class=\"def_table\">";
+        
+        txt += "<tr class=\"def_table\">";
+        txt += "<th class=\"def_table\">Event ID</th>";
+        txt += "<th class=\"def_table\">Service ID</th>";
+        txt += "<th class=\"def_table\">Producer ID</th>";
+        txt += "<th class=\"def_table\">Data Size (Bytes)</th>";
+        txt += "<th class=\"def_table\">Created At</th>";
+        txt += "<th class=\"def_table\">Data Available</th>";
+        txt += "<th class=\"def_table\">Source State</th>";
+        txt += "</tr>";
+        
+        var evtArr = respObj.elementList;
+        for (evtObj of evtArr){
+            txt += "<tr class=\"def_table\">";
+            txt += "<td class=\"def_table\">" + evtObj.eventId + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.serviceId + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.producerId + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.dataLength + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.createdAt + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.dataAvailable + "</td>";
+            txt += "<td class=\"def_table\">" + evtObj.sessionState + "</td>";
+            txt += "</tr>";
+        }
+        
+        txt += "</table>"; 
+        
+        document.getElementById("sessionEventSection").innerHTML = txt;
+      
+    }
+    };
+    
+    var url = "services/admin/sessionevents?sessionid=" + sessionId + "&size=" + retSize + "&startat=" + startIdx;
+    invokeGetRequest(xmlHttp, url);
+}
+
+</script>
+
+</div>
+
+<script src="scripts/footerpart.js"></script>
+
+</body>
+</html>

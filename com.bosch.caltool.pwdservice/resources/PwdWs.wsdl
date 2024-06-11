@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="PwdWs" targetNamespace="http://pwdservice.caltool.bosch.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://pwdservice.caltool.bosch.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://pwdservice.caltool.bosch.com">
+
+
+      <xsd:element name="PasswordRequest" type="tns:PasswordRequestType">
+      </xsd:element>
+      <xsd:element name="PasswordResponse" type="tns:PasswordResponseType">
+      </xsd:element>
+
+      <xsd:complexType name="PasswordRequestType">
+          <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="1" name="passwordName" type="xsd:string">
+              </xsd:element>
+
+          </xsd:sequence>
+      </xsd:complexType>
+    
+      <xsd:complexType name="PasswordResponseType">
+          <xsd:sequence>
+              <xsd:element maxOccurs="1" minOccurs="1" name="password" type="xsd:string">
+              </xsd:element>
+          </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="PasswordFault">
+          <xsd:complexType>
+              <xsd:sequence>
+
+                  <xsd:element name="PasswordFault" type="xsd:string">
+                  </xsd:element>
+              </xsd:sequence>
+          </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PasswordFault">
+    <wsdl:part name="parameters" element="tns:PasswordFault">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPasswordResponse">
+    <wsdl:part name="parameters" element="tns:PasswordResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPasswordRequest">
+    <wsdl:part name="parameters" element="tns:PasswordRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PwdWs">
+    <wsdl:operation name="GetPassword">
+      <wsdl:input message="tns:GetPasswordRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:GetPasswordResponse">
+    </wsdl:output>
+      <wsdl:fault name="fault" message="tns:PasswordFault">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PwdWsSOAP" type="tns:PwdWs">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetPassword">
+      <soap:operation soapAction="http://pwdservice.caltool.bosch.com/GetPassword"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="fault">
+        <soap:fault name="fault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PwdWs">
+    <wsdl:port name="PwdWsSOAP" binding="tns:PwdWsSOAP">
+      <soap:address location="http://localhost:8080/com.bosch.caltool.pwdservice/services/PwdWs/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,128 @@
+spool c:\temp\table_updates.log
+
+--------------------------------------------------------
+--  November-25-2013  
+--------------------------------------------------------
+
+--
+-- TABV_ICDM_FILES
+--
+-- New table for storing the file information
+-- 
+--
+
+
+CREATE TABLE TABV_ICDM_FILES
+  (
+    FILE_ID 	NUMBER PRIMARY KEY , 
+    NODE_ID 	NUMBER NOT NULL , 
+    NODE_TYPE VARCHAR2(15 BYTE) NOT NULL , 
+    FILE_NAME VARCHAR2(200 BYTE) NOT NULL , 
+	FILE_COUNT NUMBER(3) NOT NULL,
+    CREATED_USER 	VARCHAR2(20 BYTE) NOT NULL , 
+    CREATED_DATE 	DATE NOT NULL , 
+    MODIFIED_USER VARCHAR2(20 BYTE), 
+    MODIFIED_DATE DATE, 
+    VERSION 	NUMBER NOT NULL
+  );
+
+CREATE INDEX TABV_ICDM_FILES_INDEX1 ON TABV_ICDM_FILES (NODE_ID, NODE_TYPE);
+
+--
+-- TABV_ICDM_FILES
+--
+-- New table for storing the file data
+-- 
+--
+
+CREATE TABLE TABV_ICDM_FILE_DATA 
+  (	
+    FILE_DATA_ID NUMBER PRIMARY KEY, 
+	FILE_ID NUMBER NOT NULL, 
+	FILE_DATA BLOB NOT NULL, 
+	VERSION NUMBER NOT NULL,
+	
+	CONSTRAINT TABV_ICDM_FILE_DATA_UK1 UNIQUE (FILE_ID), 
+	CONSTRAINT TABV_ICDM_FILE_DATA_FK1 FOREIGN KEY (FILE_ID) REFERENCES TABV_ICDM_FILES (FILE_ID) 
+   );
+
+--
+-- T_REVIEW_RULES
+--
+-- Dummy table for storing review rules, until the SSD interface is established
+-- JIRA Issue : ICDM-497
+--
+
+CREATE TABLE T_REVIEW_RULES
+   (	
+    RULE_ID NUMBER PRIMARY KEY, 
+	PARAM_NAME VARCHAR2(100 BYTE) NOT NULL, 
+	REVIEW_METHOD VARCHAR2(1 BYTE) NOT NULL, 
+	VALUE_TYPE VARCHAR2(31 BYTE) NOT NULL, 
+	LOWER_LIMIT VARCHAR2(20 BYTE), 
+	UPPER_LIMIT VARCHAR2(20 BYTE), 
+	REF_VALUE VARCHAR2(20 BYTE), 
+	UNIT VARCHAR2(20 BYTE), 
+	HINT VARCHAR2(1000 BYTE),
+	VERSION  NUMBER NOT NULL,
+	  
+	CONSTRAINT T_REVIEW_RULES_UK1 UNIQUE (PARAM_NAME)
+   ) ;
+
+--
+-- TABV_TOP_LEVEL_ENTITIES
+--
+--  Table for storing the Data for the Top Level Entity Update
+-- JIRA Issue : ICDM-470
+--
+CREATE TABLE DGS_ICDM.TABV_TOP_LEVEL_ENTITIES
+(
+  ENT_ID         NUMBER                         PRIMARY KEY,
+  ENTITY_NAME    VARCHAR2(20 BYTE)              NOT NULL,
+  LAST_MOD_DATE  TIMESTAMP(6)                   NOT NULL,
+  VERSION        NUMBER                         NOT NULL,
+  CONSTRAINT TABV_TOP_LEVEL_ENTITIES_UK1 UNIQUE (ENTITY_NAME)
+);
+
+Insert into DGS_ICDM.TABV_TOP_LEVEL_ENTITIES
+   (ENT_ID, ENTITY_NAME, LAST_MOD_DATE, VERSION)
+ Values
+   (1, 'PIDC', sysdate, 1);
+Insert into DGS_ICDM.TABV_TOP_LEVEL_ENTITIES
+   (ENT_ID, ENTITY_NAME, LAST_MOD_DATE, VERSION)
+ Values
+   (2, 'ATTR_SUPER_GRP', sysdate, 1);
+Insert into DGS_ICDM.TABV_TOP_LEVEL_ENTITIES
+   (ENT_ID, ENTITY_NAME, LAST_MOD_DATE, VERSION)
+ Values
+   (3, 'TOP_LEVEL_UCG', sysdate, 1);
+COMMIT;
+
+--delete from TABV_ICDM_FILES WHERE NODE_ID = -1; --To be discussed
+Insert into TABV_ICDM_FILES (FILE_ID,NODE_ID,NODE_TYPE,FILE_NAME,CREATED_USER,CREATED_DATE,VERSION,FILE_COUNT) 
+values (SEQV_ATTRIBUTES.NEXTVAL,-1,'TEMPLATES','hotLineMailTemplate.html',user,sysdate,1,1);
+
+Insert into TABV_ICDM_FILE_DATA (FILE_DATA_ID,FILE_ID,FILE_DATA,VERSION) 
+SELECT SEQV_ATTRIBUTES.NEXTVAL,FILE_ID,EMPTY_BLOB(),1 FROM TABV_ICDM_FILES WHERE NODE_ID = -1;
+--Update BLOB column manually
+--The mail template file is available in /com.bosch.caltool.apic.jpa/database/V1.4.0_to_V1.5.0/Files/hotLineMailTemplate.html
+--The html file needs to be ZIPPED and uploaded via SQL developer
+
+delete from TABV_COMMON_PARAMS WHERE PARAM_ID = 'ICDM_HOTLINE_TEMPL_FILE';
+Insert into TABV_COMMON_PARAMS (PARAM_ID,PARAM_DESC,PARAM_VALUE,VERSION) 
+SELECT 'ICDM_HOTLINE_TEMPL_FILE','File id for ICDM clearing hotline mail template',FILE_ID,1 FROM TABV_ICDM_FILES WHERE NODE_ID = -1;
+
+delete from TABV_COMMON_PARAMS WHERE PARAM_ID = 'ICDM_HOTLINE_TO';
+Insert into TABV_COMMON_PARAMS (PARAM_ID,PARAM_DESC,PARAM_VALUE,VERSION) values ('ICDM_HOTLINE_TO','To address of ICDM Hotline','iCDM.Hotline-Clearing@de.bosch.com',1);
+
+delete from TABV_COMMON_PARAMS WHERE PARAM_ID = 'ICDM_HOTLINE_SUBJECT';
+Insert into TABV_COMMON_PARAMS (PARAM_ID,PARAM_DESC,PARAM_VALUE,VERSION) values ('ICDM_HOTLINE_SUBJECT','Subject content for ICDM Hotline mail','iCDM Attribute Clearing request',1);
+
+COMMIT;
+
+delete from TABV_COMMON_PARAMS WHERE PARAM_ID = 'iCDM_CLIENT_VERSION';
+Insert into TABV_COMMON_PARAMS (PARAM_ID,PARAM_DESC,PARAM_VALUE,VERSION) values ('iCDM_CLIENT_VERSION','iCDM Client''s current version','1.5.0',1);
+COMMIT;
+
+
+spool off

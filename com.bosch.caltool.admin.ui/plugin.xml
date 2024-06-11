@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+    <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.bosch.caltool.admin.ui.editors.NodeAccessMgmtEditor"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/admin.png"
+            id="com.bosch.caltool.admin.ui.editors.NodeAccessMgmtEditor"
+            name="Node Access Management">
+      </editor>
+      <editor
+            class="com.bosch.caltool.admin.ui.editors.UnmapA2lAdminEditor"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/a2lfile.gif"
+            id="com.bosch.caltool.admin.ui.editors.UnmapA2lAdminEditor"
+            name="Unmap A2L">
+      </editor>
+      <editor
+            class="com.bosch.caltool.admin.ui.dialog.CreateRuleSetDialog"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/rule_set.png"
+            id="com.bosch.caltool.admin.ui.dialog.CreateRuleSetDialog"
+            name="Create Ruleset">
+      </editor>
+      <editor
+            class="com.bosch.caltool.admin.ui.dialog.ImportA2lRespMergeDataDialog"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/responsibility_16x16.png"
+            id="com.bosch.caltool.admin.ui.dialog.ImportA2lRespMergeDataDialog"
+            name="Merge A2L Responsibility">
+      </editor>
+      </extension>
+
+</plugin>

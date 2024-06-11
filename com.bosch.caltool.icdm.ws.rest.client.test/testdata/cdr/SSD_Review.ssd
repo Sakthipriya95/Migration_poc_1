@@ -1,0 +1,165 @@
+!  SSD-Report for  Software, SSD-Labeldatabase, for ICDM
+!  ============================================================================================
+ 
+!  System-spezifische Software-Daten
+! 0.1 UEGO_CenSrv
+! ---------------------------------------------------------
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_flgThermDpfRgnS1B1_C, =0
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_flgUnitMilliGrQntyTot_C, =1
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_idxAsgnS1B1_C, >=0, <=6
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_idxHWES1B1_C, >=1, <=6
+ 
+#endcontact 
+#endusecase
+ 
+! 0.2 UEGO_CJ135Ctl
+! ---------------------------------------------------------
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_idxTypS1B1_C, =1
+ 
+#endcontact 
+#endusecase
+ 
+! 0.3 UEGO_CenSrv
+! ---------------------------------------------------------
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_posnmEgFlowS1B1_C, >=0, <=5
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_posnTEgMdlS1B1_C, >=0, <=5
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_stCenSrv_C, >=0, <=1
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_stEgrVlvOpen_C, =4294967293
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_stInjAllCyl_C, =8
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_stOperMod_C, =1048577
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_stSrvTestDmd_C, =0
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_tiDlyRatLamRecprMdlS1B1_C, >=0, <=1
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_tiDlyThermDpfRgn_C, =0
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_tiFilRatLamRecprMdlS1B1_C, >=.1, <=.7
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_tiFilRatO2MdlS1B1_C, >=.1, <=.7
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_tiStEngStop_C, =1
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_uBattMax_C, =16100
+ 
+#endcontact 
+#endusecase
+ 
+#usecase Review
+#contact ""
+ 
+   UEGO_uBattMin_C, =10700
+ 
+#endcontact 
+#endusecase
+ 

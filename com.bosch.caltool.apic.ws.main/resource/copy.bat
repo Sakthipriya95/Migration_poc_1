@@ -1,0 +1,6 @@
+set list=com.bosch.caltool.icdm.cns.server  com.bosch.caltool.icdm.logger  com.bosch.rcputils  com.bosch.caltool.comparator    com.bosch.caltool.icdm.plausibelparser  com.bosch.calcomp.externallink  com.bosch.caltool.icdm.common.util  com.bosch.caltool.dmframework   com.bosch.caltool.icdm.datamodelstub    com.bosch.caltool.apic.ws.common    com.bosch.caltool.icdm.database com.bosch.caltool.apic.jpa  com.bosch.caltool.apic.ws.client    com.bosch.caltool.a2l.jpa   com.bosch.caltool.apic.vcdminterface    com.bosch.caltool.cdr.jpa   com.bosch.caltool.comppkg.jpa   com.bosch.caltool.icdm.jpa  com.bosch.caltool.excel com.bosch.caltool.icdm.ws.rest.client   com.bosch.caltool.apic.ws   com.bosch.caltool.icdm.bo   com.bosch.caltool.datamodel.core    com.bosch.caltool.icdm.model    com.bosch.caltool.icdm.ws.rest.client.test  com.bosch.caltool.icdm.common.bo    com.bosch.caltool.icdm.cns.client    com.bosch.caltool.icdm.cns.common   com.bosch.caltool.icdm.oslc.ws  com.bosch.caltool.icdm.bo.report    com.bosch.caltool.icdm.report.common
+set jenkinswkp=%1
+(for %%A in (%list%) do ( 
+    echo %%A
+    xcopy /s /i /Y "%CD%\%%A" "%jenkinswkp%\%%A\"
+)) 

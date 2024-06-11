@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.bosch.caltool.icdm.common.util Test Plug-in
+Bundle-SymbolicName: com.bosch.caltool.icdm.common.util.test
+Bundle-Version: 2024.3.0
+Bundle-Vendor: Robert Bosch
+Fragment-Host: com.bosch.caltool.icdm.common.util
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit,
+ com.bosch.calcomp.junittestframework

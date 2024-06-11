@@ -1,0 +1,166 @@
+--1. Query for invalid VARIANT
+select res.* from T_RVW_RESULTS res inner join TABV_PROJECT_VARIANTS var  on res.VARIANT_ID = var.VARIANT_ID
+                                   inner join T_PIDC_VERSION pver on var.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                  inner join TABV_PROJECTIDCARD pidc on pver.PROJECT_ID = pidc.PROJECT_ID and pver.PRO_REV_ID <> pidc.PRO_REV_ID order by res.A2L_ID;
+                                  
+--2. Query to see if valid results are using any of the a2lfiles from the invalid results                                  
+select * from T_RVW_RESULTS ores where ores.RESULT_ID not in (select res.RESULT_ID from T_RVW_RESULTS res inner join TABV_PROJECT_VARIANTS var  on res.VARIANT_ID = var.VARIANT_ID
+                                   inner join T_PIDC_VERSION pver on var.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                  inner join TABV_PROJECTIDCARD pidc on pver.PROJECT_ID = pidc.PROJECT_ID and pver.PRO_REV_ID <> pidc.PRO_REV_ID) and ores.A2L_ID in 
+                                  (select res.A2L_ID from T_RVW_RESULTS res inner join TABV_PROJECT_VARIANTS var  on res.VARIANT_ID = var.VARIANT_ID
+                                   inner join T_PIDC_VERSION pver on var.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                  inner join TABV_PROJECTIDCARD pidc on pver.PROJECT_ID = pidc.PROJECT_ID and pver.PRO_REV_ID <> pidc.PRO_REV_ID);
+--4 results with same a2l_ID(888922564) all with null variant_id with same project_id were found                                                                 
+                                  
+--3. Query to see which of the invalid results are using the above a2l_id(888922564)                                  
+select * from T_RVW_RESULTS ores where ores.RESULT_ID in (select res.RESULT_ID from T_RVW_RESULTS res inner join TABV_PROJECT_VARIANTS var  on res.VARIANT_ID = var.VARIANT_ID
+                                   inner join T_PIDC_VERSION pver on var.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                  inner join TABV_PROJECTIDCARD pidc on pver.PROJECT_ID = pidc.PROJECT_ID and pver.PRO_REV_ID <> pidc.PRO_REV_ID) and ores.A2L_ID=888922564;    
+-- One invalid result_id was using this a2lid but with a different Project_id from the results of step3  --771480027
+select * from TABV_PROJECT_VARIANTS where VARIANT_ID = 771480027; --VersionID 773140165
+select * from T_PIDC_A2l where PROJECT_ID = 4190;
+select * from T_PIDC_VERSION where PROJECT_ID = 4190;
+select * from T_PIDC_VERSION where PIDC_VERS_ID = 773140165;
+select * from T_RVW_RESULTS where PROJECT_ID = 4190 and A2L_ID = 888922564; --771830866
+-- As a conclusion in T_PIDC_A2L for PROJECT_ID '4190' instead of mapping a2l_ID(888922564) to the latest pidc version(773140215), the a2l_file can be mapped to the pidcversion of the result(773140165) of step 3
+
+                                  
+select * from T_PIDC_A2L where A2L_FILE_ID in (select res.A2L_ID from T_RVW_RESULTS res inner join TABV_PROJECT_VARIANTS var  on res.VARIANT_ID = var.VARIANT_ID
+                                   inner join T_PIDC_VERSION pver on var.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                  inner join TABV_PROJECTIDCARD pidc on pver.PROJECT_ID = pidc.PROJECT_ID and pver.PRO_REV_ID <> pidc.PRO_REV_ID) and A2L_FILE_ID!=888922564 and PROJECT_ID in 
+                                  (select res.PROJECT_ID from T_RVW_RESULTS res inner join TABV_PROJECT_VARIANTS var  on res.VARIANT_ID = var.VARIANT_ID
+                                   inner join T_PIDC_VERSION pver on var.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                  inner join TABV_PROJECTIDCARD pidc on pver.PROJECT_ID = pidc.PROJECT_ID and pver.PRO_REV_ID <> pidc.PRO_REV_ID);  
+                                  
+select distinct(os.aid) from (select res.A2L_ID aid from T_RVW_RESULTS res inner join TABV_PROJECT_VARIANTS var  on res.VARIANT_ID = var.VARIANT_ID
+                                   inner join T_PIDC_VERSION pver on var.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                  inner join TABV_PROJECTIDCARD pidc on pver.PROJECT_ID = pidc.PROJECT_ID and pver.PRO_REV_ID <> pidc.PRO_REV_ID) os;        
+                                  
+                                  
+select * from TABV_PROJECT_VARIANTS where VARIANT_ID = 279065 or VARIANT_ID = 909396;   -- 589811665
+
+select * from TABV_PROJECT_VARIANTS where VARIANT_ID = 771041045 or VARIANT_ID = 771041079;  -- 897827789
+
+select * from T_PIDC_A2l where PROJECT_ID = 2747 and A2L_FILE_ID = 815724299;
+
+select * from T_RVW_RESULTS where PROJECT_ID = 352717 and A2L_ID = 801637645;
+
+select * from T_RVW_RESULTS res inner join TABV_PROJECT_VARIANTS var  on res.VARIANT_ID = var.VARIANT_ID
+                                   inner join T_PIDC_VERSION pver on var.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                  inner join TABV_PROJECTIDCARD pidc on pver.PROJECT_ID = pidc.PROJECT_ID and pver.PRO_REV_ID <> pidc.PRO_REV_ID order by res.A2L_ID;
+
+
+-- Scripts ran in DGS_TEST
+--Overwrite happens in the below script
+
+BEGIN 
+  FOR I IN (select res.PROJECT_ID PROJECT_ID,res.A2L_ID A2L_ID,var.PIDC_VERS_ID PIDC_VERS_ID  from T_RVW_RESULTS res inner join TABV_PROJECT_VARIANTS var  on res.VARIANT_ID = var.VARIANT_ID
+                                   inner join T_PIDC_VERSION pver on var.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                  inner join TABV_PROJECTIDCARD pidc on pver.PROJECT_ID = pidc.PROJECT_ID and pver.PRO_REV_ID <> pidc.PRO_REV_ID order by res.A2L_ID) 
+  LOOP 
+    UPDATE T_PIDC_A2l 
+       SET PIDC_VERS_ID = I.PIDC_VERS_ID 
+     WHERE PROJECT_ID = I.PROJECT_ID and A2L_FILE_ID = I.A2L_ID; 
+    DBMS_OUTPUT.PUT_LINE(I.PROJECT_ID || ',' || I.A2L_ID );
+  END LOOP; 
+END;
+/
+
+--Deletion of review results with a2lFile not in T_PIDC_A2L
+--This might happen if review was done on an a2lfile which belonged to a PVER not existing in the latest PIDCVersion
+-- only one such result was found in DGS_TEST after migration from DGS_PRO around 20th July
+
+select * from T_RVW_RESULTS where RESULT_ID not in (select res.RESULT_ID from T_RVW_RESULTS res ,T_PIDC_A2L pa2l where res.PROJECT_ID = pa2l.PROJECT_ID and res.A2L_ID = pa2l.A2L_FILE_ID);
+
+delete from T_RVW_PARTICIPANTS where RESULT_ID not in (select res.RESULT_ID from T_RVW_RESULTS res ,T_PIDC_A2L pa2l where res.PROJECT_ID = pa2l.PROJECT_ID and res.A2L_ID = pa2l.A2L_FILE_ID);
+
+delete from T_RVW_PARAMETERS where RESULT_ID not in (select res.RESULT_ID from T_RVW_RESULTS res ,T_PIDC_A2L pa2l where res.PROJECT_ID = pa2l.PROJECT_ID and res.A2L_ID = pa2l.A2L_FILE_ID);
+
+delete from T_RVW_FUNCTIONS where RESULT_ID not in (select res.RESULT_ID from T_RVW_RESULTS res ,T_PIDC_A2L pa2l where res.PROJECT_ID = pa2l.PROJECT_ID and res.A2L_ID = pa2l.A2L_FILE_ID);
+
+delete from T_RVW_FILES where RESULT_ID not in (select res.RESULT_ID from T_RVW_RESULTS res ,T_PIDC_A2L pa2l where res.PROJECT_ID = pa2l.PROJECT_ID and res.A2L_ID = pa2l.A2L_FILE_ID);
+
+delete from T_RVW_ATTR_VALUES where RESULT_ID not in (select res.RESULT_ID from T_RVW_RESULTS res ,T_PIDC_A2L pa2l where res.PROJECT_ID = pa2l.PROJECT_ID and res.A2L_ID = pa2l.A2L_FILE_ID);
+
+delete from T_RVW_RESULTS where ORG_RESULT_ID not in (select res.RESULT_ID from T_RVW_RESULTS res ,T_PIDC_A2L pa2l where res.PROJECT_ID = pa2l.PROJECT_ID and res.A2L_ID = pa2l.A2L_FILE_ID);
+
+delete from T_RVW_RESULTS where RESULT_ID not in (select res.RESULT_ID from T_RVW_RESULTS res ,T_PIDC_A2L pa2l where res.PROJECT_ID = pa2l.PROJECT_ID and res.A2L_ID = pa2l.A2L_FILE_ID);
+
+
+---Undo
+select * from T_RVW_RESULTS;
+
+ALTER TABLE T_RVW_RESULTS drop column PIDC_A2L_ID;
+    
+ALTER TABLE T_RVW_RESULTS ADD PROJECT_ID NUMBER; 
+
+ALTER TABLE T_RVW_RESULTS ADD CONSTRAINT "T_RVW_RESULTS_FK1" FOREIGN KEY ("PROJECT_ID")
+	  REFERENCES TABV_PROJECTIDCARD ("PROJECT_ID") ENABLE;
+    
+ALTER TABLE T_RVW_RESULTS ADD A2L_ID NUMBER;
+
+
+--UPDATE T_RVW_RESULTS test_res SET ( test_res.PROJECT_ID,test_res.A2L_ID) =
+ --           (select pro_res.PROJECT_ID,pro_res.A2L_ID from T_RVW_RESULTS@DGSPRO.WORLD@DGS_ICDM_RO pro_res where pro_res.RESULT_ID = test_res.RESULT_ID);
+ 
+ select * from COLS where DATA_DEFAULT is not null;
+
+
+ALTER TABLE T_RVW_RESULTS MODIFY PIDC_A2L_ID NUMBER(15) NOT NULL;
+
+
+ALTER TABLE T_RVW_RESULTS drop column A2L_ID;
+
+ALTER TABLE T_RVW_RESULTS drop column PROJECT_ID;
+
+select * from T_RVW_RESULTS where PIDC_A2L_ID is null;
+
+delete from T_RVW_PARTICIPANTS where RESULT_ID  in (select RESULT_ID from T_RVW_RESULTS  where PIDC_A2L_ID is null);
+
+delete from T_RVW_FILES where RESULT_ID  in (select RESULT_ID from T_RVW_RESULTS where PIDC_A2L_ID is null);
+
+delete from T_RVW_PARAMETERS where RESULT_ID  in (select RESULT_ID from T_RVW_RESULTS  where PIDC_A2L_ID is null);
+
+delete from T_RVW_FUNCTIONS where RESULT_ID  in (select RESULT_ID from T_RVW_RESULTS where PIDC_A2L_ID is null);
+
+delete from T_RVW_ATTR_VALUES where RESULT_ID  in (select RESULT_ID from T_RVW_RESULTS where PIDC_A2L_ID is null);
+
+delete from T_RVW_RESULTS where ORG_RESULT_ID in (select RESULT_ID from T_RVW_RESULTS where PIDC_A2L_ID is null);
+
+delete from T_RVW_RESULTS where RESULT_ID  in (select RESULT_ID from T_RVW_RESULTS where PIDC_A2L_ID is null);
+
+
+
+select * from T_RVW_PARAMETERS where RESULT_ID  in (select RESULT_ID from T_RVW_RESULTS  where PIDC_A2L_ID is null);
+
+--delete from T_RVW_FILES where RVW_PARAM_ID  in (select RVW_PARAM_ID from T_RVW_PARAMETERS where RESULT_ID  in (select RESULT_ID from T_RVW_RESULTS  where PIDC_A2L_ID is null));
+
+select * from T_RVW_RESULTS where VARIANT_ID is null;
+
+select * from TABV_ATTR_VALUES where TEXTVALUE_ENG = 'X_Testcustomer';
+
+select pidc.PROJECT_ID from T_RVW_RESULTS res inner join T_PIDC_A2L pa2l on res.PIDC_A2L_ID = pa2l.PIDC_A2L_ID inner join T_PIDC_VERSION pver on pa2l.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                                inner join TABV_PROJECTIDCARD pidc on pidc.PROJECT_ID = pver.PROJECT_ID where res.VARIANT_ID is null;
+                                                
+                                                
+select * from TABV_PROJECT_ATTR pattr inner join T_PIDC_VERSION pver on pattr.PIDC_VERS_ID = pver.PIDC_VERS_ID inner join TABV_PROJECTIDCARD pidc on pidc.PROJECT_ID = pver.PROJECT_ID
+                                      where pidc.PROJECT_ID in (select pidc.PROJECT_ID from T_RVW_RESULTS res inner join T_PIDC_A2L pa2l on res.PIDC_A2L_ID = pa2l.PIDC_A2L_ID inner join T_PIDC_VERSION pver on pa2l.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                                inner join TABV_PROJECTIDCARD pidc on pidc.PROJECT_ID = pver.PROJECT_ID where res.VARIANT_ID is null) and pattr.ATTR_ID = 36 and pattr.VALUE_ID = 2332;
+                                                
+select count(distinct(res.RESULT_ID)) from T_RVW_RESULTS res inner join T_PIDC_A2L pa2l on res.PIDC_A2L_ID = pa2l.PIDC_A2L_ID inner join T_PIDC_VERSION pver on pa2l.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                                inner join TABV_PROJECTIDCARD pidc on pidc.PROJECT_ID = pver.PROJECT_ID where res.VARIANT_ID is null and pidc.PROJECT_ID  not in (select pidc.PROJECT_ID from TABV_PROJECT_ATTR pattr inner join T_PIDC_VERSION pver on pattr.PIDC_VERS_ID = pver.PIDC_VERS_ID inner join TABV_PROJECTIDCARD pidc on pidc.PROJECT_ID = pver.PROJECT_ID
+                                      where pidc.PROJECT_ID in (select pidc.PROJECT_ID from T_RVW_RESULTS res inner join T_PIDC_A2L pa2l on res.PIDC_A2L_ID = pa2l.PIDC_A2L_ID inner join T_PIDC_VERSION pver on pa2l.PIDC_VERS_ID = pver.PIDC_VERS_ID 
+                                                inner join TABV_PROJECTIDCARD pidc on pidc.PROJECT_ID = pver.PROJECT_ID where res.VARIANT_ID is null) and pattr.VALUE_ID = (select val.VALUE_ID from TABV_ATTR_VALUES val where TEXTVALUE_ENG = 'X_Testcustomer'));   --53   --19                                          
+                                                
+                                               
+select * from T_PIDC_A2L where PIDC_A2L_ID = 773512815;
+
+select * from T_PIDC_VERSION where PIDC_VERS_ID = 773141165;
+
+select * from TABV_PROJECTIDCARD where PROJECT_ID = 352717;
+
+select * from TABV_ATTR_VALUES where VALUE_ID = 352716;
+
+
+                                 
+                          

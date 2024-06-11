@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: BOSCH
+Built-By: Eclipse
+Build-Jdk: 1.5.0
+Name: PaCoParser
+Implementation-Title: com.bosch.calcomp.pacoparser
+Implementation-Vendor: Bosch
+Implementation-Version: 1.3.1
+Class-Path: lib/log4j.jar

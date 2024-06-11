@@ -1,0 +1,50 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from PwdWs WSDL service -->
+
+  <service name="PwdWsSOAP" provider="java:RPC" style="document" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://pwdservice.caltool.bosch.com"/>
+      <parameter name="wsdlServiceElement" value="PwdWs"/>
+      <parameter name="schemaUnqualified" value="http://pwdservice.caltool.bosch.com"/>
+      <parameter name="wsdlServicePort" value="PwdWsSOAP"/>
+      <parameter name="className" value="com.bosch.caltool.pwdservice.PwdWsSOAPSkeleton"/>
+      <parameter name="wsdlPortType" value="PwdWs"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <parameter name="allowedMethods" value="*"/>
+
+      <typeMapping
+        xmlns:ns="http://pwdservice.caltool.bosch.com"
+        qname="ns:PasswordResponseType"
+        type="java:com.bosch.caltool.pwdservice.PasswordResponseType"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://pwdservice.caltool.bosch.com"
+        qname="ns:PasswordRequestType"
+        type="java:com.bosch.caltool.pwdservice.PasswordRequestType"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="http://pwdservice.caltool.bosch.com"
+        qname="ns:>PasswordFault"
+        type="java:com.bosch.caltool.pwdservice.PasswordFault_Element"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

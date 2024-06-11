@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests for junittestframework plugin
+Bundle-SymbolicName: com.bosch.calcomp.junittestframework.test
+Bundle-Version: 1.1.0
+Fragment-Host: com.bosch.calcomp.junittestframework
+Automatic-Module-Name: com.bosch.calcomp.junittestframework.test
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

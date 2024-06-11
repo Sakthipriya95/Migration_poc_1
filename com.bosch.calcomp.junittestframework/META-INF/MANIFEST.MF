@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JUnit Test Framework
+Bundle-SymbolicName: com.bosch.calcomp.junittestframework
+Bundle-Version: 1.1.0
+Bundle-Vendor: BOSCH
+Automatic-Module-Name: com.bosch.calcomp.junittestframework
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.bosch.calcomp.adapter.logger,
+ org.junit;bundle-version="4.12.0"
+Export-Package: com.bosch.calcomp.junittestframework

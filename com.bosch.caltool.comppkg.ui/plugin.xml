@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.bosch.caltool.comppkg.ui.editors.ComponentPackageEditor"
+            default="false"
+            icon="platform:/plugin/com.bosch.caltool.icdm.common.ui/icons/component_pkgs.png"
+            id="com.bosch.caltool.comppkg.ui.editors.ComponentPackageEditor"
+            name="ComponentPkg">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="com.bosch.caltool.comppkg.ui.category"
+            name="Component Package">
+      </category>
+     
+   </extension> 
+      <extension
+         point="org.eclipse.core.runtime.adapters">
+    
+        <factory
+            adaptableType="com.bosch.caltool.icdm.model.comppkg.CompPkgBc"
+            class="com.bosch.caltool.comppkg.ui.views.providers.CompPropertyViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+       <factory
+            adaptableType="com.bosch.caltool.icdm.model.comppkg.CompPackage"
+            class="com.bosch.caltool.comppkg.ui.views.providers.CompPropertyViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+       <factory
+            adaptableType="com.bosch.caltool.icdm.model.comppkg.CompPkgFc"
+            class="com.bosch.caltool.comppkg.ui.views.providers.CompPropertyViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+      <factory
+            adaptableType="com.bosch.caltool.apic.jpa.bo.NodeAccessRight"
+            class="com.bosch.caltool.apic.ui.views.providers.APICPropertiesViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+       <factory
+            adaptableType="com.bosch.caltool.comppkg.jpa.bo.CompPkgParameter"
+            class="com.bosch.caltool.icdm.ruleseditor.views.providers.CDRPropertyViewAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.views.properties.IPropertySource">
+         </adapter>
+      </factory>
+   </extension>
+
+</plugin>

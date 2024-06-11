@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>iCDM CNS Server - Home</title>
+    <link rel="stylesheet" href="cssstyles.css"/>
+    <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+    <script type="text/javascript" src="scripts/common.js"></script>
+</head>
+    
+<body onload="loadStats()">
+
+<script src="scripts/headerpart.js"></script>
+
+<!-- <header> -->
+<!--     <img src="images/top_bosch.png" /> -->
+
+<!-- <table> -->
+<!--     <tr> -->
+<!--         <td><img src="images/icdm_logo.ico" class="header_logo_img" /></td> -->
+<!--         <td><h1>&nbsp;iCDM CNS Server</h1></td> -->
+<!--     </tr> -->
+<!-- </table> -->
+<!-- </header> -->
+
+<div class="main_div">
+
+<p id="basicstats"></p>
+
+<table class="section_table">
+    <tr>
+        <td class="section_table">
+            <h3>Consumer-Sources <button class="h3_button" onclick="openConsumersWindow()">List</button></h3>
+            <p id="sessionstats"></p>
+        </td>
+        <td class="section_table">
+            <h3>Data Producers <button class="h3_button" onclick="openProducersWindow()">List</button></h3>
+            <p id="producerstats"></p>
+        </td>
+    </tr>
+    <tr>
+        <td class="section_table">
+            <h3>Events <button class="h3_button" onclick="openEventsWindow()">List</button></h3>
+            <p id="evtstats"></p>
+        </td>
+        <td class="section_table">
+            <h3>Data Statistics</h3>
+            <p id="datastats"></p>
+        </td>
+    </tr>
+</table>
+
+<button class="def_button" onclick="loadStats()">Refresh</button>
+
+<script>
+function loadStats() {
+  var xmlhttp, statsObj, txt = "";
+  
+  xmlhttp = new XMLHttpRequest();
+  
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      statsObj = JSON.parse(this.responseText);
+      txt = "<table border='0'>";
+      txt += "<tr><td>Server Start Time</td><td>: " + statsObj.startTime + "</td></tr>";
+      txt += "<tr><td>Data Retrieved At</td><td>: " + statsObj.currentTime + "</td></tr>";
+      txt += "</table>";
+      document.getElementById("basicstats").innerHTML = txt;
+      
+      txt = "<table border='0'>";
+      txt += "<tr><td>Latest Event ID</td><td>: " + statsObj.latestEventId + "</td></tr>";
+      txt += "<tr><td>Total Events</td><td>: " + statsObj.totalEvents + "</td></tr>";
+      txt += "<tr><td> &nbsp&nbsp from closed sources</td><td>: " + statsObj.evntClosedSessionCount + "</td></tr>";
+      txt += "<tr><td> &nbsp&nbsp from invalid sources</td><td>: " + statsObj.evntInvalidSessionCount + "</td></tr>";
+      txt += "<tr><td> &nbsp&nbsp without source ID</td><td>: " + statsObj.evntNoSessionCount + "</td></tr>";
+      txt += "</table>";
+      
+      document.getElementById("evtstats").innerHTML = txt;
+      
+      txt = "<table border='0'>";
+      txt += "<tr><td>Current Data Size (Bytes)</td><td>: " + statsObj.currentDataSize + "</td></tr>";
+      txt += "<tr><td>Total Data Size (Bytes)</td><td>: " + statsObj.totalDataSize + "</td></tr>";
+      txt += "<tr><td>Peak Data Size (Bytes)</td><td>: " + statsObj.peakDataSize + " at " + statsObj.peakDataSizeAt + "</td></tr>";
+      txt += "</table>";
+      document.getElementById("datastats").innerHTML = txt;
+      
+      txt = "<table border='0'>";
+      txt += "<tr><td>Total Data Sources</td><td>: " + statsObj.totalSessions + "</td></tr>";
+      txt += "<tr><td>Active</td><td>: " + statsObj.activeSessions + "</td></tr>";
+      txt += "<tr><td>Inactive</td><td>: " + statsObj.inactiveSessions + "</td></tr>";
+      txt += "<tr><td>Closed</td><td>: " + statsObj.closedSessions + "</td></tr>";
+      txt += "<tr><td>Peak Active</td><td>: " + statsObj.peakActiveSession + " at " + statsObj.peakActiveSessionAt + "</td></tr>";
+      txt += "</table>";  
+      document.getElementById("sessionstats").innerHTML = txt;
+
+      txt = "<table border='0'>";
+      txt += "<tr><td>Total Producers</td><td>: " + statsObj.totalProducers + "</td></tr>";
+      txt += "</table>";        
+      document.getElementById("producerstats").innerHTML = txt;
+      
+    }
+  };
+  
+  invokeGetRequest(xmlhttp, "services/admin/stats");
+}
+</script>
+
+<script>
+function openConsumersWindow() {
+	openPopupWindow('sessions.html', 'consumersWindow');
+	return false;
+}
+function openEventsWindow() {
+    openPopupWindow('events.html', 'eventsWindow');
+    return false;
+}
+function openProducersWindow() {
+    openPopupWindow('producers.html', 'producersWindow');
+    return false;
+}
+
+</script>
+
+</div>
+
+<script src="scripts/footerpart.js"></script>
+
+<!-- <footer> -->
+<!--     <p> -->
+<!--     <br> -->
+<!--     <div class="footer_txt_div"> -->
+<!--          &copy; Robert Bosch GmbH. All rights reserved.  -->
+<!--         <address>Contact <a href="mailto:iCDM-Hotline.Clearing@de.bosch.com">iCDM-Clearing Hotline</a> for further support</address> -->
+<!--     </div> -->
+<!--     <br> -->
+<!--     <img src="images/bottom_bosch.png" /> -->
+<!-- </footer> -->
+
+</body>
+</html>

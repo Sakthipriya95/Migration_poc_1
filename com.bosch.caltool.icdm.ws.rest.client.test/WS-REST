@@ -1,0 +1,861 @@
+2017-07-26 14:35:19,769 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-26 14:35:19,769 [main] [Log4JLoggerAdapterImplExt] INFO  - Test 01 =======================================================================================================
+2017-07-26 14:35:19,769 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-26 14:35:20,545 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-26 14:35:20,545 [main] [Log4JLoggerAdapterImplExt] INFO  - Test 02 =======================================================================================================
+2017-07-26 14:35:20,545 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-26 14:35:21,246 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-26 14:35:21,246 [main] [Log4JLoggerAdapterImplExt] INFO  - Test 03 =======================================================================================================
+2017-07-26 14:35:21,246 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:26:13,074 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:26:13,074 [main] [Log4JLoggerAdapterImplExt] INFO  - Test 01 =======================================================================================================
+2017-07-27 09:26:13,074 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:26:13,075 [main] [Log4JLoggerAdapterImplExt] ERROR - Error in WS call
+java.lang.NullPointerException
+	at com.bosch.caltool.icdm.ws.rest.client.a2l.FC2WPMappingServiceClient.getFC2WPMappingByVersion(FC2WPMappingServiceClient.java:52)
+	at com.bosch.caltool.icdm.ws.rest.client.a2l.FC2WPMappingServiceClientTest.test01(FC2WPMappingServiceClientTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2017-07-27 09:26:13,808 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:26:13,808 [main] [Log4JLoggerAdapterImplExt] INFO  - Test 02 =======================================================================================================
+2017-07-27 09:26:13,808 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:26:13,808 [main] [Log4JLoggerAdapterImplExt] ERROR - Error in WS call
+java.lang.NullPointerException
+	at com.bosch.caltool.icdm.ws.rest.client.a2l.FC2WPMappingServiceClient.getFC2WPMappingById(FC2WPMappingServiceClient.java:70)
+	at com.bosch.caltool.icdm.ws.rest.client.a2l.FC2WPMappingServiceClientTest.test02(FC2WPMappingServiceClientTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2017-07-27 09:26:14,480 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:26:14,480 [main] [Log4JLoggerAdapterImplExt] INFO  - Test 03 =======================================================================================================
+2017-07-27 09:26:14,480 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:26:14,480 [main] [Log4JLoggerAdapterImplExt] ERROR - Error in WS call
+java.lang.NullPointerException
+	at com.bosch.caltool.icdm.ws.rest.client.a2l.FC2WPMappingServiceClient.getFC2WPMappingById(FC2WPMappingServiceClient.java:70)
+	at com.bosch.caltool.icdm.ws.rest.client.a2l.FC2WPMappingServiceClientTest.test03(FC2WPMappingServiceClientTest.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2017-07-27 09:29:41,037 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:29:41,037 [main] [Log4JLoggerAdapterImplExt] INFO  - Test 01 =======================================================================================================
+2017-07-27 09:29:41,037 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:30:03,254 [main] [Log4JLoggerAdapterImplExt] INFO  - -----------------Log output : Mapping retrieved by mapping version key
+2017-07-27 09:30:03,254 [main] [Log4JLoggerAdapterImplExt] INFO  - Mappings = 10240
+2017-07-27 09:30:03,254 [main] [Log4JLoggerAdapterImplExt] INFO  - BC details = 3
+2017-07-27 09:30:03,254 [main] [Log4JLoggerAdapterImplExt] INFO  - PT Type details = 4
+2017-07-27 09:30:03,254 [main] [Log4JLoggerAdapterImplExt] INFO  - WP Div details = 103
+2017-07-27 09:30:03,255 [main] [Log4JLoggerAdapterImplExt] INFO  - First Mapping : FC2WPMapping [fcwpMapId=821354815, functionName=HDRVW, functionDesc=1.0.0     Hochdruckregelung - VW, agreeWithCoc=true, agreeWithCocDate=Wed Jul 05 11:13:33 IST 2017, agreeWithCocRespUserId=230016, bcID=null, ptTypeSet=[820921215, 820921265], wpDivId=780189825, useWpDef=false, contactPersonId=230016, contactPersonSecondId=null, comments=Comments Modified, usedInIcdm=true, deleted=false, version=4]
+2017-07-27 09:30:03,255 [main] [Log4JLoggerAdapterImplExt] INFO  - First BC : BaseComponent [bcId=823594015, name=BC3, description=BC3 Desc]
+2017-07-27 09:30:03,255 [main] [Log4JLoggerAdapterImplExt] INFO  - First PT Type : PTType [ptTypeId=820921215, ptTypeName=G, ptTypeDesc=Gasoline]
+2017-07-27 09:30:03,255 [main] [Log4JLoggerAdapterImplExt] INFO  - First WP Division : WorkPackageDetails [wpDivId=782084765, wpName=31.1) Release O2-Sensor Heating for O2-Sensor with TSP (Option), wpDesc=null, wpResource=AF_MIX, wpIdMcr=AFED27, contactPersonId=758453565, contactPersonSecondId=758453765]
+2017-07-27 09:30:03,801 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:30:03,801 [main] [Log4JLoggerAdapterImplExt] INFO  - Test 02 =======================================================================================================
+2017-07-27 09:30:03,801 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:30:03,894 [main] [Log4JLoggerAdapterImplExt] INFO  - -----------------Log output : Mapping retrieved by mapping key
+2017-07-27 09:30:03,894 [main] [Log4JLoggerAdapterImplExt] INFO  - Mappings = 1
+2017-07-27 09:30:03,894 [main] [Log4JLoggerAdapterImplExt] INFO  - BC details = 1
+2017-07-27 09:30:03,894 [main] [Log4JLoggerAdapterImplExt] INFO  - PT Type details = 3
+2017-07-27 09:30:03,894 [main] [Log4JLoggerAdapterImplExt] INFO  - WP Div details = 1
+2017-07-27 09:30:03,894 [main] [Log4JLoggerAdapterImplExt] INFO  - First Mapping : FC2WPMapping [fcwpMapId=821029765, functionName=MoFBrk_In, functionDesc=2.3.0     Funktionsüberwachung: Bremseeingangssignale, agreeWithCoc=true, agreeWithCocDate=null, agreeWithCocRespUserId=null, bcID=823593915, ptTypeSet=[820921165, 820921315, 820921265], wpDivId=780189825, useWpDef=true, contactPersonId=null, contactPersonSecondId=null, comments=select insert in DB by BNE4COB, usedInIcdm=true, deleted=false, version=83]
+2017-07-27 09:30:03,894 [main] [Log4JLoggerAdapterImplExt] INFO  - First BC : BaseComponent [bcId=823593915, name=BC1, description=BC1 Desc]
+2017-07-27 09:30:03,894 [main] [Log4JLoggerAdapterImplExt] INFO  - First PT Type : PTType [ptTypeId=820921165, ptTypeName=C, ptTypeDesc=Common]
+2017-07-27 09:30:03,894 [main] [Log4JLoggerAdapterImplExt] INFO  - First WP Division : WorkPackageDetails [wpDivId=780189825, wpName=112) Softwaresharing, wpDesc=null, wpResource=AF_SW, wpIdMcr=APPA03, contactPersonId=null, contactPersonSecondId=null]
+2017-07-27 09:30:04,410 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:30:04,410 [main] [Log4JLoggerAdapterImplExt] INFO  - Test 03 =======================================================================================================
+2017-07-27 09:30:04,410 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2017-07-27 09:30:04,473 [main] [Log4JLoggerAdapterImplExt] INFO  - -----------------Log output : Mapping to update(A)
+2017-07-27 09:30:04,473 [main] [Log4JLoggerAdapterImplExt] INFO  - Mappings = 1
+2017-07-27 09:30:04,473 [main] [Log4JLoggerAdapterImplExt] INFO  - BC details = 1
+2017-07-27 09:30:04,473 [main] [Log4JLoggerAdapterImplExt] INFO  - PT Type details = 3
+2017-07-27 09:30:04,473 [main] [Log4JLoggerAdapterImplExt] INFO  - WP Div details = 1
+2017-07-27 09:30:04,473 [main] [Log4JLoggerAdapterImplExt] INFO  - First Mapping : FC2WPMapping [fcwpMapId=821029765, functionName=MoFBrk_In, functionDesc=2.3.0     Funktionsüberwachung: Bremseeingangssignale, agreeWithCoc=true, agreeWithCocDate=null, agreeWithCocRespUserId=null, bcID=823593915, ptTypeSet=[820921165, 820921315, 820921265], wpDivId=780189825, useWpDef=true, contactPersonId=null, contactPersonSecondId=null, comments=select insert in DB by BNE4COB, usedInIcdm=true, deleted=false, version=83]
+2017-07-27 09:30:04,473 [main] [Log4JLoggerAdapterImplExt] INFO  - First BC : BaseComponent [bcId=823593915, name=BC1, description=BC1 Desc]
+2017-07-27 09:30:04,473 [main] [Log4JLoggerAdapterImplExt] INFO  - First PT Type : PTType [ptTypeId=820921165, ptTypeName=C, ptTypeDesc=Common]
+2017-07-27 09:30:04,473 [main] [Log4JLoggerAdapterImplExt] INFO  - First WP Division : WorkPackageDetails [wpDivId=780189825, wpName=112) Softwaresharing, wpDesc=null, wpResource=AF_SW, wpIdMcr=APPA03, contactPersonId=null, contactPersonSecondId=null]
+2017-07-27 09:30:04,488 [main] [Log4JLoggerAdapterImplExt] INFO  - -----------------Log output : Reference Mapping(B)
+2017-07-27 09:30:04,488 [main] [Log4JLoggerAdapterImplExt] INFO  - Mappings = 1
+2017-07-27 09:30:04,488 [main] [Log4JLoggerAdapterImplExt] INFO  - BC details = 0
+2017-07-27 09:30:04,488 [main] [Log4JLoggerAdapterImplExt] INFO  - PT Type details = 2
+2017-07-27 09:30:04,488 [main] [Log4JLoggerAdapterImplExt] INFO  - WP Div details = 1
+2017-07-27 09:30:04,488 [main] [Log4JLoggerAdapterImplExt] INFO  - First Mapping : FC2WPMapping [fcwpMapId=821354815, functionName=HDRVW, functionDesc=1.0.0     Hochdruckregelung - VW, agreeWithCoc=true, agreeWithCocDate=Wed Jul 05 11:13:33 IST 2017, agreeWithCocRespUserId=230016, bcID=null, ptTypeSet=[820921215, 820921265], wpDivId=780189825, useWpDef=false, contactPersonId=230016, contactPersonSecondId=null, comments=Comments Modified, usedInIcdm=true, deleted=false, version=4]
+2017-07-27 09:30:04,488 [main] [Log4JLoggerAdapterImplExt] INFO  - First PT Type : PTType [ptTypeId=820921215, ptTypeName=G, ptTypeDesc=Gasoline]
+2017-07-27 09:30:04,488 [main] [Log4JLoggerAdapterImplExt] INFO  - First WP Division : WorkPackageDetails [wpDivId=780189825, wpName=112) Softwaresharing, wpDesc=null, wpResource=AF_SW, wpIdMcr=APPA03, contactPersonId=null, contactPersonSecondId=null]
+2017-07-27 09:30:04,769 [main] [Log4JLoggerAdapterImplExt] INFO  - -----------------Log output : Mapping after update(A)
+2017-07-27 09:30:04,769 [main] [Log4JLoggerAdapterImplExt] INFO  - Mappings = 1
+2017-07-27 09:30:04,769 [main] [Log4JLoggerAdapterImplExt] INFO  - BC details = 1
+2017-07-27 09:30:04,769 [main] [Log4JLoggerAdapterImplExt] INFO  - PT Type details = 3
+2017-07-27 09:30:04,769 [main] [Log4JLoggerAdapterImplExt] INFO  - WP Div details = 1
+2017-07-27 09:30:04,769 [main] [Log4JLoggerAdapterImplExt] INFO  - First Mapping : FC2WPMapping [fcwpMapId=821029765, functionName=MoFBrk_In, functionDesc=2.3.0     Funktionsüberwachung: Bremseeingangssignale, agreeWithCoc=true, agreeWithCocDate=Wed Jul 05 16:43:33 IST 2017, agreeWithCocRespUserId=230016, bcID=823593915, ptTypeSet=[820921165, 820921315, 820921265], wpDivId=780189825, useWpDef=false, contactPersonId=230016, contactPersonSecondId=null, comments=Comments Modified, usedInIcdm=true, deleted=false, version=84]
+2017-07-27 09:30:04,769 [main] [Log4JLoggerAdapterImplExt] INFO  - First BC : BaseComponent [bcId=823593915, name=BC1, description=BC1 Desc]
+2017-07-27 09:30:04,769 [main] [Log4JLoggerAdapterImplExt] INFO  - First PT Type : PTType [ptTypeId=820921165, ptTypeName=C, ptTypeDesc=Common]
+2017-07-27 09:30:04,769 [main] [Log4JLoggerAdapterImplExt] INFO  - First WP Division : WorkPackageDetails [wpDivId=780189825, wpName=112) Softwaresharing, wpDesc=null, wpResource=AF_SW, wpIdMcr=APPA03, contactPersonId=null, contactPersonSecondId=null]
+2017-07-27 09:30:04,800 [main] [Log4JLoggerAdapterImplExt] INFO  - -----------------Log output : Mapping after revert(A)
+2017-07-27 09:30:04,800 [main] [Log4JLoggerAdapterImplExt] INFO  - Mappings = 1
+2017-07-27 09:30:04,800 [main] [Log4JLoggerAdapterImplExt] INFO  - BC details = 1
+2017-07-27 09:30:04,800 [main] [Log4JLoggerAdapterImplExt] INFO  - PT Type details = 3
+2017-07-27 09:30:04,800 [main] [Log4JLoggerAdapterImplExt] INFO  - WP Div details = 1
+2017-07-27 09:30:04,800 [main] [Log4JLoggerAdapterImplExt] INFO  - First Mapping : FC2WPMapping [fcwpMapId=821029765, functionName=MoFBrk_In, functionDesc=2.3.0     Funktionsüberwachung: Bremseeingangssignale, agreeWithCoc=true, agreeWithCocDate=null, agreeWithCocRespUserId=null, bcID=823593915, ptTypeSet=[820921165, 820921315, 820921265], wpDivId=780189825, useWpDef=true, contactPersonId=null, contactPersonSecondId=null, comments=select insert in DB by BNE4COB, usedInIcdm=true, deleted=false, version=85]
+2017-07-27 09:30:04,800 [main] [Log4JLoggerAdapterImplExt] INFO  - First BC : BaseComponent [bcId=823593915, name=BC1, description=BC1 Desc]
+2017-07-27 09:30:04,800 [main] [Log4JLoggerAdapterImplExt] INFO  - First PT Type : PTType [ptTypeId=820921165, ptTypeName=C, ptTypeDesc=Common]
+2017-07-27 09:30:04,800 [main] [Log4JLoggerAdapterImplExt] INFO  - First WP Division : WorkPackageDetails [wpDivId=780189825, wpName=112) Softwaresharing, wpDesc=null, wpResource=AF_SW, wpIdMcr=APPA03, contactPersonId=null, contactPersonSecondId=null]
+2017-10-17 17:17:08,474 [main] [Log4JLoggerAdapterImplExt] ERROR - Error when fetching Attributes
+com.bosch.caltool.apic.ws.common.exception.ApicWebServiceException: Error reading entity from input stream.
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:147)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClient.getPreCalData(PreCalibrationDataServiceClient.java:38)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClientTest.test01(PreCalibrationDataServiceClientTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: javax.ws.rs.ProcessingException: Error reading entity from input stream.
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:889)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:808)
+	at org.glassfish.jersey.client.ClientResponse.readEntity(ClientResponse.java:326)
+	at org.glassfish.jersey.client.InboundJaxrsResponse$1.call(InboundJaxrsResponse.java:115)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:228)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:419)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.runInScopeIfPossible(InboundJaxrsResponse.java:267)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.readEntity(InboundJaxrsResponse.java:112)
+	at com.bosch.caltool.apic.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:129)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:140)
+	... 25 more
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:165)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91)
+	at com.bosch.caltool.apic.ws.common.rest.interceptors.GZIPDecompressionInterceptor.aroundReadFrom(GZIPDecompressionInterceptor.java:26)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:155)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1085)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:874)
+	... 36 more
+2017-10-17 17:25:11,565 [main] [Log4JLoggerAdapterImplExt] ERROR - Error when fetching Attributes
+com.bosch.caltool.apic.ws.common.exception.ApicWebServiceException: Error reading entity from input stream.
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:147)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClient.getPreCalData(PreCalibrationDataServiceClient.java:38)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClientTest.test01(PreCalibrationDataServiceClientTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: javax.ws.rs.ProcessingException: Error reading entity from input stream.
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:889)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:808)
+	at org.glassfish.jersey.client.ClientResponse.readEntity(ClientResponse.java:326)
+	at org.glassfish.jersey.client.InboundJaxrsResponse$1.call(InboundJaxrsResponse.java:115)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:228)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:419)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.runInScopeIfPossible(InboundJaxrsResponse.java:267)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.readEntity(InboundJaxrsResponse.java:112)
+	at com.bosch.caltool.apic.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:129)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:140)
+	... 25 more
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:165)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91)
+	at com.bosch.caltool.apic.ws.common.rest.interceptors.GZIPDecompressionInterceptor.aroundReadFrom(GZIPDecompressionInterceptor.java:26)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:155)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1085)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:874)
+	... 36 more
+2017-10-17 17:47:04,707 [main] [Log4JLoggerAdapterImplExt] ERROR - Error when fetching Attributes
+com.bosch.caltool.apic.ws.common.exception.ApicWebServiceException: Error reading entity from input stream.
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:147)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClient.getPreCalData(PreCalibrationDataServiceClient.java:38)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClientTest.test01(PreCalibrationDataServiceClientTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: javax.ws.rs.ProcessingException: Error reading entity from input stream.
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:889)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:808)
+	at org.glassfish.jersey.client.ClientResponse.readEntity(ClientResponse.java:326)
+	at org.glassfish.jersey.client.InboundJaxrsResponse$1.call(InboundJaxrsResponse.java:115)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:228)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:419)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.runInScopeIfPossible(InboundJaxrsResponse.java:267)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.readEntity(InboundJaxrsResponse.java:112)
+	at com.bosch.caltool.apic.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:129)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:140)
+	... 25 more
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:165)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91)
+	at com.bosch.caltool.apic.ws.common.rest.interceptors.GZIPDecompressionInterceptor.aroundReadFrom(GZIPDecompressionInterceptor.java:26)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:155)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1085)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:874)
+	... 36 more
+2017-10-17 18:56:48,371 [main] [Log4JLoggerAdapterImplExt] ERROR - Error when fetching Attributes
+com.bosch.caltool.apic.ws.common.exception.ApicWebServiceException: Error reading entity from input stream.
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:147)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClient.getPreCalData(PreCalibrationDataServiceClient.java:38)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClientTest.test01(PreCalibrationDataServiceClientTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: javax.ws.rs.ProcessingException: Error reading entity from input stream.
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:889)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:808)
+	at org.glassfish.jersey.client.ClientResponse.readEntity(ClientResponse.java:326)
+	at org.glassfish.jersey.client.InboundJaxrsResponse$1.call(InboundJaxrsResponse.java:115)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:228)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:419)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.runInScopeIfPossible(InboundJaxrsResponse.java:267)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.readEntity(InboundJaxrsResponse.java:112)
+	at com.bosch.caltool.apic.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:129)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:140)
+	... 25 more
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:165)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91)
+	at com.bosch.caltool.apic.ws.common.rest.interceptors.GZIPDecompressionInterceptor.aroundReadFrom(GZIPDecompressionInterceptor.java:26)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:155)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1085)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:874)
+	... 36 more
+2017-10-17 18:58:04,082 [main] [Log4JLoggerAdapterImplExt] ERROR - Error when fetching Attributes
+com.bosch.caltool.apic.ws.common.exception.ApicWebServiceException: Error reading entity from input stream.
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:147)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClient.getPreCalData(PreCalibrationDataServiceClient.java:38)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClientTest.test01(PreCalibrationDataServiceClientTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: javax.ws.rs.ProcessingException: Error reading entity from input stream.
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:889)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:808)
+	at org.glassfish.jersey.client.ClientResponse.readEntity(ClientResponse.java:326)
+	at org.glassfish.jersey.client.InboundJaxrsResponse$1.call(InboundJaxrsResponse.java:115)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:228)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:419)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.runInScopeIfPossible(InboundJaxrsResponse.java:267)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.readEntity(InboundJaxrsResponse.java:112)
+	at com.bosch.caltool.apic.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:129)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:140)
+	... 25 more
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:165)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91)
+	at com.bosch.caltool.apic.ws.common.rest.interceptors.GZIPDecompressionInterceptor.aroundReadFrom(GZIPDecompressionInterceptor.java:26)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:155)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1085)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:874)
+	... 36 more
+2017-10-17 19:04:23,694 [main] [Log4JLoggerAdapterImplExt] ERROR - Error when fetching Attributes
+com.bosch.caltool.apic.ws.common.exception.ApicWebServiceException: Error reading entity from input stream.
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:147)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClient.getPreCalData(PreCalibrationDataServiceClient.java:38)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClientTest.test01(PreCalibrationDataServiceClientTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: javax.ws.rs.ProcessingException: Error reading entity from input stream.
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:889)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:808)
+	at org.glassfish.jersey.client.ClientResponse.readEntity(ClientResponse.java:326)
+	at org.glassfish.jersey.client.InboundJaxrsResponse$1.call(InboundJaxrsResponse.java:115)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:228)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:419)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.runInScopeIfPossible(InboundJaxrsResponse.java:267)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.readEntity(InboundJaxrsResponse.java:112)
+	at com.bosch.caltool.apic.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:129)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:140)
+	... 25 more
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:165)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91)
+	at com.bosch.caltool.apic.ws.common.rest.interceptors.GZIPDecompressionInterceptor.aroundReadFrom(GZIPDecompressionInterceptor.java:26)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:155)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1085)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:874)
+	... 36 more
+2017-10-17 19:04:59,363 [main] [Log4JLoggerAdapterImplExt] ERROR - Error when fetching Attributes
+com.bosch.caltool.apic.ws.common.exception.ApicWebServiceException: Error reading entity from input stream.
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:147)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClient.getPreCalData(PreCalibrationDataServiceClient.java:38)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClientTest.test01(PreCalibrationDataServiceClientTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: javax.ws.rs.ProcessingException: Error reading entity from input stream.
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:889)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:808)
+	at org.glassfish.jersey.client.ClientResponse.readEntity(ClientResponse.java:326)
+	at org.glassfish.jersey.client.InboundJaxrsResponse$1.call(InboundJaxrsResponse.java:115)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:228)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:419)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.runInScopeIfPossible(InboundJaxrsResponse.java:267)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.readEntity(InboundJaxrsResponse.java:112)
+	at com.bosch.caltool.apic.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:129)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:140)
+	... 25 more
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:165)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91)
+	at com.bosch.caltool.apic.ws.common.rest.interceptors.GZIPDecompressionInterceptor.aroundReadFrom(GZIPDecompressionInterceptor.java:26)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:155)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1085)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:874)
+	... 36 more
+2017-10-17 19:05:57,612 [main] [Log4JLoggerAdapterImplExt] ERROR - Error when fetching Attributes
+com.bosch.caltool.apic.ws.common.exception.ApicWebServiceException: Error reading entity from input stream.
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:147)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClient.getPreCalData(PreCalibrationDataServiceClient.java:38)
+	at com.bosch.caltool.icdm.ws.rest.client.cdr.PreCalibrationDataServiceClientTest.test01(PreCalibrationDataServiceClientTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: javax.ws.rs.ProcessingException: Error reading entity from input stream.
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:889)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:808)
+	at org.glassfish.jersey.client.ClientResponse.readEntity(ClientResponse.java:326)
+	at org.glassfish.jersey.client.InboundJaxrsResponse$1.call(InboundJaxrsResponse.java:115)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:228)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:419)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.runInScopeIfPossible(InboundJaxrsResponse.java:267)
+	at org.glassfish.jersey.client.InboundJaxrsResponse.readEntity(InboundJaxrsResponse.java:112)
+	at com.bosch.caltool.apic.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:129)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.post(AbstractRestServiceClient.java:140)
+	... 25 more
+Caused by: java.util.zip.ZipException: Not in GZIP format
+	at java.util.zip.GZIPInputStream.readHeader(GZIPInputStream.java:165)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:79)
+	at java.util.zip.GZIPInputStream.<init>(GZIPInputStream.java:91)
+	at com.bosch.caltool.apic.ws.common.rest.interceptors.GZIPDecompressionInterceptor.aroundReadFrom(GZIPDecompressionInterceptor.java:26)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:155)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1085)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:874)
+	... 36 more
+2018-06-06 14:24:13,532 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-06 14:24:13,539 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetRootGroups==============================================================================================
+2018-06-06 14:24:13,539 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-06 14:24:48,398 [main] [Log4JLoggerAdapterImplExt] INFO  - Root Groups count=15
+2018-06-20 10:46:06,803 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 10:46:06,803 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 10:46:06,803 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 10:46:27,023 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 10:46:27,038 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 10:46:27,038 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:04:34,137 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:04:34,137 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 11:04:34,137 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:05:50,158 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:05:50,158 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 11:05:50,158 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:06:27,634 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:06:27,634 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 11:06:27,634 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:06:47,479 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:06:47,479 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 11:06:47,479 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:08:56,061 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:08:56,061 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 11:08:56,061 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:08:59,573 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:08:59,573 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 11:08:59,573 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:10:06,034 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:10:06,034 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 11:10:06,034 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:10:09,499 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:10:09,499 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 11:10:09,499 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:33:34,384 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:33:34,384 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 11:33:34,384 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:33:54,167 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:33:54,167 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 11:33:54,167 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:34:19,362 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:34:19,362 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 11:34:19,362 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:34:20,049 [main] [Log4JLoggerAdapterImplExt] ERROR - Error in WS call
+com.bosch.caltool.icdm.ws.rest.client.exception.ApicWebServiceException: Internal server error occured. Please contact iCDM Hotline.
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:167)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:120)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:96)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.get(AbstractRestServiceClient.java:141)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClient.getUseCaseEditorData(UseCaseServiceClient.java:99)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClientTest.testGetEditorData(UseCaseServiceClientTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2018-06-20 11:40:26,710 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:40:26,710 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 11:40:26,710 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:44:33,749 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:44:33,749 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 11:44:33,749 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:44:34,155 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:44:34,155 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 11:44:34,155 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 11:44:34,811 [main] [Log4JLoggerAdapterImplExt] ERROR - Error in WS call
+com.bosch.caltool.icdm.ws.rest.client.exception.ApicWebServiceException: Internal server error occured. Please contact iCDM Hotline.
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:167)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:120)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:96)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.get(AbstractRestServiceClient.java:141)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClient.getUseCaseEditorData(UseCaseServiceClient.java:99)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClientTest.testGetEditorData(UseCaseServiceClientTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2018-06-20 12:50:20,279 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:50:20,279 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 12:50:20,279 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:50:45,102 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:50:45,102 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 12:50:45,102 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:50:45,602 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:50:45,602 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 12:50:45,602 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:50:46,257 [main] [Log4JLoggerAdapterImplExt] ERROR - Error in WS call
+com.bosch.caltool.icdm.ws.rest.client.exception.ApicWebServiceException: Internal server error occured. Please contact iCDM Hotline.
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:167)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:120)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:96)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.get(AbstractRestServiceClient.java:141)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClient.getUseCaseEditorData(UseCaseServiceClient.java:99)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClientTest.testGetEditorData(UseCaseServiceClientTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2018-06-20 12:54:22,992 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:54:22,992 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 12:54:22,992 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:54:52,244 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:54:52,244 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 12:54:52,244 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:54:52,713 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:54:52,713 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 12:54:52,713 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:54:53,275 [main] [Log4JLoggerAdapterImplExt] ERROR - Error in WS call
+com.bosch.caltool.icdm.ws.rest.client.exception.ApicWebServiceException: Internal server error occured. Please contact iCDM Hotline.
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:167)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:120)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:96)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.get(AbstractRestServiceClient.java:141)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClient.getUseCaseEditorData(UseCaseServiceClient.java:99)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClientTest.testGetEditorData(UseCaseServiceClientTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2018-06-20 12:56:20,035 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:56:20,035 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 12:56:20,035 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:57:51,482 [main] [Log4JLoggerAdapterImplExt] ERROR - Error in WS call
+com.bosch.caltool.icdm.ws.rest.client.exception.ApicWebServiceException: Internal server error occured. Please contact iCDM Hotline.
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:167)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:120)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:96)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.get(AbstractRestServiceClient.java:141)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClient.getUseCaseEditorData(UseCaseServiceClient.java:99)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClientTest.testGetEditorData(UseCaseServiceClientTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2018-06-20 12:57:51,483 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:57:51,483 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 12:57:51,483 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:57:51,873 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 12:57:51,873 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 12:57:51,873 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:13:25,319 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:13:25,319 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 13:13:25,319 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:20:50,075 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:20:50,075 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 13:20:50,075 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:21:19,810 [main] [Log4JLoggerAdapterImplExt] ERROR - Error in WS call
+com.bosch.caltool.icdm.ws.rest.client.exception.ApicWebServiceException: Internal server error occured. Please contact iCDM Hotline.
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.checkErrors(ResponseHandler.java:167)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:120)
+	at com.bosch.caltool.icdm.ws.rest.client.ResponseHandler.getResponse(ResponseHandler.java:96)
+	at com.bosch.caltool.icdm.ws.rest.client.AbstractRestServiceClient.get(AbstractRestServiceClient.java:141)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClient.getUseCaseEditorData(UseCaseServiceClient.java:99)
+	at com.bosch.caltool.icdm.ws.rest.client.uc.UseCaseServiceClientTest.testGetEditorData(UseCaseServiceClientTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:76)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2018-06-20 13:21:19,811 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:21:19,811 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 13:21:19,811 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:40:34,541 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:40:34,541 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 13:40:34,541 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:41:09,064 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:41:09,064 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 13:41:09,064 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:41:09,579 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:41:09,579 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 13:41:09,579 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:41:21,992 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:41:21,992 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetAll==============================================================================================
+2018-06-20 13:41:21,992 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:41:25,409 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:41:25,409 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 13:41:25,409 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:41:25,815 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================
+2018-06-20 13:41:25,815 [main] [Log4JLoggerAdapterImplExt] INFO  -  TestGetById==============================================================================================
+2018-06-20 13:41:25,815 [main] [Log4JLoggerAdapterImplExt] INFO  - =======================================================================================================

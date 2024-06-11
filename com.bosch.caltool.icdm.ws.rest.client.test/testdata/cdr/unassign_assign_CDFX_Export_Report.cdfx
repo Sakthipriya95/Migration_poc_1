@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE MSRSW PUBLIC "-//ASAM//DTD CALIBRATION DATA FORMAT:V2.0.0:LAI:IAI:XML:CDF200.XSD//EN" "cdf_v2.0.0.sl.dtd">
+
+<MSRSW>
+    <CATEGORY>CDF20</CATEGORY>
+    <SW-SYSTEMS>
+        <SW-SYSTEM>
+            <SHORT-NAME>tbd</SHORT-NAME>
+            <SW-INSTANCE-SPEC>
+                <SW-INSTANCE-TREE>
+                    <SHORT-NAME>tbd</SHORT-NAME>
+                    <CATEGORY>NO_VCD</CATEGORY>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DFC_DisblMsk2.DFC_AFVlvSCB_C</SHORT-NAME>
+                        <LONG-NAME/>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF> </SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>65535.0</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>2019-01-25T15:20:58</DATE>
+<CSUS>BRU2COB</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Max Value from Series Statistics</P>
+    <P>2966 datasets using this label</P>
+    <P>Label has 6 different values</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_agRoadTrmpAtWpr_A_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>COM_AXIS</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>rad</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>0.0</V>
+<V>0.030000000000000002</V>
+<V>0.060000000000000005</V>
+<V>0.09000000000000001</V>
+<V>0.12000000000000001</V>
+<V>0.15</V>
+<V>0.18000000000000002</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:35 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>3608 datasets using this label</P>
+    <P>Label has 1 different values</P>
+    <P>3608 datasets using this value (100 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_facCorThmGear1_T_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>CURVE</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+                            <SW-ARRAYSIZE>
+<V>8</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+<V>0.796875</V>
+<V>0.8125</V>
+<V>0.8984375</V>
+<V>0.953125</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.1015625</V>
+<V>1.203125</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-AXIS-CONTS>
+                            <SW-AXIS-CONT>
+<CATEGORY>COM_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>°C</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF>DATA_AntiTrmp.AntiTrmp_tAmb_A_VW</SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>-5.25</V>
+    <V>0.0</V>
+    <V>5.25</V>
+    <V>9.75</V>
+    <V>13.5</V>
+    <V>16.5</V>
+    <V>21.0</V>
+    <V>35.25</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                        </SW-AXIS-CONTS>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:50 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>4958 datasets using this label</P>
+    <P>Label has 17 different values</P>
+    <P>459 datasets using this value (9 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_facCorThmGear2Wpr_T_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>CURVE</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+                            <SW-ARRAYSIZE>
+<V>8</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+<V>0.796875</V>
+<V>0.8125</V>
+<V>0.8984375</V>
+<V>0.953125</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.1015625</V>
+<V>1.203125</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-AXIS-CONTS>
+                            <SW-AXIS-CONT>
+<CATEGORY>COM_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>°C</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF>DATA_AntiTrmp.AntiTrmp_tAmb_A_VW</SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>-5.25</V>
+    <V>0.0</V>
+    <V>5.25</V>
+    <V>9.75</V>
+    <V>12.0</V>
+    <V>15.0</V>
+    <V>20.25</V>
+    <V>24.75</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                        </SW-AXIS-CONTS>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:14:01 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>4958 datasets using this label</P>
+    <P>Label has 11 different values</P>
+    <P>95 datasets using this value (1 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AdpCus.AdpCus_nMinEngOn_C_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>U/min</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>0.0</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:25 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>65 datasets using this label</P>
+    <P>Label has 1 different values</P>
+    <P>65 datasets using this value (100 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_facCorStgGear2_M_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>MAP</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+                            <SW-ARRAYSIZE>
+<V>11</V>
+<V>7</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+<V>0.79998779296875</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-AXIS-CONTS>
+                            <SW-AXIS-CONT>
+<CATEGORY>COM_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>°</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF>DATA_AntiTrmp.AntiTrmp_agStgTrmp_A_VW</SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>0.0</V>
+    <V>45.01875</V>
+    <V>89.99374999999999</V>
+    <V>135.0125</V>
+    <V>179.98749999999998</V>
+    <V>225.00625</V>
+    <V>269.98125</V>
+    <V>315.0</V>
+    <V>360.01874999999995</V>
+    <V>450.0125</V>
+    <V>540.0062499999999</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                            <SW-AXIS-CONT>
+<CATEGORY>COM_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>U/min</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF>DATA_AntiTrmp.AntiTrmp_nEngTrmp_A_VW</SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>1000.0</V>
+    <V>2000.0</V>
+    <V>3000.0</V>
+    <V>4000.0</V>
+    <V>5000.0</V>
+    <V>6000.0</V>
+    <V>7000.0</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                        </SW-AXIS-CONTS>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:47 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>4958 datasets using this label</P>
+    <P>Label has 12 different values</P>
+    <P>45 datasets using this value (0 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_facCorThmGear2_T_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>CURVE</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+                            <SW-ARRAYSIZE>
+<V>8</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+<V>0.796875</V>
+<V>0.8125</V>
+<V>0.8984375</V>
+<V>0.953125</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.1015625</V>
+<V>1.203125</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-AXIS-CONTS>
+                            <SW-AXIS-CONT>
+<CATEGORY>COM_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>°C</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF>DATA_AntiTrmp.AntiTrmp_tAmb_A_VW</SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>-5.25</V>
+    <V>0.0</V>
+    <V>5.25</V>
+    <V>9.75</V>
+    <V>12.0</V>
+    <V>15.0</V>
+    <V>20.25</V>
+    <V>24.75</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                        </SW-AXIS-CONTS>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:57 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>4958 datasets using this label</P>
+    <P>Label has 9 different values</P>
+    <P>1359 datasets using this value (27 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_facDownStg2Gear_C_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>-0.010009765625</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:20 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>4822 datasets using this label</P>
+    <P>Label has 2 different values</P>
+    <P>3330 datasets using this value (69 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_agRoadTrmp_A_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>COM_AXIS</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>rad</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>0.0</V>
+<V>0.030000000000000002</V>
+<V>0.069</V>
+<V>0.07</V>
+<V>0.099</V>
+<V>0.1</V>
+<V>0.2</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:29 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>4822 datasets using this label</P>
+    <P>Label has 2 different values</P>
+    <P>3330 datasets using this value (69 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_agRoadTrmpAt_A_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>COM_AXIS</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>rad</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>0.0</V>
+<V>0.030000000000000002</V>
+<V>0.060000000000000005</V>
+<V>0.09000000000000001</V>
+<V>0.12000000000000001</V>
+<V>0.15</V>
+<V>0.18000000000000002</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:32 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>3608 datasets using this label</P>
+    <P>Label has 1 different values</P>
+    <P>3608 datasets using this value (100 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_facCorStgGear1_M_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>MAP</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+                            <SW-ARRAYSIZE>
+<V>11</V>
+<V>7</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.95001220703125</V>
+<V>0.95001220703125</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.95001220703125</V>
+<V>0.95001220703125</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.95001220703125</V>
+<V>0.95001220703125</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.95001220703125</V>
+<V>0.95001220703125</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.95001220703125</V>
+<V>0.95001220703125</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.95001220703125</V>
+<V>0.95001220703125</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>0.95001220703125</V>
+<V>0.95001220703125</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+<V>0.9000244140625</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-AXIS-CONTS>
+                            <SW-AXIS-CONT>
+<CATEGORY>STD_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>°</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF></SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>0.0</V>
+    <V>24.98125</V>
+    <V>50.006249999999994</V>
+    <V>74.9875</V>
+    <V>99.00625</V>
+    <V>100.01249999999999</V>
+    <V>199.01874999999998</V>
+    <V>199.98125</V>
+    <V>299.99375</V>
+    <V>500.01874999999995</V>
+    <V>599.9875</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                            <SW-AXIS-CONT>
+<CATEGORY>STD_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>U/min</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF></SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>1000.0</V>
+    <V>2000.0</V>
+    <V>3000.0</V>
+    <V>4000.0</V>
+    <V>5000.0</V>
+    <V>6000.0</V>
+    <V>7000.0</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                        </SW-AXIS-CONTS>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:43 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>4958 datasets using this label</P>
+    <P>Label has 17 different values</P>
+    <P>504 datasets using this value (10 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_facCorThmGear1Wpr_T_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>CURVE</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+                            <SW-ARRAYSIZE>
+<V>8</V>
+                            </SW-ARRAYSIZE>
+                            <SW-VALUES-PHYS>
+<V>0.796875</V>
+<V>0.8125</V>
+<V>0.8984375</V>
+<V>0.984375</V>
+<V>1.0</V>
+<V>1.0</V>
+<V>1.1015625</V>
+<V>1.796875</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-AXIS-CONTS>
+                            <SW-AXIS-CONT>
+<CATEGORY>STD_AXIS</CATEGORY>
+<UNIT-DISPLAY-NAME>°C</UNIT-DISPLAY-NAME>
+<SW-INSTANCE-REF></SW-INSTANCE-REF>
+<SW-VALUES-PHYS>
+    <V>-5.25</V>
+    <V>0.0</V>
+    <V>5.25</V>
+    <V>9.75</V>
+    <V>12.0</V>
+    <V>15.0</V>
+    <V>20.25</V>
+    <V>24.75</V>
+</SW-VALUES-PHYS>
+                            </SW-AXIS-CONT>
+                        </SW-AXIS-CONTS>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:54 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>4958 datasets using this label</P>
+    <P>Label has 16 different values</P>
+    <P>467 datasets using this value (9 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_agStgTrmp_A_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>COM_AXIS</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>°</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>0.0</V>
+<V>45.01875</V>
+<V>89.99374999999999</V>
+<V>135.0125</V>
+<V>179.98749999999998</V>
+<V>225.00625</V>
+<V>269.98125</V>
+<V>315.0</V>
+<V>360.01874999999995</V>
+<V>450.0125</V>
+<V>540.0062499999999</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:13:40 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>4822 datasets using this label</P>
+    <P>Label has 4 different values</P>
+    <P>22 datasets using this value (0 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                    <SW-INSTANCE>
+                        <SHORT-NAME>DATA_AntiTrmp.AntiTrmp_facDownStg1Gear_C_VW</SHORT-NAME>
+                        <LONG-NAME></LONG-NAME>
+                        <CATEGORY>VALUE</CATEGORY>
+                        <SW-FEATURE-REF></SW-FEATURE-REF>
+                        <SW-VALUE-CONT>
+                            <UNIT-DISPLAY-NAME>-</UNIT-DISPLAY-NAME>
+                            <SW-VALUES-PHYS>
+<V>-0.010009765625</V>
+                            </SW-VALUES-PHYS>
+                        </SW-VALUE-CONT>
+                        <SW-CS-HISTORY>
+                            <CS-ENTRY>
+<STATE>prelimCalibrated</STATE>
+<DATE>Thu Sep 27 07:14:05 CEST 2018</DATE>
+<CSUS>IMI2SI</CSUS>
+<CSWP>iCDM pre-calibration from SeriesStatistics</CSWP>
+<REMARK>
+    <P>Statistics Value from Series Statistics</P>
+    <P>4822 datasets using this label</P>
+    <P>Label has 2 different values</P>
+    <P>3330 datasets using this value (69 %)</P>
+</REMARK>
+                            </CS-ENTRY>
+                        </SW-CS-HISTORY>
+                    </SW-INSTANCE>
+                </SW-INSTANCE-TREE>
+            </SW-INSTANCE-SPEC>
+        </SW-SYSTEM>
+    </SW-SYSTEMS>
+</MSRSW>
